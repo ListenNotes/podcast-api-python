@@ -25,9 +25,9 @@ cache:
 #  -
 
 install:
-  - make test
+  - make
 
-#script:
-#  - make test-travis
+script:
+  - make test-travis
 
 #after_success: make coveralls
