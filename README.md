@@ -1,6 +1,6 @@
 # Podcast API Python Library
 
-[![Build Status](https://travis-ci.com/ListenNotes/python-api-python.svg?branch=master)](https://travis-ci.com/ListenNotes/python-api-python)
+[![Build Status](https://travis-ci.com/ListenNotes/python-api-python.svg?branch=main)](https://travis-ci.com/ListenNotes/python-api-python)
 
 The Podcast API Python library provides convenient access to the [Listen Notes Podcast API](https://www.listennotes.com/api/) from
 applications written in the Python language.
