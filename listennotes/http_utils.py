@@ -17,7 +17,7 @@ class Request:
 
     MAX_RETRIES = 3
     MAX_REDIRECTS = 15
-    TIMEOUT = 5  # seconds
+    TIMEOUT = 30  # seconds
 
     def __init__(
         self,
