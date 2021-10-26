@@ -1,0 +1,27 @@
+name: Python CI
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+jobs:
+  run:
+    name: Run
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run with setup-python 3.5
+      uses: ./
+      with:
+        python-version: 3.5
+    - name: Test on 3.5
+      run: make && make test-travis
