@@ -21,6 +21,5 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-        cache: 'pip'
     - run: make
     - run: make test-travis
