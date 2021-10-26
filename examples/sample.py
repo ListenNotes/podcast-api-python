@@ -41,6 +41,15 @@ else:
 # response = client.search(q='startup')
 # print(response.json())
 
+# response = client.spellcheck(q='evergrand stok')
+# print(response.json())
+
+# response = client.fetch_related_searches(q='evergrande')
+# print(response.json())
+
+# response = client.fetch_trending_searches()
+# print(response.json())
+
 # response = client.fetch_best_podcasts()
 # print(response.json())
 

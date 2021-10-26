@@ -53,6 +53,36 @@ class TestClient(object):
         assert params["q"][0] == term
         assert params["show_podcasts"][0] == "1"
 
+    def test_spellcheck_with_mock(self):
+        client = podcast_api.Client()
+        term = "dummy"
+        response = client.spellcheck(q=term)
+        assert len(response.json().get("tokens", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        assert url.path == "/api/v2/spellcheck"
+        params = parse_qs(url.query)
+        assert params["q"][0] == term
+
+    def test_related_searches_with_mock(self):
+        client = podcast_api.Client()
+        term = "dummy"
+        response = client.fetch_related_searches(q=term)
+        assert len(response.json().get("terms", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        assert url.path == "/api/v2/related_searches"
+        params = parse_qs(url.query)
+        assert params["q"][0] == term
+
+    def test_trending_searches_with_mock(self):
+        client = podcast_api.Client()
+        response = client.fetch_trending_searches()
+        assert len(response.json().get("terms", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        assert url.path == "/api/v2/trending_searches"
+
     def test_fetch_best_podcasts_with_mock(self):
         client = podcast_api.Client()
         genre_id = 23

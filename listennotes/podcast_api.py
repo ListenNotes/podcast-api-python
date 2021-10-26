@@ -39,6 +39,27 @@ class Client(object):
             headers=self.request_headers,
         )
 
+    def spellcheck(self, **kwargs):
+        return self.http_client.get(
+            "%s/spellcheck" % self.api_base,
+            params=kwargs,
+            headers=self.request_headers,
+        )
+
+    def fetch_related_searches(self, **kwargs):
+        return self.http_client.get(
+            "%s/related_searches" % self.api_base,
+            params=kwargs,
+            headers=self.request_headers,
+        )
+
+    def fetch_trending_searches(self, **kwargs):
+        return self.http_client.get(
+            "%s/trending_searches" % self.api_base,
+            params=kwargs,
+            headers=self.request_headers,
+        )
+
     def fetch_best_podcasts(self, **kwargs):
         return self.http_client.get(
             "%s/best_podcasts" % self.api_base,
