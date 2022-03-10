@@ -91,7 +91,7 @@ the sort of error that occurred.
 |  AuthenticationError | wrong api key or your account is suspended  |
 | APIConnectionError  | fail to connect to API servers  |
 | InvalidRequestError  | something wrong on your end (client side errors), e.g., missing required parameters  |
-| RateLimitError  | you are using FREE plan and you exceed the quota limit  |
+| RateLimitError  | for FREE plan, exceeding the quota limit; or for all plans, sending too many requests too fast and exceeding the rate limit  |
 | NotFoundError  | endpoint not exist, or podcast / episode not exist  |
 | PodcastApiError  | something wrong on our end (unexpected server errors)  |
 
