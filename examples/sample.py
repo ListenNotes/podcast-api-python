@@ -23,7 +23,7 @@ except errors.InvalidRequestError:
 except errors.NotFoundError:
     print("Endpoint not exist or the podcast / episode not exist!")
 except errors.RateLimitError:
-    print("You have reached your quota limit!")
+    print("Reached your quota limit, or rate limit.")
 except errors.ListenApiError:
     print("Something wrong on Listen Notes servers")
 except Exception:

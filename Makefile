@@ -11,6 +11,9 @@ $(VENV_NAME)/bin/activate: setup.py
 	${VENV_NAME}/bin/python -m pip install -e .
 	@touch $(VENV_NAME)/bin/activate
 
+run: venv
+	@${VENV_NAME}/bin/python examples/sample.py
+
 test: venv
 	@${VENV_NAME}/bin/tox -p auto $(TOX_ARGS)
 

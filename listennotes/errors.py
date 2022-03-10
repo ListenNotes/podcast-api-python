@@ -38,7 +38,9 @@ class AuthenticationError(ListenApiError):
 
 class RateLimitError(ListenApiError):
     """
-    Too many requests made to the API too quickly
+    For FREE plan, exceeding the quota limit; or for all plans,
+    sending too many requests too fast and exceeding the rate limit
+    - https://www.listennotes.com/api/faq/#faq17
     """
 
     pass

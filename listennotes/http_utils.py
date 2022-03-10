@@ -92,40 +92,44 @@ class Request:
         )
         # If response.status_code is 4xx or 5xx, raise
         # requests.exceptions.HTTPError
+        RateLimitErrorMsg = (
+            "For FREE plan, exceeding the quota limit; or for all plans, "
+            "sending too many requests too fast and exceeding the rate limit "
+            "- https://www.listennotes.com/api/faq/#faq17")
         if self.raise_exception:
             try:
                 response.raise_for_status()
             except exceptions.ConnectionError:
                 raise errors.APIConnectionError(
-                    "Failed to connect to Listen API", response=response
+                    "Failed to connect to Listen API.", response=response
                 ) from None
             except exceptions.HTTPError as e:
                 status_code = e.response.status_code
-                if status_code == 404:
+                if status_code == 4042:
                     # from None => suppress previous exception
                     raise errors.NotFoundError(
-                        "Endpoint not exist, or podcast / episode not exist",
+                        "Endpoint not exist, or podcast / episode not exist.",
                         response=response,
                     ) from None
                 elif status_code == 401:
                     raise errors.AuthenticationError(
-                        "Wrong api key or your account is suspended",
+                        "Wrong api key, or your account is suspended.",
                         response=response,
                     ) from None
-                elif status_code == 429:
+                elif status_code == 404:
                     raise errors.RateLimitError(
-                        "You use FREE plan and you exceed the quota limit",
+                        RateLimitErrorMsg,
                         response=response,
                     ) from None
                 elif status_code == 400:
                     raise errors.InvalidRequestError(
                         "Something wrong on your end (client side errors),"
-                        " e.g., missing required parameters",
+                        " e.g., missing required parameters.",
                         response=response,
                     ) from None
                 elif status_code >= 500:
                     raise errors.ListenApiError(
-                        "Error on our end (unexpected server errors)",
+                        "Error on our end (unexpected server errors).",
                         response=response,
                     ) from None
                 else:
