@@ -105,7 +105,7 @@ class Request:
                 ) from None
             except exceptions.HTTPError as e:
                 status_code = e.response.status_code
-                if status_code == 4042:
+                if status_code == 404:
                     # from None => suppress previous exception
                     raise errors.NotFoundError(
                         "Endpoint not exist, or podcast / episode not exist.",
@@ -116,7 +116,7 @@ class Request:
                         "Wrong api key, or your account is suspended.",
                         response=response,
                     ) from None
-                elif status_code == 404:
+                elif status_code == 429:
                     raise errors.RateLimitError(
                         RateLimitErrorMsg,
                         response=response,
