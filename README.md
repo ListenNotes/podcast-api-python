@@ -14,6 +14,10 @@ If you have any questions, please contact [hello@listennotes.com](hello@listenno
 
 **Table of Contents**
 - [Podcast API Python Library](#podcast-api-python-library)
+  - [Installation](#installation)
+    - [Requirements](#requirements)
+  - [Usage](#usage)
+    - [Handling exceptions](#handling-exceptions)
   - [API Reference](#api-reference)
     - [Full-text search](#full-text-search)
     - [Typeahead search](#typeahead-search)
@@ -39,6 +43,63 @@ If you have any questions, please contact [hello@listennotes.com](hello@listenno
     - [Spell check on a search term](#spell-check-on-a-search-term)
     - [Fetch audience demographics for a podcast](#fetch-audience-demographics-for-a-podcast)
 
+
+## Installation
+
+Install [the official PIP package](https://pypi.org/project/podcast-api/) of the Listen Notes Podcast API:
+
+```sh
+pip install --upgrade podcast-api
+```
+
+You can also install from source:
+
+```sh
+make && source venv/bin/activate
+```
+
+### Requirements
+
+- Python 3.5+
+
+## Usage
+
+The library needs to be configured with your account's API key which is
+available in your [Listen API Dashboard](https://www.listennotes.com/podcast-api/dashboard/#apps). Set `api_key` to its
+value:
+
+```python
+from listennotes import podcast_api
+
+api_key = 'a6a1f7ae6a4a4cf7a208e5ba********'
+
+client = podcast_api.Client(api_key=api_key)
+
+response = client.search(q='star wars')
+
+print(response.json())
+```
+
+If `api_key` is None, then we'll connect to a [mock server](https://www.listennotes.com/podcast-api/tutorials/#faq0) that returns fake data for testing purposes.
+
+
+### Handling exceptions
+
+Unsuccessful requests raise exceptions. The class of the exception will reflect
+the sort of error that occurred.
+
+| Exception Class  | Description |
+| ------------- | ------------- |
+|  AuthenticationError | wrong api key or your account is suspended  |
+| APIConnectionError  | fail to connect to API servers  |
+| InvalidRequestError  | something wrong on your end (client side errors), e.g., missing required parameters  |
+| RateLimitError  | for FREE plan, exceeding the quota limit; or for all plans, sending too many requests too fast and exceeding the rate limit  |
+| NotFoundError  | endpoint not exist, or podcast / episode not exist  |
+| PodcastApiError  | something wrong on our end (unexpected server errors)  |
+
+All exception classes can be found in [this file](https://github.com/ListenNotes/podcast-api-python/blob/main/listennotes/errors.py).
+
+And you can see some sample code [here](https://github.com/ListenNotes/podcast-api-python/blob/main/examples/sample.py#L17).
 
 
 
