@@ -241,3 +241,12 @@ class TestClient(object):
         assert response.request.method == "DELETE"
         url = urlparse(response.url)
         assert url.path == "/api/v2/podcasts/%s" % podcast_id
+
+    def test_fetch_audience_for_podcast_with_mock(self):
+        client = podcast_api.Client()
+        podcast_id = "adfsddf"
+        response = client.fetch_audience_for_podcast(id=podcast_id)
+        assert len(response.json().get("by_regions", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        assert url.path == "/api/v2/podcasts/%s/audience" % podcast_id

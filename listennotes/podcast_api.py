@@ -185,3 +185,11 @@ class Client(object):
             params=kwargs,
             headers=self.request_headers,
         )
+
+    def fetch_audience_for_podcast(self, **kwargs):
+        podcast_id = kwargs.pop("id", None)
+        return self.http_client.get(
+            "%s/podcasts/%s/audience" % (self.api_base, podcast_id),
+            params=kwargs,
+            headers=self.request_headers,
+        )

@@ -108,3 +108,6 @@ else:
 # response = client.delete_podcast(
 #     id='4d3fe717742d4963a85562e9f84d8c79', reason='the podcaster wants to delete it')
 # print(response.json())
+
+# response = client.fetch_audience_for_podcast(id='25212ac3c53240a880dd5032e547047b')
+# print(response.json())
