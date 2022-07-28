@@ -1,6 +1,6 @@
 # Podcast API Python Library
 
-[![Python CI](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml/badge.svg)](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml)
+[![Python CI](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml/badge.svg)](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml) [![PyPI](https://img.shields.io/pypi/v/podcast-api)](https://pypi.org/project/podcast-api/)
 
 The Podcast API Python library provides convenient access to the [Listen Notes Podcast API](https://www.listennotes.com/podcast-api/) from
 applications written in the Python language.
