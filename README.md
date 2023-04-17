@@ -61,7 +61,7 @@ make && source venv/bin/activate
 
 ### Requirements
 
-- Python 3.5+
+- Python 3.7+
 
 ## Usage
 
