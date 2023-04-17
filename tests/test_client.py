@@ -250,3 +250,14 @@ class TestClient(object):
         assert response.request.method == "GET"
         url = urlparse(response.url)
         assert url.path == "/api/v2/podcasts/%s/audience" % podcast_id
+
+    def test_fetch_podcasts_by_domain_with_mock(self):
+        client = podcast_api.Client()
+        domain_name = "nytimes.com"
+        response = client.fetch_podcasts_by_domain(domain_name=domain_name, page=3)
+        assert len(response.json().get("podcasts", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        params = parse_qs(url.query)
+        assert params["page"][0] == '3'        
+        assert url.path == "/api/v2/podcasts/domains/%s" % domain_name

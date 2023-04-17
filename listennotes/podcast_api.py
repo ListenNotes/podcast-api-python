@@ -193,3 +193,11 @@ class Client(object):
             params=kwargs,
             headers=self.request_headers,
         )
+
+    def fetch_podcasts_by_domain(self, **kwargs):
+        domain_name = kwargs.pop("domain_name", None)
+        return self.http_client.get(
+            "%s/podcasts/domains/%s" % (self.api_base, domain_name),
+            params=kwargs,
+            headers=self.request_headers,
+        )
