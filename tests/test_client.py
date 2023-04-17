@@ -259,5 +259,5 @@ class TestClient(object):
         assert response.request.method == "GET"
         url = urlparse(response.url)
         params = parse_qs(url.query)
-        assert params["page"][0] == '3'        
+        assert params["page"][0] == '3'
         assert url.path == "/api/v2/podcasts/domains/%s" % domain_name
