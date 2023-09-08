@@ -39,6 +39,13 @@ class Client(object):
             headers=self.request_headers,
         )
 
+    def search_episode_titles(self, **kwargs):
+        return self.http_client.get(
+            "%s/search_episode_titles" % self.api_base,
+            params=kwargs,
+            headers=self.request_headers,
+        )
+
     def spellcheck(self, **kwargs):
         return self.http_client.get(
             "%s/spellcheck" % self.api_base,

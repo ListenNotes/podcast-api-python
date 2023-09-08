@@ -35,11 +35,11 @@ lint: venv
 
 publish-test: test
 	${VENV_NAME}/bin/python -m pip install --upgrade twine
-	${VENV_NAME}/bin/python -m twine upload --repository testpypi .tox/dist/*
+	${VENV_NAME}/bin/python -m twine upload --repository testpypi dist/*
 
 publish: test
 	${VENV_NAME}/bin/python -m pip install --upgrade twine
-	${VENV_NAME}/bin/python -m twine upload --repository pypi .tox/dist/*
+	${VENV_NAME}/bin/python -m twine upload --repository pypi dist/*
 
 clean:
 	@rm -rf $(VENV_NAME) .coverage .coverage.* build/ dist/ htmlcov/ *.egg-info .tox

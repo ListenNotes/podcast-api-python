@@ -40,6 +40,19 @@ class TestClient(object):
         else:
             assert False
 
+    def test_search_episode_titles_with_mock(self):
+        client = podcast_api.Client()
+        term = "dummy2"
+        response = client.search_episode_titles(
+            q=term, podcast_id='0cdaa63b905b4de3861554669a6a3dd1')
+        assert len(response.json().get("results", [])) > 0
+        assert response.request.method == "GET"
+        url = urlparse(response.url)
+        assert url.path == "/api/v2/search_episode_titles"
+        params = parse_qs(url.query)
+        assert params["q"][0] == term
+        assert params["podcast_id"][0] == "0cdaa63b905b4de3861554669a6a3dd1"
+
     def test_typeahead_with_mock(self):
         client = podcast_api.Client()
         term = "dummy"

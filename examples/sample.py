@@ -41,6 +41,9 @@ else:
 # response = client.search(q='startup')
 # print(response.json())
 
+# response = client.search_episode_titles(q='Jerusalem Demsas on The Dispossessed')
+# print(response.json())
+
 # response = client.spellcheck(q='evergrand stok')
 # print(response.json())
 

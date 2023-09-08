@@ -43,6 +43,7 @@ If you have any questions, please contact [hello@listennotes.com](hello@listenno
     - [Spell check on a search term](#spell-check-on-a-search-term)
     - [Fetch audience demographics for a podcast](#fetch-audience-demographics-for-a-podcast)
     - [Fetch podcasts by a publisher's domain name](#fetch-podcasts-by-a-publishers-domain-name)
+    - [Find individual episodes by searching for their titles](#find-individual-episodes-by-searching-for-their-titles)
 
 
 ## Installation
@@ -104,7 +105,6 @@ And you can see some sample code [here](https://github.com/ListenNotes/podcast-a
 
 
 
-
 ## API Reference
 
 Each function is a wrapper to send an HTTP request to the corresponding endpoint on the
@@ -149,9 +149,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   
 ```json
 {
-  "took": 0.616,
+  "took": 0.133,
   "count": 10,
-  "total": 9135,
+  "total": 8993,
   "results": [
     {
       "id": "ea09b575d07341599d8d5b71f205517b",
@@ -167,7 +167,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
           68
         ],
         "thumbnail": "https://production.listennotes.com/podcasts/the-rough-cut-matt-feury-DEkF_8ybj6A-53MLh7NpAwm.300x300.jpg",
-        "listen_score": 39,
+        "listen_score": 40,
         "title_original": "The Rough Cut",
         "listennotes_url": "https://www.listennotes.com/c/8758da9be6c8452884a8cab6373b007c/",
         "title_highlighted": "The Rough Cut",
@@ -177,7 +177,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       },
       "itunes_id": 1471556007,
       "thumbnail": "https://production.listennotes.com/podcasts/the-rough-cut-matt-feury-DEkF_8ybj6A-53MLh7NpAwm.300x300.jpg",
-      "pub_date_ms": 1579507216163,
+      "pub_date_ms": 1579507216184,
       "guid_from_rss": "004f03c8-cdf9-4ff5-9d89-b2147f8d55cf",
       "title_original": "Star Wars - The Force Awakens",
       "listennotes_url": "https://www.listennotes.com/e/ea09b575d07341599d8d5b71f205517b/",
@@ -186,6 +186,78 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> - The Force Awakens",
       "description_original": "<p>In this episode of The Rough Cut we close out our study of the final Skywalker trilogy with a look back on the film that helped the dormant franchise make the jump to lightspeed, <a href=\"https://www.imdb.com/title/tt2488496/\">Episode VII - The Force Awakens</a>.\u00a0 Recorded in Amsterdam in front of a festival audience in 2018, editor <a href=\"https://www.imdb.com/name/nm0104783/?ref_=nv_sr_srsg_0\">Maryann Brandon ACE</a> recounts her work on <em>The Force Awakens</em> just as she was about to begin editing what would come to be known as <a href=\"https://www.imdb.com/title/tt2527338/?ref_=nm_flmg_edt_1\">Episode IX - The Rise of Skywalker</a>.</p> <p>\u00a0</p> <p>Go back to the beginning and listen to our <a href=\"http://theroughcutpod.com/paul-hirsch/\">podcast with Star Wars and 'Empire' editor, Paul Hirsch</a>.</p> <p>Hear editor Bob Ducsay talk about cutting <a href=\"http://theroughcutpod.com/last-jedi/\">The Last Jedi</a>.</p> <p>Listen to Maryann Brandon talk about her work on <a href=\"http://theroughcutpod.com/star-wars/\">The Rise of Skywalker</a>.</p> <p>Get your hands on the non-linear editor behind the latest Skywalker trilogy,\u00a0 <a href=\"https://www.avid.com/video-editor-right-for-you\">Avid Media Composer!</a></p> <p><a href=\"http://theroughcutpod.com/subscribe/\">Subscribe to The Rough Cut</a> for more great interviews with the heroes of the editing room!</p> <p>\u00a0</p> <p>\u00a0</p>",
       "description_highlighted": "...Go back to the beginning and listen to our podcast with <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> and 'Empire' editor, Paul Hirsch. \nHear editor Bob Ducsay talk about cutting The Last Jedi....",
+      "transcripts_highlighted": []
+    },
+    {
+      "id": "39746ccfc0d64f62aea8e96641366109",
+      "rss": "https://www.spreaker.com/show/3200822/episodes/feed",
+      "link": "https://www.spreaker.com/user/mcucast/star-wars-is-better-than-star-trek?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/39746ccfc0d64f62aea8e96641366109/",
+      "image": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-AlLrRjiNDya-aXR7VuG2z4p.1400x1400.jpg",
+      "podcast": {
+        "id": "593c42e343ba44e7b6f8634a946f0b52",
+        "image": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-AlLrRjiNDya-aXR7VuG2z4p.1400x1400.jpg",
+        "genre_ids": [
+          68,
+          99,
+          122
+        ],
+        "thumbnail": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-F36vtPyanRB-aXR7VuG2z4p.300x300.jpg",
+        "listen_score": 59,
+        "title_original": "Marvel Cinematic Universe Podcast",
+        "listennotes_url": "https://www.listennotes.com/c/593c42e343ba44e7b6f8634a946f0b52/",
+        "title_highlighted": "Marvel Cinematic Universe Podcast",
+        "publisher_original": "Stranded Panda",
+        "publisher_highlighted": "Stranded Panda",
+        "listen_score_global_rank": "0.5%"
+      },
+      "itunes_id": 907175322,
+      "thumbnail": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-F36vtPyanRB-aXR7VuG2z4p.300x300.jpg",
+      "pub_date_ms": 1575521386425,
+      "guid_from_rss": "https://api.spreaker.com/episode/20495415",
+      "title_original": "Star Wars is better than Star Trek",
+      "listennotes_url": "https://www.listennotes.com/e/39746ccfc0d64f62aea8e96641366109/",
+      "audio_length_sec": 734,
+      "explicit_content": true,
+      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> is better than <span class=\"ln-search-highlight\">Star</span> Trek",
+      "description_original": "A just for fun episode.  Time to punish Matt for his sins against baby yoda<br /><br />This show is part of the Spreaker Prime Network, if you are interested in advertising on this podcast, contact us at <a href=\"https://www.spreaker.com/show/3200822/advertisement\">https://www.spreaker.com/show/3200822/advertisement</a>",
+      "description_highlighted": "...A just for fun episode.  Time to punish Matt for his sins against baby yodaThis show is part of the Spreaker Prime Network, if you are interested in advertising on this podcast, contact us at https://www.spreaker.com/show/3200822/advertisement...",
+      "transcripts_highlighted": []
+    },
+    {
+      "id": "42b1898db6a84973b41879618002937b",
+      "rss": "https://feeds.libsyn.com/125567/rss",
+      "link": "https://www.vintagerpg.com/2019/12/star-wars-galaxy-guides/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/42b1898db6a84973b41879618002937b/",
+      "image": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-aPsHYKgykCR-eq8uGUY6vXN.1400x1400.jpg",
+      "podcast": {
+        "id": "f3094a0b14684300a3d6b69a1063e708",
+        "image": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-aPsHYKgykCR-eq8uGUY6vXN.1400x1400.jpg",
+        "genre_ids": [
+          83,
+          85,
+          82
+        ],
+        "thumbnail": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-03VBIC7U68Y-eq8uGUY6vXN.300x300.jpg",
+        "listen_score": 47,
+        "title_original": "The Vintage RPG Podcast",
+        "listennotes_url": "https://www.listennotes.com/c/f3094a0b14684300a3d6b69a1063e708/",
+        "title_highlighted": "The Vintage RPG Podcast",
+        "publisher_original": "Vintage RPG",
+        "publisher_highlighted": "Vintage RPG",
+        "listen_score_global_rank": "1%"
+      },
+      "itunes_id": 1409477830,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-03VBIC7U68Y-eq8uGUY6vXN.300x300.jpg",
+      "pub_date_ms": 1575867600184,
+      "guid_from_rss": "9861105d-bf98-4684-871a-5cbe11484159",
+      "title_original": "Star Wars Galaxy Guides",
+      "listennotes_url": "https://www.listennotes.com/e/42b1898db6a84973b41879618002937b/",
+      "audio_length_sec": 1519,
+      "explicit_content": false,
+      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Galaxy Guides",
+      "description_original": "<p>Because Star Wars is hitting the critical mass point for 2019, we figured we\u2019d add to the fun with an episode that looks at the Galaxy Guides series of sourcebooks for the West End Games Star Wars Role Playing Game. We take a quick tour through each of the twelve volumes and chat about what they added to the RPG experience and how they formed the backbone of the greater Star Wars Expanded Universe.</p>",
+      "description_highlighted": "...Because <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> is hitting the critical mass point for 2019, we figured we\u2019d add to the fun with an episode that looks at the Galaxy Guides series of sourcebooks for the West End Games <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Role...",
       "transcripts_highlighted": []
     },
     {
@@ -214,7 +286,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       },
       "itunes_id": 1479112798,
       "thumbnail": "https://production.listennotes.com/podcasts/super-carlin-brothers-j-and-ben-carlin-EtH8D7G3Qyq-BodDr7iIAR3.300x300.jpg",
-      "pub_date_ms": 1574355600328,
+      "pub_date_ms": 1574355600377,
       "guid_from_rss": "d6549e8f-3718-4cbc-8fa0-6a5ce7c021b7",
       "title_original": "Star Wars Theory: The Great Star Wars Ice Cream Conspiracy",
       "listennotes_url": "https://www.listennotes.com/e/c877bf360bda4c74adea2ba066df6929/",
@@ -226,39 +298,37 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "transcripts_highlighted": []
     },
     {
-      "id": "39746ccfc0d64f62aea8e96641366109",
-      "rss": "https://www.spreaker.com/show/3200822/episodes/feed",
-      "link": "https://www.spreaker.com/user/mcucast/star-wars-is-better-than-star-trek?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/39746ccfc0d64f62aea8e96641366109/",
-      "image": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-a3b_OGr0iUT-aXR7VuG2z4p.1400x1400.jpg",
+      "id": "a47ed9e517ed4767a679ac8499f27565",
+      "rss": "https://filmthreat.libsyn.com/rss",
+      "link": "https://filmthreat.libsyn.com/the-star-wars-saga-ranked?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/a47ed9e517ed4767a679ac8499f27565/",
+      "image": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-qh2IVg58zR6-cBuD3xXjTAG.1400x1400.jpg",
       "podcast": {
-        "id": "593c42e343ba44e7b6f8634a946f0b52",
-        "image": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-a3b_OGr0iUT-aXR7VuG2z4p.1400x1400.jpg",
+        "id": "f0a8fa8df3d04ec08fba8d317dafdeb0",
+        "image": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-qh2IVg58zR6-cBuD3xXjTAG.1400x1400.jpg",
         "genre_ids": [
-          68,
-          99,
-          122
+          68
         ],
-        "thumbnail": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-6nzjMFWwxU4-aXR7VuG2z4p.300x300.jpg",
-        "listen_score": 58,
-        "title_original": "Marvel Cinematic Universe Podcast",
-        "listennotes_url": "https://www.listennotes.com/c/593c42e343ba44e7b6f8634a946f0b52/",
-        "title_highlighted": "Marvel Cinematic Universe Podcast",
-        "publisher_original": "Stranded Panda",
-        "publisher_highlighted": "Stranded Panda",
-        "listen_score_global_rank": "0.5%"
+        "thumbnail": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-Awkm8hri9Sg-cBuD3xXjTAG.300x300.jpg",
+        "listen_score": 39,
+        "title_original": "Film Threat",
+        "listennotes_url": "https://www.listennotes.com/c/f0a8fa8df3d04ec08fba8d317dafdeb0/",
+        "title_highlighted": "Film Threat",
+        "publisher_original": "Film Threat Podcast Network",
+        "publisher_highlighted": "Film Threat Podcast Network",
+        "listen_score_global_rank": "2%"
       },
-      "itunes_id": 907175322,
-      "thumbnail": "https://production.listennotes.com/podcasts/marvel-cinematic-universe-podcast-stranded-6nzjMFWwxU4-aXR7VuG2z4p.300x300.jpg",
-      "pub_date_ms": 1575521386385,
-      "guid_from_rss": "https://api.spreaker.com/episode/20495415",
-      "title_original": "Star Wars is better than Star Trek",
-      "listennotes_url": "https://www.listennotes.com/e/39746ccfc0d64f62aea8e96641366109/",
-      "audio_length_sec": 734,
+      "itunes_id": 1202134377,
+      "thumbnail": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-Awkm8hri9Sg-cBuD3xXjTAG.300x300.jpg",
+      "pub_date_ms": 1577019600037,
+      "guid_from_rss": "7bbf8fdc-22cb-4e9b-b3cb-edc9cd59a71f",
+      "title_original": "The Star Wars Saga Ranked",
+      "listennotes_url": "https://www.listennotes.com/e/a47ed9e517ed4767a679ac8499f27565/",
+      "audio_length_sec": 1512,
       "explicit_content": true,
-      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> is better than <span class=\"ln-search-highlight\">Star</span> Trek",
-      "description_original": "A just for fun episode.  Time to punish Matt for his sins against baby yoda",
-      "description_highlighted": "...A just for fun episode.  Time to punish Matt for his sins against baby yoda...",
+      "title_highlighted": "The <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Saga Ranked",
+      "description_original": "The circle is now complete. The Film Threat staff discusses all nine episodes of the Star Wars saga and ranks the best films, characters and now that we've seen them all, debates which is the best trilogy.",
+      "description_highlighted": "...The Film Threat staff discusses all nine episodes of the <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> saga and ranks the best films, characters and now that we've seen them all, debates which is the best trilogy....",
       "transcripts_highlighted": []
     },
     {
@@ -284,7 +354,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       },
       "itunes_id": 1453571424,
       "thumbnail": "https://production.listennotes.com/podcasts/frames-per-second-studio71-nFjw84GgN7c-J_3zM-VyFvj.300x300.jpg",
-      "pub_date_ms": 1576544400475,
+      "pub_date_ms": 1576544400542,
       "guid_from_rss": "90b15eb4-1fae-11ea-9f65-17cad885ccc2",
       "title_original": "Is Star Wars Overrated?",
       "listennotes_url": "https://www.listennotes.com/e/a5ae21acf75a43538b635cf6b089f0b3/",
@@ -293,152 +363,6 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title_highlighted": "Is <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Overrated?",
       "description_original": "<p>In this episode, we discuss whether or not Star Wars is overrated. Let us know your thoughts. </p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\">megaphone.fm/adchoices</a></p>",
       "description_highlighted": "...In this episode, we discuss whether or not <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> is overrated. Let us know your thoughts. \n \nLearn more about your ad choices. Visit megaphone.fm/adchoices...",
-      "transcripts_highlighted": []
-    },
-    {
-      "id": "42b1898db6a84973b41879618002937b",
-      "rss": "https://www.spreaker.com/show/5650052/episodes/feed",
-      "link": "https://www.spreaker.com/user/16701867/star-wars-galaxy-guides?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/42b1898db6a84973b41879618002937b/",
-      "image": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-ULe2OuyiBPx-eq8uGUY6vXN.1400x1400.jpg",
-      "podcast": {
-        "id": "f3094a0b14684300a3d6b69a1063e708",
-        "image": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-ULe2OuyiBPx-eq8uGUY6vXN.1400x1400.jpg",
-        "genre_ids": [
-          83,
-          85,
-          82
-        ],
-        "thumbnail": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-N-xGey_CAin-eq8uGUY6vXN.300x300.jpg",
-        "listen_score": 47,
-        "title_original": "The Vintage RPG Podcast",
-        "listennotes_url": "https://www.listennotes.com/c/f3094a0b14684300a3d6b69a1063e708/",
-        "title_highlighted": "The Vintage RPG Podcast",
-        "publisher_original": "Vintage RPG",
-        "publisher_highlighted": "Vintage RPG",
-        "listen_score_global_rank": "1%"
-      },
-      "itunes_id": 1409477830,
-      "thumbnail": "https://production.listennotes.com/podcasts/the-vintage-rpg-podcast-vintage-rpg-N-xGey_CAin-eq8uGUY6vXN.300x300.jpg",
-      "pub_date_ms": 1575867600166,
-      "guid_from_rss": "9861105d-bf98-4684-871a-5cbe11484159",
-      "title_original": "Star Wars Galaxy Guides",
-      "listennotes_url": "https://www.listennotes.com/e/42b1898db6a84973b41879618002937b/",
-      "audio_length_sec": 1519,
-      "explicit_content": false,
-      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Galaxy Guides",
-      "description_original": "Because Star Wars is hitting the critical mass point for 2019, we figured we'd add to the fun with an episode that looks at the Galaxy Guides series of sourcebooks for the West End Games Star Wars Role Playing Game. We take a quick tour through each of the twelve volumes and chat about what they added to the RPG experience and how they formed the backbone of the greater Star Wars Expanded Universe. * * * If\u00a0 you dig what we do, join us on the Vintage RPG Patreon for more roleplaying fun and surprises! Patrons keep us going! Like, Rate, Subscribe and Review the Vintage RPG Podcast! Send questions, comments or corrections to\u00a0<a href=\"mailto:info@vintagerpg.com\">info@vintagerpg.com</a>. Follow\u00a0Vintage RPG\u00a0on\u00a0Instagram,\u00a0Tumblr\u00a0and\u00a0Facebook. Learn more at the\u00a0Vintage RPG FAQ. Follow\u00a0Stu Horvath,\u00a0John McGuire,\u00a0VintageRPG\u00a0and\u00a0Unwinnable\u00a0on Twitter. Intro music by\u00a0George Collazo. The Vintage RPG illustration is by\u00a0Shafer Brown. Follow\u00a0him on Twitter. Tune in next week for the next episode. Until then, may the dice always roll in your favor!",
-      "description_highlighted": "...Because <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> is hitting the critical mass point for 2019, we figured we'd add to the fun with an episode that looks at the Galaxy Guides series of sourcebooks for the West End Games <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Role...",
-      "transcripts_highlighted": []
-    },
-    {
-      "id": "a47ed9e517ed4767a679ac8499f27565",
-      "rss": "https://filmthreat.libsyn.com/rss",
-      "link": "https://filmthreat.libsyn.com/the-star-wars-saga-ranked?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/a47ed9e517ed4767a679ac8499f27565/",
-      "image": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-qh2IVg58zR6-cBuD3xXjTAG.1400x1400.jpg",
-      "podcast": {
-        "id": "f0a8fa8df3d04ec08fba8d317dafdeb0",
-        "image": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-qh2IVg58zR6-cBuD3xXjTAG.1400x1400.jpg",
-        "genre_ids": [
-          68
-        ],
-        "thumbnail": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-Awkm8hri9Sg-cBuD3xXjTAG.300x300.jpg",
-        "listen_score": 38,
-        "title_original": "Film Threat",
-        "listennotes_url": "https://www.listennotes.com/c/f0a8fa8df3d04ec08fba8d317dafdeb0/",
-        "title_highlighted": "Film Threat",
-        "publisher_original": "Film Threat Podcast Network",
-        "publisher_highlighted": "Film Threat Podcast Network",
-        "listen_score_global_rank": "2%"
-      },
-      "itunes_id": 1202134377,
-      "thumbnail": "https://production.listennotes.com/podcasts/film-threat-film-threat-podcast-network-Awkm8hri9Sg-cBuD3xXjTAG.300x300.jpg",
-      "pub_date_ms": 1577019600037,
-      "guid_from_rss": "7bbf8fdc-22cb-4e9b-b3cb-edc9cd59a71f",
-      "title_original": "The Star Wars Saga Ranked",
-      "listennotes_url": "https://www.listennotes.com/e/a47ed9e517ed4767a679ac8499f27565/",
-      "audio_length_sec": 1512,
-      "explicit_content": true,
-      "title_highlighted": "The <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Saga Ranked",
-      "description_original": "The circle is now complete. The Film Threat staff discusses all nine episodes of the Star Wars saga and ranks the best films, characters and now that we've seen them all, debates which is the best trilogy.",
-      "description_highlighted": "...The Film Threat staff discusses all nine episodes of the <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> saga and ranks the best films, characters and now that we've seen them all, debates which is the best trilogy....",
-      "transcripts_highlighted": []
-    },
-    {
-      "id": "abdc7a70194c4d6daaa429b7fc2ec5c6",
-      "rss": "https://triviawithbudds.libsyn.com/rss",
-      "link": "https://triviawithbudds.libsyn.com/11-trivia-questions-on-modern-star-wars?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/abdc7a70194c4d6daaa429b7fc2ec5c6/",
-      "image": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-FE72QeI6CSP-odHDeJf8O5Y.1400x1400.jpg",
-      "podcast": {
-        "id": "9229022e1b7e46578d8793b1601f983d",
-        "image": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-FE72QeI6CSP-odHDeJf8O5Y.1400x1400.jpg",
-        "genre_ids": [
-          68,
-          82,
-          133
-        ],
-        "thumbnail": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-Cb9oyie0tUZ-odHDeJf8O5Y.300x300.jpg",
-        "listen_score": 49,
-        "title_original": "Trivia With Budds",
-        "listennotes_url": "https://www.listennotes.com/c/9229022e1b7e46578d8793b1601f983d/",
-        "title_highlighted": "Trivia With Budds",
-        "publisher_original": "Ryan Budds",
-        "publisher_highlighted": "Ryan Budds",
-        "listen_score_global_rank": "0.5%"
-      },
-      "itunes_id": 1139115219,
-      "thumbnail": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-Cb9oyie0tUZ-odHDeJf8O5Y.300x300.jpg",
-      "pub_date_ms": 1577226086771,
-      "guid_from_rss": "6ab99079-61c0-4fa3-91f0-28cca5d918b0",
-      "title_original": "11 Trivia Questions on Modern Star Wars",
-      "listennotes_url": "https://www.listennotes.com/e/abdc7a70194c4d6daaa429b7fc2ec5c6/",
-      "audio_length_sec": 646,
-      "explicit_content": false,
-      "title_highlighted": "11 Trivia Questions on Modern <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span>",
-      "description_original": "<p>With the release of Rise of Skywalker, I just had to include a round on the most recent Star Wars movies at my live events last week, and now, on the podcast! Grab a wookie and play!</p> <p>Question of the Day brought to you by Funky Monkey Design of San Dimas, CA:\u00a0 What network originally aired Eureka's castle? Tweet me your answer @ryanbudds or email <a href=\"mailto:ryanbudds@gmail.com\">ryanbudds@gmail.com</a>\u00a0to be eligible for a prize!\u00a0</p> <p>Yesterday's QotD answer:\u00a0 Terry Trivia Team Name of the Day:\u00a0 Bob's Wahlburgers  Funky Monkey Designs:\u00a0 <a href=\"http://fmdesignsinc.com/\">http://fmdesignsinc.com/</a></p> <p>Save 25% site wide when using the code BUDDS25 on <a href=\"http://www.DrewBlank.com!\">www.DrewBlank.com!</a> This guy makes the best pop culture art around. Grab some Office, Parks and Rec, Big Lebowski, Bill Murray, and Horror Icon coloring books for the ones you love, along with hundreds of other great creations, all for 1/4th off!\u00a0</p> <p>THE FIRST TRIVIA QUESTION STARTS AT 03:53 Theme song by <a href=\"http://www.soundcloud.com/Frawsty\">www.soundcloud.com/Frawsty</a></p> <p>Bed Music:\u00a0 \"Misuse\" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/</p> <p><a href=\"http://TriviaWithBudds.com\">http://TriviaWithBudds.com</a><a href=\"http://facebook.com/TriviaWithBudds\">http://Facebook.com/TriviaWithBudds </a> <a href=\"http://twitter.com/ryanbudds\">http://Twitter.com/ryanbudds</a>  <a href=\"http://instagram.com/ryanbudds\">http://Instagram.com/ryanbudds</a></p> <p>Book a party, corporate event, or fundraiser anytime by emailing <a href=\"mailto:ryanbudds@gmail.com\">ryanbudds@gmail.com</a> or use the contact form here: <a href=\"https://www.triviawithbudds.com/contact\">https://www.triviawithbudds.com/contact</a></p> <p>SUPPORT THE SHOW:\u00a0<a href=\"http://www.Patreon.com/TriviaWithBudds\">www.Patreon.com/TriviaWithBudds</a></p> <p>Send me your questions and I'll read them/answer them on the show. Also send me any topics you'd like me to cover on future episodes, anytime! Cheers.\u00a0</p> <p><em>SPECIAL THANKS TO ALL MY PATREON SUBSCRIBERS INCLUDING:</em>\u00a0 Chris Adams, Christopher Callahan, Veronica Baker, Manny Majarian, Greg Bristow, Brenda Martinez, Alex DeSmet, Joe Finnie, Manny Cortez, Sarah McKavetz, Simon Time, Mo Martinez, Randy Tatum, Joan Bryce, Katie Christofferson, Denise Leonard, Jen Wojnar, Sarah Guest, Jess Whitener, Kyle Bonnin, Dan Papallo, Robert Casey, Ian Schulze, Casey O'Connor, Marissa Cuthbertson, Kyle Aumer, Taryn Napolitano, Matthew Frost, Katie Smith, Brian Salyer, Megan Acuna, Anna Evans, Jim Fields, Lauren Ward, Greg Heinz, Wreck My Podcast, Douglas French, Erika Cooper, Mark Haas, Sarah Haas, Katelyn Reik, Casey Becker, Paul McLaughlin, Amy Jeppesen, Melissa Chesser, Shaun Delacruz, Feana Nevel, Cody Welter, Paul Doronila, Kathryn Mott, Luke McKay, Ricky Carney, Kyle Hendrickson, Willy Powell, Myke Edwards, Joe Jermolowicz, Joey Mucha, Mona Bray, and Russ Friedewald! YOU GUYS ROCK!\u00a0</p>",
-      "description_highlighted": "...With the release of Rise of Skywalker, I just had to include a round on the most recent <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> movies at my live events last week, and now, on the podcast! Grab a wookie and play!...",
-      "transcripts_highlighted": []
-    },
-    {
-      "id": "9cfb4901a891449aa30553cddfa582f8",
-      "rss": "http://sw7x7.libsyn.com/rss",
-      "link": "https://sites.libsyn.com/55931/1945-answering-star-wars-questions-from-star-wars-77-patrons?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/9cfb4901a891449aa30553cddfa582f8/",
-      "image": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-HN08OoDE7pc-AIg3cZVKCsL.1400x1400.jpg",
-      "podcast": {
-        "id": "4d3fe717742d4963a85562e9f84d8c79",
-        "image": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-HN08OoDE7pc-AIg3cZVKCsL.1400x1400.jpg",
-        "genre_ids": [
-          86,
-          68,
-          82,
-          100,
-          101,
-          160,
-          138
-        ],
-        "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-2LryqMj-sGP-AIg3cZVKCsL.300x300.jpg",
-        "listen_score": 49,
-        "title_original": "Star Wars 7x7: The Daily Star Wars Podcast",
-        "listennotes_url": "https://www.listennotes.com/c/4d3fe717742d4963a85562e9f84d8c79/",
-        "title_highlighted": "Star Wars 7x7: The Daily Star Wars Podcast",
-        "publisher_original": "Star Wars 7x7",
-        "publisher_highlighted": "Star Wars 7x7",
-        "listen_score_global_rank": "0.5%"
-      },
-      "itunes_id": 896354638,
-      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-2LryqMj-sGP-AIg3cZVKCsL.300x300.jpg",
-      "pub_date_ms": 1572505201232,
-      "guid_from_rss": "dacf14513dd34eddaace4f1b4bc27f86",
-      "title_original": "1,945. Answering Star Wars Questions from Star Wars 7\u00d77 Patrons!",
-      "listennotes_url": "https://www.listennotes.com/e/9cfb4901a891449aa30553cddfa582f8/",
-      "audio_length_sec": 777,
-      "explicit_content": false,
-      "title_highlighted": "Answering <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Questions from <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7\u00d77 Patrons!",
-      "description_original": "<p>Patrons of Star Wars 7x7 at the \"Vader's Fist\" level and above can submit questions for me to answer on the show every month! In this installment, we'll be talking about an aspect of the Millennium Falcon as it appears in The Rise of Skywalker; why Ben Solo may or may not have talked to his Force-ghost grandfather; and favorite Star Wars Halloween costumes. Punch it!</p> <p>***I'm listener supported! Join the community at http://Patreon.com/sw7x7 to get access to bonus episodes and other insider rewards.***\u00a0</p>",
-      "description_highlighted": "...Patrons of <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7x7 at the \"Vader's Fist\" level and above can submit questions for me to answer on the show every month!...",
       "transcripts_highlighted": []
     },
     {
@@ -478,41 +402,117 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "transcripts_highlighted": []
     },
     {
-      "id": "6c02148d56814a289524f223bd072132",
-      "rss": "https://feeds.megaphone.fm/ADV7475920787",
-      "link": "https://www.imaginaryworldspodcast.org/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/6c02148d56814a289524f223bd072132/",
-      "image": "https://production.listennotes.com/podcasts/imaginary-worlds-eric-molinsky-3LMZCqH2RDa-Va53GbWDK_U.1400x1400.jpg",
+      "id": "428fc8c5d1dc4ea4bfa7197f50dfcbef",
+      "rss": "https://anchor.fm/s/2e7b510/podcast/rss",
+      "link": "https://podcasters.spotify.com/pod/show/drzeuspodcast/episodes/Star-Wars-on-Saturday-Night-e9skm5?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/428fc8c5d1dc4ea4bfa7197f50dfcbef/",
+      "image": "https://production.listennotes.com/podcasts/dr-zeus-podcast-dr-zeus-ietJoCgElyS-uG3iyp0tI89.1400x1400.jpg",
       "podcast": {
-        "id": "c64d9295ac8e4ac1875ee23f564ea186",
-        "image": "https://production.listennotes.com/podcasts/imaginary-worlds-eric-molinsky-3LMZCqH2RDa-Va53GbWDK_U.1400x1400.jpg",
+        "id": "2c48295d6e2643ee837896a03920255a",
+        "image": "https://production.listennotes.com/podcasts/dr-zeus-podcast-dr-zeus-ietJoCgElyS-uG3iyp0tI89.1400x1400.jpg",
+        "genre_ids": [
+          133,
+          68,
+          263,
+          86,
+          82
+        ],
+        "thumbnail": "https://production.listennotes.com/podcasts/dr-zeus-podcast-dr-zeus-EgmZh68AS2r-uG3iyp0tI89.300x300.jpg",
+        "listen_score": 24,
+        "title_original": "Dr Zeus Podcast ",
+        "listennotes_url": "https://www.listennotes.com/c/2c48295d6e2643ee837896a03920255a/",
+        "title_highlighted": "Dr Zeus Podcast ",
+        "publisher_original": "Dr Zeus ",
+        "publisher_highlighted": "Dr Zeus ",
+        "listen_score_global_rank": "10%"
+      },
+      "itunes_id": 1360921520,
+      "thumbnail": "https://production.listennotes.com/podcasts/dr-zeus-podcast-dr-zeus-EgmZh68AS2r-uG3iyp0tI89.300x300.jpg",
+      "pub_date_ms": 1577587068379,
+      "guid_from_rss": "9298b06d-5ebe-4b87-bccb-39b6b2377962",
+      "title_original": "Star Wars on Saturday Night.",
+      "listennotes_url": "https://www.listennotes.com/e/428fc8c5d1dc4ea4bfa7197f50dfcbef/",
+      "audio_length_sec": 638,
+      "explicit_content": false,
+      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> on Saturday Night.",
+      "description_original": "Snl wars. \n\n--- \n\nSend in a voice message: https://podcasters.spotify.com/pod/show/drzeuspodcast/message",
+      "description_highlighted": "...Snl <span class=\"ln-search-highlight\">wars</span>. \n\n--- \n\nSend in a voice message: https://podcasters.spotify.com/pod/show/drzeuspodcast/message...",
+      "transcripts_highlighted": []
+    },
+    {
+      "id": "abdc7a70194c4d6daaa429b7fc2ec5c6",
+      "rss": "https://triviawithbudds.libsyn.com/rss",
+      "link": "https://triviawithbudds.libsyn.com/11-trivia-questions-on-modern-star-wars?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/abdc7a70194c4d6daaa429b7fc2ec5c6/",
+      "image": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds--K74E8aYCBr-odHDeJf8O5Y.1400x1400.jpg",
+      "podcast": {
+        "id": "9229022e1b7e46578d8793b1601f983d",
+        "image": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds--K74E8aYCBr-odHDeJf8O5Y.1400x1400.jpg",
         "genre_ids": [
           68,
-          122,
-          159,
-          165,
-          100
+          82,
+          133
         ],
-        "thumbnail": "https://production.listennotes.com/podcasts/imaginary-worlds-eric-molinsky-emTw3lA2ujL-Va53GbWDK_U.300x300.jpg",
-        "listen_score": 63,
-        "title_original": "Imaginary Worlds",
-        "listennotes_url": "https://www.listennotes.com/c/c64d9295ac8e4ac1875ee23f564ea186/",
-        "title_highlighted": "Imaginary Worlds",
-        "publisher_original": "Eric Molinsky",
-        "publisher_highlighted": "Eric Molinsky",
-        "listen_score_global_rank": "0.1%"
+        "thumbnail": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-YlFUN1Qs_68-odHDeJf8O5Y.300x300.jpg",
+        "listen_score": 49,
+        "title_original": "Trivia With Budds",
+        "listennotes_url": "https://www.listennotes.com/c/9229022e1b7e46578d8793b1601f983d/",
+        "title_highlighted": "Trivia With Budds",
+        "publisher_original": "Ryan Budds",
+        "publisher_highlighted": "Ryan Budds",
+        "listen_score_global_rank": "0.5%"
       },
-      "itunes_id": 916273527,
-      "thumbnail": "https://production.listennotes.com/podcasts/imaginary-worlds-eric-molinsky-emTw3lA2ujL-Va53GbWDK_U.300x300.jpg",
-      "pub_date_ms": 1577293200080,
-      "guid_from_rss": "gid://art19-episode-locator/V0/nFFci_ugkpSRbZ0k8Qo5J-BoyCTYoauKO_E09Pd3KCM",
-      "title_original": "In Defense of The Star Wars Holiday Special",
-      "listennotes_url": "https://www.listennotes.com/e/6c02148d56814a289524f223bd072132/",
-      "audio_length_sec": 1516,
-      "explicit_content": true,
-      "title_highlighted": "In Defense of The <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Holiday Special",
-      "description_original": "<p>As far as Star Wars fans are concerned, there is no greater hive of scum and villainy than the 1978 made-for-TV Star Wars Holiday Special. The musical variety program, which centered on Chewbacca\u2019s family, is considered a hokey, misguided embarrassment. But entertainment writer Bonnie Burton and comedian Alex Schmidt think there\u2019s something to love about The Holiday Special -- and it may be in canon after all.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\">megaphone.fm/adchoices</a></p>",
-      "description_highlighted": "...As far as <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> fans are concerned, there is no greater hive of scum and villainy than the 1978 made-for-TV <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Holiday Special....",
+      "itunes_id": 1139115219,
+      "thumbnail": "https://production.listennotes.com/podcasts/trivia-with-budds-ryan-budds-YlFUN1Qs_68-odHDeJf8O5Y.300x300.jpg",
+      "pub_date_ms": 1577226086879,
+      "guid_from_rss": "6ab99079-61c0-4fa3-91f0-28cca5d918b0",
+      "title_original": "11 Trivia Questions on Modern Star Wars",
+      "listennotes_url": "https://www.listennotes.com/e/abdc7a70194c4d6daaa429b7fc2ec5c6/",
+      "audio_length_sec": 646,
+      "explicit_content": false,
+      "title_highlighted": "11 Trivia Questions on Modern <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span>",
+      "description_original": "<p>With the release of Rise of Skywalker, I just had to include a round on the most recent Star Wars movies at my live events last week, and now, on the podcast! Grab a wookie and play!</p> <p>Question of the Day brought to you by Funky Monkey Design of San Dimas, CA:\u00a0 What network originally aired Eureka's castle? Tweet me your answer @ryanbudds or email <a href=\"mailto:ryanbudds@gmail.com\">ryanbudds@gmail.com</a>\u00a0to be eligible for a prize!\u00a0</p> <p>Yesterday's QotD answer:\u00a0 Terry Trivia Team Name of the Day:\u00a0 Bob's Wahlburgers  Funky Monkey Designs:\u00a0 <a href=\"http://fmdesignsinc.com/\">http://fmdesignsinc.com/</a></p> <p>Save 25% site wide when using the code BUDDS25 on <a href=\"http://www.DrewBlank.com!\">www.DrewBlank.com!</a> This guy makes the best pop culture art around. Grab some Office, Parks and Rec, Big Lebowski, Bill Murray, and Horror Icon coloring books for the ones you love, along with hundreds of other great creations, all for 1/4th off!\u00a0</p> <p>THE FIRST TRIVIA QUESTION STARTS AT 03:53 Theme song by <a href=\"http://www.soundcloud.com/Frawsty\">www.soundcloud.com/Frawsty</a></p> <p>Bed Music:\u00a0 \"Misuse\" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/</p> <p><a href=\"http://TriviaWithBudds.com\">http://TriviaWithBudds.com</a><a href=\"http://facebook.com/TriviaWithBudds\">http://Facebook.com/TriviaWithBudds </a> <a href=\"http://twitter.com/ryanbudds\">http://Twitter.com/ryanbudds</a>  <a href=\"http://instagram.com/ryanbudds\">http://Instagram.com/ryanbudds</a></p> <p>Book a party, corporate event, or fundraiser anytime by emailing <a href=\"mailto:ryanbudds@gmail.com\">ryanbudds@gmail.com</a> or use the contact form here: <a href=\"https://www.triviawithbudds.com/contact\">https://www.triviawithbudds.com/contact</a></p> <p>SUPPORT THE SHOW:\u00a0<a href=\"http://www.Patreon.com/TriviaWithBudds\">www.Patreon.com/TriviaWithBudds</a></p> <p>Send me your questions and I'll read them/answer them on the show. Also send me any topics you'd like me to cover on future episodes, anytime! Cheers.\u00a0</p> <p><em>SPECIAL THANKS TO ALL MY PATREON SUBSCRIBERS INCLUDING:</em>\u00a0 Chris Adams, Christopher Callahan, Veronica Baker, Manny Majarian, Greg Bristow, Brenda Martinez, Alex DeSmet, Joe Finnie, Manny Cortez, Sarah McKavetz, Simon Time, Mo Martinez, Randy Tatum, Joan Bryce, Katie Christofferson, Denise Leonard, Jen Wojnar, Sarah Guest, Jess Whitener, Kyle Bonnin, Dan Papallo, Robert Casey, Ian Schulze, Casey O'Connor, Marissa Cuthbertson, Kyle Aumer, Taryn Napolitano, Matthew Frost, Katie Smith, Brian Salyer, Megan Acuna, Anna Evans, Jim Fields, Lauren Ward, Greg Heinz, Wreck My Podcast, Douglas French, Erika Cooper, Mark Haas, Sarah Haas, Katelyn Reik, Casey Becker, Paul McLaughlin, Amy Jeppesen, Melissa Chesser, Shaun Delacruz, Feana Nevel, Cody Welter, Paul Doronila, Kathryn Mott, Luke McKay, Ricky Carney, Kyle Hendrickson, Willy Powell, Myke Edwards, Joe Jermolowicz, Joey Mucha, Mona Bray, and Russ Friedewald! YOU GUYS ROCK!\u00a0</p>",
+      "description_highlighted": "...With the release of Rise of Skywalker, I just had to include a round on the most recent <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> movies at my live events last week, and now, on the podcast! Grab a wookie and play!...",
+      "transcripts_highlighted": []
+    },
+    {
+      "id": "9cfb4901a891449aa30553cddfa582f8",
+      "rss": "http://sw7x7.libsyn.com/rss",
+      "link": "https://sites.libsyn.com/55931/1945-answering-star-wars-questions-from-star-wars-77-patrons?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/9cfb4901a891449aa30553cddfa582f8/",
+      "image": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-HN08OoDE7pc-AIg3cZVKCsL.1400x1400.jpg",
+      "podcast": {
+        "id": "4d3fe717742d4963a85562e9f84d8c79",
+        "image": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-HN08OoDE7pc-AIg3cZVKCsL.1400x1400.jpg",
+        "genre_ids": [
+          86,
+          68,
+          82,
+          100,
+          101,
+          160,
+          138
+        ],
+        "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-2LryqMj-sGP-AIg3cZVKCsL.300x300.jpg",
+        "listen_score": 49,
+        "title_original": "Star Wars 7x7: A Daily Bite-Sized Dose of Star Wars Joy",
+        "listennotes_url": "https://www.listennotes.com/c/4d3fe717742d4963a85562e9f84d8c79/",
+        "title_highlighted": "Star Wars 7x7: A Daily Bite-Sized Dose of Star Wars Joy",
+        "publisher_original": "Star Wars 7x7",
+        "publisher_highlighted": "Star Wars 7x7",
+        "listen_score_global_rank": "0.5%"
+      },
+      "itunes_id": 896354638,
+      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-2LryqMj-sGP-AIg3cZVKCsL.300x300.jpg",
+      "pub_date_ms": 1572505201403,
+      "guid_from_rss": "dacf14513dd34eddaace4f1b4bc27f86",
+      "title_original": "1,945. Answering Star Wars Questions from Star Wars 7\u00d77 Patrons!",
+      "listennotes_url": "https://www.listennotes.com/e/9cfb4901a891449aa30553cddfa582f8/",
+      "audio_length_sec": 777,
+      "explicit_content": false,
+      "title_highlighted": "Answering <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Questions from <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7\u00d77 Patrons!",
+      "description_original": "<p>Patrons of Star Wars 7x7 at the \"Vader's Fist\" level and above can submit questions for me to answer on the show every month! In this installment, we'll be talking about an aspect of the Millennium Falcon as it appears in The Rise of Skywalker; why Ben Solo may or may not have talked to his Force-ghost grandfather; and favorite Star Wars Halloween costumes. Punch it!</p> <p>***I'm listener supported! Join the community at http://Patreon.com/sw7x7 to get access to bonus episodes and other insider rewards.***\u00a0</p>",
+      "description_highlighted": "...Patrons of <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7x7 at the \"Vader's Fist\" level and above can submit questions for me to answer on the show every month!...",
       "transcripts_highlighted": []
     }
   ],
@@ -1032,24 +1032,24 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher_highlighted": "Wondery"
     },
     {
-      "id": "912f36444ea6475693ab3ab899cc3782",
-      "image": "https://production.listennotes.com/podcasts/star-wars-theory-jigowatt-media-C8gLMex9FE5-FGYt8XM-sIK.1400x1400.jpg",
-      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-theory-jigowatt-media-ANg49Ewk-uz-FGYt8XM-sIK.300x300.jpg",
-      "title_original": "Star Wars Theory",
-      "explicit_content": false,
-      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Theory",
-      "publisher_original": "Jigowatt Media",
-      "publisher_highlighted": "Jigowatt Media"
-    },
-    {
       "id": "e8bdeb557c194bb9a97f8e1835a405b0",
-      "image": "https://production.listennotes.com/podcasts/star-wars-stuff-podcast-star-wars-JAvZVoa09r8-4-E8Ab7PQ_B.1400x1400.jpg",
-      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-stuff-podcast-star-wars-4prJOMj3HID-4-E8Ab7PQ_B.300x300.jpg",
+      "image": "https://production.listennotes.com/podcasts/star-wars-stuff-podcast-star-wars-N2eYaLJWtk8-4-E8Ab7PQ_B.1400x1400.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-stuff-podcast-star-wars-TOvDUaL7l3m-4-E8Ab7PQ_B.300x300.jpg",
       "title_original": "Star Wars STUFF Podcast",
       "explicit_content": false,
       "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> STUFF Podcast",
       "publisher_original": "Star Wars",
       "publisher_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span>"
+    },
+    {
+      "id": "699701ca2479411f9c0bbf8dd85323e8",
+      "image": "https://production.listennotes.com/podcasts/star-wars-explained-alex-mollie-MKIbl7dwVTC-zuwl0R2DOjf.1400x1400.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/star-wars-explained-alex-mollie-2_yoeSVtXOM-zuwl0R2DOjf.300x300.jpg",
+      "title_original": "Star Wars Explained",
+      "explicit_content": false,
+      "title_highlighted": "<span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> Explained",
+      "publisher_original": "Alex & Mollie",
+      "publisher_highlighted": "Alex & Mollie"
     },
     {
       "id": "46c50b17a1c6474fb77e21f438ccd78d",
@@ -1230,7 +1230,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     "instagram_handle": ""
   },
   "image": "https://production.listennotes.com/podcasts/star-wars-7x7-the-daily-star-wars-podcast-HN08OoDE7pc-AIg3cZVKCsL.1400x1400.jpg",
-  "title": "Star Wars 7x7: The Daily Star Wars Podcast",
+  "title": "Star Wars 7x7: A Daily Bite-Sized Dose of Star Wars Joy",
   "country": "United States",
   "website": "https://sw7x7.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
   "episodes": [
@@ -1242,7 +1242,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "864: Part 2 of My (New) Conversation With Bobby Roberts",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/864-part-2-of-my-new-yqjrzNDEXaS-2WVsxtU0f3m.300x157.jpg",
       "description": "<p>The second half of my latest conversation with Bobby Roberts, Podcast Emeritus from Full of Sith and now Star Wars \"Podcast Force Ghost at Large.\" Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1479110402174,
+      "pub_date_ms": 1479110402345,
       "guid_from_rss": "bbada2b3a99054ce93b0eb95dd762b4d",
       "listennotes_url": "https://www.listennotes.com/e/4e7c59e10e4640b98f2f3cb1777dbb43/",
       "audio_length_sec": 2447,
@@ -1258,7 +1258,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "863: A (New) Conversation With Bobby Roberts, Part 1",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/863-a-new-conversation-with-lcQsDS5uvYb-0YRBTlgiVeU.300x157.jpg",
       "description": "<p>An in-depth conversation about the Star Wars \"Story\" movies and so much more, featuring Bobby Roberts, Star Wars \"Podcast Force Ghost at Large.\" Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1479024002175,
+      "pub_date_ms": 1479024002346,
       "guid_from_rss": "2c298fe68246aad30bd5afe0b79fdd76",
       "listennotes_url": "https://www.listennotes.com/e/9ae0e2e49a9c477191263df90adf7f3e/",
       "audio_length_sec": 2916,
@@ -1274,7 +1274,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "862: \"Assassin\" - Clone Wars Briefing, Season 3, Episode 7",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/862-assassin-clone-wars-Uh3E0GwOQRX-jEcMAdTntzs.300x157.jpg",
       "description": "<p>The beginnings of the true power of the Force, revealed in \"Assassin,\" season 3, episode 7 of the Star Wars: The Clone Wars cartoon series. Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478937602176,
+      "pub_date_ms": 1478937602347,
       "guid_from_rss": "6f64d1b37c661bbd066e773ae3b72d5e",
       "listennotes_url": "https://www.listennotes.com/e/98bcfa3fd1b44727913385938788bcc5/",
       "audio_length_sec": 636,
@@ -1290,7 +1290,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "861: Rogue One International Trailer Breakdown",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/861-rogue-one-international-AFlEBXPHG6d-nGxaRC95V6o.300x157.jpg",
       "description": "<p>Surprise! An international trailer for Rogue One has dropped, and it includes new scenes, new dialogue, and some heavy foreshadowing about Jyn Erso's fate. Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478851458177,
+      "pub_date_ms": 1478851458348,
       "guid_from_rss": "10f042cf7346e078e201769b1097d651",
       "listennotes_url": "https://www.listennotes.com/e/61d1de72f97e48e887c5d6280d3de384/",
       "audio_length_sec": 1082,
@@ -1306,7 +1306,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "860: Will Jyn and Cassian Survive Rogue One?",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/860-will-jyn-and-cassian-k-2Si6HYjTP-l_3qXNfHAU0.300x157.jpg",
       "description": "<p>Today I conclude a two-episode set looking at the odds of survival for major Rogue One characters. Today: Jyn Erso, Cassian Andor, Bodhi Rook, and K-2SO. Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478764802178,
+      "pub_date_ms": 1478764802349,
       "guid_from_rss": "18062743dbffa4ce293686607ce30af4",
       "listennotes_url": "https://www.listennotes.com/e/53f5d00491134367ac3baf8c75b9a46b/",
       "audio_length_sec": 651,
@@ -1322,7 +1322,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "859: The Odds: Who Will Survive Rogue One?",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/859-the-odds-who-will-RlXojiI5Wm6-kprAXUCS8uQ.300x157.jpg",
       "description": "<p>Will Galen Erso, Lyra Erso, Saw Gerrera, and Orson Krennic survive the events of Rogue One: A Star Wars Story? Starting a mini-series to look at the odds... Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478678402179,
+      "pub_date_ms": 1478678402350,
       "guid_from_rss": "98e4d31b23bc7f48db490effe4d77e73",
       "listennotes_url": "https://www.listennotes.com/e/76c00b559f7d4f1c8be3ff1e2d808af9/",
       "audio_length_sec": 483,
@@ -1338,7 +1338,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "858: \"Together\" - New Rogue One Commercial Dialogue",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/858-together-new-rogue-one-dJF6XLmfYl4-WpFSsNUOzcL.300x157.jpg",
       "description": "<p>A new Rogue One commercial dropped Sunday, with some new dialogue that hints at the relationship between Jyn Erso, Saw Gerrera, the Rebellion, and the Partisans. Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478592002180,
+      "pub_date_ms": 1478592002351,
       "guid_from_rss": "c6dd42254e561130bf891f92e944041b",
       "listennotes_url": "https://www.listennotes.com/e/62cdfe0b9ef64d1288a975a659dcf442/",
       "audio_length_sec": 448,
@@ -1354,7 +1354,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "857: \"Imperial Supercommandos\" - Star Wars Rebels Season 3, Episode 7",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/857-imperial-supercommandos-OFpdNki02M_-L6bAOKCmyqt.300x157.jpg",
       "description": "<p>\"Imperial Supercommandos\" is Season 3, episode 7 of Star Wars Rebels, referring to Mandalorians serving the Empire. But can Fenn Rau be trusted, either? Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478505602181,
+      "pub_date_ms": 1478505602352,
       "guid_from_rss": "007883a51d5ddc49b8b8d7fee80cb1ba",
       "listennotes_url": "https://www.listennotes.com/e/a98c9cb497f04aec9e09cc50ce25ea59/",
       "audio_length_sec": 494,
@@ -1370,7 +1370,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "856: \"The Academy\" - Clone Wars Briefing, Season 3, Episode 6",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/856-the-academy-clone-wars-x6_sqVGe-KS-l6QpC-2RDTH.300x157.jpg",
       "description": "<p>\"The Academy,\" Season 3 Episode 6 of the Clone Wars cartoon series, is a quieter episode that highlights the importance of Mandalore to the Star Wars franchise. Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478415602182,
+      "pub_date_ms": 1478415602353,
       "guid_from_rss": "f346a6e7575ab41197cacc6648070da2",
       "listennotes_url": "https://www.listennotes.com/e/e055bd1750a745a6adfcb70b935c03b7/",
       "audio_length_sec": 561,
@@ -1386,7 +1386,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "title": "855: Episode VIII and Han Solo Movie Updates",
       "thumbnail": "https://production.listennotes.com/podcasts/star-wars-7x7-the/855-episode-viii-and-han-naM8NWQxR19-9vz38ko_X2s.300x157.jpg",
       "description": "<p>Daisy Ridley says wait for Episode VIII for answers about Rey's parents. Bradford Young says the Han Solo movie won't be what you expect. Updates here... Punch it!</p> <p>***We\u2019re listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u2019ll get some fabulous rewards for your pledge.***\u00a0</p> <p>Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast.</p> <p>Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!</p>",
-      "pub_date_ms": 1478329202183,
+      "pub_date_ms": 1478329202354,
       "guid_from_rss": "89ac7c92db19f7d06f523eb2c093bde6",
       "listennotes_url": "https://www.listennotes.com/e/d602a45cdb524f3fac1effd79a61f828/",
       "audio_length_sec": 1103,
@@ -1418,15 +1418,15 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     "cross_promotion": false
   },
   "listen_score": 49,
-  "total_episodes": 3272,
+  "total_episodes": 3415,
   "listennotes_url": "https://www.listennotes.com/c/4d3fe717742d4963a85562e9f84d8c79/",
-  "audio_length_sec": 595,
+  "audio_length_sec": 589,
   "explicit_content": false,
-  "latest_episode_id": "eb1a656babb043239eaab3747e40efef",
-  "latest_pub_date_ms": 1681716600000,
+  "latest_episode_id": "3c6127f14bb84d988ae37e7d89e631d7",
+  "latest_pub_date_ms": 1694071800000,
   "earliest_pub_date_ms": 1404637200000,
-  "next_episode_pub_date": 1478329202183,
-  "update_frequency_hours": 20,
+  "next_episode_pub_date": 1478329202354,
+  "update_frequency_hours": 23,
   "listen_score_global_rank": "0.5%"
 }
 ```   
@@ -1814,10 +1814,10 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "amazon_music_url": "",
       "instagram_handle": "paralympics"
     },
-    "image": "https://production.listennotes.com/podcasts/a-winning-mindset-a-winning-mindset-lessons-f06IOp3gkZq-BktA4YUzNbu.1400x1400.jpg",
+    "image": "https://production.listennotes.com/podcasts/a-winning-mindset-a-winning-mindset-lessons-Kj8u0kgP3Nd-BktA4YUzNbu.1400x1400.jpg",
     "title": "A Winning Mindset",
     "country": "Germany",
-    "website": "https://www.paralympic.org/a-winning-mindset-lessons-from-the-paralympics?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+    "website": "https://audioboom.com/channels/5031508-a-winning-mindset?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
     "language": "English",
     "genre_ids": [
       88,
@@ -1834,9 +1834,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     ],
     "itunes_id": 1527733477,
     "publisher": "A Winning Mindset: Lessons From The Paralympics",
-    "thumbnail": "https://production.listennotes.com/podcasts/a-winning-mindset-a-winning-mindset-lessons-DHlfCBAqXh6-BktA4YUzNbu.300x300.jpg",
+    "thumbnail": "https://production.listennotes.com/podcasts/a-winning-mindset-a-winning-mindset-lessons-OkvHWfUtEAi-BktA4YUzNbu.300x300.jpg",
     "is_claimed": true,
-    "description": "A Winning Mindset, an award-winning partnership between the International Paralympic Committee and Allianz, is a fascinating journey into the minds of Paralympians, with experiences that can benefit your own personal and professional life. \u00a0\n\u00a0\nThe official podcast of the Paralympic Games provides a platform for Para athletes to talk about their empowering and inspirational stories and allows each athlete to showcase their true personalities.\u00a0\n\nWINNER OF BEST BRANDED PODCAST AT THE 2021 WEBBY AWARDS\nWINNER OF BEST PODCAST AT 2021 DIGIDAY MEDIA EUROPE AWARDS\nWINNER OF BEST SPORT PODCAST AT 2021 SPORT INDUSTRY AWARDS\nWINNER OF BEST BRAND PARTNERSHIP AT 2022 DIGIDAY MEDIA EUROPE AWARDS\n\u00a0\nEpisodes go beyond Paralympic stories by covering a range of educational, mental health and self-improvement themes.\u00a0 Athletes also tackle subjects that are close to their hearts and of interest to fans. Issues explored include finding purpose, wellbeing, motivation, changing attitudes, overcoming failure, support systems, resilience, positivity, diversity and inclusion, body confidence and many more. \u00a0\n\nAllianz is a long-standing partner of the International Paralympic Committee. Together, we bring you this series of podcasts. We will introduce you to stories with Paralympians that will spark confidence in your everyday life. Stories of challenges, ups and downs, determination, and excellence. Stories that demonstrate the true power of having the right team behind you. And prepare you for what\u2019s ahead.\u00a0\n\u00a0\n\nThe Paralympic podcast series is presented by British broadcaster Andy Stevenson, who has reported on the Paralympic Games since 2012 for BBC and Channel 4.\u00a0\n\u00a0\nFeatured athletes include Tatyana McFadden, Jonnie Peacock and Arly Velasquez. Make sure you subscribe to hear upcoming episodes from athletes including Marcel Hug and Anastasia Pagonis.\u00a0",
+    "description": "A Winning Mindset, an award-winning partnership between the International Paralympic Committee and Allianz, is a fascinating journey into the minds of Paralympians, with experiences that can benefit your own personal and professional life.\n\nThe official podcast of the Paralympic Games provides a platform for Para athletes to talk about their empowering and inspirational stories and allows each athlete to showcase their true personalities.\n\nWINNER OF BEST BRANDED PODCAST AT THE 2021 WEBBY AWARDS\nWINNER OF BEST PODCAST AT 2021 DIGIDAY MEDIA EUROPE AWARDS\nWINNER OF BEST SPORT PODCAST AT 2021 SPORT INDUSTRY AWARDS\nWINNER OF BEST BRAND PARTNERSHIP AT 2022 DIGIDAY MEDIA EUROPE AWARDS\n\nEpisodes go beyond Paralympic stories by covering a range of educational, mental health and self-improvement themes.\u00a0 Athletes also tackle subjects that are close to their hearts and of interest to fans. Issues explored include finding purpose, wellbeing, motivation, changing attitudes, overcoming failure, support systems, resilience, positivity, diversity and inclusion, body confidence and many more.\n\nAllianz is a long-standing partner of the International Paralympic Committee. Together, we bring you this series of podcasts. We will introduce you to stories with Paralympians that will spark confidence in your everyday life. Stories of challenges, ups and downs, determination, and excellence. Stories that demonstrate the true power of having the right team behind you. And prepare you for what\u2019s ahead.\n\nThe Paralympic podcast series is presented by British broadcaster Andy Stevenson, who has reported on the Paralympic Games since 2012 for BBC and Channel 4.\n\nFeatured athletes include Tatyana McFadden, Jonnie Peacock and Arly Velasquez. Make sure you subscribe to hear upcoming episodes from athletes including Marcel Hug and Anastasia Pagonis.",
     "looking_for": {
       "guests": false,
       "cohosts": false,
@@ -2406,13 +2406,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "parent_id": 67
     },
     {
-      "id": 77,
-      "name": "Sports",
+      "id": 93,
+      "name": "Business",
       "parent_id": 67
     },
     {
-      "id": 93,
-      "name": "Business",
+      "id": 77,
+      "name": "Sports",
       "parent_id": 67
     },
     {
@@ -2592,9 +2592,62 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "id": 93,
   "name": "Business",
-  "total": 728,
+  "total": 746,
   "has_next": true,
   "podcasts": [
+    {
+      "id": "34beae8ad8fd4b299196f413b8270a30",
+      "rss": "https://feeds.feedburner.com/WorklifeWithAdamGrant",
+      "type": "episodic",
+      "email": "podcasts@ted.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5mZWVkYnVybmVyLmNvbS9Xb3JrbGlmZVdpdGhBZGFtR3JhbnQ=",
+        "spotify_url": "https://open.spotify.com/show/4eylg9GZJOVvUhTynt4jjA",
+        "youtube_url": "",
+        "linkedin_url": "https://www.linkedin.com/in/adammgrant/",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "AdamMGrant",
+        "facebook_handle": "AdamMGrant",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/worklife-with-adam-grant-ted-KgaXjFPEoVc.1400x1400.jpg",
+      "title": "WorkLife with Adam Grant",
+      "country": "United States",
+      "website": "https://www.ted.com/podcasts/worklife?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        67,
+        97,
+        111,
+        93
+      ],
+      "itunes_id": 1346314086,
+      "publisher": "TED",
+      "thumbnail": "https://production.listennotes.com/podcasts/worklife-with-adam-grant-ted-KgaXjFPEoVc.300x300.jpg",
+      "is_claimed": false,
+      "description": "\n      <p>You spend a quarter of your life at work. You should enjoy it! Organizational psychologist Adam Grant takes you inside the minds of some of the world\u2019s most unusual professionals to discover the keys to a better work life. From learning how to love your rivals to harnessing the power of frustration, one thing\u2019s for sure: You\u2019ll never see your job the same way again. Produced in partnership with Transmitter Media.</p>\n    ",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 74,
+      "total_episodes": 131,
+      "listennotes_url": "https://www.listennotes.com/c/34beae8ad8fd4b299196f413b8270a30/",
+      "audio_length_sec": 2322,
+      "explicit_content": false,
+      "latest_episode_id": "7bc6a4aad20d4219b7c574e7419af605",
+      "latest_pub_date_ms": 1692676800000,
+      "earliest_pub_date_ms": 1518044524125,
+      "update_frequency_hours": 167,
+      "listen_score_global_rank": "0.01%"
+    },
     {
       "id": "28ba59be5b8346589e910e24d4b3eed7",
       "rss": "https://pultepodcast.libsyn.com/rss",
@@ -2742,7 +2795,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "NPR",
       "thumbnail": "https://production.listennotes.com/podcasts/the-indicator-from-planet-money-npr-pb1-q5f_msG-G2EDjFO-TLA.300x300.jpg",
       "is_claimed": false,
-      "description": "A little show about big ideas. From the people who make <em>Planet Money</em>, <em>The Indicator</em> helps you make sense of what's happening today. It's a quick hit of insight into work, business, the economy, and everything else. Listen weekday afternoons.<br><br><em>Got money on your mind? Try Planet Money+ \u2014 a new way to support the show you love, get a sponsor-free feed of the podcast, *and* get access to bonus content. A subscription also gets you access to The Indicator and Planet Money Summer School, both without interruptions. </em>",
+      "description": "A little show about big ideas. From the people who make <em>Planet Money</em>, <em>The Indicator</em> helps you make sense of what's happening today. It's a quick hit of insight into work, business, the economy, and everything else. Listen weekday afternoons.<br><br><em>Try Planet Money+! a new way to support the show you love, get a sponsor-free feed of the podcast, *and* get access to bonus content. You'll also get access to The Indicator and Planet Money Summer School, both without interruptions. sign up at plus.npr.org/planetmoney</em>",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -2750,68 +2803,68 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 73,
-      "total_episodes": 1229,
+      "total_episodes": 1329,
       "listennotes_url": "https://www.listennotes.com/c/5f237b79824e4dfb8355f6dff9b1c542/",
-      "audio_length_sec": 574,
+      "audio_length_sec": 573,
       "explicit_content": false,
-      "latest_episode_id": "33b9445be544477a8931f5c30b6cee1a",
-      "latest_pub_date_ms": 1681507413000,
+      "latest_episode_id": "42996352487a4b07a47d0d76a9ea9823",
+      "latest_pub_date_ms": 1694127022000,
       "earliest_pub_date_ms": 1527108300299,
       "update_frequency_hours": 29,
       "listen_score_global_rank": "0.01%"
     },
     {
-      "id": "34beae8ad8fd4b299196f413b8270a30",
-      "rss": "https://feeds.feedburner.com/WorklifeWithAdamGrant",
+      "id": "a10d3bea3ffc40329727291321721c11",
+      "rss": "https://feeds.megaphone.fm/TPG1669083856",
       "type": "episodic",
-      "email": "podcasts@ted.com",
+      "email": "listen@thepodglomerate.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5mZWVkYnVybmVyLmNvbS9Xb3JrbGlmZVdpdGhBZGFtR3JhbnQ=",
-        "spotify_url": "https://open.spotify.com/show/4eylg9GZJOVvUhTynt4jjA",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vVFBHMTY2OTA4Mzg1Ng==",
+        "spotify_url": "",
         "youtube_url": "",
-        "linkedin_url": "https://www.linkedin.com/in/adammgrant/",
+        "linkedin_url": "",
         "wechat_handle": "",
         "patreon_handle": "",
-        "twitter_handle": "AdamMGrant",
-        "facebook_handle": "AdamMGrant",
+        "twitter_handle": "",
+        "facebook_handle": "",
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/worklife-with-adam-grant-ted-KgaXjFPEoVc.1400x1400.jpg",
-      "title": "WorkLife with Adam Grant",
+      "image": "https://production.listennotes.com/podcasts/money-rehab-with-nicole-lapin-money-news-ixsLZayFUCK-AvJIC3_u-j8.1400x1400.jpg",
+      "title": "Money Rehab with Nicole Lapin",
       "country": "United States",
-      "website": "https://www.ted.com/podcasts/worklife?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://moneynewsnetwork.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
-        67,
-        97,
+        93,
         111,
-        93
+        181,
+        67
       ],
-      "itunes_id": 1346314086,
-      "publisher": "TED",
-      "thumbnail": "https://production.listennotes.com/podcasts/worklife-with-adam-grant-ted-KgaXjFPEoVc.300x300.jpg",
+      "itunes_id": 1559564016,
+      "publisher": "Money News Network",
+      "thumbnail": "https://production.listennotes.com/podcasts/money-rehab-with-nicole-lapin-money-news-v24RloNcmpf-AvJIC3_u-j8.300x300.jpg",
       "is_claimed": false,
-      "description": "\n      <p>You spend a quarter of your life at work. You should enjoy it! Organizational psychologist Adam Grant takes you inside the minds of some of the world\u2019s most unusual professionals to discover the keys to a better work life. From learning how to love your rivals to harnessing the power of frustration, one thing\u2019s for sure: You\u2019ll never see your job the same way again. Produced in partnership with Transmitter Media.</p>\n    ",
+      "description": "Ever notice that we will talk about everything before we talk about money? Sex? No problem. Politics? Bring it on. Money? Totally taboo. But not for long! Nicole Lapin\u2014 the only financial expert you don\u2019t need a dictionary to understand, New York Times best selling author of Rich Bitch, and host of Money Rehab\u2014 is here to rehab your wallet, so you can get your financial life together once and for all. Episodes are just ten minutes-ish... no frills, just bite-sized tips and tricks so you don\u2019t waste any time. And Nicole wants to hear from YOU! Email the money questions you want answered to MoneyRehab@NicoleLapin.com and Nicole will help\u2013and you could even join Nicole on the show for a one-on-one intervention.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 73,
-      "total_episodes": 111,
-      "listennotes_url": "https://www.listennotes.com/c/34beae8ad8fd4b299196f413b8270a30/",
-      "audio_length_sec": 2370,
-      "explicit_content": false,
-      "latest_episode_id": "7d8be1e80e314f378fb38082c3c5585b",
-      "latest_pub_date_ms": 1681185600000,
-      "earliest_pub_date_ms": 1518044524105,
-      "update_frequency_hours": 166,
-      "listen_score_global_rank": "0.01%"
+      "listen_score": 72,
+      "total_episodes": 608,
+      "listennotes_url": "https://www.listennotes.com/c/a10d3bea3ffc40329727291321721c11/",
+      "audio_length_sec": 964,
+      "explicit_content": true,
+      "latest_episode_id": "182508ff1cc64ed28c50541605ba9d0c",
+      "latest_pub_date_ms": 1694070000000,
+      "earliest_pub_date_ms": 1616593020570,
+      "update_frequency_hours": 24,
+      "listen_score_global_rank": "0.05%"
     },
     {
       "id": "fc6d33e22b7f4db38df3bb64a9a8c227",
@@ -2861,14 +2914,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 72,
-      "total_episodes": 158,
+      "total_episodes": 162,
       "listennotes_url": "https://www.listennotes.com/c/fc6d33e22b7f4db38df3bb64a9a8c227/",
-      "audio_length_sec": 2839,
+      "audio_length_sec": 2846,
       "explicit_content": false,
-      "latest_episode_id": "ad611e0c0a1b4792b39e9c9732b6fa7a",
-      "latest_pub_date_ms": 1679533500000,
+      "latest_episode_id": "eac17936c71e4588b96e6e71ecc0db25",
+      "latest_pub_date_ms": 1688184480000,
       "earliest_pub_date_ms": 1459373820099,
-      "update_frequency_hours": 885,
+      "update_frequency_hours": 721,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -2917,14 +2970,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 72,
-      "total_episodes": 504,
+      "total_episodes": 526,
       "listennotes_url": "https://www.listennotes.com/c/ed79b615ed074204bc4702b56a264a78/",
-      "audio_length_sec": 1915,
+      "audio_length_sec": 1903,
       "explicit_content": false,
-      "latest_episode_id": "f914f36e10d4428399f1a6284b965c94",
-      "latest_pub_date_ms": 1681376400000,
-      "earliest_pub_date_ms": 1398606925476,
-      "update_frequency_hours": 151,
+      "latest_episode_id": "2137ca6345dd416aad93d8b811053dad",
+      "latest_pub_date_ms": 1694077200000,
+      "earliest_pub_date_ms": 1398606925484,
+      "update_frequency_hours": 168,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -2969,14 +3022,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 71,
-      "total_episodes": 124,
+      "total_episodes": 143,
       "listennotes_url": "https://www.listennotes.com/c/bee3a6eeb43d45d482cff16d7e6eec6d/",
-      "audio_length_sec": 3781,
+      "audio_length_sec": 3713,
       "explicit_content": true,
-      "latest_episode_id": "1741183d6583436fbd4b58d45d669ac1",
-      "latest_pub_date_ms": 1681344000000,
+      "latest_episode_id": "e8ef82005f084db8a1dc8cbe9aad2b23",
+      "latest_pub_date_ms": 1694044800000,
       "earliest_pub_date_ms": 1601668154000,
-      "update_frequency_hours": 168,
+      "update_frequency_hours": 184,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3020,21 +3073,21 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 71,
-      "total_episodes": 128,
+      "total_episodes": 137,
       "listennotes_url": "https://www.listennotes.com/c/2184bada602d431689dbb4c6c1bc5839/",
-      "audio_length_sec": 1731,
+      "audio_length_sec": 1770,
       "explicit_content": false,
-      "latest_episode_id": "7e989412b8f7427eb4ae75bb3af2863f",
-      "latest_pub_date_ms": 1680775200000,
-      "earliest_pub_date_ms": 1452675180120,
-      "update_frequency_hours": 407,
+      "latest_episode_id": "7183c1c09dcb4654aa7d2d02f916482d",
+      "latest_pub_date_ms": 1694080800000,
+      "earliest_pub_date_ms": 1452675180134,
+      "update_frequency_hours": 391,
       "listen_score_global_rank": "0.05%"
     },
     {
       "id": "c5ce6c02cbf1486496206829f7d42e8e",
       "rss": "https://feeds.megaphone.fm/marketsnacks-daily",
       "type": "episodic",
-      "email": "podcasts@cadence13.com",
+      "email": "iwonder@wondery.com",
       "extra": {
         "url1": "http://www.marketsnacks.com/",
         "url2": "",
@@ -3050,10 +3103,10 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "The Best One Yet",
       "country": "United States",
-      "website": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         98,
@@ -3064,9 +3117,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 1386234384,
       "publisher": "Nick & Jack Studios",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
       "is_claimed": false,
-      "description": "Feel brighter every day with our 20-minute pop-biz podcast. The 3 business news stories you need, with fresh takes you can pretend you came up with \u2014 Pairs perfectly with your morning oatmeal ritual. Hosted by Jack Crivici-Kramer & Nick Martell.",
+      "description": "\n      Feel brighter every day with our 20-minute pop-biz podcast. The 3 business news stories you need, with fresh takes you can pretend you came up with \u2014 Pairs perfectly with your morning oatmeal ritual. Hosted by Jack Crivici-Kramer & Nick Martell.\n    ",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -3074,14 +3127,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 71,
-      "total_episodes": 950,
+      "total_episodes": 1035,
       "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
-      "audio_length_sec": 1090,
+      "audio_length_sec": 1106,
       "explicit_content": false,
-      "latest_episode_id": "e67a558bc7564f72aede4f01d3e0004f",
-      "latest_pub_date_ms": 1681722000000,
-      "earliest_pub_date_ms": 1553519100903,
-      "update_frequency_hours": 33,
+      "latest_episode_id": "80f68b3bc2ba4e1bb96aab1455852d11",
+      "latest_pub_date_ms": 1694077200000,
+      "earliest_pub_date_ms": 1553519101033,
+      "update_frequency_hours": 50,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3132,14 +3185,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 71,
-      "total_episodes": 383,
+      "total_episodes": 409,
       "listennotes_url": "https://www.listennotes.com/c/d863da7f921e435fb35f512b54e774d6/",
-      "audio_length_sec": 2049,
+      "audio_length_sec": 2029,
       "explicit_content": false,
-      "latest_episode_id": "3e6e6e405f794ce69855d60079b2c60d",
-      "latest_pub_date_ms": 1681203600000,
-      "earliest_pub_date_ms": 1492543297377,
-      "update_frequency_hours": 107,
+      "latest_episode_id": "70afc27ebc4d4aa28528a903d2b945c3",
+      "latest_pub_date_ms": 1693990800000,
+      "earliest_pub_date_ms": 1492543297406,
+      "update_frequency_hours": 146,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3186,14 +3239,72 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 71,
-      "total_episodes": 344,
+      "total_episodes": 448,
       "listennotes_url": "https://www.listennotes.com/c/5590cb1318054bceb942564a4f067eb6/",
-      "audio_length_sec": 1652,
+      "audio_length_sec": 1655,
       "explicit_content": false,
-      "latest_episode_id": "f340ca7271c0406498e9ef676c6226ac",
-      "latest_pub_date_ms": 1681511980000,
+      "latest_episode_id": "72379b23f2ff4255a4bd67d70e3ad742",
+      "latest_pub_date_ms": 1694126942000,
       "earliest_pub_date_ms": 1640304971049,
       "update_frequency_hours": 28,
+      "listen_score_global_rank": "0.05%"
+    },
+    {
+      "id": "13a7957aeac34e1c9e004f2a2ced5fb0",
+      "rss": "https://feeds.megaphone.fm/pivot",
+      "type": "episodic",
+      "email": "pivot@voxmedia.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vcGl2b3Q=",
+        "spotify_url": "https://open.spotify.com/show/4MU3RFGELZxPT9XHVwTNPR",
+        "youtube_url": "",
+        "linkedin_url": "https://www.linkedin.com/company/re-code-news/",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "recode",
+        "facebook_handle": "RecodeDotNet",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/pivot-new-york-magazine-b0XsOSV7WDZ-YyJxq4Dbk67.1400x1400.jpg",
+      "title": "Pivot",
+      "country": "United States",
+      "website": null,
+      "language": "English",
+      "genre_ids": [
+        99,
+        131,
+        97,
+        157,
+        171,
+        94,
+        127,
+        93,
+        67
+      ],
+      "itunes_id": 1073226719,
+      "publisher": "New York Magazine",
+      "thumbnail": "https://production.listennotes.com/podcasts/pivot-new-york-magazine-L2FeZNEqKst-YyJxq4Dbk67.300x300.jpg",
+      "is_claimed": false,
+      "description": "Every Tuesday and Friday, tech journalist Kara Swisher and NYU Professor Scott Galloway offer sharp, unfiltered insights into the biggest stories in tech, business, and politics. They make bold predictions, pick winners and losers, and bicker and banter like no one else. After all, with great power comes great scrutiny. From New York Magazine and the Vox Media Podcast Network.",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 70,
+      "total_episodes": 475,
+      "listennotes_url": "https://www.listennotes.com/c/13a7957aeac34e1c9e004f2a2ced5fb0/",
+      "audio_length_sec": 3376,
+      "explicit_content": false,
+      "latest_episode_id": "ea4b7196b18945d186358fb5176672b7",
+      "latest_pub_date_ms": 1693908000000,
+      "earliest_pub_date_ms": 1537812480472,
+      "update_frequency_hours": 83,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3219,7 +3330,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "image": "https://production.listennotes.com/podcasts/scam-goddess-earwolf-laci-mosley-pMX-87Jicaq-PstEMgqXCUd.1400x1400.jpg",
       "title": "Scam Goddess",
       "country": "United States",
-      "website": "https://www.earwolf.com/show/scam-goddess/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://teamcoco.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         93,
@@ -3239,57 +3350,59 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 70,
-      "total_episodes": 123,
+      "total_episodes": 144,
       "listennotes_url": "https://www.listennotes.com/c/23bd4f3432c2452d93f525e2446a5878/",
-      "audio_length_sec": 4051,
+      "audio_length_sec": 4094,
       "explicit_content": true,
-      "latest_episode_id": "f224faef768f4d31b1761df0805af826",
-      "latest_pub_date_ms": 1681185900000,
+      "latest_episode_id": "6b63f6e8a814455da27997e9487e80b5",
+      "latest_pub_date_ms": 1693886700000,
       "earliest_pub_date_ms": 1420099200036,
-      "update_frequency_hours": 167,
+      "update_frequency_hours": 168,
       "listen_score_global_rank": "0.05%"
     },
     {
-      "id": "4e272a4cec844b32be6ad2048d614b28",
-      "rss": "https://feeds.simplecast.com/mWO0BLec",
+      "id": "d1336f3217eb4510bdbcdf021a38de38",
+      "rss": "https://feeds.megaphone.fm/ADL1740142880",
       "type": "episodic",
-      "email": null,
+      "email": "hello@cathyheller.com",
       "extra": {
-        "url1": "https://bythebookpod.com/",
+        "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYWFlYTRlNjktYWY1MS00OTVlLWFmYzktYTk3NjAxNDY5MjJiLzczZmQ4MGMyLTQ4ZDYtNDMzYy04MTdmLWFhYTQwMTdjM2MxNi8xYzM1Yzk0Ny01NmQyLTQ5Y2MtYmUxNS1hYWE0MDE3YzNjMWUvcG9kY2FzdC5yc3M=",
-        "spotify_url": "https://open.spotify.com/show/4uPxHwRyvRC7ebz3gMxpk1",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vQURMMTc0MDE0Mjg4MA==",
+        "spotify_url": "https://open.spotify.com/show/7DFQyVP0hc3d1xnht1U3UI",
         "youtube_url": "",
         "linkedin_url": "",
         "wechat_handle": "",
         "patreon_handle": "",
-        "twitter_handle": "bythebookpod",
-        "facebook_handle": "kristenandjolenta",
+        "twitter_handle": "",
+        "facebook_handle": "",
         "amazon_music_url": "",
-        "instagram_handle": "bythebookpod"
+        "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/how-to-be-fine-stitcher-jolenta-greenberg-SXRBvqDjNth--sCyAljv4BT.1400x1400.jpg",
-      "title": "How to Be Fine",
+      "image": "https://production.listennotes.com/podcasts/the-cathy-heller-podcast-manifest-flow-and-LQn1wC_Mdkp-W-XR2oujCdK.1400x1400.jpg",
+      "title": "The Cathy Heller Podcast: Manifest, Flow, and Align",
       "country": "United States",
-      "website": "https://www.stitcher.com/podcast/stitcher/by-the-book?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.cathyheller.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
+        93,
+        100,
         88,
         90,
+        94,
+        132,
+        69,
+        244,
         122,
-        133,
-        93,
-        78,
-        191,
-        104,
-        67
+        67,
+        70
       ],
-      "itunes_id": 1217948628,
-      "publisher": "Stitcher & Jolenta Greenberg, Kristen Meinzer",
-      "thumbnail": "https://production.listennotes.com/podcasts/how-to-be-fine-stitcher-jolenta-greenberg-1DC5KVBFAc7--sCyAljv4BT.300x300.jpg",
+      "itunes_id": 1191831035,
+      "publisher": "Cathy Heller",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-cathy-heller-podcast-manifest-flow-and-sXr8L0A5Bib-W-XR2oujCdK.300x300.jpg",
       "is_claimed": false,
-      "description": "Half advice show, half cultural critique, and one wild ride through the world of wellness. Join podcast besties Kristen Meinzer and Jolenta Greenberg as they dissect the inner workings of the betterment industry - and offer up some advice along the way. Their goal? To help get you a little closer to fine.\n\nKristen and Jolenta's first show By the Book is on this feed. To hear back episodes of By the Book, just scroll down!",
+      "description": "Life is too short to be building someone else's dream.\u00a0On the Cathy Heller Podcast, top ranking podcast host, business and spiritual coach, and bestselling author Cathy Heller gives you the tools to change your frequency, allow in new possibilities, and become the director of your life.\u00a0You'll learn how to get unstuck from your fears and self doubt, find your confidence, change your subconscious program, shift your mindset, and build an abundant dream life where you can make an impact and get paid to be authentically you.\u00a0\n\nThis show features coaching calls and heart-to-heart conversations with successful authors, celebrities, entrepreneurs, spiritual leaders, experts, and everyday heroes about what led them to the biggest moments in their lives, and how you too can create a new reality that you can't wait to wake up to every single day.\u00a0\n\nYou've got so much to contribute and Cathy is here to help you do it.\u00a0\n\nFollow Cathy @cathy.heller on Instagram for daily sparks of inspiration.\u00a0\nSubscribe to the Cathy Heller Podcast and share the show with someone who needs to hear it.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -3297,14 +3410,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 70,
-      "total_episodes": 248,
-      "listennotes_url": "https://www.listennotes.com/c/4e272a4cec844b32be6ad2048d614b28/",
-      "audio_length_sec": 2083,
-      "explicit_content": true,
-      "latest_episode_id": "cdb493d25c9a4a6183c061f62e99f9d2",
-      "latest_pub_date_ms": 1681358700000,
-      "earliest_pub_date_ms": 1489787580232,
-      "update_frequency_hours": 165,
+      "total_episodes": 788,
+      "listennotes_url": "https://www.listennotes.com/c/d1336f3217eb4510bdbcdf021a38de38/",
+      "audio_length_sec": 3064,
+      "explicit_content": false,
+      "latest_episode_id": "41e772e60381492da0e721bcb03cf37a",
+      "latest_pub_date_ms": 1694070000000,
+      "earliest_pub_date_ms": 1483455806748,
+      "update_frequency_hours": 45,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3358,13 +3471,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 70,
-      "total_episodes": 685,
+      "total_episodes": 726,
       "listennotes_url": "https://www.listennotes.com/c/499661f3589f42aaa1532673e0e0aedf/",
-      "audio_length_sec": 2519,
+      "audio_length_sec": 2476,
       "explicit_content": false,
-      "latest_episode_id": "677e8c0b94154ae083be8c88f612e03c",
-      "latest_pub_date_ms": 1681455600000,
-      "earliest_pub_date_ms": 1279551600655,
+      "latest_episode_id": "475bc0fecead42889324c4d58884d64c",
+      "latest_pub_date_ms": 1693983600000,
+      "earliest_pub_date_ms": 1279551600722,
       "update_frequency_hours": 83,
       "listen_score_global_rank": "0.05%"
     },
@@ -3388,7 +3501,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "https://music.amazon.com/podcasts/b42b0171-d75e-4f9a-999f-da3a4db30f45/we-study-billionaires---the-investor%E2%80%99s-podcast-network",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/we-study-billionaires-the-investors-podcast-CrF62Mw39ov-ZuO23m60ePb.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/we-study-billionaires-the-investors-podcast-dufIKDVLEoJ-ZuO23m60ePb.1400x1400.jpg",
       "title": "We Study Billionaires - The Investor\u2019s Podcast Network",
       "country": "United States",
       "website": "https://www.theinvestorspodcast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -3403,9 +3516,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 928933489,
       "publisher": "The Investor's Podcast Network",
-      "thumbnail": "https://production.listennotes.com/podcasts/we-study-billionaires-the-investors-podcast-xPmzOS9Y4lQ-ZuO23m60ePb.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/we-study-billionaires-the-investors-podcast--EpuIXZbUq1-ZuO23m60ePb.300x300.jpg",
       "is_claimed": false,
-      "description": "\n      <p>We interview and study famous financial billionaires, including Warren Buffett, Ray Dalio, and Howard Marks, and teach you what we learn and how you can apply their investment strategies in the stock market.</p><p>We Study Billionaires is the largest stock investing podcast show in the world with 100,000,000+ downloads and is hosted by Stig Brodersen, Trey Lockerbie, and Clay Finck.</p><p>This podcast also includes the Richer Wiser Happier series hosted by best-selling author William Green. William regularly interviews legendary investors such as Mohnish Pabrai and Guy Spier, exploring what they can teach us about how to succeed in markets and life.</p><p>And finally, our Bitcoin Fundamentals series is hosted by Preston Pysh, where he interviews prominent figures in the Bitcoin and macroeconomic space. To learn more about TIP, you can visit&nbsp;<a href=\"http://theinvestorspodcast.com/\" rel=\"noopener noreferrer\" target=\"_blank\">theinvestorspodcast.com</a>&nbsp;or subscribe to our free daily newsletter&nbsp;<a href=\"https://www.theinvestorspodcast.com/westudymarkets\" rel=\"noopener noreferrer\" target=\"_blank\">here</a>.</p>\n    ",
+      "description": "\n      <p>We interview and study famous financial billionaires, including Warren Buffett, Ray Dalio, and Howard Marks, and teach you what we learn and how you can apply their investment strategies in the stock market.</p><p>We Study Billionaires is the largest stock investing podcast show in the world with 100,000,000+ downloads and is hosted by Stig Brodersen and Clay Finck.</p><p>This podcast also includes the Richer Wiser Happier series hosted by best-selling author William Green. William regularly interviews legendary investors such as Mohnish Pabrai and Guy Spier, exploring what they can teach us about how to succeed in markets and life.</p><p>And finally, our Bitcoin Fundamentals series is hosted by Preston Pysh, where he interviews prominent figures in the Bitcoin and macroeconomic space. To learn more about TIP, you can visit&nbsp;<a href=\"http://theinvestorspodcast.com/\" rel=\"noopener noreferrer\" target=\"_blank\">theinvestorspodcast.com</a>&nbsp;or subscribe to our free daily newsletter&nbsp;<a href=\"https://www.theinvestorspodcast.com/westudymarkets\" rel=\"noopener noreferrer\" target=\"_blank\">here</a>.</p>\n    ",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -3413,125 +3526,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 70,
-      "total_episodes": 719,
+      "total_episodes": 775,
       "listennotes_url": "https://www.listennotes.com/c/0da3baee05cc47e4b3222da775573efe/",
-      "audio_length_sec": 3380,
+      "audio_length_sec": 3434,
       "explicit_content": false,
-      "latest_episode_id": "7e7ff753095348109cc4183a588da9e5",
-      "latest_pub_date_ms": 1681603200000,
-      "earliest_pub_date_ms": 1411981990704,
-      "update_frequency_hours": 43,
-      "listen_score_global_rank": "0.05%"
-    },
-    {
-      "id": "a10d3bea3ffc40329727291321721c11",
-      "rss": "https://feeds.megaphone.fm/TPG1669083856",
-      "type": "episodic",
-      "email": "listen@thepodglomerate.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vVFBHMTY2OTA4Mzg1Ng==",
-        "spotify_url": "",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/money-rehab-with-nicole-lapin-money-news-ixsLZayFUCK-AvJIC3_u-j8.1400x1400.jpg",
-      "title": "Money Rehab with Nicole Lapin",
-      "country": "United States",
-      "website": "https://moneynewsnetwork.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        93,
-        111,
-        181,
-        67
-      ],
-      "itunes_id": 1559564016,
-      "publisher": "Money News Network",
-      "thumbnail": "https://production.listennotes.com/podcasts/money-rehab-with-nicole-lapin-money-news-v24RloNcmpf-AvJIC3_u-j8.300x300.jpg",
-      "is_claimed": false,
-      "description": "Ever notice that we will talk about everything before we talk about money? Sex? No problem. Politics? Bring it on. Money? Totally taboo. But not for long! Nicole Lapin\u2014 the only financial expert you don\u2019t need a dictionary to understand, New York Times best selling author of Rich Bitch, and host of Money Rehab\u2014 is here to rehab your wallet, so you can get your financial life together once and for all. Episodes are just ten minutes-ish... no frills, just bite-sized tips and tricks so you don\u2019t waste any time. And Nicole wants to hear from YOU! Email the money questions you want answered to MoneyRehab@NicoleLapin.com and Nicole will help\u2013and you could even join Nicole on the show for a one-on-one intervention.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 69,
-      "total_episodes": 481,
-      "listennotes_url": "https://www.listennotes.com/c/a10d3bea3ffc40329727291321721c11/",
-      "audio_length_sec": 896,
-      "explicit_content": true,
-      "latest_episode_id": "7a81dadbe6cf4e0598a155c8308f980f",
-      "latest_pub_date_ms": 1681714800000,
-      "earliest_pub_date_ms": 1616593020458,
-      "update_frequency_hours": 33,
-      "listen_score_global_rank": "0.05%"
-    },
-    {
-      "id": "13a7957aeac34e1c9e004f2a2ced5fb0",
-      "rss": "https://feeds.megaphone.fm/pivot",
-      "type": "episodic",
-      "email": "pivot@voxmedia.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vcGl2b3Q=",
-        "spotify_url": "https://open.spotify.com/show/4MU3RFGELZxPT9XHVwTNPR",
-        "youtube_url": "",
-        "linkedin_url": "https://www.linkedin.com/company/re-code-news/",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "recode",
-        "facebook_handle": "RecodeDotNet",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/pivot-new-york-magazine-b0XsOSV7WDZ-YyJxq4Dbk67.1400x1400.jpg",
-      "title": "Pivot",
-      "country": "United States",
-      "website": null,
-      "language": "English",
-      "genre_ids": [
-        99,
-        131,
-        97,
-        157,
-        171,
-        94,
-        127,
-        93,
-        67
-      ],
-      "itunes_id": 1073226719,
-      "publisher": "New York Magazine",
-      "thumbnail": "https://production.listennotes.com/podcasts/pivot-new-york-magazine-L2FeZNEqKst-YyJxq4Dbk67.300x300.jpg",
-      "is_claimed": false,
-      "description": "Every Tuesday and Friday, tech journalist Kara Swisher and NYU Professor Scott Galloway offer sharp, unfiltered insights into the biggest stories in tech, business, and politics. They make bold predictions, pick winners and losers, and bicker and banter like no one else. After all, with great power comes great scrutiny. From New York Magazine and the Vox Media Podcast Network.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 69,
-      "total_episodes": 434,
-      "listennotes_url": "https://www.listennotes.com/c/13a7957aeac34e1c9e004f2a2ced5fb0/",
-      "audio_length_sec": 3336,
-      "explicit_content": false,
-      "latest_episode_id": "429687c9391440d9b5b0b0daf20a49c4",
-      "latest_pub_date_ms": 1681466400000,
-      "earliest_pub_date_ms": 1537812480412,
-      "update_frequency_hours": 77,
+      "latest_episode_id": "71f33b37797e40b6aff7077aa9596cd1",
+      "latest_pub_date_ms": 1693965919000,
+      "earliest_pub_date_ms": 1411981990769,
+      "update_frequency_hours": 60,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -3567,11 +3569,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         123,
         127,
         129,
-        98,
-        144
+        144,
+        98
       ],
       "itunes_id": 1187770032,
-      "publisher": "The Unstuck Network",
+      "publisher": "ChooseFI",
       "thumbnail": "https://production.listennotes.com/podcasts/choosefi-jonathan-mendonsa-brad-barrett-UCfs8WRklv0-e8_g1GAYHIj.300x300.jpg",
       "is_claimed": false,
       "description": "How would your life change if you reached Financial Independence and got to the point where working is optional? What actions can you take today to make that not just possible but probable. Jonathan & Brad explore the tactics that the FI community uses to reclaim decades of their lives. They discuss reducing expenses, crushing debt, tax optimization, building passive income streams through online businesses and real estate and how to travel the world for free. Every episode is packed with actionable tips and no topic is too big or small as long as it speeds up the process of reaching financial independence.",
@@ -3582,13 +3584,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 69,
-      "total_episodes": 594,
+      "total_episodes": 614,
       "listennotes_url": "https://www.listennotes.com/c/f4a7bdbef7a84fd0b4a712b70a3c5ec5/",
-      "audio_length_sec": 3358,
+      "audio_length_sec": 3359,
       "explicit_content": false,
-      "latest_episode_id": "9b6878be290243b5b323f8a1a5ba5c23",
-      "latest_pub_date_ms": 1681707600000,
-      "earliest_pub_date_ms": 1482062785588,
+      "latest_episode_id": "588fdf42c6104aaa8798d3934ea916d5",
+      "latest_pub_date_ms": 1693803600000,
+      "earliest_pub_date_ms": 1482062785609,
       "update_frequency_hours": 167,
       "listen_score_global_rank": "0.05%"
     },
@@ -3633,13 +3635,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 69,
-      "total_episodes": 591,
+      "total_episodes": 735,
       "listennotes_url": "https://www.listennotes.com/c/c73271d55ffa4e2d9b529220072fbd79/",
-      "audio_length_sec": 2549,
+      "audio_length_sec": 2303,
       "explicit_content": false,
-      "latest_episode_id": "bf34693226ea4eb8a8ca90022bc54475",
-      "latest_pub_date_ms": 1681662600000,
-      "earliest_pub_date_ms": 1548186120509,
+      "latest_episode_id": "f825aa2854ff452c8ab57d50d017a16b",
+      "latest_pub_date_ms": 1694095200000,
+      "earliest_pub_date_ms": 1548186120653,
       "update_frequency_hours": 23,
       "listen_score_global_rank": "0.05%"
     },
@@ -3688,14 +3690,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 69,
-      "total_episodes": 605,
+      "total_episodes": 650,
       "listennotes_url": "https://www.listennotes.com/c/fbecfdd4116e4e7a954bd6bc4cb0b406/",
-      "audio_length_sec": 2282,
+      "audio_length_sec": 2259,
       "explicit_content": false,
-      "latest_episode_id": "a7240cd87ceb4f66baaf21fff6f15167",
-      "latest_pub_date_ms": 1681369260000,
-      "earliest_pub_date_ms": 1358200867587,
-      "update_frequency_hours": 74,
+      "latest_episode_id": "de0e98a2c1ce48398021b08a687d2725",
+      "latest_pub_date_ms": 1694070060000,
+      "earliest_pub_date_ms": 1358200867624,
+      "update_frequency_hours": 73,
       "listen_score_global_rank": "0.05%"
     }
   ],
@@ -4116,6 +4118,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     "mt": "Malta",
     "mx": "Mexico",
     "my": "Malaysia",
+    "ng": "Nigeria",
     "ni": "Nicaragua",
     "nl": "Netherlands",
     "no": "Norway",
@@ -4217,56 +4220,59 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "recommendations": [
     {
-      "id": "7060b5d48b3440ba9668f9af2a90fa7f",
-      "rss": "https://www.spreaker.com/show/4920844/episodes/feed",
+      "id": "73fc48e052674c3dbab02b4b0fa10fe4",
+      "rss": "https://feeds.simplecast.com/xZuZL16q",
       "type": "episodic",
-      "email": null,
+      "email": "kevinrose@gmail.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy80ZjJjNjZmMC9wb2RjYXN0L3Jzcw==",
-        "spotify_url": "https://open.spotify.com/show/62soqGPhnYJBRrP2vSAk6b",
-        "youtube_url": "",
-        "linkedin_url": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS94WnVaTDE2cQ==",
+        "spotify_url": "https://open.spotify.com/show/7EYh5AcGYbXauYeIsTu2lu",
+        "youtube_url": "https://www.youtube.com/user/kevinrose",
+        "linkedin_url": "https://www.linkedin.com/in/kevinrose/",
         "wechat_handle": "",
         "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
+        "twitter_handle": "kevinrose",
+        "facebook_handle": "kevinrose",
         "amazon_music_url": "",
-        "instagram_handle": ""
+        "instagram_handle": "kevinrose"
       },
-      "image": "https://production.listennotes.com/podcasts/the-tim-ferriss-show-5-minute-podcast-mpqMa73u08D-mYx8LcSkhz1.1400x1400.jpg",
-      "title": "The Tim Ferriss Show | 5 minute podcast summaries",
+      "image": "https://production.listennotes.com/podcasts/the-kevin-rose-show-kevin-rose-X6m7gBDpQfx-GtV_fXwadQN.1400x1400.jpg",
+      "title": "The Kevin Rose Show",
       "country": "United States",
-      "website": "https://www.spreaker.com/show/the-tim-ferriss-show-5-minute-podcast-su?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://podcast.kevinrose.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
-        111,
-        181,
+        127,
+        122,
+        149,
+        93,
+        88,
         67
       ],
-      "itunes_id": 1556286643,
-      "publisher": "5 minute podcast summaries",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-tim-ferriss-show-5-minute-podcast-XMuN8q2Jorb-mYx8LcSkhz1.300x300.jpg",
+      "itunes_id": 1088864895,
+      "publisher": "Kevin Rose",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-kevin-rose-show-kevin-rose-BAnFZeYKp0l-GtV_fXwadQN.300x300.jpg",
       "is_claimed": false,
-      "description": "5 minute summaries of The Tim Ferriss Show's podcast episodes. Get the best insights and ideas in much less time, more at owltail.com<br /><br />Written summaries: <a href=\"https://www.owltail.com/summaries/75553-the-tim-ferriss-show\" rel=\"noopener\">https://www.owltail.com/summaries/75553-the-tim-ferriss-show</a><br /><br />Other podcast summaries in Apple Podcasts: <a href=\"http://bit.ly/5-min-summaries\" rel=\"noopener\">http://bit.ly/5-min-summaries</a><br /><br />Other podcast summaries In other apps, search 'podcast summaries'.<br /><br />Tim Ferriss is a self-experimenter and bestselling author, best known for The 4-Hour Workweek, which has been translated into 40+ languages. Newsweek calls him \"the world's best human guinea pig,\" and The New York Times calls him \"a cross between Jack Welch and a Buddhist monk.\" In this show, he deconstructs world-class performers from eclectic areas (investing, chess, pro sports, etc.), digging deep to find the tools, tactics, and tricks that listeners can use.",
+      "description": "Join entrepreneur, technology investor, and self-experimenter Kevin Rose as he explores new ways to reach peak personal and professional performance. In this \"podcast for the curious,\" Kevin interviews technologists, scientists, meditators, self-experimenters, and productivity hackers to discover insights that you can incorporate into daily life. Time Magazine calls him one of the \"Top 25 Most Influential People on the Web,\" and Bloomberg lists him as a \"Top 25 Angel Investor.\" Kevin has appeared on the Jimmy Fallon Show, Charlie Rose Show, as well as the covers of Businessweek and Inc. Magazine.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 34,
-      "total_episodes": 12,
-      "listennotes_url": "https://www.listennotes.com/c/7060b5d48b3440ba9668f9af2a90fa7f/",
-      "audio_length_sec": 221,
+      "listen_score": 64,
+      "total_episodes": 64,
+      "listennotes_url": "https://www.listennotes.com/c/73fc48e052674c3dbab02b4b0fa10fe4/",
+      "audio_length_sec": 4217,
       "explicit_content": false,
-      "latest_episode_id": "9163fe8fdfc34710af8d41b575023e07",
-      "latest_pub_date_ms": 1625881044000,
-      "earliest_pub_date_ms": 1619229600011,
-      "update_frequency_hours": 165,
-      "listen_score_global_rank": "3%"
+      "latest_episode_id": "a62af28c2540442cb50e11faaa42e77b",
+      "latest_pub_date_ms": 1640920114000,
+      "earliest_pub_date_ms": 1456759020063,
+      "update_frequency_hours": 1191,
+      "listen_score_global_rank": "0.05%"
     },
     {
       "id": "805535e1de5a4c7991f4f323e82ce9e7",
@@ -4311,7 +4317,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 36,
+      "listen_score": 35,
       "total_episodes": 64,
       "listennotes_url": "https://www.listennotes.com/c/805535e1de5a4c7991f4f323e82ce9e7/",
       "audio_length_sec": 1695,
@@ -4320,19 +4326,19 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "latest_pub_date_ms": 1502287200000,
       "earliest_pub_date_ms": 1453246535000,
       "update_frequency_hours": 327,
-      "listen_score_global_rank": "2.5%"
+      "listen_score_global_rank": "3%"
     },
     {
-      "id": "d1344e580523433e9e7b6d3d17579c68",
-      "rss": "https://feeds.acast.com/public/shows/eddbcc04-6cf8-4a7b-8bf7-f29cb306da8c",
+      "id": "7060b5d48b3440ba9668f9af2a90fa7f",
+      "rss": "https://www.spreaker.com/show/4920844/episodes/feed",
       "type": "episodic",
       "email": null,
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5hY2FzdC5jb20vcHVibGljL3Nob3dzL2VkZGJjYzA0LTZjZjgtNGE3Yi04YmY3LWYyOWNiMzA2ZGE4Yw==",
-        "spotify_url": "",
+        "google_url": "https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy80ZjJjNjZmMC9wb2RjYXN0L3Jzcw==",
+        "spotify_url": "https://open.spotify.com/show/62soqGPhnYJBRrP2vSAk6b",
         "youtube_url": "",
         "linkedin_url": "",
         "wechat_handle": "",
@@ -4342,38 +4348,37 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/the-guinea-pig-the-guinea-pig-podcast-f71pCJnAd8Q-bpDvSg1QWR4.1400x1400.jpg",
-      "title": "The Guinea Pig",
+      "image": "https://production.listennotes.com/podcasts/the-tim-ferriss-show-5-minute-podcast-mpqMa73u08D-mYx8LcSkhz1.1400x1400.jpg",
+      "title": "The Tim Ferriss Show | 5 minute podcast summaries",
       "country": "United States",
-      "website": null,
+      "website": "https://www.spreaker.com/show/the-tim-ferriss-show-5-minute-podcast-su?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
-        90,
-        107,
         111,
+        181,
         67
       ],
-      "itunes_id": 1453993716,
-      "publisher": "The Guinea Pig Podcast",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-guinea-pig-the-guinea-pig-podcast-eQwm9xXzlPv-bpDvSg1QWR4.300x300.jpg",
+      "itunes_id": 1556286643,
+      "publisher": "5 minute podcast summaries",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-tim-ferriss-show-5-minute-podcast-XMuN8q2Jorb-mYx8LcSkhz1.300x300.jpg",
       "is_claimed": false,
-      "description": "Leading surgeon and founder of cult brand MZ SKIN, Dr&nbsp;Maryam&nbsp;Zamani and ex-Vogue editor-at-Large, Fiona Golfar&nbsp;present&nbsp;The Guinea Pig&nbsp;podcast!Fiona and&nbsp;Maryam&nbsp;share their honest opinions and hilarious real-life experiences and give essential safety advice to those considering any kind of aesthetic procedure.For adults only, this bi-weekly podcast covers the latest aesthetic treatment reviews by the resident guinea pig, Fiona Golfar, supported by necessary medical advice and insights from Dr&nbsp;Maryam&nbsp;Zamani.Fiona tries the treatments - so you don\u2019t have to -&nbsp;allowing the listener to decide for themselves once they are armed with the necessary knowledge, questions to ask and potential risks.&nbsp;Maryam&nbsp;and Fiona chat openly and candidly about products and procedures aided by experts & high-profile friends to offer advice and insights to anyone considering a treatment.So if you, or someone you know is thinking of changing their&nbsp;moisturiser, dealing with tired looking eyes, or even having a neck-lift, The Guinea Pig is here to help you!<br /><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>",
+      "description": "5 minute summaries of The Tim Ferriss Show's podcast episodes. Get the best insights and ideas in much less time, more at owltail.com<br /><br />Written summaries: <a href=\"https://www.owltail.com/summaries/75553-the-tim-ferriss-show\" rel=\"noopener\">https://www.owltail.com/summaries/75553-the-tim-ferriss-show</a><br /><br />Other podcast summaries in Apple Podcasts: <a href=\"http://bit.ly/5-min-summaries\" rel=\"noopener\">http://bit.ly/5-min-summaries</a><br /><br />Other podcast summaries In other apps, search 'podcast summaries'.<br /><br />Tim Ferriss is a self-experimenter and bestselling author, best known for The 4-Hour Workweek, which has been translated into 40+ languages. Newsweek calls him \"the world's best human guinea pig,\" and The New York Times calls him \"a cross between Jack Welch and a Buddhist monk.\" In this show, he deconstructs world-class performers from eclectic areas (investing, chess, pro sports, etc.), digging deep to find the tools, tactics, and tricks that listeners can use.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 40,
-      "total_episodes": 70,
-      "listennotes_url": "https://www.listennotes.com/c/d1344e580523433e9e7b6d3d17579c68/",
-      "audio_length_sec": 1715,
-      "explicit_content": true,
-      "latest_episode_id": "7ce4a41ab7034fb2936646236b392dc0",
-      "latest_pub_date_ms": 1613008800000,
-      "earliest_pub_date_ms": 1550841504069,
-      "update_frequency_hours": 319,
-      "listen_score_global_rank": "1.5%"
+      "listen_score": 35,
+      "total_episodes": 12,
+      "listennotes_url": "https://www.listennotes.com/c/7060b5d48b3440ba9668f9af2a90fa7f/",
+      "audio_length_sec": 221,
+      "explicit_content": false,
+      "latest_episode_id": "9163fe8fdfc34710af8d41b575023e07",
+      "latest_pub_date_ms": 1625881044000,
+      "earliest_pub_date_ms": 1619229600011,
+      "update_frequency_hours": 165,
+      "listen_score_global_rank": "3%"
     },
     {
       "id": "f9d5885d7cf7485d891e82dea3186640",
@@ -4395,7 +4400,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/how-i-built-this-with-guy-raz-guy-raz-wondery-7krpVtcCzMB-UC0qH23iP9T.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/how-i-built-this-with-guy-raz-guy-raz-wondery-I8nbimW4uEZ-UC0qH23iP9T.1400x1400.jpg",
       "title": "How I Built This with Guy Raz",
       "country": "United States",
       "website": "https://wondery.com/shows/how-i-built-this/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -4413,9 +4418,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 1150510297,
       "publisher": "Guy Raz | Wondery",
-      "thumbnail": "https://production.listennotes.com/podcasts/how-i-built-this-with-guy-raz-guy-raz-wondery--t38KFIqlAi-UC0qH23iP9T.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/how-i-built-this-with-guy-raz-guy-raz-wondery-6hPxKdwGUe0-UC0qH23iP9T.300x300.jpg",
       "is_claimed": false,
-      "description": "\n      <p>Guy Raz interviews the world\u2019s best-known entrepreneurs to learn how they built their iconic brands. In each episode, founders reveal deep, intimate moments of doubt and failure, and share insights on their eventual success.&nbsp;<em>How I Built This&nbsp;</em>is a master-class on innovation, creativity, leadership and how to navigate challenges of all kinds.</p><p>New episodes on Mondays and Thursdays for free. Listen 1-week early and to all episodes ad-free with Wondery+ or Amazon Music with a Prime membership or Amazon Music Unlimited subscription.</p><p>Get your How I Built This merch at <a href=\"https://wonderyshop.com/pages/howibuiltthis ?utm_source=hibt-podcast&amp;utm_medium=referral&amp;utm_campaign=hibt-description\" rel=\"noopener noreferrer\" target=\"_blank\">WonderyShop.com/HowIBuiltThis</a></p>\n    ",
+      "description": "\n      <p>Guy Raz interviews the world\u2019s best-known entrepreneurs to learn how they built their iconic brands. In each episode, founders reveal deep, intimate moments of doubt and failure, and share insights on their eventual success.&nbsp;<em>How I Built This&nbsp;</em>is a master-class on innovation, creativity, leadership and how to navigate challenges of all kinds.</p><p>New episodes on Mondays and Thursdays for free. Listen 1-week early and to all episodes ad-free with Wondery+ or Amazon Music with a Prime membership or Amazon Music Unlimited subscription.</p><p>Get your How I Built This merch at <a href=\"https://wonderyshop.com/pages/howibuiltthis ?utm_source=hibt-podcast&amp;utm_medium=referral&amp;utm_campaign=hibt-description\" rel=\"noopener noreferrer\" target=\"_blank\">WonderyShop.com/HowIBuiltThis</a></p><p><br></p>\n    ",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -4423,14 +4428,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 83,
-      "total_episodes": 512,
+      "total_episodes": 555,
       "listennotes_url": "https://www.listennotes.com/c/f9d5885d7cf7485d891e82dea3186640/",
-      "audio_length_sec": 2970,
+      "audio_length_sec": 2988,
       "explicit_content": false,
-      "latest_episode_id": "b56382eaef9346d588e5b22510f64e34",
-      "latest_pub_date_ms": 1681715400000,
-      "earliest_pub_date_ms": 1472828160488,
-      "update_frequency_hours": 83,
+      "latest_episode_id": "20befd47de804137a0dc08185b4ddf9d",
+      "latest_pub_date_ms": 1694070600000,
+      "earliest_pub_date_ms": 1472828160531,
+      "update_frequency_hours": 79,
       "listen_score_global_rank": "0.01%"
     },
     {
@@ -4453,7 +4458,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "https://music.amazon.com/podcasts/97113abf-5c18-4c7e-8d2b-efcf161f4848/the-garyvee-audio-experience",
         "instagram_handle": "garyvee"
       },
-      "image": "https://production.listennotes.com/podcasts/the-garyvee-audio-experience-gary-vaynerchuk-KMaejZIN9lv-X0Dfm7O_o3y.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-garyvee-audio-experience-gary-vaynerchuk-jr4PQcHaude-X0Dfm7O_o3y.1400x1400.jpg",
       "title": "The GaryVee Audio Experience",
       "country": "United States",
       "website": "http://www.garyvaynerchuk.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -4468,12 +4473,12 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         98,
         173,
         93,
-        171,
-        67
+        67,
+        171
       ],
       "itunes_id": 928159684,
       "publisher": "Gary Vaynerchuk",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-garyvee-audio-experience-gary-vaynerchuk-LK-6lUgsYyT-X0Dfm7O_o3y.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-garyvee-audio-experience-gary-vaynerchuk-MEzT5ukd8Qo-X0Dfm7O_o3y.300x300.jpg",
       "is_claimed": false,
       "description": "Welcome to The GaryVee Audio Experience, hosted by entrepreneur, CEO, investor, content creator, and public speaker Gary Vaynerchuk. On this podcast you'll find a mix of the #AskGaryVee show episodes, keynote speeches on marketing and business, segments from my DAILYVEE video series, interviews and fireside chats I've given, as well as new and current thoughts I record originally for this audio experience!\n\n",
       "looking_for": {
@@ -4483,12 +4488,12 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 80,
-      "total_episodes": 2581,
+      "total_episodes": 2725,
       "listennotes_url": "https://www.listennotes.com/c/fe6864628066420c8103c94e91e72eb3/",
-      "audio_length_sec": 1843,
+      "audio_length_sec": 1864,
       "explicit_content": true,
-      "latest_episode_id": "6fe820a7280f47258b30e6cba01ffc10",
-      "latest_pub_date_ms": 1681744068000,
+      "latest_episode_id": "2edd81a31c2c4301832bff5fb7b44c97",
+      "latest_pub_date_ms": 1694070000000,
       "earliest_pub_date_ms": 1412179202542,
       "update_frequency_hours": 22,
       "listen_score_global_rank": "0.01%"
@@ -4516,7 +4521,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "image": "https://production.listennotes.com/podcasts/the-school-of-greatness-lewis-howes-Ggb9PDwVr63-H1zdqljixbp.1400x1400.jpg",
       "title": "The School of Greatness",
       "country": "United States",
-      "website": "http://lewishowes.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.stitcher.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         77,
@@ -4545,14 +4550,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 78,
-      "total_episodes": 1425,
+      "total_episodes": 1502,
       "listennotes_url": "https://www.listennotes.com/c/9f6ee51adfb046cc9936490abd2666ce/",
-      "audio_length_sec": 3111,
+      "audio_length_sec": 3154,
       "explicit_content": false,
-      "latest_episode_id": "b0bc289e97c24f77bc62715b73364e2b",
-      "latest_pub_date_ms": 1681714800000,
-      "earliest_pub_date_ms": 1358928001418,
-      "update_frequency_hours": 47,
+      "latest_episode_id": "4fe64ce81bcd411d8d4cd0f5c6d47521",
+      "latest_pub_date_ms": 1693983600000,
+      "earliest_pub_date_ms": 1358928001491,
+      "update_frequency_hours": 50,
       "listen_score_global_rank": "0.01%"
     },
     {
@@ -4605,13 +4610,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 69,
-      "total_episodes": 3322,
+      "total_episodes": 3465,
       "listennotes_url": "https://www.listennotes.com/c/a409b8bb93f44054a7be2d6b30843899/",
-      "audio_length_sec": 1815,
+      "audio_length_sec": 1804,
       "explicit_content": false,
-      "latest_episode_id": "48338dd4d0fa4c8e9f6587dd48dd9d2a",
-      "latest_pub_date_ms": 1681720200000,
-      "earliest_pub_date_ms": 1348297203313,
+      "latest_episode_id": "0d5bd83679304284a7f3205104d9cbc2",
+      "latest_pub_date_ms": 1694075400000,
+      "earliest_pub_date_ms": 1348297203456,
       "update_frequency_hours": 24,
       "listen_score_global_rank": "0.05%"
     },
@@ -4666,13 +4671,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 70,
-      "total_episodes": 685,
+      "total_episodes": 726,
       "listennotes_url": "https://www.listennotes.com/c/499661f3589f42aaa1532673e0e0aedf/",
-      "audio_length_sec": 2519,
+      "audio_length_sec": 2476,
       "explicit_content": false,
-      "latest_episode_id": "677e8c0b94154ae083be8c88f612e03c",
-      "latest_pub_date_ms": 1681455600000,
-      "earliest_pub_date_ms": 1279551600655,
+      "latest_episode_id": "475bc0fecead42889324c4d58884d64c",
+      "latest_pub_date_ms": 1693983600000,
+      "earliest_pub_date_ms": 1279551600722,
       "update_frequency_hours": 83,
       "listen_score_global_rank": "0.05%"
     }
@@ -4972,56 +4977,82 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "recommendations": [
     {
-      "id": "8c9fcee265fc4f54bbca6afafcb8c28c",
-      "link": "https://anchor.fm/thefirstmint/episodes/Roham-e15g29r?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/8c9fcee265fc4f54bbca6afafcb8c28c/",
-      "image": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-Gr3QBqaS-co-NuBwOlnV0bt.1400x1400.jpg",
-      "title": "Roham",
+      "id": "3a2016291aaa415abb9563bf8192ade7",
+      "link": "https://foundersproject.inc.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/3a2016291aaa415abb9563bf8192ade7/",
+      "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-kmUz9vWdufn-M25bgqtK8-I.1400x1400.jpg",
+      "title": "How to Build Community Through Ownership with Roham Gharegozlou of Dapper Labs",
       "podcast": {
-        "id": "fbdf83bb46ac4e0b9e807991719e210f",
-        "image": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-Gr3QBqaS-co-NuBwOlnV0bt.1400x1400.jpg",
-        "title": "The First Mint Podcast",
-        "publisher": "The First Mint",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-SyV02rj4mN5-NuBwOlnV0bt.300x300.jpg",
-        "listen_score": 47,
-        "listennotes_url": "https://www.listennotes.com/c/fbdf83bb46ac4e0b9e807991719e210f/",
-        "listen_score_global_rank": "1%"
+        "id": "0694a18b25354ce593c3aeba7fb94d67",
+        "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-kmUz9vWdufn-M25bgqtK8-I.1400x1400.jpg",
+        "title": "Inc. Founders Project with Alexa von Tobel ",
+        "publisher": "Inc. Magazine",
+        "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-2jsPht5pNkI-M25bgqtK8-I.300x300.jpg",
+        "listen_score": 38,
+        "listennotes_url": "https://www.listennotes.com/c/0694a18b25354ce593c3aeba7fb94d67/",
+        "listen_score_global_rank": "2%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-SyV02rj4mN5-NuBwOlnV0bt.300x300.jpg",
-      "description": "<p>Episode 83 of The First Mint.</p>\n<p>Roham.</p>\n<p>To kick off First Mint Fest, LG Doucet sat down with Roham Gharegozlou, the Founder &amp; CEO of Dapper Labs, the company behind NBA Top Shot and the Flow Blockchain.&nbsp;</p>",
-      "pub_date_ms": 1628143512119,
-      "guid_from_rss": "f148e49b-dfbf-4a94-8e3a-19bcb4ff1c17",
-      "listennotes_url": "https://www.listennotes.com/e/8c9fcee265fc4f54bbca6afafcb8c28c/",
-      "audio_length_sec": 3738,
+      "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-2jsPht5pNkI-M25bgqtK8-I.300x300.jpg",
+      "description": "<p>If you've heard of NFTs (non-fungible tokens), it's likely thanks to the work of Roham Gharegozlou. Roham is the Co-Founder and CEO of Dapper Labs, the NFT company that has created some of the most viral brands out there, from CryptoKitties to NBA Top Shot. Through his venture studio Axiom Zen, he started looking into crypto back in 2014. With a mission to bring play to crypto, Dapper Labs has been named one of the most innovative gaming companies by Fast Company and has created some of the most broadly used applications in the history of crypto. Roham shares how NBA Top Shot scaled to over one million users, why he thinks of NFTs as the next evolution of social media, and why entrepreneurship requires a healthy balance of optimism and paranoia.\u00a0</p>",
+      "pub_date_ms": 1646215200067,
+      "guid_from_rss": "09eb05a6-996e-11ec-9f17-ef743a58b593",
+      "listennotes_url": "https://www.listennotes.com/e/3a2016291aaa415abb9563bf8192ade7/",
+      "audio_length_sec": 1792,
       "explicit_content": false,
       "maybe_audio_invalid": false,
-      "listennotes_edit_url": "https://www.listennotes.com/e/8c9fcee265fc4f54bbca6afafcb8c28c/#edit"
+      "listennotes_edit_url": "https://www.listennotes.com/e/3a2016291aaa415abb9563bf8192ade7/#edit"
     },
     {
-      "id": "9aaeb046a07042d09ca5214a94f999b4",
-      "link": "https://www.coindesk.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/9aaeb046a07042d09ca5214a94f999b4/",
-      "image": "https://production.listennotes.com/podcasts/coindesk-reports/money-reimagined-inside-what-iJhcYnat3KX-CHxWD0gME75.1400x1400.jpg",
-      "title": "MONEY REIMAGINED: Inside What Could Be NFTs 'Mainstream Moment' with Dapper Labs CEO Roham Gharegozlou",
+      "id": "221ff88340b941148ad90749f0c745e7",
+      "link": "https://foundersproject.inc.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/221ff88340b941148ad90749f0c745e7/",
+      "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-kmUz9vWdufn-M25bgqtK8-I.1400x1400.jpg",
+      "title": "Flashback Episode: How to Build Community Through Ownership with Roham Gharegozlou of Dapper Labs",
       "podcast": {
-        "id": "188eb6965eb048469400414acb5749ae",
-        "image": "https://production.listennotes.com/podcasts/coindesk-reports-coindeskcom-2ZC6ING-TrD-TElxWfYmVpQ.1400x1400.jpg",
-        "title": "CoinDesk Reports",
-        "publisher": "CoinDesk",
-        "thumbnail": "https://production.listennotes.com/podcasts/coindesk-reports-coindeskcom-vcYaEq5G_Ox-TElxWfYmVpQ.300x300.jpg",
-        "listen_score": 28,
-        "listennotes_url": "https://www.listennotes.com/c/188eb6965eb048469400414acb5749ae/",
-        "listen_score_global_rank": "10%"
+        "id": "0694a18b25354ce593c3aeba7fb94d67",
+        "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-kmUz9vWdufn-M25bgqtK8-I.1400x1400.jpg",
+        "title": "Inc. Founders Project with Alexa von Tobel ",
+        "publisher": "Inc. Magazine",
+        "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-2jsPht5pNkI-M25bgqtK8-I.300x300.jpg",
+        "listen_score": 38,
+        "listennotes_url": "https://www.listennotes.com/c/0694a18b25354ce593c3aeba7fb94d67/",
+        "listen_score_global_rank": "2%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/coindesk-reports/money-reimagined-inside-what-ezmdK02jRlc-CHxWD0gME75.300x300.jpg",
-      "description": "<p>At the end of a high-energy week in the burgeoning digital art world, \u201cMoney Reimagined\u201d brings you the third and (for now) final edition of our NFT series.&nbsp;</p><p>In between recording this episode and publishing it two days later, a non-fungible token attached to a piece of digital art sold for a whopping $69.3 million. The sale, orchestrated by Christie\u2019s, turned the digital creator known as Beeple into the third-highest paid living artist. It also represented a high point in the media attention now swirling around this new, crypto-based technology.&nbsp;</p><p>So, it\u2019s appropriate we end on a note that grounds things in the reality of the technology and its potential to transform the creator economy generally, rather than being caught up in the celebrity story and media sensations. To do so, we talk with Roham Gharegozlou, the CEO and founder of Dapper Labs, the startup that in many respects is responsible for kicking off the entire NFT phenomenon.&nbsp;</p><p>We talk about the early days when Dapper created the ERC-721 standard on Ethereum and launched the popular CryptoKitties program. We talk about why the team made the decision to build its own blockchain, known as Flow, and to migrate the business there away from Ethereum. And we talk about where this rapidly evolving industry, with its competing platforms and wild debates over rights and opportunities, is going.</p><p>Join us for the conversation.&nbsp;</p><p><br /></p><p><em>Image credit:&nbsp;</em>&nbsp;<a href=\"https://unsplash.com/@benjaminjsuter?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\" rel=\"noopener noreferrer\" target=\"_blank\">Benjamin Suter</a>&nbsp;on&nbsp;<a href=\"https://unsplash.com/s/photos/basketball?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\" rel=\"noopener noreferrer\" target=\"_blank\">Unsplash</a>,&nbsp;<em>modified by CoinDesk</em></p><p><br /></p><p><br /></p><p>See Privacy Policy at <a href=\"https://art19.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy</a> and California Privacy Notice at <a href=\"https://art19.com/privacy#do-not-sell-my-info\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy#do-not-sell-my-info</a>.</p>",
-      "pub_date_ms": 1615573111245,
-      "guid_from_rss": "gid://art19-episode-locator/V0/TIr9Oc1xT-lNsuHS68HF9xWQ3oPV6E8w41xzcI0Ebdg",
-      "listennotes_url": "https://www.listennotes.com/e/9aaeb046a07042d09ca5214a94f999b4/",
-      "audio_length_sec": 2692,
+      "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-2jsPht5pNkI-M25bgqtK8-I.300x300.jpg",
+      "description": "<p>If you've heard of NFTs (non-fungible tokens), it's likely thanks to the work of Roham Gharegozlou. Roham is the Co-Founder and CEO of Dapper Labs, the NFT company that has created some of the most viral brands out there, from CryptoKitties to NBA Top Shot. Through his venture studio Axiom Zen, he started looking into crypto back in 2014. With a mission to bring play to crypto, Dapper Labs has been named one of the most innovative gaming companies by Fast Company and has created some of the most broadly used applications in the history of crypto. Roham shares how NBA Top Shot scaled to over one million users, why he thinks of NFTs as the next evolution of social media, and why entrepreneurship requires a healthy balance of optimism and paranoia.\u00a0</p>",
+      "pub_date_ms": 1655888400051,
+      "guid_from_rss": "ff7cc4d0-f172-11ec-b560-e703d370d4d3",
+      "listennotes_url": "https://www.listennotes.com/e/221ff88340b941148ad90749f0c745e7/",
+      "audio_length_sec": 1792,
       "explicit_content": false,
       "maybe_audio_invalid": false,
-      "listennotes_edit_url": "https://www.listennotes.com/e/9aaeb046a07042d09ca5214a94f999b4/#edit"
+      "listennotes_edit_url": "https://www.listennotes.com/e/221ff88340b941148ad90749f0c745e7/#edit"
+    },
+    {
+      "id": "774e65cead6e4b548f09a1a7bf7c55af",
+      "link": "https://www.coindesk.com/podcasts/markets-daily?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/774e65cead6e4b548f09a1a7bf7c55af/",
+      "image": "https://production.listennotes.com/podcasts/markets-daily-crypto-roundup-coindesk-xEObzQi6qJr-VTiDtLAInyo.1400x1400.jpg",
+      "title": "Most Influential 2021: Roham Gharegozlou (Pt. 2)",
+      "podcast": {
+        "id": "6c7ed315628b441c8a1bf0e331da2ba9",
+        "image": "https://production.listennotes.com/podcasts/markets-daily-crypto-roundup-coindesk-xEObzQi6qJr-VTiDtLAInyo.1400x1400.jpg",
+        "title": "Markets Daily Crypto Roundup",
+        "publisher": "CoinDesk",
+        "thumbnail": "https://production.listennotes.com/podcasts/markets-daily-crypto-roundup-coindesk-q7QR_ynu6Hv-VTiDtLAInyo.300x300.jpg",
+        "listen_score": 43,
+        "listennotes_url": "https://www.listennotes.com/c/6c7ed315628b441c8a1bf0e331da2ba9/",
+        "listen_score_global_rank": "1%"
+      },
+      "thumbnail": "https://production.listennotes.com/podcasts/markets-daily-crypto-roundup-coindesk-q7QR_ynu6Hv-VTiDtLAInyo.300x300.jpg",
+      "description": "<p>On today's show CoinDesk Columnist and author of 7 books, Jeff Wilser, picks Roham Gharegozlou as one of CoinDesk's Most Influential in 2021. The man behind CryptoKitties and NBA Top Shot has big plans for digital sports and the open metaverse.&nbsp;(Part 2)</p><p><a href=\"https://www.coindesk.com/business/2021/12/07/most-influential-2021-roham-gharegozlou/\" rel=\"noopener noreferrer\" target=\"_blank\">Read the story here.</a></p><p><br /></p><p><em>This episode is sponsored by&nbsp;</em><a href=\"https://www.kava.io/marketsdaily?utm_campaign=Ad%20Affiliates&amp;utm_source=markets_daily&amp;utm_medium=banner_ad&amp;utm_term=home\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Kava</em></a>,&nbsp;<a href=\"https://nexo.io/?%20utm_source=coindesk&amp;utm_medium=fixed&amp;utm_campaign=coindesk_sponsoredline_%20nov21\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Nexo.io</em></a><em>&nbsp;and&nbsp;</em><a href=\"https://markets.chainalysis.com/?utm_source=coindesk&amp;utm_medium=podcast\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Market Intel by Chainalysis</em></a><em>.</em></p><p><br /></p><p><em>This episode was edited &amp; produced by&nbsp;</em><a href=\"https://www.coindesk.com/author/adrian-blust\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Adrian Blust</em></a><em>.&nbsp;&nbsp;</em></p><p><em>-</em></p><p><a href=\"https://www.kava.io/marketsdaily?utm_campaign=Ad%20Affiliates&amp;utm_source=markets_daily&amp;utm_medium=banner_ad&amp;utm_term=home\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>Kava</em></strong></a><em>&nbsp;lets you mint stablecoins, lend, borrow, earn and swap safely across the world\u2019s biggest crypto assets. Connect to the world's largest cryptocurrencies, ecosystems and financial applications on DeFi\u2019s most trusted, scalable and secure earning platform with&nbsp;</em><a href=\"https://www.kava.io/marketsdaily?utm_campaign=Ad%20Affiliates&amp;utm_source=markets_daily&amp;utm_medium=banner_ad&amp;utm_term=home\" rel=\"noopener noreferrer\" target=\"_blank\"><em>kava.io</em></a><em>.</em></p><p><em>-</em></p><p><a href=\"https://nexo.io/?%20utm_source=coindesk&amp;utm_medium=fixed&amp;utm_campaign=coindesk_sponsoredline_%20nov21\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>Nexo</em></strong></a><em>&nbsp;is a powerful, all-in-one crypto platform where you can securely store your assets.&nbsp;Invest, borrow, exchange and earn up to 12% APR on Bitcoin and 20+ other top coins.&nbsp;Insured for $375M and audited in real-time by Armanino, Nexo is rated excellent on Trustpilot. Get started today at&nbsp;</em><a href=\"https://nexo.io/?%20utm_source=coindesk&amp;utm_medium=fixed&amp;utm_campaign=coindesk_sponsoredline_%20nov21\" rel=\"noopener noreferrer\" target=\"_blank\"><em>nexo.io</em></a><em>.</em></p><p><em>-</em></p><p><a href=\"https://markets.chainalysis.com/?utm_source=coindesk&amp;utm_medium=podcast\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>Market Intel by Chainalysis</em></strong></a><em>\u2014the Blockchain Data Platform\u2014arms your team with the most complete on-chain dataset to make informed crypto investments, deliver original research, and identify and confidently fund emerging players in the market. See Chainalysis&nbsp;</em><a href=\"https://markets.chainalysis.com/?utm_source=coindesk&amp;utm_medium=podcast\" rel=\"noopener noreferrer\" target=\"_blank\"><em>Market Intel in action now</em></a><em>.</em></p><p>See Privacy Policy at <a href=\"https://art19.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy</a> and California Privacy Notice at <a href=\"https://art19.com/privacy#do-not-sell-my-info\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy#do-not-sell-my-info</a>.</p>",
+      "pub_date_ms": 1640516400557,
+      "guid_from_rss": "gid://art19-episode-locator/V0/r2o71PPmrHUyC-poZTVb_1aRNHd2tBCgIe_UrksQ3Gk",
+      "listennotes_url": "https://www.listennotes.com/e/774e65cead6e4b548f09a1a7bf7c55af/",
+      "audio_length_sec": 733,
+      "explicit_content": false,
+      "maybe_audio_invalid": false,
+      "listennotes_edit_url": "https://www.listennotes.com/e/774e65cead6e4b548f09a1a7bf7c55af/#edit"
     },
     {
       "id": "2afa18fe81b64fae9a178ea4e6ea1b78",
@@ -5050,56 +5081,30 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listennotes_edit_url": "https://www.listennotes.com/e/2afa18fe81b64fae9a178ea4e6ea1b78/#edit"
     },
     {
-      "id": "221ff88340b941148ad90749f0c745e7",
-      "link": "https://foundersproject.inc.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/221ff88340b941148ad90749f0c745e7/",
-      "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-PQEWgmYsAyD-M25bgqtK8-I.1400x1400.jpg",
-      "title": "Flashback Episode: How to Build Community Through Ownership with Roham Gharegozlou of Dapper Labs",
+      "id": "8c9fcee265fc4f54bbca6afafcb8c28c",
+      "link": "https://podcasters.spotify.com/pod/show/thefirstmint/episodes/Roham-e15g29r?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/8c9fcee265fc4f54bbca6afafcb8c28c/",
+      "image": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-Gr3QBqaS-co-NuBwOlnV0bt.1400x1400.jpg",
+      "title": "Roham",
       "podcast": {
-        "id": "0694a18b25354ce593c3aeba7fb94d67",
-        "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-PQEWgmYsAyD-M25bgqtK8-I.1400x1400.jpg",
-        "title": "Inc. Founders Project with Alexa von Tobel ",
-        "publisher": "Inc. Magazine",
-        "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-LOXAc3mvR86-M25bgqtK8-I.300x300.jpg",
-        "listen_score": 38,
-        "listennotes_url": "https://www.listennotes.com/c/0694a18b25354ce593c3aeba7fb94d67/",
-        "listen_score_global_rank": "2%"
+        "id": "fbdf83bb46ac4e0b9e807991719e210f",
+        "image": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-Gr3QBqaS-co-NuBwOlnV0bt.1400x1400.jpg",
+        "title": "The First Mint Podcast",
+        "publisher": "The First Mint",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-SyV02rj4mN5-NuBwOlnV0bt.300x300.jpg",
+        "listen_score": 47,
+        "listennotes_url": "https://www.listennotes.com/c/fbdf83bb46ac4e0b9e807991719e210f/",
+        "listen_score_global_rank": "1%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-LOXAc3mvR86-M25bgqtK8-I.300x300.jpg",
-      "description": "<p>If you've heard of NFTs (non-fungible tokens), it's likely thanks to the work of Roham Gharegozlou. Roham is the Co-Founder and CEO of Dapper Labs, the NFT company that has created some of the most viral brands out there, from CryptoKitties to NBA Top Shot. Through his venture studio Axiom Zen, he started looking into crypto back in 2014. With a mission to bring play to crypto, Dapper Labs has been named one of the most innovative gaming companies by Fast Company and has created some of the most broadly used applications in the history of crypto. Roham shares how NBA Top Shot scaled to over one million users, why he thinks of NFTs as the next evolution of social media, and why entrepreneurship requires a healthy balance of optimism and paranoia.\u00a0</p>",
-      "pub_date_ms": 1655888400032,
-      "guid_from_rss": "ff7cc4d0-f172-11ec-b560-e703d370d4d3",
-      "listennotes_url": "https://www.listennotes.com/e/221ff88340b941148ad90749f0c745e7/",
-      "audio_length_sec": 1792,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-first-mint-podcast-the-first-mint-SyV02rj4mN5-NuBwOlnV0bt.300x300.jpg",
+      "description": "<p>Episode 83 of The First Mint.</p>\n<p>Roham.</p>\n<p>To kick off First Mint Fest, LG Doucet sat down with Roham Gharegozlou, the Founder &amp; CEO of Dapper Labs, the company behind NBA Top Shot and the Flow Blockchain.&nbsp;</p>",
+      "pub_date_ms": 1628143512162,
+      "guid_from_rss": "f148e49b-dfbf-4a94-8e3a-19bcb4ff1c17",
+      "listennotes_url": "https://www.listennotes.com/e/8c9fcee265fc4f54bbca6afafcb8c28c/",
+      "audio_length_sec": 3738,
       "explicit_content": false,
       "maybe_audio_invalid": false,
-      "listennotes_edit_url": "https://www.listennotes.com/e/221ff88340b941148ad90749f0c745e7/#edit"
-    },
-    {
-      "id": "3a2016291aaa415abb9563bf8192ade7",
-      "link": "https://foundersproject.inc.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "audio": "https://www.listennotes.com/e/p/3a2016291aaa415abb9563bf8192ade7/",
-      "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-PQEWgmYsAyD-M25bgqtK8-I.1400x1400.jpg",
-      "title": "How to Build Community Through Ownership with Roham Gharegozlou of Dapper Labs",
-      "podcast": {
-        "id": "0694a18b25354ce593c3aeba7fb94d67",
-        "image": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-PQEWgmYsAyD-M25bgqtK8-I.1400x1400.jpg",
-        "title": "Inc. Founders Project with Alexa von Tobel ",
-        "publisher": "Inc. Magazine",
-        "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-LOXAc3mvR86-M25bgqtK8-I.300x300.jpg",
-        "listen_score": 38,
-        "listennotes_url": "https://www.listennotes.com/c/0694a18b25354ce593c3aeba7fb94d67/",
-        "listen_score_global_rank": "2%"
-      },
-      "thumbnail": "https://production.listennotes.com/podcasts/inc-founders-project-with-alexa-von-tobel-LOXAc3mvR86-M25bgqtK8-I.300x300.jpg",
-      "description": "<p>If you've heard of NFTs (non-fungible tokens), it's likely thanks to the work of Roham Gharegozlou. Roham is the Co-Founder and CEO of Dapper Labs, the NFT company that has created some of the most viral brands out there, from CryptoKitties to NBA Top Shot. Through his venture studio Axiom Zen, he started looking into crypto back in 2014. With a mission to bring play to crypto, Dapper Labs has been named one of the most innovative gaming companies by Fast Company and has created some of the most broadly used applications in the history of crypto. Roham shares how NBA Top Shot scaled to over one million users, why he thinks of NFTs as the next evolution of social media, and why entrepreneurship requires a healthy balance of optimism and paranoia.\u00a0</p>",
-      "pub_date_ms": 1646215200048,
-      "guid_from_rss": "09eb05a6-996e-11ec-9f17-ef743a58b593",
-      "listennotes_url": "https://www.listennotes.com/e/3a2016291aaa415abb9563bf8192ade7/",
-      "audio_length_sec": 1792,
-      "explicit_content": false,
-      "maybe_audio_invalid": false,
-      "listennotes_edit_url": "https://www.listennotes.com/e/3a2016291aaa415abb9563bf8192ade7/#edit"
+      "listennotes_edit_url": "https://www.listennotes.com/e/8c9fcee265fc4f54bbca6afafcb8c28c/#edit"
     },
     {
       "id": "3663e1ba8f944df7956378ab332bf12b",
@@ -5394,9 +5399,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "title": "Listen Money Matters - Free your inner financial badass. All the stuff you should know about personal finance.",
         "publisher": "ListenMoneyMatters.com | Andrew Fiebert and Matt Giovanisci",
         "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
-        "listen_score": 64,
+        "listen_score": 63,
         "listennotes_url": "https://www.listennotes.com/c/3302bc71139541baa46ecb27dbf6071a/",
-        "listen_score_global_rank": "0.05%"
+        "listen_score_global_rank": "0.1%"
       },
       "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
       "description": "<p>There are only so many hours in a day so you need to build a business that can grow while you\u2019re sleeping, on vacation, or working on your next business. You have to do things that scale when starting a business that will take off. While we are discussing scaling a business, there are plenty of other areas of life that you can scale including investing and video games. To scale a business means to create a system, product, or service that can generate more money through some resource that isn\u2019t your time. Scale is a concept that is meant to support infinite growth. When starting a business, you want to find ways to apply your time and money that are scalable and to shift your focus from things with a hard maximum return to things that have the potential to be infinitely scalable.</p><p>\u00a0</p><p><a href=\"https://www.listenmoneymatters.com/starting-a-business-that-scales/%20%E2%80%8E\">Full Article Here</a></p><p><strong></p><p>Show Notes</p><p></strong></p><p><a href=\"http://portbrewing.com/beer/board-meeting/\"><strong>Board Meeting:</strong></a> A coffee flavored brown ale.</p><p><a href=\"https://www.listenmoneymatters.com/toolbox/\"><strong>Tool Box:</strong></a> All the best stuff to manage your money.</p><p><a href=\"http://paulgraham.com/ds.html\"><strong>Do Things That Don't Scale:</strong></a> The essay Andrew mentioned by Paul Graham.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\">megaphone.fm/adchoices</a></p>",
@@ -5590,60 +5595,59 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "podcasts": [
     {
-      "id": "3302bc71139541baa46ecb27dbf6071a",
-      "rss": "https://feeds.megaphone.fm/listen-money-matters",
+      "id": "37589a3e121e40debe4cef3d9638932a",
+      "rss": "https://exponent.fm/feed/",
       "type": "episodic",
-      "email": "listenmoneymatters@gmail.com",
+      "email": "bjthompson@mac.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vbGlzdGVuLW1vbmV5LW1hdHRlcnM=",
-        "spotify_url": "https://open.spotify.com/show/54VydTdMDHkfqPqzlwRJFa",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9leHBvbmVudC5mbS9mZWVkLw==",
+        "spotify_url": "https://open.spotify.com/show/1do6Oa0fxKFyw1Yt1IlBIk",
         "youtube_url": "",
         "linkedin_url": "",
         "wechat_handle": "",
         "patreon_handle": "",
-        "twitter_handle": "MoneyMattersMan",
-        "facebook_handle": "ListenMoneyMatters",
+        "twitter_handle": "exponentfm",
+        "facebook_handle": "",
         "amazon_music_url": "",
-        "instagram_handle": "listenmoneymatters"
+        "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-lPXW7V_6n0C-SJEHNr84kVg.1400x1400.jpg",
-      "title": "Listen Money Matters - Free your inner financial badass. All the stuff you should know about personal finance.",
+      "image": "https://production.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-xZm7IMnq5bR-OaJSjb4xQv3.1400x1400.jpg",
+      "title": "Exponent",
       "country": "United States",
-      "website": "https://www.listenmoneymatters.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://exponent.fm?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
-        67,
+        149,
+        157,
         93,
-        127,
-        128,
-        144,
-        111,
-        98
+        129,
+        67,
+        127
       ],
-      "itunes_id": 736826307,
-      "publisher": "ListenMoneyMatters.com | Andrew Fiebert and Matt Giovanisci",
-      "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
+      "itunes_id": 826420969,
+      "publisher": "Ben Thompson / James Allworth",
+      "thumbnail": "https://production.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-8sx24A_0Jlk-OaJSjb4xQv3.300x300.jpg",
       "is_claimed": false,
-      "description": "Honest and uncensored - this is not your father\u2019s boring finance show. This show brings much needed ACTIONABLE advice to a people who hate being lectured about personal finance from the out-of-touch one percent. Andrew and Matt are relatable, funny, and brash. Their down-to-earth discussions about money are entertaining whether you\u2019re a financial whiz or just starting out. To be a part of the show and get your financial questions answered, send an email to listenmoneymatters@gmail.com.",
+      "description": "A podcast about tech and society, hosted by Ben Thompson and James Allworth",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 64,
-      "total_episodes": 505,
-      "listennotes_url": "https://www.listennotes.com/c/3302bc71139541baa46ecb27dbf6071a/",
-      "audio_length_sec": 2787,
-      "explicit_content": true,
-      "latest_episode_id": "d044a9f0fb304c148f4f4e9e3ad27dd6",
-      "latest_pub_date_ms": 1589169600000,
-      "earliest_pub_date_ms": 1383138000504,
-      "update_frequency_hours": 201,
-      "listen_score_global_rank": "0.05%"
+      "listen_score": 59,
+      "total_episodes": 198,
+      "listennotes_url": "https://www.listennotes.com/c/37589a3e121e40debe4cef3d9638932a/",
+      "audio_length_sec": 3740,
+      "explicit_content": false,
+      "latest_episode_id": "dc09fd798802477b8dba0ca1e10134fa",
+      "latest_pub_date_ms": 1670628575000,
+      "earliest_pub_date_ms": 1392899826198,
+      "update_frequency_hours": 1250,
+      "listen_score_global_rank": "0.1%"
     },
     {
       "id": "68faf62be97149c280ebcc25178aa731",
@@ -5700,61 +5704,6 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score_global_rank": "0.5%"
     },
     {
-      "id": "37589a3e121e40debe4cef3d9638932a",
-      "rss": "https://exponent.fm/feed/",
-      "type": "episodic",
-      "email": "bjthompson@mac.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9leHBvbmVudC5mbS9mZWVkLw==",
-        "spotify_url": "https://open.spotify.com/show/1do6Oa0fxKFyw1Yt1IlBIk",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "exponentfm",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-xZm7IMnq5bR-OaJSjb4xQv3.1400x1400.jpg",
-      "title": "Exponent",
-      "country": "United States",
-      "website": "https://exponent.fm?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        149,
-        157,
-        93,
-        129,
-        67,
-        127
-      ],
-      "itunes_id": 826420969,
-      "publisher": "Ben Thompson / James Allworth",
-      "thumbnail": "https://production.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-8sx24A_0Jlk-OaJSjb4xQv3.300x300.jpg",
-      "is_claimed": false,
-      "description": "A podcast about tech and society, hosted by Ben Thompson and James Allworth",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 59,
-      "total_episodes": 198,
-      "listennotes_url": "https://www.listennotes.com/c/37589a3e121e40debe4cef3d9638932a/",
-      "audio_length_sec": 3740,
-      "explicit_content": false,
-      "latest_episode_id": "dc09fd798802477b8dba0ca1e10134fa",
-      "latest_pub_date_ms": 1670628575000,
-      "earliest_pub_date_ms": 1392899826198,
-      "update_frequency_hours": 1250,
-      "listen_score_global_rank": "0.1%"
-    },
-    {
       "id": "9cf19c590ff0484d97b18b329fed0c6a",
       "rss": "https://feeds.megaphone.fm/binge-mode",
       "type": "serial",
@@ -5808,6 +5757,62 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score_global_rank": "0.01%"
     },
     {
+      "id": "3302bc71139541baa46ecb27dbf6071a",
+      "rss": "https://feeds.megaphone.fm/listen-money-matters",
+      "type": "episodic",
+      "email": "listenmoneymatters@gmail.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vbGlzdGVuLW1vbmV5LW1hdHRlcnM=",
+        "spotify_url": "https://open.spotify.com/show/54VydTdMDHkfqPqzlwRJFa",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "MoneyMattersMan",
+        "facebook_handle": "ListenMoneyMatters",
+        "amazon_music_url": "",
+        "instagram_handle": "listenmoneymatters"
+      },
+      "image": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-lPXW7V_6n0C-SJEHNr84kVg.1400x1400.jpg",
+      "title": "Listen Money Matters - Free your inner financial badass. All the stuff you should know about personal finance.",
+      "country": "United States",
+      "website": "https://www.listenmoneymatters.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        67,
+        93,
+        127,
+        128,
+        144,
+        111,
+        98
+      ],
+      "itunes_id": 736826307,
+      "publisher": "ListenMoneyMatters.com | Andrew Fiebert and Matt Giovanisci",
+      "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
+      "is_claimed": false,
+      "description": "Honest and uncensored - this is not your father\u2019s boring finance show. This show brings much needed ACTIONABLE advice to a people who hate being lectured about personal finance from the out-of-touch one percent. Andrew and Matt are relatable, funny, and brash. Their down-to-earth discussions about money are entertaining whether you\u2019re a financial whiz or just starting out. To be a part of the show and get your financial questions answered, send an email to listenmoneymatters@gmail.com.",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 63,
+      "total_episodes": 505,
+      "listennotes_url": "https://www.listennotes.com/c/3302bc71139541baa46ecb27dbf6071a/",
+      "audio_length_sec": 2787,
+      "explicit_content": true,
+      "latest_episode_id": "d044a9f0fb304c148f4f4e9e3ad27dd6",
+      "latest_pub_date_ms": 1589169600000,
+      "earliest_pub_date_ms": 1383138000504,
+      "update_frequency_hours": 201,
+      "listen_score_global_rank": "0.1%"
+    },
+    {
       "id": "613aa80ec729409ea0db4265cf3e3899",
       "rss": "https://www.npr.org/rss/podcast.php?id=510331",
       "type": "serial",
@@ -5859,60 +5864,6 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score_global_rank": null
     },
     {
-      "id": "c5ce6c02cbf1486496206829f7d42e8e",
-      "rss": "https://feeds.megaphone.fm/marketsnacks-daily",
-      "type": "episodic",
-      "email": "podcasts@cadence13.com",
-      "extra": {
-        "url1": "http://www.marketsnacks.com/",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vbWFya2V0c25hY2tzLWRhaWx5",
-        "spotify_url": "https://open.spotify.com/show/5RllMBgvDnTau8nnsCUdse",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "marketsnacks",
-        "facebook_handle": "MarketSnacks",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
-      "title": "The Best One Yet",
-      "country": "United States",
-      "website": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        98,
-        67,
-        93,
-        95,
-        99
-      ],
-      "itunes_id": 1386234384,
-      "publisher": "Nick & Jack Studios",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "is_claimed": false,
-      "description": "Feel brighter every day with our 20-minute pop-biz podcast. The 3 business news stories you need, with fresh takes you can pretend you came up with \u2014 Pairs perfectly with your morning oatmeal ritual. Hosted by Jack Crivici-Kramer & Nick Martell.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 71,
-      "total_episodes": 950,
-      "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
-      "audio_length_sec": 1090,
-      "explicit_content": false,
-      "latest_episode_id": "e67a558bc7564f72aede4f01d3e0004f",
-      "latest_pub_date_ms": 1681722000000,
-      "earliest_pub_date_ms": 1553519100903,
-      "update_frequency_hours": 33,
-      "listen_score_global_rank": "0.05%"
-    },
-    {
       "id": "3a2a6ddd549f4df0b876e7315fa1a319",
       "rss": "https://philosophizethis.libsyn.com/rss",
       "type": "episodic",
@@ -5957,15 +5908,69 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 77,
-      "total_episodes": 178,
+      "total_episodes": 188,
       "listennotes_url": "https://www.listennotes.com/c/3a2a6ddd549f4df0b876e7315fa1a319/",
-      "audio_length_sec": 1751,
+      "audio_length_sec": 1767,
       "explicit_content": false,
-      "latest_episode_id": "02aebc6128db44a39749c008f7bfaef6",
-      "latest_pub_date_ms": 1680703380000,
-      "earliest_pub_date_ms": 1370556600177,
-      "update_frequency_hours": 620,
+      "latest_episode_id": "3977d26976ef40a886c704439a710337",
+      "latest_pub_date_ms": 1694052420000,
+      "earliest_pub_date_ms": 1370556600187,
+      "update_frequency_hours": 365,
       "listen_score_global_rank": "0.01%"
+    },
+    {
+      "id": "c5ce6c02cbf1486496206829f7d42e8e",
+      "rss": "https://feeds.megaphone.fm/marketsnacks-daily",
+      "type": "episodic",
+      "email": "iwonder@wondery.com",
+      "extra": {
+        "url1": "http://www.marketsnacks.com/",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5tZWdhcGhvbmUuZm0vbWFya2V0c25hY2tzLWRhaWx5",
+        "spotify_url": "https://open.spotify.com/show/5RllMBgvDnTau8nnsCUdse",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "marketsnacks",
+        "facebook_handle": "MarketSnacks",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
+      "title": "The Best One Yet",
+      "country": "United States",
+      "website": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        98,
+        67,
+        93,
+        95,
+        99
+      ],
+      "itunes_id": 1386234384,
+      "publisher": "Nick & Jack Studios",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "is_claimed": false,
+      "description": "\n      Feel brighter every day with our 20-minute pop-biz podcast. The 3 business news stories you need, with fresh takes you can pretend you came up with \u2014 Pairs perfectly with your morning oatmeal ritual. Hosted by Jack Crivici-Kramer & Nick Martell.\n    ",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 71,
+      "total_episodes": 1035,
+      "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
+      "audio_length_sec": 1106,
+      "explicit_content": false,
+      "latest_episode_id": "80f68b3bc2ba4e1bb96aab1455852d11",
+      "latest_pub_date_ms": 1694077200000,
+      "earliest_pub_date_ms": 1553519101033,
+      "update_frequency_hours": 50,
+      "listen_score_global_rank": "0.05%"
     },
     {
       "id": "bacb2f7ca7a04ed0b21efd21192f5014",
@@ -6019,110 +6024,6 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score_global_rank": "0.1%"
     },
     {
-      "id": "8579c3f5d11f479d939396b1f36f30a4",
-      "rss": "https://anchor.fm/s/55f4e200/podcast/rss",
-      "type": "episodic",
-      "email": "formosafiles@gmail.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy81NWY0ZTIwMC9wb2RjYXN0L3Jzcw==",
-        "spotify_url": "https://open.spotify.com/show/23NZCM4ik6o3UYkM473Itz",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/formosa-files-lh-INvDesSm-EV8ID9SeJ1d.1400x1400.jpg",
-      "title": " Formosa Files:\nThe History of Taiwan ",
-      "country": "United States",
-      "website": "https://www.formosafiles.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        67,
-        125
-      ],
-      "itunes_id": 1588477096,
-      "publisher": "John Ross and Eryk Michael Smith",
-      "thumbnail": "https://production.listennotes.com/podcasts/formosa-files-qMZyeXN3uxL-EV8ID9SeJ1d.300x300.jpg",
-      "is_claimed": false,
-      "description": "The history of Taiwan (1600 C.E. - 2000) told through interesting stories in a non-chronological order. John Ross is an author and publisher of works on Taiwan and China, while Eryk Michael Smith has worked as a writer and journalist for several media outlets in Taiwan. Both hosts have lived in Taiwan for well over 20 years and call the island home. Email: formosafiles@gmail.com ",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 34,
-      "total_episodes": 89,
-      "listennotes_url": "https://www.listennotes.com/c/8579c3f5d11f479d939396b1f36f30a4/",
-      "audio_length_sec": 1516,
-      "explicit_content": false,
-      "latest_episode_id": "479ad6bf3af4482bb6cf366e0b9eb526",
-      "latest_pub_date_ms": 1681369066000,
-      "earliest_pub_date_ms": 1630893086084,
-      "update_frequency_hours": 168,
-      "listen_score_global_rank": "3%"
-    },
-    {
-      "id": "1c956b42302a488bbac0595e1922ea86",
-      "rss": "https://www.omnycontent.com/d/playlist/bc559b08-358b-442a-81b6-a96000559829/c5fae094-0e75-4840-8b0d-a9ad0116ba3b/cf505041-2f72-4502-b876-a9ad0116ba3b/podcast.rss",
-      "type": "episodic",
-      "email": "host@alreadygonepodcast.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYmM1NTliMDgtMzU4Yi00NDJhLTgxYjYtYTk2MDAwNTU5ODI5L2M1ZmFlMDk0LTBlNzUtNDg0MC04YjBkLWE5YWQwMTE2YmEzYi9jZjUwNTA0MS0yZjcyLTQ1MDItYjg3Ni1hOWFkMDExNmJhM2IvcG9kY2FzdC5yc3M=",
-        "spotify_url": "https://open.spotify.com/show/4qDNe5Gvl1XxdLinUGEXrC",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-p-yZYMJ0U6B-MoexDp6EKra.1400x1400.jpg",
-      "title": "Already Gone",
-      "country": "United States",
-      "website": "https://alreadygonepodcast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        99,
-        122,
-        135,
-        67
-      ],
-      "itunes_id": 1335405710,
-      "publisher": "Nina Innsted",
-      "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-L92z_F-sXQO-MoexDp6EKra.300x300.jpg",
-      "is_claimed": false,
-      "description": "Great Lakes. True Crime. Host Nina Innsted covers lesser known crimes, digging beneath the media and back page to tell their stories and find the truth. #Michigan #Ohio #Pennsylvania #NewYork #Wisconsin #Illinois #TrueCrime\u00a0\n\nFind me on Twitter: @Alreadygonepod (https://twitter.com/alreadygonepod) and Instagram https://www.instagram.com/ninainnsted/",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": null,
-      "total_episodes": 270,
-      "listennotes_url": "https://www.listennotes.com/c/1c956b42302a488bbac0595e1922ea86/",
-      "audio_length_sec": 1926,
-      "explicit_content": false,
-      "latest_episode_id": "1ebf1f87074a44cba7354fc3f6ef8f6b",
-      "latest_pub_date_ms": 1681549500000,
-      "earliest_pub_date_ms": 1463950769204,
-      "update_frequency_hours": 230,
-      "listen_score_global_rank": null
-    },
-    {
       "id": "f46aac143841488b89c76923e5812846",
       "rss": "https://anchor.fm/s/cd0e434/podcast/rss",
       "type": "episodic",
@@ -6163,37 +6064,141 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 46,
-      "total_episodes": 433,
+      "total_episodes": 475,
       "listennotes_url": "https://www.listennotes.com/c/f46aac143841488b89c76923e5812846/",
-      "audio_length_sec": 1338,
+      "audio_length_sec": 1313,
       "explicit_content": false,
-      "latest_episode_id": "6bde61b66f85466494e929420eada310",
-      "latest_pub_date_ms": 1681421411000,
-      "earliest_pub_date_ms": 1563549867418,
-      "update_frequency_hours": 83,
+      "latest_episode_id": "ea042ef03a8841629b7671b590a2ae4d",
+      "latest_pub_date_ms": 1693949400000,
+      "earliest_pub_date_ms": 1563549867472,
+      "update_frequency_hours": 91,
       "listen_score_global_rank": "1%"
+    },
+    {
+      "id": "1c956b42302a488bbac0595e1922ea86",
+      "rss": "https://www.omnycontent.com/d/playlist/bc559b08-358b-442a-81b6-a96000559829/c5fae094-0e75-4840-8b0d-a9ad0116ba3b/cf505041-2f72-4502-b876-a9ad0116ba3b/podcast.rss",
+      "type": "episodic",
+      "email": "host@alreadygonepodcast.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYmM1NTliMDgtMzU4Yi00NDJhLTgxYjYtYTk2MDAwNTU5ODI5L2M1ZmFlMDk0LTBlNzUtNDg0MC04YjBkLWE5YWQwMTE2YmEzYi9jZjUwNTA0MS0yZjcyLTQ1MDItYjg3Ni1hOWFkMDExNmJhM2IvcG9kY2FzdC5yc3M=",
+        "spotify_url": "https://open.spotify.com/show/4qDNe5Gvl1XxdLinUGEXrC",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "",
+        "facebook_handle": "",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-M_4QcFrhTuI-MoexDp6EKra.1400x1400.jpg",
+      "title": "Already Gone",
+      "country": "United States",
+      "website": "https://alreadygonepodcast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        99,
+        122,
+        67,
+        135
+      ],
+      "itunes_id": 1335405710,
+      "publisher": "Nina Innsted",
+      "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-B9RX5TE2moM-MoexDp6EKra.300x300.jpg",
+      "is_claimed": false,
+      "description": "Great Lakes. True Crime. Host Nina Innsted covers lesser known crimes, digging beneath the media and back page to tell their stories and find the truth. #Michigan #Ohio #Pennsylvania #NewYork #Wisconsin #Illinois #TrueCrime\u00a0\n\nFind me on Twitter: @Alreadygonepod (https://twitter.com/alreadygonepod) and Instagram https://www.instagram.com/ninainnsted/",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": null,
+      "total_episodes": 263,
+      "listennotes_url": "https://www.listennotes.com/c/1c956b42302a488bbac0595e1922ea86/",
+      "audio_length_sec": 1963,
+      "explicit_content": false,
+      "latest_episode_id": "4ff053277f604a71ab3474279da9c714",
+      "latest_pub_date_ms": 1693555440000,
+      "earliest_pub_date_ms": 1463950769204,
+      "update_frequency_hours": 261,
+      "listen_score_global_rank": null
+    },
+    {
+      "id": "8579c3f5d11f479d939396b1f36f30a4",
+      "rss": "https://anchor.fm/s/55f4e200/podcast/rss",
+      "type": "episodic",
+      "email": "formosafiles@gmail.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy81NWY0ZTIwMC9wb2RjYXN0L3Jzcw==",
+        "spotify_url": "https://open.spotify.com/show/23NZCM4ik6o3UYkM473Itz",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "",
+        "facebook_handle": "",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/formosa-files-lh-INvDesSm-EV8ID9SeJ1d.1400x1400.jpg",
+      "title": " Formosa Files:\nThe History of Taiwan ",
+      "country": "United States",
+      "website": "https://www.formosafiles.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        67,
+        125
+      ],
+      "itunes_id": 1588477096,
+      "publisher": "John Ross and Eryk Michael Smith",
+      "thumbnail": "https://production.listennotes.com/podcasts/formosa-files-qMZyeXN3uxL-EV8ID9SeJ1d.300x300.jpg",
+      "is_claimed": false,
+      "description": "The history of Taiwan (1600 C.E. - 2000) told through interesting stories in a non-chronological order. John Ross is an author and publisher of works on Taiwan and China, while Eryk Michael Smith has worked as a writer and journalist for several media outlets in Taiwan. Both hosts have lived in Taiwan for well over 20 years and call the island home. Email: formosafiles@gmail.com ",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 35,
+      "total_episodes": 115,
+      "listennotes_url": "https://www.listennotes.com/c/8579c3f5d11f479d939396b1f36f30a4/",
+      "audio_length_sec": 1532,
+      "explicit_content": false,
+      "latest_episode_id": "740a4e0080244a4db6fc0b923d0d99a9",
+      "latest_pub_date_ms": 1694060709000,
+      "earliest_pub_date_ms": 1630893086110,
+      "update_frequency_hours": 134,
+      "listen_score_global_rank": "3%"
     }
   ],
   "latest_episodes": [
     {
       "id": "9447ce07dd2345618054b04b733e4ad5",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/9447ce07dd2345618054b04b733e4ad5/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Google\u2019s $399 smartphone, Crocs\u2019 comeback, and GM\u2019s robotaxi Cruise snags $1B",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>Google\u2019s I/O event day enjoyed protests, AI tech to screen fake\u00a0calls, and a $399 Pixel phone. General Motors acquired self-driving car startup Cruise when it was worth $1B \u2014 Now it\u2019s worth $19B, and wants robotaxis on streets this year. And Crocs shares have nearly doubled in the past year, so we look at why.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1557309360872,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "Google\u2019s I/O event day enjoyed protests, AI tech to screen fake\u00a0calls, and a $399 Pixel phone. General Motors acquired self-driving car startup Cruise when it was worth $1B \u2014 Now it\u2019s worth $19B, and wants robotaxis on streets this year. And Crocs shares have nearly doubled in the past year, so we look at why.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1557309361002,
       "guid_from_rss": "cc706928-7143-11e9-94ec-bf6cee57c71d",
       "listennotes_url": "https://www.listennotes.com/e/9447ce07dd2345618054b04b733e4ad5/",
       "audio_length_sec": 916,
@@ -6203,23 +6208,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "68d378e5b029431dbaca6acf7ce396f2",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/68d378e5b029431dbaca6acf7ce396f2/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Big Trade War update, Apple\u2019s bought 20+ companies in 6 months, and the largest VC investment in Latin America ever",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>The Trade War was supposed to end this week with a peace\u00a0deal. That\u2019s not looking likely, and we\u2019ll tell you why. Apple\u2019s CEO casually dropped that the company\u2019s bought over 20 startups over the last six months. And super delivery app Rappi just raised $1B from Softbank, making it the biggest Latin American venture\u00a0investment ever.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1557222960873,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "The Trade War was supposed to end this week with a peace\u00a0deal. That\u2019s not looking likely, and we\u2019ll tell you why. Apple\u2019s CEO casually dropped that the company\u2019s bought over 20 startups over the last six months. And super delivery app Rappi just raised $1B from Softbank, making it the biggest Latin American venture\u00a0investment ever.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1557222961003,
       "guid_from_rss": "e46adbce-705f-11e9-baa5-1779edf441e3",
       "listennotes_url": "https://www.listennotes.com/e/68d378e5b029431dbaca6acf7ce396f2/",
       "audio_length_sec": 1039,
@@ -6255,23 +6260,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "d6ff153d632f428195dfd54f002b0990",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/d6ff153d632f428195dfd54f002b0990/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Warren Buffett\u2019s epic annual event, Planet Fitness\u2019 innovative real estate strategy, and almond milk vs. Dean Foods dairy",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>The annual Berkshire Hathaway shareholder meeting showcased\u00a088-year-old legendary investor Warren Buffett, so we broke down his 6 hours of one-liner business takeaways. Planet Fitness shares are up 75% in the last year, so we\u2019re focused on its innovative real estate strategy that feeds off the retail-pocalypse. And Dean Foods is America\u2019s biggest dairy company, but the stock is down 62% in 2019 because of alt-milk.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1557136560874,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "The annual Berkshire Hathaway shareholder meeting showcased\u00a088-year-old legendary investor Warren Buffett, so we broke down his 6 hours of one-liner business takeaways. Planet Fitness shares are up 75% in the last year, so we\u2019re focused on its innovative real estate strategy that feeds off the retail-pocalypse. And Dean Foods is America\u2019s biggest dairy company, but the stock is down 62% in 2019 because of alt-milk.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1557136561004,
       "guid_from_rss": "de6a8f92-6f94-11e9-a2be-2bb85bb3ed24",
       "listennotes_url": "https://www.listennotes.com/e/d6ff153d632f428195dfd54f002b0990/",
       "audio_length_sec": 986,
@@ -6291,9 +6296,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "title": "Listen Money Matters - Free your inner financial badass. All the stuff you should know about personal finance.",
         "publisher": "ListenMoneyMatters.com | Andrew Fiebert and Matt Giovanisci",
         "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
-        "listen_score": 64,
+        "listen_score": 63,
         "listennotes_url": "https://www.listennotes.com/c/3302bc71139541baa46ecb27dbf6071a/",
-        "listen_score_global_rank": "0.05%"
+        "listen_score_global_rank": "0.1%"
       },
       "thumbnail": "https://production.listennotes.com/podcasts/listen-money-matters-free-your-inner-d5If074qkhz-SJEHNr84kVg.300x300.jpg",
       "description": "<p>Some people who are hesitant to invest in the stock market are willing to invest in gold. Why? Gold is tangible, you can see it, hold it, and keep it right in your own house (or bunker). You can buy it from some guy in a late night infomercial. You can buy it with images of the fallen Twin Towers on it. Or an American eagle.<strong></p><p></strong></p><p><strong>You can\u2019t say any of that about investing in the stock market!</strong> When you own stock, you don\u2019t own a tangible thing. You have to deal with some slick stockbroker if you want to buy and sell it (you don\u2019t). And stocks don\u2019t come in a limited edition collector\u2019s box.</p><p>LMM hasn\u2019t discussed gold very much in the past and like a lot of you, thought it was something only Doomsday preppers were interested in so not really relevant to us or our audience. But while doing research for the <a href=\"https://www.listenmoneymatters.com/ray-dalio-all-weather-portfolio/\">Golden Butterfly episode,</a> we learned some legitimate reasons for investing in gold and <strong><em>none</em></strong> of them are related to the zombie apocalypse that is surely coming.</p><p>Many of our listeners wanted to know more about it too, why and how to invest in gold. We got a lot of emails asking questions. You asked and we answered. This is all things gold.<strong></p><p></strong><a href=\"https://www.listenmoneymatters.com/all-things-gold/\">Full Article Here</a><strong></p><p></strong></p><p><strong>Show Notes</p><p></strong></p><p><a href=\"http://SPS.NORTHWESTERN.EDU/CFP\">Northwestern University CFP Program</a> - Prepare for a career as a financial planner\u00a0</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\">megaphone.fm/adchoices</a></p>",
@@ -6307,23 +6312,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "e2e15dc3f99745818872e71f7c828f89",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/e2e15dc3f99745818872e71f7c828f89/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "The Taser CEO gets $246M in stock comp, Beyond Meat surges 163%, and Wayfair drops 7% because you\u2019re expensive",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>Axon Enterprises is the company behind the taser, and it just awarded its CEO $246M in compensation \u2014 So we look in to how it\u2019s set up to incentivize him. Beyond Meat surged 163% on its IPO day. And Wayfair is the biggest online furniture platform whose stock fell 7%, but it\u2019s got a fascinating relationship with 80 \u201chouse brands.\u201d</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1556877360875,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "Axon Enterprises is the company behind the taser, and it just awarded its CEO $246M in compensation \u2014 So we look in to how it\u2019s set up to incentivize him. Beyond Meat surged 163% on its IPO day. And Wayfair is the biggest online furniture platform whose stock fell 7%, but it\u2019s got a fascinating relationship with 80 \u201chouse brands.\u201d\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1556877361005,
       "guid_from_rss": "fee4b324-6d3c-11e9-a4bf-c3f62ea29894",
       "listennotes_url": "https://www.listennotes.com/e/e2e15dc3f99745818872e71f7c828f89/",
       "audio_length_sec": 893,
@@ -6359,23 +6364,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "f0f2cc1d772c4ae4aef5bd1d1c8fb834",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/f0f2cc1d772c4ae4aef5bd1d1c8fb834/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Molson Coors falls 8% on mid-beer crisis, Royal Caribbean becomes pricing power superhero, and Fitbit is our \u201cSurvivor of the Day\u201d",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>With beer sales slowing, Molson Coors is desperately\u00a0focused on innovation (aka non-alcohol drinks), but shares fell because of its beer battles. Fitbit used to be profitable, now it\u2019s using partnerships to survive. And Royal Caribbean jumped 7% as it realizes it can charge a lot more for cruises.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1556790960876,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "With beer sales slowing, Molson Coors is desperately\u00a0focused on innovation (aka non-alcohol drinks), but shares fell because of its beer battles. Fitbit used to be profitable, now it\u2019s using partnerships to survive. And Royal Caribbean jumped 7% as it realizes it can charge a lot more for cruises.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1556790961006,
       "guid_from_rss": "ae282d24-6c71-11e9-a7ab-eff35f170a02",
       "listennotes_url": "https://www.listennotes.com/e/f0f2cc1d772c4ae4aef5bd1d1c8fb834/",
       "audio_length_sec": 1000,
@@ -6385,23 +6390,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "79811cc9a5704e32881699b0b93356ab",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/79811cc9a5704e32881699b0b93356ab/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Facebook\u2019s new \u201cFB5\u201d redesign (and dating feature), Apple\u2019s past-dependent business model, and Merck\u2019s profits quadruple",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>Apple\u2019s earnings report was critical for what it didn\u2019t say, just as much as what it did \u2014 And it reveals that Apple\u2019s transformation. Facebook\u2019s F8 event revealed new features (dating and crushes), but the big focus was its app redesign. And Merck\u2019s profits quadrupled because a measles vaccine and a new cancer drug have become its profit puppies.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1556704560877,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "Apple\u2019s earnings report was critical for what it didn\u2019t say, just as much as what it did \u2014 And it reveals that Apple\u2019s transformation. Facebook\u2019s F8 event revealed new features (dating and crushes), but the big focus was its app redesign. And Merck\u2019s profits quadrupled because a measles vaccine and a new cancer drug have become its profit puppies.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1556704561007,
       "guid_from_rss": "ad35b722-6bb0-11e9-8988-bfa74a4a2234",
       "listennotes_url": "https://www.listennotes.com/e/79811cc9a5704e32881699b0b93356ab/",
       "audio_length_sec": 888,
@@ -6413,21 +6418,21 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "id": "82290b02fa4e48d7bda7d9a4ee0b47bc",
       "link": "https://omny.fm/shows/already-gone/the-mothers-day-murders?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/82290b02fa4e48d7bda7d9a4ee0b47bc/",
-      "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-p-yZYMJ0U6B-MoexDp6EKra.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-M_4QcFrhTuI-MoexDp6EKra.1400x1400.jpg",
       "title": "The Mother's Day Murders",
       "podcast": {
         "id": "1c956b42302a488bbac0595e1922ea86",
-        "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-p-yZYMJ0U6B-MoexDp6EKra.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-M_4QcFrhTuI-MoexDp6EKra.1400x1400.jpg",
         "title": "Already Gone",
         "publisher": "Nina Innsted",
-        "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-L92z_F-sXQO-MoexDp6EKra.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-B9RX5TE2moM-MoexDp6EKra.300x300.jpg",
         "listen_score": null,
         "listennotes_url": "https://www.listennotes.com/c/1c956b42302a488bbac0595e1922ea86/",
         "listen_score_global_rank": null
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-L92z_F-sXQO-MoexDp6EKra.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/already-gone-nina-innsted-B9RX5TE2moM-MoexDp6EKra.300x300.jpg",
       "description": "<p>Mother's Day 1982, high school students David Cole and Timothy Fowler die in a fiery blaze at the Cole home in Deerfield Michigan. This episode features an interview with the sister of Tim Fowler.\u00a0 <a href=\"https://www.facebook.com/timfowlerdavidcole/\">https://www.facebook.com/timfowlerdavidcole/</a><br /><br />If you have information on this unsolved case, please contact the Lenawee County Sheriff's Department at <strong>517-266-6161 </strong>or, submit an anonymous tip via CrimeStoppers, Online at:\u00a0<a href=\"http://www.tipsubmit.com\">www.tipsubmit.com</a> or via text \u00a0274637 Start Tip \"LENAWEE\"</p>\n<p>Additional Music provided by RFM: <a href=\"https://www.youtube.com/watch?v=dPEoasBHNiA\">https://youtu.be/dPEoasBHNiA</a><strong><br /></strong></p><p><a href=\"https://www.patreon.com/AlreadyGone\" rel=\"payment\">Support the show: https://www.patreon.com/AlreadyGone</a></p><p>See <a href=\"https://omnystudio.com/listener\">omnystudio.com/listener</a> for privacy information.</p>",
-      "pub_date_ms": 1556683500101,
+      "pub_date_ms": 1556683500113,
       "guid_from_rss": "7081a388-0ebe-4d75-98c0-aa3e01475606",
       "listennotes_url": "https://www.listennotes.com/e/82290b02fa4e48d7bda7d9a4ee0b47bc/",
       "audio_length_sec": 2001,
@@ -6437,23 +6442,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "6f4b561b98c4489f94673bd709fa0c85",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/6f4b561b98c4489f94673bd709fa0c85/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Spotify hits 217M profitless users, Airbnb & Marriott\u2019s twin announcements, and Chewy.com\u2019s \u201cpet humanization\u201d IPO",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>Spotify now boasts 100M paying subscribers, so we looked\u00a0into why it\u2019s still losing so much money (hint: It\u2019s betting on podcasts). Airbnb and Marriott both revealed new services that look a lot like each other (awkward). And PetSmart\u2019s digital brand Chewy.com will IPO thanks to \u201cpet humanization\u201d trends.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1556618160878,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "Spotify now boasts 100M paying subscribers, so we looked\u00a0into why it\u2019s still losing so much money (hint: It\u2019s betting on podcasts). Airbnb and Marriott both revealed new services that look a lot like each other (awkward). And PetSmart\u2019s digital brand Chewy.com will IPO thanks to \u201cpet humanization\u201d trends.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1556618161008,
       "guid_from_rss": "6499bd3a-6aeb-11e9-a4ca-1b74330fa7a7",
       "listennotes_url": "https://www.listennotes.com/e/6f4b561b98c4489f94673bd709fa0c85/",
       "audio_length_sec": 1025,
@@ -6505,7 +6510,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       },
       "thumbnail": "https://production.listennotes.com/podcasts/philosophize-this-stephen-west-oSuiCW7Bz8T-ivQCfmkqM_h.300x300.jpg",
       "description": "<p>Today we talk about a famous debate from the early 20th century.\u00a0</p>",
-      "pub_date_ms": 1556594432048,
+      "pub_date_ms": 1556594432058,
       "guid_from_rss": "09cea1e8a32c49b383f85fff0f172a2e",
       "listennotes_url": "https://www.listennotes.com/e/8823f69978ac40899d4e7264206db89f/",
       "audio_length_sec": 1298,
@@ -6515,23 +6520,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "d8ad1f1994654319a041e23d76d6b599",
-      "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "audio": "https://www.listennotes.com/e/p/d8ad1f1994654319a041e23d76d6b599/",
-      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
       "title": "Beyond Meat boots its meat-focused investor, Comcast (shockingly) hits record high, and one startup\u2019s worst 1st week",
       "podcast": {
         "id": "c5ce6c02cbf1486496206829f7d42e8e",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "The Best One Yet",
         "publisher": "Nick & Jack Studios",
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
         "listen_score": 71,
         "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
         "listen_score_global_rank": "0.05%"
       },
-      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-      "description": "<p>Plant-based meat innovator Beyond Meat had an awkward investor: The world\u2019s 2nd biggest meat producer, Tyson Foods -- So Beyond Meat kicked it out before its upcoming IPO. Old school cable throwback Comcast is winning even though you cut the cord. And Luminary was supposed to be the future of podcasting, but its 1st week went really badly.</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-      "pub_date_ms": 1556531760879,
+      "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+      "description": "Plant-based meat innovator Beyond Meat had an awkward investor: The world\u2019s 2nd biggest meat producer, Tyson Foods -- So Beyond Meat kicked it out before its upcoming IPO. Old school cable throwback Comcast is winning even though you cut the cord. And Luminary was supposed to be the future of podcasting, but its 1st week went really badly.\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+      "pub_date_ms": 1556531761009,
       "guid_from_rss": "76ae24a6-6a24-11e9-a711-dbdc65a73778",
       "listennotes_url": "https://www.listennotes.com/e/d8ad1f1994654319a041e23d76d6b599/",
       "audio_length_sec": 803,
@@ -6979,30 +6984,30 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   
 ```json
 {
-  "id": "01d2b1f0b810448c8671407a7e02c969",
-  "link": "https://www.cleartosend.net/cts-314-is-chatgpt-useful-to-a-wi-fi-engineer/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-  "audio": "https://www.listennotes.com/e/p/01d2b1f0b810448c8671407a7e02c969/",
-  "image": "https://production.listennotes.com/podcasts/clear-to-send-wireless-network-engineering-DFGwRzxcMC4.1024x1024.jpg",
-  "title": "CTS 314: Is ChatGPT useful to a Wi-Fi Engineer",
+  "id": "35fa22a2bba54b7f866c9844f98fc7be",
+  "link": "https://giftsofthewyrd.podbean.com/e/irisanya-moon/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+  "audio": "https://www.listennotes.com/e/p/35fa22a2bba54b7f866c9844f98fc7be/",
+  "image": "https://production.listennotes.com/podcasts/gifts-of-the-wyrd-j-hijatt-Nj2sVmbe-4u-C3oUOXQLNT1.384x292.jpg",
+  "title": "69 Gifts of the Wyrd: Irisanya Moon - The Norns",
   "podcast": {
-    "id": "e2afd72249f54625acc0d2a5cb364d9c",
-    "image": "https://production.listennotes.com/podcasts/clear-to-send-wireless-network-engineering-DFGwRzxcMC4.1024x1024.jpg",
-    "title": "Clear To Send: Wireless Network Engineering",
-    "publisher": "Rowell Dionicio and Fran\u00e7ois Verg\u00e8s",
-    "thumbnail": "https://production.listennotes.com/podcasts/clear-to-send-wireless-network-engineering-DFGwRzxcMC4.300x300.jpg",
-    "listen_score": 38,
-    "listennotes_url": "https://www.listennotes.com/c/e2afd72249f54625acc0d2a5cb364d9c/",
-    "listen_score_global_rank": "2%"
+    "id": "e2f5859d8344467289ea2b917f08dd66",
+    "image": "https://production.listennotes.com/podcasts/gifts-of-the-wyrd-j-hijatt-Nj2sVmbe-4u-C3oUOXQLNT1.384x292.jpg",
+    "title": "Gifts of the Wyrd",
+    "publisher": "J Hijatt",
+    "thumbnail": "https://production.listennotes.com/podcasts/gifts-of-the-wyrd-j-hijatt-zTy0Ru5rGDf-C3oUOXQLNT1.300x228.jpg",
+    "listen_score": 34,
+    "listennotes_url": "https://www.listennotes.com/c/e2f5859d8344467289ea2b917f08dd66/",
+    "listen_score_global_rank": "5%"
   },
-  "thumbnail": "https://production.listennotes.com/podcasts/clear-to-send-wireless-network-engineering-DFGwRzxcMC4.300x300.jpg",
-  "description": "<p></p>\n\n\n\n<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n\n</div></figure>\n\n\n\n<p><strong>Description</strong></p>\n\n\n\n<p> &#x1f4a1; Talk about the ChatGPT trend and discuss if it is useful to us as Wi-Fi Engineer</p>\n\n\n\n<p></p>\n\n\n\n<h3 class=\"wp-block-heading\">Talking Points</h3>\n\n\n\n<p><strong>Introduction</strong></p>\n\n\n\n<ul>\n<li>Chat GPT trend</li>\n\n\n\n<li>How is AI going to change the way we work (as Wi-Fi Engineer)</li>\n</ul>\n\n\n\n<p><strong>Main Topic</strong></p>\n\n\n\n<ul>\n<li>Is it really useful?</li>\n\n\n\n<li>What has been our experience</li>\n\n\n\n<li>What works\n<ul>\n<li>Programming (coding, converting, adjusting, debugging, creating)</li>\n\n\n\n<li>Fixing writing and spelling mistakes</li>\n\n\n\n<li>Translating</li>\n\n\n\n<li>Debug or fix issues (mtr)</li>\n</ul>\n</li>\n\n\n\n<li>What doesn\u2019t fully work\n<ul>\n<li>Research work</li>\n\n\n\n<li>Digging out information</li>\n</ul>\n</li>\n\n\n\n<li>What doesn\u2019t really work\n<ul>\n<li>Creating Wireshark 802.11 filters didn\u2019t work for me</li>\n\n\n\n<li>Hard to know if what it tells you is True of False (it always sound very confident)</li>\n</ul>\n</li>\n</ul>\n\n\n\n<p>Useful Chrome Extensions:</p>\n\n\n\n<ul>\n<li>Send all Google Search to ChatGPT \u2192 <a href=\"https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf\"></a><a href=\"https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf\">https://chrome.google.com/webstore/detail/chatgpt-for-google/jgjaeacdkonaoafenlfkkkmbaopkbilf</a></li>\n\n\n\n<li>Add access to Internet to ChatGPT \u2192 <a href=\"https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn\"></a><a href=\"https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn\">https://chrome.google.com/webstore/detail/webchatgpt-chatgpt-with-i/lpfemeioodjbpieminkklglpmhlngfcn</a></li>\n</ul>\n\n\n\n<p></p>\n<p>The post <a href=\"https://www.cleartosend.net/cts-314-is-chatgpt-useful-to-a-wi-fi-engineer/\" rel=\"nofollow\">CTS 314: Is ChatGPT useful to a Wi-Fi Engineer</a> appeared first on <a href=\"https://www.cleartosend.net\" rel=\"nofollow\">Clear To Send</a>.</p>",
-  "pub_date_ms": 1681726740000,
-  "guid_from_rss": "https://www.cleartosend.net/?p=4214",
-  "listennotes_url": "https://www.listennotes.com/e/01d2b1f0b810448c8671407a7e02c969/",
-  "audio_length_sec": 2071,
+  "thumbnail": "https://production.listennotes.com/podcasts/gifts-of-the-wyrd-j-hijatt-zTy0Ru5rGDf-C3oUOXQLNT1.300x228.jpg",
+  "description": "<p> Irisanya Moon joins me this episode to talk about her latest book in the Pagan Portals series from Moon Books - The Norns: Weavers of Fate and Magick.\u00a0</p>\n<p>We talk about the most well known of the Norns - Urd, Verdandi, and Skuld, and talk about how we can work with them to connect with the threads of our web of Wyrd.\u00a0</p>\n<p>There isn't much material out about working with the Norns, and this book is a great starting point for a beginner and also a great resource for those who are familiar with the Norns to help invigorate or take a fresh approach to working with them.\u00a0</p>\n<p>Get the book through your books store, from <a href=\"https://www.collectiveinkbooks.com/\">Moon Books (Collective Ink)</a> , or from your preferred online seller.\u00a0</p>\n<p>Follow Irisanya at Instagram: @irisanya.moon or Facebook: @irisanyamoon</p>\n<p># # #</p>\n<p>Follow my channel on Instagram: @wyrdgifts1</p>\n<p>Facebook: @GiftsoftheWyrd Email: giftsofthwyrd@gmail.com\u00a0</p>\n<p>Please leave feedback on Apple and other podcast providers. This helps the podcast to be found easier.</p>\n<p>Music.\u00a0\u00a0Intro:\u00a0<em>Silly Bank Heist</em>. Royalty free music from<a href=\"https://www.fesliyanstudios.com/\"> https://www.fesliyanstudios.com\u00a0</a>\u00a0Please do not add this audio content to the YouTube Content ID System. I have used background music which is owned by FesliyanStudios.</p>\n<p>Outgoing: <em>Voluspa 57-59 (\"the Norns\") by Tonya Threet</em></p>\n<p>Logo Created by Xan Folmer.\u00a0</p>\n<p>Logo based on the Vanic boar created by Vanatru Priestess Ember of the Vanic Conspiracy.</p>\n<p>Studio recordings by Zencastr and Audacity.</p>",
+  "pub_date_ms": 1694076676000,
+  "guid_from_rss": "GiftsoftheWyrd.podbean.com/8a05934d-65fe-3437-8773-97645fcf104e",
+  "listennotes_url": "https://www.listennotes.com/e/35fa22a2bba54b7f866c9844f98fc7be/",
+  "audio_length_sec": 2988,
   "explicit_content": false,
   "maybe_audio_invalid": false,
-  "listennotes_edit_url": "https://www.listennotes.com/e/01d2b1f0b810448c8671407a7e02c969/#edit"
+  "listennotes_edit_url": "https://www.listennotes.com/e/35fa22a2bba54b7f866c9844f98fc7be/#edit"
 }
 ```   
 </details>
@@ -7214,14 +7219,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 43,
-      "total_episodes": 323,
+      "total_episodes": 334,
       "listennotes_url": "https://www.listennotes.com/c/c463d5980b8e480fb78db6b3ed6be115/",
-      "audio_length_sec": 3059,
+      "audio_length_sec": 3019,
       "explicit_content": false,
-      "latest_episode_id": "5b879b5d11724057bff453ac0bf3661c",
-      "latest_pub_date_ms": 1681075800000,
-      "earliest_pub_date_ms": 1434346200321,
-      "update_frequency_hours": 167,
+      "latest_episode_id": "c4aeee6ef2174766869ed384479f97a5",
+      "latest_pub_date_ms": 1693773000000,
+      "earliest_pub_date_ms": 1434346200322,
+      "update_frequency_hours": 218,
       "listen_score_global_rank": "1%"
     },
     {
@@ -7383,14 +7388,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "ff180c271be249e9b94a8bc3d80bb094",
-      "rss": "https://static.adorilabs.com/feed/watcha.xml",
+      "rss": "https://www.omnycontent.com/d/playlist/e0dce4b3-2eb8-48cb-822c-af1d00e03e20/5ed87087-3717-42b7-97e0-af4700e1cd68/cc529bce-5357-420f-9495-af4700e1cd84/podcast.rss",
       "type": "episodic",
-      "email": "shows@indusvox.com",
+      "email": "ivmshows@pratilipi.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9zdGF0aWMuYWRvcmlsYWJzLmNvbS9mZWVkL3dhdGNoYS54bWw=",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvZTBkY2U0YjMtMmViOC00OGNiLTgyMmMtYWYxZDAwZTAzZTIwLzVlZDg3MDg3LTM3MTctNDJiNy05N2UwLWFmNDcwMGUxY2Q2OC9jYzUyOWJjZS01MzU3LTQyMGYtOTQ5NS1hZjQ3MDBlMWNkODQvcG9kY2FzdC5yc3M=",
         "spotify_url": "https://open.spotify.com/show/7tvnxtkeAYAtys53aqYAVs",
         "youtube_url": "",
         "linkedin_url": "",
@@ -7401,7 +7406,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/watcha-ivm-podcasts-Qv2WOYNyz5V-HEvn-LS7uyo.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/watcha-ivm-podcasts-WxQHviSVUhn-HEvn-LS7uyo.1400x1400.jpg",
       "title": "Watcha!",
       "country": "United States",
       "website": "http://ivmpodcasts.com/watcha?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -7415,9 +7420,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 1076223958,
       "publisher": "IVM Podcasts",
-      "thumbnail": "https://production.listennotes.com/podcasts/watcha-ivm-podcasts-wSHZVq-i_TJ-HEvn-LS7uyo.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/watcha-ivm-podcasts-zO4KIJ-Ei85-HEvn-LS7uyo.300x300.jpg",
       "is_claimed": true,
-      "description": "Film critic and writer Aniruddha Guha talks about the films and TV shows currently on his playlist, and recommends the best of them. Feature films, documentaries, television shows, web series, YouTube videos; come, Watcha! with @AniGuha.",
+      "description": "<p>Film critic and writer Aniruddha Guha talks about the films and TV shows currently on his playlist, and recommends the best of them. Feature films, documentaries, television shows, web series, YouTube videos; come, Watcha! with @AniGuha.</p>",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -7427,7 +7432,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score": null,
       "total_episodes": 10,
       "listennotes_url": "https://www.listennotes.com/c/ff180c271be249e9b94a8bc3d80bb094/",
-      "audio_length_sec": 2399,
+      "audio_length_sec": 2374,
       "explicit_content": false,
       "latest_episode_id": "71ef8a25d040413bb6ea4bd5cb7e57a7",
       "latest_pub_date_ms": 1459143000000,
@@ -7469,7 +7474,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "SynTalk",
       "thumbnail": "https://production.listennotes.com/podcasts/syntalk-syntalk-AscbMPzh92d-j2nFBUVDzq_.300x300.jpg",
       "is_claimed": false,
-      "description": "f(q) = Where do dogs go to die? (#TLFD)\n\nSynTalk is a freewheeling interdisciplinary talk show with a philosophical approach to understanding the world from a long term perspective.",
+      "description": "f(q) = What gets demolished? (#TPLB)\n\nSynTalk is a freewheeling interdisciplinary talk show with a philosophical approach to understanding the world from a long term perspective.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -7477,14 +7482,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 31,
-      "total_episodes": 179,
+      "total_episodes": 183,
       "listennotes_url": "https://www.listennotes.com/c/c40188a1a51249a3bafb11793a011359/",
-      "audio_length_sec": 4078,
+      "audio_length_sec": 4095,
       "explicit_content": false,
-      "latest_episode_id": "0cbf27a83b364f5f9e7285db0e438f29",
-      "latest_pub_date_ms": 1680912000000,
-      "earliest_pub_date_ms": 1405191856173,
-      "update_frequency_hours": 1212,
+      "latest_episode_id": "e364134266ec484282c9bee360aa06f8",
+      "latest_pub_date_ms": 1693271235000,
+      "earliest_pub_date_ms": 1405191856180,
+      "update_frequency_hours": 1540,
       "listen_score_global_rank": "5%"
     },
     {
@@ -7598,14 +7603,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "4151ce9377a6435c8aac7d23f306243d",
-      "rss": "https://static.adorilabs.com/feed/geek-fruit-podcast.xml",
+      "rss": "https://www.omnycontent.com/d/playlist/e0dce4b3-2eb8-48cb-822c-af1d00e03e20/c66968a2-4e7e-4bb8-8f20-af470099a6a3/c4612d0e-b2f1-4547-95a1-af470099a6ad/podcast.rss",
       "type": "episodic",
-      "email": "shows@indusvox.com",
+      "email": "ivmshows@pratilipi.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9zdGF0aWMuYWRvcmlsYWJzLmNvbS9mZWVkL2dlZWstZnJ1aXQtcG9kY2FzdC54bWw=",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvZTBkY2U0YjMtMmViOC00OGNiLTgyMmMtYWYxZDAwZTAzZTIwL2M2Njk2OGEyLTRlN2UtNGJiOC04ZjIwLWFmNDcwMDk5YTZhMy9jNDYxMmQwZS1iMmYxLTQ1NDctOTVhMS1hZjQ3MDA5OWE2YWQvcG9kY2FzdC5yc3M=",
         "spotify_url": "https://open.spotify.com/show/4ief9N2sznclDDHeqKZXqz",
         "youtube_url": "",
         "linkedin_url": "",
@@ -7616,7 +7621,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": "ivmpodcasts"
       },
-      "image": "https://production.listennotes.com/podcasts/geek-fruit-podcast-ivm-podcasts-eLbAdx-J8yq-hNgR81AbBO4.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/geek-fruit-podcast-ivm-podcasts-3oaUMvOB8Iy-hNgR81AbBO4.1400x1400.jpg",
       "title": "Geek Fruit Podcast",
       "country": "United States",
       "website": "http://ivmpodcasts.com/geekfruit?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -7630,7 +7635,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 1070891121,
       "publisher": "IVM Podcasts",
-      "thumbnail": "https://production.listennotes.com/podcasts/geek-fruit-podcast-ivm-podcasts-lS_yLej9CAr-hNgR81AbBO4.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/geek-fruit-podcast-ivm-podcasts-9xwEC2muNqW-hNgR81AbBO4.300x300.jpg",
       "is_claimed": true,
       "description": "We spend way too much time discussing minuscule facts, character dynamics, story arcs and unique concepts in the wonderful world of science-fiction and overall nerd culture. Think you do that too? Find us and become one with the geeks! And believe it; the Force is totally strong with us.",
       "looking_for": {
@@ -7642,11 +7647,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "listen_score": 33,
       "total_episodes": 342,
       "listennotes_url": "https://www.listennotes.com/c/4151ce9377a6435c8aac7d23f306243d/",
-      "audio_length_sec": 2641,
+      "audio_length_sec": 2489,
       "explicit_content": false,
       "latest_episode_id": "07bdb16df6d04ba783895ae96b941963",
       "latest_pub_date_ms": 1595810106000,
-      "earliest_pub_date_ms": 1450868870327,
+      "earliest_pub_date_ms": 1450868870341,
       "update_frequency_hours": 160,
       "listen_score_global_rank": "5%"
     },
@@ -7692,15 +7697,15 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 52,
-      "total_episodes": 1157,
+      "listen_score": 53,
+      "total_episodes": 1200,
       "listennotes_url": "https://www.listennotes.com/c/2641ed2ce5524b3da43b8f19fe0f5ae9/",
-      "audio_length_sec": 3211,
+      "audio_length_sec": 3225,
       "explicit_content": false,
-      "latest_episode_id": "cf4b9c06a56747af89c131d3110c2009",
-      "latest_pub_date_ms": 1681453800000,
-      "earliest_pub_date_ms": 1426829401156,
-      "update_frequency_hours": 83,
+      "latest_episode_id": "9501c53153ed400ba5a1452bd7820f83",
+      "latest_pub_date_ms": 1693919337000,
+      "earliest_pub_date_ms": 1426829401189,
+      "update_frequency_hours": 73,
       "listen_score_global_rank": "0.5%"
     },
     {
@@ -7795,7 +7800,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 41,
+      "listen_score": 44,
       "total_episodes": 8,
       "listennotes_url": "https://www.listennotes.com/c/bdeb94c7f7164b14837dcd0449f4a5ee/",
       "audio_length_sec": 1135,
@@ -7804,7 +7809,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "latest_pub_date_ms": 1506436886000,
       "earliest_pub_date_ms": 1488805724007,
       "update_frequency_hours": 476,
-      "listen_score_global_rank": "1.5%"
+      "listen_score_global_rank": "1%"
     },
     {
       "id": "d203864a67fb43b1a98b7107cabeaa4b",
@@ -7900,15 +7905,15 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 55,
-      "total_episodes": 142,
+      "listen_score": 56,
+      "total_episodes": 143,
       "listennotes_url": "https://www.listennotes.com/c/83907f1577724ac1b2c6ab154f8e0566/",
-      "audio_length_sec": 2618,
+      "audio_length_sec": 2624,
       "explicit_content": false,
-      "latest_episode_id": "1b58cd0c4312421db376d2af5165f25e",
-      "latest_pub_date_ms": 1610564400000,
-      "earliest_pub_date_ms": 1437820995140,
-      "update_frequency_hours": 623,
+      "latest_episode_id": "c00ce90558954dfca4a0bb4aa36a5387",
+      "latest_pub_date_ms": 1685620800000,
+      "earliest_pub_date_ms": 1437820995141,
+      "update_frequency_hours": 1210,
       "listen_score_global_rank": "0.5%"
     },
     {
@@ -7964,14 +7969,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "id": "1daa2a04171f44f58f4fba42b77a8203",
-      "rss": "https://static.adorilabs.com/feed/tfg-sports-podcast.xml",
+      "rss": "https://www.omnycontent.com/d/playlist/e0dce4b3-2eb8-48cb-822c-af1d00e03e20/7dffa21c-335a-45ce-8a28-af54012282fe/0c6730be-d749-4234-a795-af540122831e/podcast.rss",
       "type": "episodic",
-      "email": "shows@indusvox.com",
+      "email": "ivmshows@pratilipi.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9zdGF0aWMuYWRvcmlsYWJzLmNvbS9mZWVkL3RmZy1zcG9ydHMtcG9kY2FzdC54bWw=",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvZTBkY2U0YjMtMmViOC00OGNiLTgyMmMtYWYxZDAwZTAzZTIwLzdkZmZhMjFjLTMzNWEtNDVjZS04YTI4LWFmNTQwMTIyODJmZS8wYzY3MzBiZS1kNzQ5LTQyMzQtYTc5NS1hZjU0MDEyMjgzMWUvcG9kY2FzdC5yc3M=",
         "spotify_url": "https://open.spotify.com/show/0lEkSBHhsiNnWeIWGajTjV",
         "youtube_url": "",
         "linkedin_url": "",
@@ -7982,7 +7987,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/tfg-sports-podcast-ivm-podcasts-TnJ7PSoMCbA-5Mq0usV3E84.1400x1400.jpg",
+      "image": "https://production.listennotes.com/podcasts/tfg-sports-podcast-ivm-podcasts-2Nw-chDqY1O-5Mq0usV3E84.1400x1400.jpg",
       "title": "TFG Sports Podcast",
       "country": "United States",
       "website": "http://ivmpodcasts.com/tfgsportspodcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
@@ -7995,9 +8000,9 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       ],
       "itunes_id": 1062166975,
       "publisher": "IVM Podcasts",
-      "thumbnail": "https://production.listennotes.com/podcasts/tfg-sports-podcast-ivm-podcasts-HjVfPrghzdy-5Mq0usV3E84.300x300.jpg",
+      "thumbnail": "https://production.listennotes.com/podcasts/tfg-sports-podcast-ivm-podcasts-IQLjvr7Y6R8-5Mq0usV3E84.300x300.jpg",
       "is_claimed": true,
-      "description": "TFG Sports podcast is the place to check in for discussion on Indian sports. We talk about Cricket, Football, Kabaddi, Hockey, Athletics and more with a variety of guests and regular contributors.",
+      "description": "<p>TFG Sports podcast is the place to check in for discussion on Indian sports. We talk about Cricket, Football, Kabaddi, Hockey, Athletics and more with a variety of guests and regular contributors.</p>",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -8005,14 +8010,14 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": null,
-      "total_episodes": 565,
+      "total_episodes": 563,
       "listennotes_url": "https://www.listennotes.com/c/1daa2a04171f44f58f4fba42b77a8203/",
-      "audio_length_sec": 1694,
+      "audio_length_sec": 1700,
       "explicit_content": false,
-      "latest_episode_id": "c416a3afee9f497b86f91e90df55dfb0",
-      "latest_pub_date_ms": 1560299400000,
-      "earliest_pub_date_ms": 1448286726564,
-      "update_frequency_hours": 26,
+      "latest_episode_id": "c4e61b1f5dd84fd399e0bdb6a86acbdb",
+      "latest_pub_date_ms": 1559867400000,
+      "earliest_pub_date_ms": 1448286726562,
+      "update_frequency_hours": 24,
       "listen_score_global_rank": null
     }
   ],
@@ -8353,55 +8358,841 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   
 ```json
 {
-  "total": 4523,
+  "total": 4712,
   "has_next": true,
   "page_number": 2,
   "has_previous": true,
   "curated_lists": [
     {
-      "id": "L415XAvPT7q",
-      "title": "The Best Podcasts Like My Dad Wrote a Porno",
+      "id": "A1mz0ZKu473",
+      "title": "The Best Art Podcasts To Add To Your Queue",
+      "total": 8,
+      "podcasts": [
+        {
+          "id": "3ddcb6e93a8b47e3a95b4cf7e6e2ca1c",
+          "image": "https://production.listennotes.com/podcasts/artcurious-podcast-jennifer-dasalartcurious-zmjvr7W19IO-Q2GWkaPsw7J.1400x1400.jpg",
+          "title": "ArtCurious Podcast",
+          "publisher": "Jennifer Dasal/ArtCurious",
+          "thumbnail": "https://production.listennotes.com/podcasts/artcurious-podcast-jennifer-dasalartcurious-M92WqaFQzSH-Q2GWkaPsw7J.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/3ddcb6e93a8b47e3a95b4cf7e6e2ca1c/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "1b2adc7d04644cb3b52a9454c37e36f6",
+          "image": "https://production.listennotes.com/podcasts/talk-art-russell-tovey-and-robert-diament-u_UVtrEBjeq-AovYj5Z4hqg.1400x1400.jpg",
+          "title": "Talk Art",
+          "publisher": "Russell Tovey and Robert Diament",
+          "thumbnail": "https://production.listennotes.com/podcasts/talk-art-russell-tovey-and-robert-diament-_hRdIX86e5--AovYj5Z4hqg.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/1b2adc7d04644cb3b52a9454c37e36f6/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "8e48106cbedb49cca409dcfd8fbc5d45",
+          "image": "https://production.listennotes.com/podcasts/the-sculptors-funeral-jason-arkles-c9HEzQjtk6F-PKx_w1eg5Ev.1400x1400.jpg",
+          "title": "The Sculptor's Funeral",
+          "publisher": "Jason Arkles",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-sculptors-funeral-jason-arkles-LOMJG-v_UsW-PKx_w1eg5Ev.300x300.jpg",
+          "listen_score": 45,
+          "listennotes_url": "https://www.listennotes.com/c/8e48106cbedb49cca409dcfd8fbc5d45/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "8ad2a5f28070406d98a34dbe9e399f65",
+          "image": "https://production.listennotes.com/podcasts/the-week-in-art-by-the-art-newspaper-the-Xc2ZqEMiyuL-WK-Xcmef3wP.1400x1400.jpg",
+          "title": "The Week in Art",
+          "publisher": "The Art Newspaper",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-week-in-art-by-the-art-newspaper-the-eIU4lQ6cz5d-WK-Xcmef3wP.300x300.jpg",
+          "listen_score": 50,
+          "listennotes_url": "https://www.listennotes.com/c/8ad2a5f28070406d98a34dbe9e399f65/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "dc62e31b4eec4e7596ea2e61e4c268b5",
+          "image": "https://production.listennotes.com/podcasts/the-lonely-palette-tamar-avishai-RbL6_CTE7ci-S9_PQbKdFkg.1028x1028.jpg",
+          "title": "The Lonely Palette",
+          "publisher": "Tamar Avishai",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-lonely-palette-tamar-avishai-A0h695IMxcL-S9_PQbKdFkg.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/dc62e31b4eec4e7596ea2e61e4c268b5/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.thehandbook.com/the-best-art-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Love art? Want to know more about the history behind some of the world\u2019s greatest painters, but don\u2019t know where to start? Sometimes the world of canvases and sculptures can be daunting, but it doesn\u2019t have to be. We\u2019ve rounded up the best art podcasts where the experts reveal all there is to know about great women artists, art history and more.\"",
+      "pub_date_ms": 1692718697858,
+      "source_domain": "www.thehandbook.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-best-art-podcasts-to-add-to-your-A1mz0ZKu473/"
+    },
+    {
+      "id": "NthlLgSc0d4",
+      "title": "The 13 Best Tech Podcasts, According to Us",
+      "total": 13,
+      "podcasts": [
+        {
+          "id": "8063db4878224449b0588bfb0a22ba5f",
+          "image": "https://production.listennotes.com/podcasts/bad-blood-the-final-chapter-three-uncanny-CHm089VjMcE-vMTrJ6L2Bic.1400x1400.jpg",
+          "title": "Bad Blood: The Final Chapter",
+          "publisher": "Three Uncanny Four",
+          "thumbnail": "https://production.listennotes.com/podcasts/bad-blood-the-final-chapter-three-uncanny-auqlHgAfz62-vMTrJ6L2Bic.300x300.jpg",
+          "listen_score": 65,
+          "listennotes_url": "https://www.listennotes.com/c/8063db4878224449b0588bfb0a22ba5f/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "535815a492a941d79b95be6ae1c5cc9c",
+          "image": "https://production.listennotes.com/podcasts/radiolab-wnyc-studios-BgiSzGyUIXx-LcwYyVzfJx9.1400x1400.jpg",
+          "title": "Radiolab",
+          "publisher": "WNYC Studios",
+          "thumbnail": "https://production.listennotes.com/podcasts/radiolab-wnyc-studios--AczeRs3UEK-LcwYyVzfJx9.300x300.jpg",
+          "listen_score": 85,
+          "listennotes_url": "https://www.listennotes.com/c/535815a492a941d79b95be6ae1c5cc9c/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "cfeaa7a758a94e069ba087f323ffa225",
+          "image": "https://production.listennotes.com/podcasts/the-vergecast-the-verge-CXnK7DEQBN_-n6zR1v83Ejt.1400x1400.jpg",
+          "title": "The Vergecast",
+          "publisher": "The Verge",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-vergecast-the-verge-48gxEm7coLX-n6zR1v83Ejt.300x300.jpg",
+          "listen_score": 67,
+          "listennotes_url": "https://www.listennotes.com/c/cfeaa7a758a94e069ba087f323ffa225/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "ecac001513b94919bdc68b0b9277cc90",
+          "image": "https://production.listennotes.com/podcasts/ologies-with-alie-ward-alie-ward-KfHcnoSrNTY-k0n1jbDJigN.1400x1400.jpg",
+          "title": "Ologies with Alie Ward",
+          "publisher": "Alie Ward",
+          "thumbnail": "https://production.listennotes.com/podcasts/ologies-with-alie-ward-alie-ward-hU8wJsrtyDb-k0n1jbDJigN.300x300.jpg",
+          "listen_score": 80,
+          "listennotes_url": "https://www.listennotes.com/c/ecac001513b94919bdc68b0b9277cc90/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "2e800d2ddd26463a9453487c49268edc",
+          "image": "https://production.listennotes.com/podcasts/spellcaster-the-fall-of-sam-bankman-fried-m8hFR97nGkY-NDdJpRatBy1.1400x1400.jpg",
+          "title": "Spellcaster: The Fall of Sam Bankman-Fried",
+          "publisher": "Wondery | Bloomberg",
+          "thumbnail": "https://production.listennotes.com/podcasts/spellcaster-the-fall-of-sam-bankman-fried-mWQNqDHFG1P-NDdJpRatBy1.300x300.jpg",
+          "listen_score": 49,
+          "listennotes_url": "https://www.listennotes.com/c/2e800d2ddd26463a9453487c49268edc/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://gizmodo.com.au/2023/08/best-tech-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Podcasts are a dime a dozen, but too much choice can be a bad thing. So, we decided to round up suggestions from the team \u2013 here are the best tech podcasts, according to us.\"",
+      "pub_date_ms": 1692552661409,
+      "source_domain": "gizmodo.com.au",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-13-best-tech-podcasts-according-to-NthlLgSc0d4/"
+    },
+    {
+      "id": "DaEKOlT-yZc",
+      "title": "Best walking podcasts: 9 brilliant series that will keep your mind busy on long hikes",
+      "total": 9,
+      "podcasts": [
+        {
+          "id": "c72b95c240714fb38627a1e24259ee65",
+          "image": "https://production.listennotes.com/podcasts/walk-to-wellbeing-the-wellness-and-walking-wp4e_S13Ofx-gT_yr-i7lQ1.1400x1400.jpg",
+          "title": "Walk To Wellbeing: The wellness and walking podcast by Health & Wellbeing",
+          "publisher": "DC Thomson",
+          "thumbnail": "https://production.listennotes.com/podcasts/walk-to-wellbeing-the-wellness-and-walking-LSkmW2alCvQ-gT_yr-i7lQ1.300x300.jpg",
+          "listen_score": 30,
+          "listennotes_url": "https://www.listennotes.com/c/c72b95c240714fb38627a1e24259ee65/",
+          "listen_score_global_rank": "5%"
+        },
+        {
+          "id": "3f349c8c74a544c79908274b733969be",
+          "image": "https://production.listennotes.com/podcasts/national-trust-podcast-national-trust-f-c38GF2BWL-hjQ9VKotJrU.1400x1400.jpg",
+          "title": "National Trust Podcast",
+          "publisher": "National Trust",
+          "thumbnail": "https://production.listennotes.com/podcasts/national-trust-podcast-national-trust-KEuMhY_oCUJ-hjQ9VKotJrU.300x300.jpg",
+          "listen_score": 50,
+          "listennotes_url": "https://www.listennotes.com/c/3f349c8c74a544c79908274b733969be/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "e1c66a542b8d4acfbc95b898c7ac710f",
+          "image": "https://production.listennotes.com/podcasts/feel-better-live-more-with-dr-rangan-HCVm172lNcX-JKmSp6BXHVk.1400x1400.jpg",
+          "title": "Feel Better, Live More with Dr Rangan Chatterjee",
+          "publisher": "Dr Rangan Chatterjee: GP & Author",
+          "thumbnail": "https://production.listennotes.com/podcasts/feel-better-live-more-with-dr-rangan-H1l2zKIPydb-JKmSp6BXHVk.300x300.jpg",
+          "listen_score": 73,
+          "listennotes_url": "https://www.listennotes.com/c/e1c66a542b8d4acfbc95b898c7ac710f/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "2c619ccac19943a7af53fa04a58ad2ef",
+          "image": "https://production.listennotes.com/podcasts/walking-the-dog-with-emily-dean-the-times-ywVxQCJhPN2-bFLhfgYpAPm.1400x1400.jpg",
+          "title": "Walking The Dog with Emily Dean",
+          "publisher": "The Times",
+          "thumbnail": "https://production.listennotes.com/podcasts/walking-the-dog-with-emily-dean-the-times-l3IZLGS5y0r-bFLhfgYpAPm.300x300.jpg",
+          "listen_score": 62,
+          "listennotes_url": "https://www.listennotes.com/c/2c619ccac19943a7af53fa04a58ad2ef/",
+          "listen_score_global_rank": "0.1%"
+        },
+        {
+          "id": "4be7fc6864854199812237804f489a2e",
+          "image": "https://production.listennotes.com/podcasts/sliced-bread-bbc-radio-4-tCUGfOB0L59-PY2HKWuLVcg.1400x1400.jpg",
+          "title": "Sliced Bread",
+          "publisher": "BBC Radio 4",
+          "thumbnail": "https://production.listennotes.com/podcasts/sliced-bread-bbc-radio-4-IMJAvN7unZo-PY2HKWuLVcg.300x300.jpg",
+          "listen_score": 50,
+          "listennotes_url": "https://www.listennotes.com/c/4be7fc6864854199812237804f489a2e/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.stylist.co.uk/entertainment/podcasts/best-walking-hiking-podcasts/812779?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Is a lack of entertainment putting you off going for long walks? Try listening to one of these engaging podcasts to keep you busy and boost your motivation levels.\"",
+      "pub_date_ms": 1692552425288,
+      "source_domain": "www.stylist.co.uk",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-walking-podcasts-9-brilliant-DaEKOlT-yZc/"
+    },
+    {
+      "id": "jFXH91_5Txw",
+      "title": "7 of the Best Star-Studded Rewatch Podcasts to Listen to Amidst the Hollywood Strikes",
+      "total": 8,
+      "podcasts": [
+        {
+          "id": "767212ac574c4912bbaadab795b7fef5",
+          "image": "https://production.listennotes.com/podcasts/pod-meets-world-iheartpodcasts-uI8O31Lhb6k-Dbtv8dGgFzY.1400x1400.jpg",
+          "title": "Pod Meets World",
+          "publisher": "iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/pod-meets-world-iheartpodcasts-3WcwUlfinvI-Dbtv8dGgFzY.300x300.jpg",
+          "listen_score": 64,
+          "listennotes_url": "https://www.listennotes.com/c/767212ac574c4912bbaadab795b7fef5/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "fb692671e0a64506a0b272f6054cd760",
+          "image": "https://production.listennotes.com/podcasts/full-house-rewind-D1Xmx8fVbBo--OiJqgQ8WCn.1400x1400.jpg",
+          "title": "Full House Rewind",
+          "publisher": "PodCo",
+          "thumbnail": "https://production.listennotes.com/podcasts/full-house-rewind-mLMbzXe5Cfp--OiJqgQ8WCn.300x300.jpg",
+          "listen_score": 46,
+          "listennotes_url": "https://www.listennotes.com/c/fb692671e0a64506a0b272f6054cd760/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "af5858c544634421a47dd7c99ee9a20e",
+          "image": "https://production.listennotes.com/podcasts/how-rude-tanneritos-iheartpodcasts-SfFjneWBsId-Kn1Z97d8Ris.1400x1400.jpg",
+          "title": "How Rude, Tanneritos!",
+          "publisher": "iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/how-rude-tanneritos-iheartpodcasts-wr6n97ti8mF-Kn1Z97d8Ris.300x300.jpg",
+          "listen_score": 51,
+          "listennotes_url": "https://www.listennotes.com/c/af5858c544634421a47dd7c99ee9a20e/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "6f8b58216aed4e8fb8d84f3d579c2864",
+          "image": "https://production.listennotes.com/podcasts/drama-queens-iheartpodcasts-xTFVm1Bkzvu-Wfs0aE92byP.1400x1400.jpg",
+          "title": "Drama Queens",
+          "publisher": "iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/drama-queens-iheartpodcasts-7GqrPIhvyaw-Wfs0aE92byP.300x300.jpg",
+          "listen_score": 75,
+          "listennotes_url": "https://www.listennotes.com/c/6f8b58216aed4e8fb8d84f3d579c2864/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "44155df378c24577bfe906248368d82d",
+          "image": "https://production.listennotes.com/podcasts/90210mg-iheartpodcasts-MfCZY9uFVoE-ysE8WUFoX4M.1400x1400.jpg",
+          "title": "90210MG",
+          "publisher": "iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/90210mg-iheartpodcasts-nzsmpXRKreZ-ysE8WUFoX4M.300x300.jpg",
+          "listen_score": 61,
+          "listennotes_url": "https://www.listennotes.com/c/44155df378c24577bfe906248368d82d/",
+          "listen_score_global_rank": "0.1%"
+        }
+      ],
+      "source_url": "https://popculture.com/tv-shows/news/7-of-the-best-star-studded-rewatch-podcasts-to-listen-to-amidst-the-hollywood-strikes/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "'With the WGA and SAG-AFTRA strikes, almost all of Hollywood is at a standstill. Only a select few will be airing new episodes this fall. Maybe instead of looking forward to something new, fans can look forward to something old. While there are many rewatch podcasts, we have narrowed it down, so take a look at some of the best star-studded rewatch podcasts to listen to.'",
+      "pub_date_ms": 1692552333948,
+      "source_domain": "popculture.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/7-of-the-best-star-studded-rewatch-jFXH91_5Txw/"
+    },
+    {
+      "id": "mIChM6YAxsu",
+      "title": "Five Best Self-Help Podcasts for Teens 2023",
+      "total": 5,
+      "podcasts": [
+        {
+          "id": "c7b48218be8e48ec9791a60c1795ac7b",
+          "image": "https://production.listennotes.com/podcasts/anything-goes-with-emma-chamberlain-emma-b0Q6-Ej5dMw-7z1YesgG3Pf.1400x1400.jpg",
+          "title": "anything goes with emma chamberlain",
+          "publisher": "emma chamberlain",
+          "thumbnail": "https://production.listennotes.com/podcasts/anything-goes-with-emma-chamberlain-emma-WU8iSf5uq-9-7z1YesgG3Pf.300x300.jpg",
+          "listen_score": 85,
+          "listennotes_url": "https://www.listennotes.com/c/c7b48218be8e48ec9791a60c1795ac7b/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "adbabfe5dfe24d16831a50be66e6dbd0",
+          "image": "https://production.listennotes.com/podcasts/things-could-be-worse-2qKsyeoCS5k-b7zJSE3dNyB.1400x1400.jpg",
+          "title": "Things Could Be Worse",
+          "publisher": "Bailey Dedrick",
+          "thumbnail": "https://production.listennotes.com/podcasts/things-could-be-worse-GvUuWrxKgL--b7zJSE3dNyB.300x300.jpg",
+          "listen_score": 56,
+          "listennotes_url": "https://www.listennotes.com/c/adbabfe5dfe24d16831a50be66e6dbd0/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "98e4ce04e0de4606bc407127d4a1488c",
+          "image": "https://production.listennotes.com/podcasts/call-your-friends-madison-and-lauren-orlando-cCM2sQUwBD3-abjTmEhBAfG.1400x1400.jpg",
+          "title": "Call Your Friends",
+          "publisher": "Madison and Lauren Orlando",
+          "thumbnail": "https://production.listennotes.com/podcasts/call-your-friends-madison-and-lauren-orlando-j1YsoX0ZNLM-abjTmEhBAfG.300x300.jpg",
+          "listen_score": 56,
+          "listennotes_url": "https://www.listennotes.com/c/98e4ce04e0de4606bc407127d4a1488c/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "795d876d4f114f368630aec49aab03a0",
+          "image": "https://production.listennotes.com/podcasts/on-purpose-with-jay-shetty-iheartpodcasts-yxTRzc7LHZP-gnyHELJ0usD.1400x1400.jpg",
+          "title": "On Purpose with Jay Shetty",
+          "publisher": "iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/on-purpose-with-jay-shetty-iheartpodcasts-dsVoPaCB2mW-gnyHELJ0usD.300x300.jpg",
+          "listen_score": 83,
+          "listennotes_url": "https://www.listennotes.com/c/795d876d4f114f368630aec49aab03a0/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "3c180ebf93b3408f89b62600d00b8eab",
+          "image": "https://production.listennotes.com/podcasts/high-low-with-emrata-emrata-sony-music-RxViyrYebqX-LEGndbzpcSP.1400x1400.jpg",
+          "title": "High Low with EmRata",
+          "publisher": "EmRata / Sony Music Entertainment",
+          "thumbnail": "https://production.listennotes.com/podcasts/high-low-with-emrata-emrata-sony-music-uWS-8eNKsYU-LEGndbzpcSP.300x300.jpg",
+          "listen_score": 55,
+          "listennotes_url": "https://www.listennotes.com/c/3c180ebf93b3408f89b62600d00b8eab/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.theteenmagazine.com/five-best-self-help-podcasts-for-teens-2023?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"To help you guys out, I have compiled a list of the five best self-help podcasts for teens in 2023 according to my experience, reviews that I've gathered from the internet, and an immense amount of research that I've done to put all of the fragments of information that I've found helpful together, which are truly the cream of the crop! These podcasts cover mental health, personal development, career advice, and more.\"",
+      "pub_date_ms": 1692551021846,
+      "source_domain": "www.theteenmagazine.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/five-best-self-help-podcasts-for-teens-mIChM6YAxsu/"
+    },
+    {
+      "id": "7jHf6pV2W1v",
+      "title": "The Best Podcasts to Represent Every US State (Plus DC)",
+      "total": 51,
+      "podcasts": [
+        {
+          "id": "d3528487ea4045f9927d0ef8bf94a149",
+          "image": "https://production.listennotes.com/podcasts/alabama-astronaut-W7hTFxbS9k--m45LQRiydqa.1400x1400.jpg",
+          "title": "Alabama Astronaut",
+          "publisher": "Abe Partridge & Ferrill Gibbs",
+          "thumbnail": "https://production.listennotes.com/podcasts/alabama-astronaut-wHEqm0PaoF2-m45LQRiydqa.300x300.jpg",
+          "listen_score": 43,
+          "listennotes_url": "https://www.listennotes.com/c/d3528487ea4045f9927d0ef8bf94a149/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "98f78d96c1e5458f8c36932486775f19",
+          "image": "https://production.listennotes.com/podcasts/iditapod-alaska-public-media-_LtHwo6Y8OF-_Ys4if1qkP5.1400x1400.jpg",
+          "title": "Iditapod",
+          "publisher": "Alaska Public Media",
+          "thumbnail": "https://production.listennotes.com/podcasts/iditapod-alaska-public-media-d-gSneYFAE3-_Ys4if1qkP5.300x300.jpg",
+          "listen_score": 44,
+          "listennotes_url": "https://www.listennotes.com/c/98f78d96c1e5458f8c36932486775f19/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "1bb3c46ee67e401180c1f959abcba5e8",
+          "image": "https://production.listennotes.com/podcasts/behind-the-scenery-9qL8fCydoJ7-GxSgU09DuAn.1400x1400.jpg",
+          "title": "Behind the Scenery",
+          "publisher": "National Park Service",
+          "thumbnail": "https://production.listennotes.com/podcasts/behind-the-scenery-AJS2B4bftvk-GxSgU09DuAn.300x300.jpg",
+          "listen_score": 27,
+          "listennotes_url": "https://www.listennotes.com/c/1bb3c46ee67e401180c1f959abcba5e8/",
+          "listen_score_global_rank": "10%"
+        },
+        {
+          "id": "852f79600d3840e487195bdb45cc8915",
+          "image": "https://production.listennotes.com/podcasts/ozark-whispers-vincent-vangetti-5LZiWdewpmB-VMEa2nHdy_j.1400x1400.jpg",
+          "title": "Ozark Whispers",
+          "publisher": "Vincent Vangetti",
+          "thumbnail": "https://production.listennotes.com/podcasts/ozark-whispers-vincent-vangetti-jJUVZmotlay-VMEa2nHdy_j.300x300.jpg",
+          "listen_score": 28,
+          "listennotes_url": "https://www.listennotes.com/c/852f79600d3840e487195bdb45cc8915/",
+          "listen_score_global_rank": "10%"
+        },
+        {
+          "id": "26512878acb24d589c7088b3c7045e6e",
+          "image": "https://production.listennotes.com/podcasts/california-love-laist-studios-3NvrBXq4m1V-xNiGon0uhrC.1400x1400.jpg",
+          "title": "California Love",
+          "publisher": "LAist Studios",
+          "thumbnail": "https://production.listennotes.com/podcasts/california-love-laist-studios-QXogFJMx8t2-xNiGon0uhrC.300x300.jpg",
+          "listen_score": 56,
+          "listennotes_url": "https://www.listennotes.com/c/26512878acb24d589c7088b3c7045e6e/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://lifehacker.com/best-podcast-for-every-us-state-1850741030?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Each one celebrates the voices and stories that make the United States so diverse. If you\u2019re taking a cross-country road trip, you could blast state-specific podcasts the whole way. Here\u2019s a list to get you started.\"",
+      "pub_date_ms": 1692309919935,
+      "source_domain": "lifehacker.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-best-podcasts-to-represent-every-7jHf6pV2W1v/"
+    },
+    {
+      "id": "ZatwYU8Aqib",
+      "title": "Best podcasts of the week: Join Sara Pascoe and Cariad Lloyd\u2019s book club with a difference",
+      "total": 8,
+      "podcasts": [
+        {
+          "id": "6e893f63911c4c278de7aa5947676323",
+          "image": "https://production.listennotes.com/podcasts/sara-cariads-weirdos-book-club-plosive-yNSIsVMbOPk-ZUqT1HjaVGw.1400x1400.jpg",
+          "title": "Sara & Cariad's Weirdos Book Club",
+          "publisher": "Plosive",
+          "thumbnail": "https://production.listennotes.com/podcasts/sara-cariads-weirdos-book-club-plosive-aPO5_3d7kBQ-ZUqT1HjaVGw.300x300.jpg",
+          "listen_score": 40,
+          "listennotes_url": "https://www.listennotes.com/c/6e893f63911c4c278de7aa5947676323/",
+          "listen_score_global_rank": "1.5%"
+        },
+        {
+          "id": "ded8f6fce1c946e89053259c60ed8200",
+          "image": "https://production.listennotes.com/podcasts/serpentine-podcast-serpentine-y-Ur64K0oDx-b-ZhB0ovfPK.1400x1400.jpg",
+          "title": "Serpentine Podcast",
+          "publisher": "Serpentine",
+          "thumbnail": "https://production.listennotes.com/podcasts/serpentine-podcast-serpentine-g9kGdqKrHfB-b-ZhB0ovfPK.300x300.jpg",
+          "listen_score": 38,
+          "listennotes_url": "https://www.listennotes.com/c/ded8f6fce1c946e89053259c60ed8200/",
+          "listen_score_global_rank": "2%"
+        },
+        {
+          "id": "f0573955f1bb437ab4eab076e65bc69f",
+          "image": "https://production.listennotes.com/podcasts/the-red-carpet-treatment-with-jordan-MwJpLaSyi9t-LRg2THXaBfO.1400x1400.jpg",
+          "title": "The Red Carpet Treatment with Jordan Stephens",
+          "publisher": "s:e creative studio ",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-red-carpet-treatment-with-jordan-RB4rtEasxz6-LRg2THXaBfO.300x300.jpg",
+          "listen_score": 28,
+          "listennotes_url": "https://www.listennotes.com/c/f0573955f1bb437ab4eab076e65bc69f/",
+          "listen_score_global_rank": "10%"
+        },
+        {
+          "id": "8ff0306ffef641948118318eb05d3dec",
+          "image": "https://production.listennotes.com/podcasts/where-is-alex-a-5-news-podcast-9K_rmu4zcxv-oZL_SW5zbgI.1400x1400.jpg",
+          "title": "\u2018Where is Alex?\u2019 - a 5 News podcast",
+          "publisher": "Julian Druker",
+          "thumbnail": "https://production.listennotes.com/podcasts/where-is-alex-a-5-news-podcast-S69yPXaBz-u-oZL_SW5zbgI.300x300.jpg",
+          "listen_score": null,
+          "listennotes_url": "https://www.listennotes.com/c/8ff0306ffef641948118318eb05d3dec/",
+          "listen_score_global_rank": null
+        },
+        {
+          "id": "dd5821bb41734e669169d6c01c97cf91",
+          "image": "https://production.listennotes.com/podcasts/cocktails-and-takeaways-cocktails-and-ndgqF9zpM5l-GgsF02DMJmO.1400x1400.jpg",
+          "title": "COCKTAILS AND TAKEAWAYS",
+          "publisher": "cocktails and takeaways",
+          "thumbnail": "https://production.listennotes.com/podcasts/cocktails-and-takeaways-cocktails-and-qPRCXVK7ZeM-GgsF02DMJmO.300x300.jpg",
+          "listen_score": 49,
+          "listennotes_url": "https://www.listennotes.com/c/dd5821bb41734e669169d6c01c97cf91/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.theguardian.com/tv-and-radio/2023/aug/17/hear-here-sara-cariad-weirdos-book-club?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"The comedians promise \u2018a space for the lonely outsider to feel accepted\u2019 in Sara & Cariad\u2019s Weirdos Book Club. Plus: five of the best podcasts with multitasking hosts.\"",
+      "pub_date_ms": 1692309524021,
+      "source_domain": "www.theguardian.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-podcasts-of-the-week-join-sara-ZatwYU8Aqib/"
+    },
+    {
+      "id": "YTA_Nwm69lb",
+      "title": "Top 10 Most Popular Podcast Series in 2023",
+      "total": 11,
+      "podcasts": [
+        {
+          "id": "441f4f517fa44d38aaa95bb72e1fc37a",
+          "image": "https://production.listennotes.com/podcasts/blackout-qcode-endeavor-content-SEQXzolMu1W-AK2fNL8tWmP.1400x1400.jpg",
+          "title": "Blackout",
+          "publisher": "QCODE & Endeavor Content",
+          "thumbnail": "https://production.listennotes.com/podcasts/blackout-qcode-endeavor-content-1uKCHGIvRcq-AK2fNL8tWmP.300x300.jpg",
+          "listen_score": 78,
+          "listennotes_url": "https://www.listennotes.com/c/441f4f517fa44d38aaa95bb72e1fc37a/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "4e1f73af5f4e4e5aa51e351f3c3f39fe",
+          "image": "https://production.listennotes.com/podcasts/batman-the-animated-series-podcast-NH7os9Yq6pc-GrdUWAO-e1H.1400x1400.jpg",
+          "title": "Batman the Animated Series Podcast",
+          "publisher": "Alex & Will Robson",
+          "thumbnail": "https://production.listennotes.com/podcasts/batman-the-animated-series-podcast-ENA97DbKrnL-GrdUWAO-e1H.300x300.jpg",
+          "listen_score": 36,
+          "listennotes_url": "https://www.listennotes.com/c/4e1f73af5f4e4e5aa51e351f3c3f39fe/",
+          "listen_score_global_rank": "2.5%"
+        },
+        {
+          "id": "3ac868ea6ecb4c52ad6dc2a999cb8927",
+          "image": "https://production.listennotes.com/podcasts/bridgewater-iheartpodcasts-and-grim-mild-z39e_vFrTsU-1OYpZlVzmKd.1400x1400.jpg",
+          "title": "Bridgewater",
+          "publisher": "iHeartPodcasts and Grim & Mild",
+          "thumbnail": "https://production.listennotes.com/podcasts/bridgewater-iheartpodcasts-and-grim-mild-6Te_wo3KB1n-1OYpZlVzmKd.300x300.jpg",
+          "listen_score": 67,
+          "listennotes_url": "https://www.listennotes.com/c/3ac868ea6ecb4c52ad6dc2a999cb8927/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "9ac767bb2dee4cd396e55ddf2753acb4",
+          "image": "https://production.listennotes.com/podcasts/the-wolverine-podcast-thewolverinecom-e5SurEm4I1b-nXPI9zpA7QY.1400x1400.jpg",
+          "title": "The Wolverine Podcast",
+          "publisher": "TheWolverine.com",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-wolverine-podcast-thewolverinecom-Do-LB2xqMza-nXPI9zpA7QY.300x300.jpg",
+          "listen_score": 48,
+          "listennotes_url": "https://www.listennotes.com/c/9ac767bb2dee4cd396e55ddf2753acb4/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "b68e20af0aad415da1045be573927062",
+          "image": "https://production.listennotes.com/podcasts/marvels-wolverine-the-long-night-TUt4YZivDkR--CQ9NEh1kIX.1400x1400.jpg",
+          "title": "Marvel's Wolverine: The Long Night",
+          "publisher": "Marvel & SiriusXM",
+          "thumbnail": "https://production.listennotes.com/podcasts/marvels-wolverine-the-long-night-uFTJirOALNx--CQ9NEh1kIX.300x300.jpg",
+          "listen_score": 52,
+          "listennotes_url": "https://www.listennotes.com/c/b68e20af0aad415da1045be573927062/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://technosports.co.in/top-10-most-popular-podcast-series/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Podcasts have become a popular way to consume audio content in recent years and with good reason. They offer a wide variety of topics and styles, from educational to entertaining, and can be listened to on the go or in the comfort of your own home.\"",
+      "pub_date_ms": 1692135828264,
+      "source_domain": "technosports.co.in",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/top-10-most-popular-podcast-series-in-YTA_Nwm69lb/"
+    },
+    {
+      "id": "qtAZhrimlBJ",
+      "title": "12 Comedy Podcasts As Smart as SmartLess",
+      "total": 12,
+      "podcasts": [
+        {
+          "id": "fa07bed1958840ca89c4c7d2536ab701",
+          "image": "https://production.listennotes.com/podcasts/family-trips-with-the-meyers-brothers-p2Kxr1EiX6--2j4-Oyeu0TK.1400x1400.jpg",
+          "title": "Family Trips with the Meyers Brothers",
+          "publisher": "Seth Meyers and Josh Meyers",
+          "thumbnail": "https://production.listennotes.com/podcasts/family-trips-with-the-meyers-brothers-eCzgUAX_vYK-2j4-Oyeu0TK.300x300.jpg",
+          "listen_score": 52,
+          "listennotes_url": "https://www.listennotes.com/c/fa07bed1958840ca89c4c7d2536ab701/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "170ba77c435a4faeaf41f93a1ffa1971",
+          "image": "https://production.listennotes.com/podcasts/baby-this-is-keke-palmer-j6kNzpt41qi-u2MSNy3hXxK.1400x1400.jpg",
+          "title": "Baby, This is Keke Palmer",
+          "publisher": "Wondery",
+          "thumbnail": "https://production.listennotes.com/podcasts/baby-this-is-keke-palmer-PyijXYsgFEQ-u2MSNy3hXxK.300x300.jpg",
+          "listen_score": 51,
+          "listennotes_url": "https://www.listennotes.com/c/170ba77c435a4faeaf41f93a1ffa1971/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "8038647a5e1c49e2934d3dea401aaf6b",
+          "image": "https://production.listennotes.com/podcasts/all-fantasy-everything-headgum-gdz1T3yokef-hGkLxfsg1To.1400x1400.jpg",
+          "title": "All Fantasy Everything",
+          "publisher": "Headgum",
+          "thumbnail": "https://production.listennotes.com/podcasts/all-fantasy-everything-headgum-OtygIaobpuE-hGkLxfsg1To.300x300.jpg",
+          "listen_score": 66,
+          "listennotes_url": "https://www.listennotes.com/c/8038647a5e1c49e2934d3dea401aaf6b/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "81ab79ffad794edab15e5b616d196650",
+          "image": "https://production.listennotes.com/podcasts/straightiolab-big-money-players-network-and-8XThz1-_0Ov-vnYD5R87bPe.1400x1400.jpg",
+          "title": "StraightioLab",
+          "publisher": "Big Money Players Network and iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/straightiolab-big-money-players-network-and-J62I1wf4v9G-vnYD5R87bPe.300x300.jpg",
+          "listen_score": 55,
+          "listennotes_url": "https://www.listennotes.com/c/81ab79ffad794edab15e5b616d196650/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "de5f2712de804c9fb6c60db35e64d3c5",
+          "image": "https://production.listennotes.com/podcasts/do-you-need-a-ride-exactly-right-mpAGMZCfrSW-mRz6LDytGMh.1400x1400.jpg",
+          "title": "Do You Need A Ride?",
+          "publisher": "Exactly Right",
+          "thumbnail": "https://production.listennotes.com/podcasts/do-you-need-a-ride-exactly-right-yIUF-NX9OzH-mRz6LDytGMh.300x300.jpg",
+          "listen_score": 68,
+          "listennotes_url": "https://www.listennotes.com/c/de5f2712de804c9fb6c60db35e64d3c5/",
+          "listen_score_global_rank": "0.05%"
+        }
+      ],
+      "source_url": "https://www.lifehacker.com.au/2023/08/12-comedy-podcasts-as-smart-as-smartless/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"That means if you\u2019re reading this you probably know all about the show, and maybe you\u2019re in the market for something with the same vibes: funny, offbeat, conversational. Here are 12 podcasts that might not be in the top five just yet, but are sure to bring you lots of laughs.\"",
+      "pub_date_ms": 1691947919171,
+      "source_domain": "www.lifehacker.com.au",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/12-comedy-podcasts-as-smart-as-smartless-qtAZhrimlBJ/"
+    },
+    {
+      "id": "2Kogx1clwMW",
+      "title": "Fifteen Parenting Podcasts That Don\u2019t Preach or Judge",
+      "total": 15,
+      "podcasts": [
+        {
+          "id": "61c1e648111e49d685c3c6abab0ef8f3",
+          "image": "https://production.listennotes.com/podcasts/what-fresh-hell-laughing-in-the-face-of-lSdqxtW7Ebn-750HD-Cd_ZL.1400x1400.jpg",
+          "title": "What Fresh Hell: Laughing in the Face of Motherhood",
+          "publisher": "Margaret Ables and Amy Wilson",
+          "thumbnail": "https://production.listennotes.com/podcasts/what-fresh-hell-laughing-in-the-face-of-V08M5iIoGeu-750HD-Cd_ZL.300x300.jpg",
+          "listen_score": 55,
+          "listennotes_url": "https://www.listennotes.com/c/61c1e648111e49d685c3c6abab0ef8f3/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "74ce7a91a84a4bba8899ba5cff5ab922",
+          "image": "https://production.listennotes.com/podcasts/didnt-i-just-feed-you-stacie-billis-and-p-HWbOAstYJ-OWkDLgpb0di.1400x1400.jpg",
+          "title": "Didn't I Just Feed You",
+          "publisher": "Stacie Billis and Meghan Splawn",
+          "thumbnail": "https://production.listennotes.com/podcasts/didnt-i-just-feed-you-stacie-billis-and-WisuKR-QhO6-OWkDLgpb0di.300x300.jpg",
+          "listen_score": 52,
+          "listennotes_url": "https://www.listennotes.com/c/74ce7a91a84a4bba8899ba5cff5ab922/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "0ab0a0438fea428d92f46e775dd7fad1",
+          "image": "https://production.listennotes.com/podcasts/the-girl-next-door-podcast-kelsey-wharton-HqWXlEgTu07-vDj0c_HfIsa.1400x1400.jpg",
+          "title": "The Girl Next Door Podcast",
+          "publisher": "Kelsey Wharton and Erica Ladd",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-girl-next-door-podcast-kelsey-wharton-ClMmNqkO6t9-vDj0c_HfIsa.300x300.jpg",
+          "listen_score": 51,
+          "listennotes_url": "https://www.listennotes.com/c/0ab0a0438fea428d92f46e775dd7fad1/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "39c0ad8b4f2d4e0888fe56312557b35d",
+          "image": "https://production.listennotes.com/podcasts/best-of-both-worlds-podcast-laura-vanderkam-sEA9dBfSWHx-xXbtjyMOgBA.1400x1400.jpg",
+          "title": "Best of Both Worlds Podcast",
+          "publisher": "Laura Vanderkam and Sarah Hart-Unger",
+          "thumbnail": "https://production.listennotes.com/podcasts/best-of-both-worlds-podcast-laura-vanderkam-aA1rWEs4Oyl-xXbtjyMOgBA.300x300.jpg",
+          "listen_score": 54,
+          "listennotes_url": "https://www.listennotes.com/c/39c0ad8b4f2d4e0888fe56312557b35d/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "0316b11c9ddd4f19be98c6e12b3df0bb",
+          "image": "https://production.listennotes.com/podcasts/motherhood-in-black-white-kaanji-and-tara-ywaXrDPb3uE-4UdLF0tgGJK.1400x1400.jpg",
+          "title": "Motherhood in Black & White ",
+          "publisher": "Kaanji and Tara",
+          "thumbnail": "https://production.listennotes.com/podcasts/motherhood-in-black-white-kaanji-and-tara-VO0IwpGkhsF-4UdLF0tgGJK.300x300.jpg",
+          "listen_score": 41,
+          "listennotes_url": "https://www.listennotes.com/c/0316b11c9ddd4f19be98c6e12b3df0bb/",
+          "listen_score_global_rank": "1.5%"
+        }
+      ],
+      "source_url": "https://www.independent.com/2023/08/07/fifteen-parenting-podcasts-that-dont-preach-or-judge/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Today, there are so many options to choose from. There\u2019s no one right way to be a great parent, and the perfect podcast for you is one that reminds you of that. Here are 15 shows that don\u2019t preach or judge, and that just might make your next sleepless night a little less lonely.\"",
+      "pub_date_ms": 1691948111370,
+      "source_domain": "www.independent.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/fifteen-parenting-podcasts-that-dont-2Kogx1clwMW/"
+    },
+    {
+      "id": "gYLOfRvVq_3",
+      "title": "Best Podcasts Hosted by Famous Actors",
+      "total": 10,
+      "podcasts": [
+        {
+          "id": "9663cd4f309c4bf99e56c5cc63246a5c",
+          "image": "https://production.listennotes.com/podcasts/the-lohdown-with-lindsay-lohan-6q4UbBNM31L-J6obqeyhH8F.1400x1400.jpg",
+          "title": "The Lohdown with Lindsay Lohan",
+          "publisher": "Lindsay Lohan & Studio71",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-lohdown-with-lindsay-lohan-AvKgj75wiZU-J6obqeyhH8F.300x300.jpg",
+          "listen_score": 45,
+          "listennotes_url": "https://www.listennotes.com/c/9663cd4f309c4bf99e56c5cc63246a5c/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "fe60eeeb10394a41b1b0fbdb21a5a9a4",
+          "image": "https://production.listennotes.com/podcasts/smartless-jason-bateman-sean-hayes-will-u23xwCAJ4Np-uMrHzgVoN8O.1400x1400.jpg",
+          "title": "SmartLess",
+          "publisher": "Jason Bateman, Sean Hayes, Will Arnett",
+          "thumbnail": "https://production.listennotes.com/podcasts/smartless-jason-bateman-sean-hayes-will-AvK9UqtwCkD-uMrHzgVoN8O.300x300.jpg",
+          "listen_score": 83,
+          "listennotes_url": "https://www.listennotes.com/c/fe60eeeb10394a41b1b0fbdb21a5a9a4/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "fda58aa1372d4aa59a7597c152cb08e0",
+          "image": "https://production.listennotes.com/podcasts/the-left-ear-dakota-johnson-spoke-media-Z6q5AmC7fwU--gF07RcBQMs.1400x1400.jpg",
+          "title": "The Left Ear",
+          "publisher": "Dakota Johnson & Spoke Media",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-left-ear-dakota-johnson-spoke-media-FXzVfnNWwut--gF07RcBQMs.300x300.jpg",
+          "listen_score": 51,
+          "listennotes_url": "https://www.listennotes.com/c/fda58aa1372d4aa59a7597c152cb08e0/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "042aa7bd3c7f4226914a9fa6c891d2ef",
+          "image": "https://production.listennotes.com/podcasts/bunny-ears-studio71-Qa0KBJM9vkr-UDVywxA76uv.1400x1400.jpg",
+          "title": "Bunny Ears",
+          "publisher": "Studio71",
+          "thumbnail": "https://production.listennotes.com/podcasts/bunny-ears-studio71-tn1z9EPTj4L-UDVywxA76uv.300x300.jpg",
+          "listen_score": 59,
+          "listennotes_url": "https://www.listennotes.com/c/042aa7bd3c7f4226914a9fa6c891d2ef/",
+          "listen_score_global_rank": "0.1%"
+        },
+        {
+          "id": "db3736c71b5a41b9a3798359e79a7def",
+          "image": "https://production.listennotes.com/podcasts/oprahs-super-soul-oprah-Lh7Z-faYkzI-Gv-_hNgTmac.1400x1400.jpg",
+          "title": "Oprah's Super Soul",
+          "publisher": "Oprah",
+          "thumbnail": "https://production.listennotes.com/podcasts/oprahs-super-soul-oprah-x6t_GSzc7mN-Gv-_hNgTmac.300x300.jpg",
+          "listen_score": 83,
+          "listennotes_url": "https://www.listennotes.com/c/db3736c71b5a41b9a3798359e79a7def/",
+          "listen_score_global_rank": "0.01%"
+        }
+      ],
+      "source_url": "https://movieweb.com/podcast-actors-host/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Especially after COVID struck, many A-listers have turned to audio platforms like podcasts as a new way of reaching their fans. Here's a closer look.\"",
+      "pub_date_ms": 1691948260146,
+      "source_domain": "movieweb.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-podcasts-hosted-by-famous-actors-gYLOfRvVq_3/"
+    },
+    {
+      "id": "cVS5C1t4dRL",
+      "title": "Best Podcasts For Your Mental Health",
       "total": 6,
       "podcasts": [
         {
-          "id": "6d9aadb8bcdd47248f81958bde7f610c",
-          "image": "https://production.listennotes.com/podcasts/help-i-sexted-my-boss-audio-always-XGwzdTJRegO-LakX4pShTF9.1400x1400.jpg",
-          "title": "Help I Sexted My Boss",
-          "publisher": "Audio Always",
-          "thumbnail": "https://production.listennotes.com/podcasts/help-i-sexted-my-boss-audio-always-F9pIdB5yal4-LakX4pShTF9.300x300.jpg",
-          "listen_score": 65,
-          "listennotes_url": "https://www.listennotes.com/c/6d9aadb8bcdd47248f81958bde7f610c/",
+          "id": "10a012ebebe6453199c6e46174ad29c6",
+          "image": "https://production.listennotes.com/podcasts/the-friend-zone-loud-speakers-network-oZWlKkcUn9w-krsBLThdIgJ.1400x1400.jpg",
+          "title": "The Friend Zone",
+          "publisher": "Loud Speakers Network",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-friend-zone-loud-speakers-network-K8coa2wPjh9-krsBLThdIgJ.300x300.jpg",
+          "listen_score": 68,
+          "listennotes_url": "https://www.listennotes.com/c/10a012ebebe6453199c6e46174ad29c6/",
           "listen_score_global_rank": "0.05%"
         },
         {
-          "id": "5135c34d884a47bba26472c1ecd39f23",
-          "image": "https://production.listennotes.com/podcasts/the-mortified-podcast-mortified-media-and-6KzT8DM1iXc-oiAIBjZbt5r.1400x1400.jpg",
-          "title": "The Mortified Podcast",
-          "publisher": "Mortified Media and Radiotopia",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-mortified-podcast-mortified-media-and-B_NjkwSsy7q-oiAIBjZbt5r.300x300.jpg",
-          "listen_score": 65,
-          "listennotes_url": "https://www.listennotes.com/c/5135c34d884a47bba26472c1ecd39f23/",
+          "id": "1701e6bab88b4f21b3ebb885bf1a020b",
+          "image": "https://production.listennotes.com/podcasts/black-girls-heal-shena-lashey-FMJvDUqmd8G-TQZ6UispOLI.1400x1400.jpg",
+          "title": "Black Girls Heal",
+          "publisher": "Shena Lashey",
+          "thumbnail": "https://production.listennotes.com/podcasts/black-girls-heal-shena-lashey-MFWgAcr-6mL-TQZ6UispOLI.300x300.jpg",
+          "listen_score": 59,
+          "listennotes_url": "https://www.listennotes.com/c/1701e6bab88b4f21b3ebb885bf1a020b/",
+          "listen_score_global_rank": "0.1%"
+        },
+        {
+          "id": "adb2026fb84746719c4ed3103b5b7793",
+          "image": "https://production.listennotes.com/podcasts/lets-talk-bruh-lets-talk-bruh-podcast-XdTwgfLsnz7-D2yleFK1TNx.1400x1400.jpg",
+          "title": "Let's Talk Bruh",
+          "publisher": "Let's Talk Bruh Podcast",
+          "thumbnail": "https://production.listennotes.com/podcasts/lets-talk-bruh-lets-talk-bruh-podcast-5MX8wA2fxKc-D2yleFK1TNx.300x300.jpg",
+          "listen_score": 47,
+          "listennotes_url": "https://www.listennotes.com/c/adb2026fb84746719c4ed3103b5b7793/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "6d01c4e63c5349099ea5c6e617c646e6",
+          "image": "https://production.listennotes.com/podcasts/therapy-for-black-girls-iheartpodcasts-and-oMShBw6KgJj-Jw_CUaBj1GI.1400x1400.jpg",
+          "title": "Therapy for Black Girls",
+          "publisher": "iHeartPodcasts and Joy Harden Bradford, Ph.D.",
+          "thumbnail": "https://production.listennotes.com/podcasts/therapy-for-black-girls-iheartpodcasts-and-y-NG0kfoReq-Jw_CUaBj1GI.300x300.jpg",
+          "listen_score": 70,
+          "listennotes_url": "https://www.listennotes.com/c/6d01c4e63c5349099ea5c6e617c646e6/",
           "listen_score_global_rank": "0.05%"
         },
         {
-          "id": "7610fb06bdfb4a97913b8fbbd4e0549d",
-          "image": "https://production.listennotes.com/podcasts/shxtsngigs-shxtsngigs-WEdcmPDxljC-xzNB5_7Tb1-.1400x1400.jpg",
-          "title": "ShxtsNGigs",
-          "publisher": "shxtsngigs",
-          "thumbnail": "https://production.listennotes.com/podcasts/shxtsngigs-shxtsngigs-XHus6ymkh9N-xzNB5_7Tb1-.300x300.jpg",
-          "listen_score": 64,
-          "listennotes_url": "https://www.listennotes.com/c/7610fb06bdfb4a97913b8fbbd4e0549d/",
-          "listen_score_global_rank": "0.05%"
+          "id": "df42896b0081410bbaeaa436253e882f",
+          "image": "https://production.listennotes.com/podcasts/the-faith-mental-wellness-podcast-with-15MKmVgTGfj-CiqFAa4h59f.1400x1400.jpg",
+          "title": "The Faith & Mental Wellness Podcast with Brittney Moses",
+          "publisher": "Brittney Moses",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-faith-mental-wellness-podcast-with-asnqBwQuE7L-CiqFAa4h59f.300x300.jpg",
+          "listen_score": 42,
+          "listennotes_url": "https://www.listennotes.com/c/df42896b0081410bbaeaa436253e882f/",
+          "listen_score_global_rank": "1.5%"
+        }
+      ],
+      "source_url": "https://blackdoctor.org/best-podcasts-for-your-mental-health/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Even if you just like to hear relatable stories from people who are like you, there\u2019s a podcast for you. Here are some of the top podcasts of 2023 that are guaranteed to boost your mental health.\"",
+      "pub_date_ms": 1691948349634,
+      "source_domain": "blackdoctor.org",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-podcasts-for-your-mental-health-cVS5C1t4dRL/"
+    },
+    {
+      "id": "EpnqoMGdyVc",
+      "title": "The Best and Most Replay-Worthy Podcasts for Women by Women",
+      "total": 12,
+      "podcasts": [
+        {
+          "id": "150b9bda9a3a4025b84a44249916423b",
+          "image": "https://production.listennotes.com/podcasts/the-cutting-room-floor-omondi-ha9sTwEF5gn-axoV1UvAeFz.1400x1400.jpg",
+          "title": "The Cutting Room Floor",
+          "publisher": "OMONDI",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-cutting-room-floor-omondi-75Zv0py1NeP-axoV1UvAeFz.300x300.jpg",
+          "listen_score": 49,
+          "listennotes_url": "https://www.listennotes.com/c/150b9bda9a3a4025b84a44249916423b/",
+          "listen_score_global_rank": "0.5%"
         },
         {
-          "id": "318c0919e1d44a409c8d7e6df3879585",
-          "image": "https://production.listennotes.com/podcasts/beach-too-sandy-water-too-wet-forever-dog-6IFTGu9l0xj-eXcHhl2EMAF.1400x1400.jpg",
-          "title": "Beach Too Sandy, Water Too Wet",
-          "publisher": "Forever Dog",
-          "thumbnail": "https://production.listennotes.com/podcasts/beach-too-sandy-water-too-wet-forever-dog-MziK3NWYaTe-eXcHhl2EMAF.300x300.jpg",
-          "listen_score": 67,
-          "listennotes_url": "https://www.listennotes.com/c/318c0919e1d44a409c8d7e6df3879585/",
-          "listen_score_global_rank": "0.05%"
+          "id": "e3ed6bd88fa9464c823319024baa946c",
+          "image": "https://production.listennotes.com/podcasts/female-founder-world-female-founder-world-9-YqZVLH7is-GlDITBfJdrY.1400x1400.jpg",
+          "title": "Female Founder World",
+          "publisher": "Female Founder World",
+          "thumbnail": "https://production.listennotes.com/podcasts/female-founder-world-female-founder-world-h-RUPT3IBEX-GlDITBfJdrY.300x300.jpg",
+          "listen_score": 41,
+          "listennotes_url": "https://www.listennotes.com/c/e3ed6bd88fa9464c823319024baa946c/",
+          "listen_score_global_rank": "1.5%"
+        },
+        {
+          "id": "30695bfb270e475ca066a0bb0af31c3a",
+          "image": "https://production.listennotes.com/podcasts/where-should-we-begin-with-esther-perel-kLqFyjNT1PH-_qXi51hfacb.1400x1400.jpg",
+          "title": "Where Should We Begin? with Esther Perel",
+          "publisher": "Esther Perel Global Media",
+          "thumbnail": "https://production.listennotes.com/podcasts/where-should-we-begin-with-esther-perel-EnZi41x-P2_-_qXi51hfacb.300x300.jpg",
+          "listen_score": 78,
+          "listennotes_url": "https://www.listennotes.com/c/30695bfb270e475ca066a0bb0af31c3a/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "5eeb8130da324b71802d2f94814262f9",
+          "image": "https://production.listennotes.com/podcasts/its-a-lot-with-abbie-chatfield-listnr--NfMEPpHxbJ-OIlswEpiB1R.1400x1400.jpg",
+          "title": "It's A Lot with Abbie Chatfield",
+          "publisher": "LiSTNR",
+          "thumbnail": "https://production.listennotes.com/podcasts/its-a-lot-with-abbie-chatfield-listnr-nyWfkFHg_Qj-OIlswEpiB1R.300x300.jpg",
+          "listen_score": 61,
+          "listennotes_url": "https://www.listennotes.com/c/5eeb8130da324b71802d2f94814262f9/",
+          "listen_score_global_rank": "0.1%"
+        },
+        {
+          "id": "9fc0aaa255704368a98c7b99056c9942",
+          "image": "https://production.listennotes.com/podcasts/fat-mascara-jennifer-sullivan-jessica-matlin-ys58F9O_KJD-tmMdf5wFklo.1400x1400.jpg",
+          "title": "Fat Mascara",
+          "publisher": "Jennifer Sullivan & Jessica Matlin",
+          "thumbnail": "https://production.listennotes.com/podcasts/fat-mascara-jennifer-sullivan-jessica-matlin-0Igut9xrRMN-tmMdf5wFklo.300x300.jpg",
+          "listen_score": 61,
+          "listennotes_url": "https://www.listennotes.com/c/9fc0aaa255704368a98c7b99056c9942/",
+          "listen_score_global_rank": "0.1%"
+        }
+      ],
+      "source_url": "https://www.ellecanada.com/culture/society/podcasts-for-women?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Here are some brilliant, clever, eye-opening, life-improving podcasts made by women for women.\"",
+      "pub_date_ms": 1691796273101,
+      "source_domain": "www.ellecanada.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-best-and-most-replay-worthy-EpnqoMGdyVc/"
+    },
+    {
+      "id": "P1Sy_L5VjIC",
+      "title": "The best comedy podcasts for light relief listening",
+      "total": 10,
+      "podcasts": [
+        {
+          "id": "d32e07048d134d4fb8e81204df6f1c64",
+          "image": "https://production.listennotes.com/podcasts/off-menu-with-ed-gamble-and-james-acaster-QiHRzslYXTy-Cs9v-FhUS7l.1400x1400.jpg",
+          "title": "Off Menu with Ed Gamble and James Acaster",
+          "publisher": "Plosive",
+          "thumbnail": "https://production.listennotes.com/podcasts/off-menu-with-ed-gamble-and-james-acaster-ls5W87SVI6i-Cs9v-FhUS7l.300x300.jpg",
+          "listen_score": 77,
+          "listennotes_url": "https://www.listennotes.com/c/d32e07048d134d4fb8e81204df6f1c64/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "e18c9662eb7f451b9298a726c531af9c",
+          "image": "https://production.listennotes.com/podcasts/my-dad-wrote-a-porno-my-dad-wrote-a-porno-Msi1SfwL3RZ-2qLhKps0IM8.1400x1400.jpg",
+          "title": "My Dad Wrote A Porno",
+          "publisher": "My Dad Wrote A Porno",
+          "thumbnail": "https://production.listennotes.com/podcasts/my-dad-wrote-a-porno-my-dad-wrote-a-porno-SInP1dKuo6b-2qLhKps0IM8.300x300.jpg",
+          "listen_score": 83,
+          "listennotes_url": "https://www.listennotes.com/c/e18c9662eb7f451b9298a726c531af9c/",
+          "listen_score_global_rank": "0.01%"
         },
         {
           "id": "be6b21ba8c1a49d1973df83a122699a6",
@@ -8412,1191 +9203,395 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
           "listen_score": 81,
           "listennotes_url": "https://www.listennotes.com/c/be6b21ba8c1a49d1973df83a122699a6/",
           "listen_score_global_rank": "0.01%"
-        }
-      ],
-      "source_url": "https://www.denofgeek.com/podcasts/best-podcasts-like-my-dad-wrote-a-porno/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"Now that worldwide phenomenon My Dad Wrote a Porno has ended, here are some equally funny and scandalous podcasts to enjoy next.\"",
-      "pub_date_ms": 1680407072378,
-      "source_domain": "www.denofgeek.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-best-podcasts-like-my-dad-wrote-a-L415XAvPT7q/"
-    },
-    {
-      "id": "6J1xiuD5Ar4",
-      "title": "Top 10 car podcasts",
-      "total": 10,
-      "podcasts": [
-        {
-          "id": "9c048773daf9473ea41b66cc4b511f69",
-          "image": "https://production.listennotes.com/podcasts/carexpert-carexpertcomau-b92uFdv4c5P-6G4TEZ2f8uD.1400x1400.jpg",
-          "title": "CarExpert",
-          "publisher": "CarExpert.com.au",
-          "thumbnail": "https://production.listennotes.com/podcasts/carexpert-carexpertcomau-xMVpBIP4uK5-6G4TEZ2f8uD.300x300.jpg",
-          "listen_score": null,
-          "listennotes_url": "https://www.listennotes.com/c/9c048773daf9473ea41b66cc4b511f69/",
-          "listen_score_global_rank": null
         },
         {
-          "id": "f8439a06fa8b44cf9d3819cf8387d16d",
-          "image": "https://production.listennotes.com/podcasts/the-smoking-tire-matt-farah-zack-klapman-K8p_sUTzeCq-8f-yWmvF9I3.1400x1400.jpg",
-          "title": "The Smoking Tire",
-          "publisher": "Zack Klapman, Matt Farah",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-smoking-tire-matt-farah-zack-klapman-6W4e9OMcEJG-8f-yWmvF9I3.300x300.jpg",
-          "listen_score": 62,
-          "listennotes_url": "https://www.listennotes.com/c/f8439a06fa8b44cf9d3819cf8387d16d/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "e0b6dae4f06e469fb23324bb1bbc3bc8",
-          "image": "https://production.listennotes.com/podcasts/spikes-car-radio-spike-feresten-HQDkcE1imLb-7iCcqYe6lMf.1400x1400.jpg",
-          "title": "Spike's Car Radio",
-          "publisher": "Spike Feresten",
-          "thumbnail": "https://production.listennotes.com/podcasts/spikes-car-radio-spike-feresten-0hYvtNx-_wn-7iCcqYe6lMf.300x300.jpg",
-          "listen_score": 55,
-          "listennotes_url": "https://www.listennotes.com/c/e0b6dae4f06e469fb23324bb1bbc3bc8/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "2be2157b8b1e470abadab4d1d13ebcb8",
-          "image": "https://production.listennotes.com/podcasts/the-best-of-car-talk-npr-THOv5fJidPL-53jRscFSlMw.1400x1400.jpg",
-          "title": "The Best of Car Talk",
-          "publisher": "NPR",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-best-of-car-talk-npr-0jrfbFyY-oq-53jRscFSlMw.300x300.jpg",
-          "listen_score": 74,
-          "listennotes_url": "https://www.listennotes.com/c/2be2157b8b1e470abadab4d1d13ebcb8/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "dbff693d48784154a13d32af5ea22638",
-          "image": "https://production.listennotes.com/podcasts/the-drivers-show-paul-maric-and-gordie-waters-DiLHyn1WYAC-swLJ9vhzrnx.1400x1400.jpg",
-          "title": "The Driver's Show",
-          "publisher": "Paul Maric and Gordie Waters",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-drivers-show-paul-maric-and-gordie-waters-wEnZguvDWUY-swLJ9vhzrnx.300x300.jpg",
-          "listen_score": 39,
-          "listennotes_url": "https://www.listennotes.com/c/dbff693d48784154a13d32af5ea22638/",
-          "listen_score_global_rank": "1.5%"
-        }
-      ],
-      "source_url": "https://www.carexpert.com.au/car-news/top-10-car-podcasts?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"These are listed in no particular order. Some are also marked as explicit (with a [E]), so probably best to not have your kids listening while these play in the background!\"",
-      "pub_date_ms": 1680026211596,
-      "source_domain": "www.carexpert.com.au",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/top-10-car-podcasts-6J1xiuD5Ar4/"
-    },
-    {
-      "id": "znomXUlrsci",
-      "title": "Nature Podcasts to Educate",
-      "total": 5,
-      "podcasts": [
-        {
-          "id": "184dc14ae8914c14a7fd43001c072610",
-          "image": "https://production.listennotes.com/podcasts/birdnote-daily-birdnote-scmP8rvw0Gt-ADlda5NVyqz.1400x1400.jpg",
-          "title": "BirdNote Daily",
-          "publisher": "BirdNote",
-          "thumbnail": "https://production.listennotes.com/podcasts/birdnote-daily-birdnote-TQolx8jWpgO-ADlda5NVyqz.300x300.jpg",
-          "listen_score": 56,
-          "listennotes_url": "https://www.listennotes.com/c/184dc14ae8914c14a7fd43001c072610/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "8aad569695ca4c0aa5a6b0be4658efee",
-          "image": "https://production.listennotes.com/podcasts/bbc-earth-podcast-bbc-earth-Ft-d5cPm6l0-VjTIeYlNOyt.1400x1400.jpg",
-          "title": "BBC Earth Podcast",
-          "publisher": "BBC Earth",
-          "thumbnail": "https://production.listennotes.com/podcasts/bbc-earth-podcast-bbc-earth-AGfiMkbo4-t-VjTIeYlNOyt.300x300.jpg",
-          "listen_score": 55,
-          "listennotes_url": "https://www.listennotes.com/c/8aad569695ca4c0aa5a6b0be4658efee/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "bb61723cb2464343aa4e835e62d8662b",
-          "image": "https://production.listennotes.com/podcasts/park-predators-audiochuck--5KdinCMwxG-vLgRZSsIQ7o.1400x1400.jpg",
-          "title": "Park Predators",
-          "publisher": "audiochuck",
-          "thumbnail": "https://production.listennotes.com/podcasts/park-predators-audiochuck-Y8KgAWXbkRQ-vLgRZSsIQ7o.300x300.jpg",
-          "listen_score": 72,
-          "listennotes_url": "https://www.listennotes.com/c/bb61723cb2464343aa4e835e62d8662b/",
-          "listen_score_global_rank": "0.05%"
-        },
-        {
-          "id": "ba10ceb784b642c0a234e96e8d39432f",
-          "image": "https://production.listennotes.com/podcasts/tooth-claw-true-stories-of-animal-attacks-ksm3rlSdqL8-c5LijYmN1dE.1400x1400.jpg",
-          "title": "Tooth & Claw: True Stories of Animal Attacks",
-          "publisher": "Wes Larson, Jeff Larson, Mike Smith | QCODE",
-          "thumbnail": "https://production.listennotes.com/podcasts/tooth-claw-true-stories-of-animal-attacks-95gpEs1A0Ta-c5LijYmN1dE.300x300.jpg",
-          "listen_score": 62,
-          "listennotes_url": "https://www.listennotes.com/c/ba10ceb784b642c0a234e96e8d39432f/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "8af72a8efd37477d9cbbfaede5c3042e",
-          "image": "https://production.listennotes.com/podcasts/outside-voices-D0AdQ6shxNo-LKAp71aJ0zt.1400x1400.jpg",
-          "title": "Outside Voices Podcast",
-          "publisher": "Resource Media",
-          "thumbnail": "https://production.listennotes.com/podcasts/outside-voices-gaIiC26QJvx-LKAp71aJ0zt.300x300.jpg",
-          "listen_score": 39,
-          "listennotes_url": "https://www.listennotes.com/c/8af72a8efd37477d9cbbfaede5c3042e/",
-          "listen_score_global_rank": "2%"
-        }
-      ],
-      "source_url": "https://www.greenmatters.com/living/nature-podcasts?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"From educational conservation-based series, to true crime, there's a wide range of genres on our list. And each will immerse you in the great outdoors \u2014 whether you're on a walk, commuting, or simply sitting on the couch.\"",
-      "pub_date_ms": 1680026018088,
-      "source_domain": "www.greenmatters.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/nature-podcasts-to-educate-znomXUlrsci/"
-    },
-    {
-      "id": "TmLObBagd92",
-      "title": "These Filmmaking Podcasts Will Change the Way You Make Movies",
-      "total": 12,
-      "podcasts": [
-        {
-          "id": "28be0efa943449019e6c305dc4a60c7f",
-          "image": "https://production.listennotes.com/podcasts/the-a24-podcast-a24-2QLYrzFhvkU-vzW69M_g3jO.1400x1400.jpg",
-          "title": "The A24 Podcast",
-          "publisher": "A24",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-a24-podcast-a24-yfsQE5gvzVh-vzW69M_g3jO.300x300.jpg",
-          "listen_score": 57,
-          "listennotes_url": "https://www.listennotes.com/c/28be0efa943449019e6c305dc4a60c7f/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "64129ee64c4c4f89844cfaa3e9e69ab2",
-          "image": "https://production.listennotes.com/podcasts/awards-chatter-the-hollywood-reporter-8gwM53CDbAr-bzympGoXZiw.1400x1400.jpg",
-          "title": "Awards Chatter",
-          "publisher": "The Hollywood Reporter",
-          "thumbnail": "https://production.listennotes.com/podcasts/awards-chatter-the-hollywood-reporter-BwdEsHozn5q-bzympGoXZiw.300x300.jpg",
-          "listen_score": 59,
-          "listennotes_url": "https://www.listennotes.com/c/64129ee64c4c4f89844cfaa3e9e69ab2/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "59f99a54c3a94ab9813ffcf7d6ed17a7",
-          "image": "https://production.listennotes.com/podcasts/write-on-a-screenwriting-podcast-final-draft-41_vhUxtske-hm5S4dBp917.1400x787.jpg",
-          "title": "Write On: A Screenwriting Podcast",
-          "publisher": "Final Draft",
-          "thumbnail": "https://production.listennotes.com/podcasts/write-on-a-screenwriting-podcast-final-draft-P8AMFVT3Xn--hm5S4dBp917.300x168.jpg",
-          "listen_score": 43,
-          "listennotes_url": "https://www.listennotes.com/c/59f99a54c3a94ab9813ffcf7d6ed17a7/",
-          "listen_score_global_rank": "1%"
-        },
-        {
-          "id": "f77403bfbf0b4680a5bf19557342392f",
-          "image": "https://production.listennotes.com/podcasts/the-rewatchables-the-ringer-cDsu24f8WTL-HV0-qYTQl3c.1400x1400.jpg",
-          "title": "The Rewatchables",
-          "publisher": "The Ringer",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-rewatchables-the-ringer-yHOrqaYxS_b-HV0-qYTQl3c.300x300.jpg",
-          "listen_score": 76,
-          "listennotes_url": "https://www.listennotes.com/c/f77403bfbf0b4680a5bf19557342392f/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "c7d57311a1174b94a37aa02cf7feb9e1",
-          "image": "https://production.listennotes.com/podcasts/i-saw-what-you-did-exactly-right-3OMCBirQb2e-VpjLgZG7DTu.1400x1400.jpg",
-          "title": "I Saw What You Did",
-          "publisher": "Exactly Right",
-          "thumbnail": "https://production.listennotes.com/podcasts/i-saw-what-you-did-exactly-right-Ufn8r5dAb1x-VpjLgZG7DTu.300x300.jpg",
-          "listen_score": 62,
-          "listennotes_url": "https://www.listennotes.com/c/c7d57311a1174b94a37aa02cf7feb9e1/",
-          "listen_score_global_rank": "0.1%"
-        }
-      ],
-      "source_url": "https://screencraft.org/blog/filmmaking-podcasts-change-the-way-you-make-movies/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"If you're not listening to these great filmmaking podcasts, you're seriously missing out.\"",
-      "pub_date_ms": 1680025886383,
-      "source_domain": "screencraft.org",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/these-filmmaking-podcasts-will-change-TmLObBagd92/"
-    },
-    {
-      "id": "FUMor-0Tbdn",
-      "title": "16 Tech Experts Share Their Favorite Tech-Focused Podcasts",
-      "total": 16,
-      "podcasts": [
-        {
-          "id": "c5ce6c02cbf1486496206829f7d42e8e",
-          "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
-          "title": "The Best One Yet",
-          "publisher": "Nick & Jack Studios",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-          "listen_score": 71,
-          "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
-          "listen_score_global_rank": "0.05%"
-        },
-        {
-          "id": "6564539c383449029020fb3c4dc8e8d1",
-          "image": "https://production.listennotes.com/podcasts/build-with-blake-bartlett-openview-venture-3qsGIr1Mm2p-JY8xHQcOL7o.1400x1400.jpg",
-          "title": "BUILD with Blake Bartlett",
-          "publisher": "OpenView Venture Partners",
-          "thumbnail": "https://production.listennotes.com/podcasts/build-with-blake-bartlett-openview-venture-bv1y5V_wUMl-JY8xHQcOL7o.300x300.jpg",
-          "listen_score": 43,
-          "listennotes_url": "https://www.listennotes.com/c/6564539c383449029020fb3c4dc8e8d1/",
-          "listen_score_global_rank": "1%"
-        },
-        {
-          "id": "e3794af26c2140e2ac74d00395e59201",
-          "image": "https://production.listennotes.com/podcasts/darknet-diaries-jack-rhysider-8vOdxXD6QTr-ztuNyvC2F_O.1400x1400.jpg",
-          "title": "Darknet Diaries",
-          "publisher": "Jack Rhysider",
-          "thumbnail": "https://production.listennotes.com/podcasts/darknet-diaries-jack-rhysider-2j15fXqn0w9-ztuNyvC2F_O.300x300.jpg",
-          "listen_score": 74,
-          "listennotes_url": "https://www.listennotes.com/c/e3794af26c2140e2ac74d00395e59201/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "0bb97ed16ae44434b8528d8d9a33ece2",
-          "image": "https://production.listennotes.com/podcasts/drzerotrust-gW4J5Cn8Tej-DUzt2WO6rCK.1400x1400.jpg",
-          "title": "DrZeroTrust",
-          "publisher": "Chase Cunningham",
-          "thumbnail": "https://production.listennotes.com/podcasts/drzerotrust-sgGTPUE7A4c-DUzt2WO6rCK.300x300.jpg",
-          "listen_score": 25,
-          "listennotes_url": "https://www.listennotes.com/c/0bb97ed16ae44434b8528d8d9a33ece2/",
-          "listen_score_global_rank": "10%"
-        },
-        {
-          "id": "c3c933b6d22d4a06b236e5493b4603cc",
-          "image": "https://production.listennotes.com/podcasts/hard-fork-the-new-york-times-vEr0edDkOFp-M2AZCUFvHzY.1400x1400.jpg",
-          "title": "Hard Fork",
-          "publisher": "The New York Times",
-          "thumbnail": "https://production.listennotes.com/podcasts/hard-fork-the-new-york-times-mwetHTuP2Az-M2AZCUFvHzY.300x300.jpg",
-          "listen_score": 66,
-          "listennotes_url": "https://www.listennotes.com/c/c3c933b6d22d4a06b236e5493b4603cc/",
-          "listen_score_global_rank": "0.05%"
-        }
-      ],
-      "source_url": "https://www.forbes.com/sites/forbestechcouncil/2023/03/28/16-tech-experts-share-their-favorite-tech-focused-podcasts/?sh=18504812655e&utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"From deep dives into the latest tech news to interviews with top tech experts, these podcasts offer a wealth of knowledge and insights for anyone interested in the tech industry.\"",
-      "pub_date_ms": 1680025767630,
-      "source_domain": "www.forbes.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/16-tech-experts-share-their-favorite-FUMor-0Tbdn/"
-    },
-    {
-      "id": "ESjphawK0zN",
-      "title": "Best Cryptocurrency Podcasts for Traders in 2023",
-      "total": 10,
-      "podcasts": [
-        {
-          "id": "3035855c61044f8cbb9cab4d6d4712e9",
-          "image": "https://production.listennotes.com/podcasts/the-breakdown-nathaniel-whittemore-x9ET_6BWtse-WDqMy-FNJPp.1400x1400.jpg",
-          "title": "The Breakdown",
-          "publisher": "Nathaniel Whittemore",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-breakdown-nathaniel-whittemore-ZTD-gW4A2r5-WDqMy-FNJPp.300x300.jpg",
-          "listen_score": 55,
-          "listennotes_url": "https://www.listennotes.com/c/3035855c61044f8cbb9cab4d6d4712e9/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "e6907bd41a0f4ceca8edc81f305f4c93",
-          "image": "https://production.listennotes.com/podcasts/unchained-laura-shin-F-rjz7XLZ9m-8W2AXkU7NYf.1400x1400.jpg",
-          "title": "Unchained",
-          "publisher": "Laura Shin",
-          "thumbnail": "https://production.listennotes.com/podcasts/unchained-laura-shin-OcGLDAdz0wq-8W2AXkU7NYf.300x300.jpg",
-          "listen_score": 62,
-          "listennotes_url": "https://www.listennotes.com/c/e6907bd41a0f4ceca8edc81f305f4c93/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "4104fab13a6f4cb39b90a09a8c25d8d8",
-          "image": "https://production.listennotes.com/podcasts/what-bitcoin-did-with-peter-mccormack-peter-LAGPzj25-Sn-4n2D3d67Yxk.1400x1400.jpg",
-          "title": "What Bitcoin Did with Peter McCormack",
-          "publisher": "Peter McCormack",
-          "thumbnail": "https://production.listennotes.com/podcasts/what-bitcoin-did-with-peter-mccormack-peter-spBqw0l9CYg-4n2D3d67Yxk.300x300.jpg",
-          "listen_score": 66,
-          "listennotes_url": "https://www.listennotes.com/c/4104fab13a6f4cb39b90a09a8c25d8d8/",
-          "listen_score_global_rank": "0.05%"
-        },
-        {
-          "id": "dcd55e314de84730b43db674e562deb8",
-          "image": "https://production.listennotes.com/podcasts/the-bad-crypto-podcast-joel-comm-and-travis-l0EOQqkspoi-mj-e0z67gol.1400x1400.jpg",
-          "title": "The Bad Crypto Podcast",
-          "publisher": "Joel Comm and Travis Wright",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-bad-crypto-podcast-joel-comm-and-travis-Sr0lj3RdZQ4-mj-e0z67gol.300x300.jpg",
-          "listen_score": 61,
-          "listennotes_url": "https://www.listennotes.com/c/dcd55e314de84730b43db674e562deb8/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "f405bce4ab6f43439892b80e3a2d34be",
-          "image": "https://production.listennotes.com/podcasts/bankless-bankless-rGmB0uzeqLa-ukgFt3i7N-d.1400x1400.jpg",
-          "title": "Bankless",
-          "publisher": "Bankless",
-          "thumbnail": "https://production.listennotes.com/podcasts/bankless-bankless-atflB2pFJ3Q-ukgFt3i7N-d.300x300.jpg",
-          "listen_score": 59,
-          "listennotes_url": "https://www.listennotes.com/c/f405bce4ab6f43439892b80e3a2d34be/",
-          "listen_score_global_rank": "0.1%"
-        }
-      ],
-      "source_url": "https://www.analyticsinsight.net/best-cryptocurrency-podcasts-for-traders-in-2023/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"Ready to learn about all things crypto? Check out these fantastic cryptocurrency podcasts that can educate and entertain you in 2023!\"",
-      "pub_date_ms": 1680025467000,
-      "source_domain": "www.analyticsinsight.net",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-cryptocurrency-podcasts-for-ESjphawK0zN/"
-    },
-    {
-      "id": "OLQRys6phcb",
-      "title": "10 best sports betting podcasts",
-      "total": 10,
-      "podcasts": [
-        {
-          "id": "d0137f7c41be40e6953614133f19762a",
-          "image": "https://production.listennotes.com/podcasts/bet-the-board-payne-insider-and-todd-fuhrman-Nh7Qa2SKFdG-Ecgu326Tksl.1400x1400.jpg",
-          "title": "Bet The Board",
-          "publisher": "Payne Insider and Todd Fuhrman | Wondery",
-          "thumbnail": "https://production.listennotes.com/podcasts/bet-the-board-payne-insider-and-todd-fuhrman-Q3hkM-mUTZo-Ecgu326Tksl.300x300.jpg",
-          "listen_score": 59,
-          "listennotes_url": "https://www.listennotes.com/c/d0137f7c41be40e6953614133f19762a/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "4cc0368263394cf8a75953f89860fba9",
-          "image": "https://production.listennotes.com/podcasts/barstool-pick-em-barstool-sports-v1BKyGUFia9-cVCOy4UHWGv.1400x1400.jpg",
-          "title": "Barstool Pick Em",
-          "publisher": "Barstool Sports",
-          "thumbnail": "https://production.listennotes.com/podcasts/barstool-pick-em-barstool-sports-OcsyUAmT3VN-cVCOy4UHWGv.300x300.jpg",
-          "listen_score": 58,
-          "listennotes_url": "https://www.listennotes.com/c/4cc0368263394cf8a75953f89860fba9/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "68c6bcb0bc1a4bc09076a5f760ac8ce7",
-          "image": "https://production.listennotes.com/podcasts/you-better-you-bet-audacy-Gy2DT4lMZbk-8nlQeBCMPTh.1400x1400.jpg",
-          "title": "You Better You Bet",
-          "publisher": "Audacy",
-          "thumbnail": "https://production.listennotes.com/podcasts/you-better-you-bet-audacy-5-j2r1E_TGa-8nlQeBCMPTh.300x300.jpg",
-          "listen_score": 56,
-          "listennotes_url": "https://www.listennotes.com/c/68c6bcb0bc1a4bc09076a5f760ac8ce7/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "c79bd0d06acb4fdfbbb0fa9f4f0d13f0",
-          "image": "https://production.listennotes.com/podcasts/hammer-dahn-pat-mcafee-1nc-ntf2E8iH76U-xQyJHYCuDwO.1400x1400.jpg",
-          "title": "Hammer Dahn - Sports Betting",
-          "publisher": "Pat McAfee 1nc.",
-          "thumbnail": "https://production.listennotes.com/podcasts/hammer-dahn-pat-mcafee-1nc-Euh24YaHAbC-xQyJHYCuDwO.300x300.jpg",
-          "listen_score": 53,
-          "listennotes_url": "https://www.listennotes.com/c/c79bd0d06acb4fdfbbb0fa9f4f0d13f0/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "1d0082302fa44cc3adb236ae8f5f44a3",
-          "image": "https://production.listennotes.com/podcasts/bet-the-process-bet-the-process-a_BDF2UxMZY-Nys0TgDw4Ld.400x400.jpg",
-          "title": "Bet The Process",
-          "publisher": "Bet The Process",
-          "thumbnail": "https://production.listennotes.com/podcasts/bet-the-process-bet-the-process-pmHcJIEFPbK-Nys0TgDw4Ld.300x300.jpg",
-          "listen_score": 49,
-          "listennotes_url": "https://www.listennotes.com/c/1d0082302fa44cc3adb236ae8f5f44a3/",
-          "listen_score_global_rank": "0.5%"
-        }
-      ],
-      "source_url": "https://franchisesports.co.uk/best-sports-betting-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"The top sports gambling podcasts are a combination of expert analysis, entertainment, and information. Listening to these podcasts gives you insight into strategies that can help you make better-informed betting decisions. Moreover, these podcasts aren\u2019t just pure numbers. They can also be fun and entertaining.\"",
-      "pub_date_ms": 1680025583956,
-      "source_domain": "franchisesports.co.uk",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/10-best-sports-betting-podcasts-OLQRys6phcb/"
-    },
-    {
-      "id": "aTHb63KI-eU",
-      "title": "The Top 7 AI Podcasts You Need To Hear Now",
-      "total": 7,
-      "podcasts": [
-        {
-          "id": "51f6ce503750485ba02bb60193feef49",
-          "image": "https://production.listennotes.com/podcasts/the-twiml-ai-podcast-formerly-this-week-in-jPedLfZBQmT-KCJYSHz9orX.1400x1400.jpg",
-          "title": "The TWIML AI Podcast (formerly This Week in Machine Learning & Artificial Intelligence)",
-          "publisher": "Sam Charrington",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-twiml-ai-podcast-formerly-this-week-in-Nv7hEIQFlrB-KCJYSHz9orX.300x300.jpg",
-          "listen_score": 54,
-          "listennotes_url": "https://www.listennotes.com/c/51f6ce503750485ba02bb60193feef49/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "72beb0c368ba4e9e97f6fdbf52d0094d",
-          "image": "https://production.listennotes.com/podcasts/the-bad-ai-show-bxP3ROUwV54-a5FCxrt8PR9.1400x1400.jpg",
-          "title": "The Bad AI Show",
-          "publisher": "Joel Comm & Travis Wright",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-bad-ai-show-WeioFkIf5UO-a5FCxrt8PR9.300x300.jpg",
-          "listen_score": 28,
-          "listennotes_url": "https://www.listennotes.com/c/72beb0c368ba4e9e97f6fdbf52d0094d/",
-          "listen_score_global_rank": "10%"
-        },
-        {
-          "id": "fa06c55be2244e22a0e263c8560ece47",
-          "image": "https://production.listennotes.com/podcasts/the-ai-podcast-nvidia-DCc4vTZ08s9-8WS6JPYmMvj.497x497.jpg",
-          "title": "The AI Podcast",
-          "publisher": "NVIDIA",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-ai-podcast-nvidia-Le_jn0a8UtG-8WS6JPYmMvj.300x300.jpg",
-          "listen_score": 48,
-          "listennotes_url": "https://www.listennotes.com/c/fa06c55be2244e22a0e263c8560ece47/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "dead7a0cea9548ebab9ed6596cd233aa",
-          "image": "https://production.listennotes.com/podcasts/data-skeptic-kyle-polich-CeUYHpSbi-y-potOlIZJGuH.1400x1400.jpg",
-          "title": "Data Skeptic",
-          "publisher": "Kyle Polich",
-          "thumbnail": "https://production.listennotes.com/podcasts/data-skeptic-kyle-polich-N25OG-PMf73-potOlIZJGuH.300x300.jpg",
-          "listen_score": 55,
-          "listennotes_url": "https://www.listennotes.com/c/dead7a0cea9548ebab9ed6596cd233aa/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "e8bbabc7446043d9b39132bf88eccdd8",
-          "image": "https://production.listennotes.com/podcasts/ai-in-business-daniel-faggella-7MtEgSuUTOo-qfQ5EPYKyvk.1400x1400.jpg",
-          "title": "The AI in Business Podcast",
-          "publisher": "Daniel Faggella",
-          "thumbnail": "https://production.listennotes.com/podcasts/ai-in-business-daniel-faggella-Vry0_2UpwQk-qfQ5EPYKyvk.300x300.jpg",
-          "listen_score": 46,
-          "listennotes_url": "https://www.listennotes.com/c/e8bbabc7446043d9b39132bf88eccdd8/",
-          "listen_score_global_rank": "1%"
-        }
-      ],
-      "source_url": "https://readwrite.com/the-top-ai-podcasts-you-need-to-hear-now/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"We\u2019ve brought together a list of seven of the top podcasts that track and explain the newest developments. They look behind the scenes at the technology behind the platforms, and they discuss how artificial intelligence is already upending business, marketing, data analysis, and more.\"",
-      "pub_date_ms": 1679789132830,
-      "source_domain": "readwrite.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-top-7-ai-podcasts-you-need-to-hear-aTHb63KI-eU/"
-    },
-    {
-      "id": "wlv9bFuxUoq",
-      "title": "Top Canadian Podcasts Ranked",
-      "total": 8,
-      "podcasts": [
-        {
-          "id": "d31a63613c5c461cb4b400f8f61d7362",
-          "image": "https://production.listennotes.com/podcasts/dateline-nbc-nbc-news--jTk9Zr2z6Q-aSOM3Nln0KL.1400x1400.jpg",
-          "title": "Dateline NBC",
-          "publisher": "NBC News",
-          "thumbnail": "https://production.listennotes.com/podcasts/dateline-nbc-nbc-news-24WUN1Ovahp-aSOM3Nln0KL.300x300.jpg",
-          "listen_score": 81,
-          "listennotes_url": "https://www.listennotes.com/c/d31a63613c5c461cb4b400f8f61d7362/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "0d3bc91908054d69b3d8aefc35258163",
-          "image": "https://production.listennotes.com/podcasts/front-burner-cbc-podcasts-6xIQiLaG2qN-BkJbKvn2rh8.1400x1400.jpg",
-          "title": "Front Burner",
-          "publisher": "CBC Podcasts",
-          "thumbnail": "https://production.listennotes.com/podcasts/front-burner-cbc-podcasts-xpy14G7YmzS-BkJbKvn2rh8.300x300.jpg",
-          "listen_score": 63,
-          "listennotes_url": "https://www.listennotes.com/c/0d3bc91908054d69b3d8aefc35258163/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "e656340496fb4b2f93a9382027ec1156",
-          "image": "https://production.listennotes.com/podcasts/the-current-cbc-radio-efCbgdkuwqO-dM2uzYTI_56.1400x1400.jpg",
-          "title": "The Current",
-          "publisher": "CBC Radio",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-current-cbc-radio-EyX8PLbSwoq-dM2uzYTI_56.300x300.jpg",
-          "listen_score": 58,
-          "listennotes_url": "https://www.listennotes.com/c/e656340496fb4b2f93a9382027ec1156/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "68ed9ef3aef74d028cf0b2faf141b31d",
-          "image": "https://production.listennotes.com/podcasts/cbc-news-the-world-this-hour-cbc-news-the-lTOXu8n-Eia-NneUcwhy_XB.1400x1400.jpg",
-          "title": "CBC News: The World This Hour",
-          "publisher": "CBC News: The World This Hour",
-          "thumbnail": "https://production.listennotes.com/podcasts/cbc-news-the-world-this-hour-cbc-news-the-Qri-8DS5E9Y-NneUcwhy_XB.300x300.jpg",
-          "listen_score": 51,
-          "listennotes_url": "https://www.listennotes.com/c/68ed9ef3aef74d028cf0b2faf141b31d/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "60d38482c845400b9527c81bbebada50",
-          "image": "https://production.listennotes.com/podcasts/f1-beyond-the-grid-formula-1-cKTdntQlOI8-UtYmp2y35cA.1400x1400.jpg",
-          "title": "F1: Beyond The Grid",
-          "publisher": "Formula 1",
-          "thumbnail": "https://production.listennotes.com/podcasts/f1-beyond-the-grid-formula-1--D4FJpUfziG-UtYmp2y35cA.300x300.jpg",
+          "id": "318c0919e1d44a409c8d7e6df3879585",
+          "image": "https://production.listennotes.com/podcasts/beach-too-sandy-water-too-wet-forever-dog-6IFTGu9l0xj-eXcHhl2EMAF.1400x1400.jpg",
+          "title": "Beach Too Sandy, Water Too Wet",
+          "publisher": "Forever Dog",
+          "thumbnail": "https://production.listennotes.com/podcasts/beach-too-sandy-water-too-wet-forever-dog-MziK3NWYaTe-eXcHhl2EMAF.300x300.jpg",
           "listen_score": 68,
-          "listennotes_url": "https://www.listennotes.com/c/60d38482c845400b9527c81bbebada50/",
-          "listen_score_global_rank": "0.05%"
-        }
-      ],
-      "source_url": "https://radioink.com/2023/03/22/top-canadian-podcasts-ranked/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"The latest Canada Podcast Ranker from Triton Digital\u00ae for the February 2023 reporting period has been released. There were 14.3 million average weekly podcast downloads for the month\"",
-      "pub_date_ms": 1679789034123,
-      "source_domain": "radioink.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/top-canadian-podcasts-ranked-wlv9bFuxUoq/"
-    },
-    {
-      "id": "Z3EF7adI2up",
-      "title": "Five best true crime podcasts in 2023",
-      "total": 5,
-      "podcasts": [
-        {
-          "id": "6d2ab9d90973430dbec3c5c24e689f00",
-          "image": "https://production.listennotes.com/podcasts/serial-serial-productions-the-new-york-times-DUZXYIf3sqw-V1NRH-2wzoB.1400x1400.jpg",
-          "title": "Serial",
-          "publisher": "Serial Productions & The New York Times",
-          "thumbnail": "https://production.listennotes.com/podcasts/serial-serial-productions-the-new-york-times-RgmG8YyL-nk-V1NRH-2wzoB.300x300.jpg",
-          "listen_score": 89,
-          "listennotes_url": "https://www.listennotes.com/c/6d2ab9d90973430dbec3c5c24e689f00/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "873414cf0efe4efebb20f467aa0f28b2",
-          "image": "https://production.listennotes.com/podcasts/my-favorite-murder-with-karen-kilgariff-and-F3YIV0w2usX-nUHfdZot1PQ.1400x1400.jpg",
-          "title": "My Favorite Murder with Karen Kilgariff and Georgia Hardstark",
-          "publisher": "Exactly Right",
-          "thumbnail": "https://production.listennotes.com/podcasts/my-favorite-murder-with-karen-kilgariff-and-MF9LXOkt-YT-nUHfdZot1PQ.300x300.jpg",
-          "listen_score": 94,
-          "listennotes_url": "https://www.listennotes.com/c/873414cf0efe4efebb20f467aa0f28b2/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "581fc67e281047d09fa90f7782c51feb",
-          "image": "https://production.listennotes.com/podcasts/dirty-john-los-angeles-times-wondery-qHhortA1ZYR-1rJzL4wEyuY.1400x1400.jpg",
-          "title": "Dirty John",
-          "publisher": "Los Angeles Times | Wondery",
-          "thumbnail": "https://production.listennotes.com/podcasts/dirty-john-los-angeles-times-wondery-qZAerlh56VY-1rJzL4wEyuY.300x300.jpg",
-          "listen_score": 83,
-          "listennotes_url": "https://www.listennotes.com/c/581fc67e281047d09fa90f7782c51feb/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "73771979c7ba4ed183129d7823210c17",
-          "image": "https://production.listennotes.com/podcasts/welcome-to-your-fantasy-pineapple-street-FvIN9qApiOV-QlbekzVnCor.1400x1400.jpg",
-          "title": "Welcome to Your Fantasy",
-          "publisher": "Pineapple Street Studios / Gimlet",
-          "thumbnail": "https://production.listennotes.com/podcasts/welcome-to-your-fantasy-pineapple-street-NTtiZ-WRulK-QlbekzVnCor.300x300.jpg",
-          "listen_score": 50,
-          "listennotes_url": "https://www.listennotes.com/c/73771979c7ba4ed183129d7823210c17/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "60b14e297a9142f4b2ab885bd3d1bfb8",
-          "image": "https://production.listennotes.com/podcasts/someone-knows-something-cbc-podcasts-zks_Sm7HAW8-e9j723ECnps.1400x1400.jpg",
-          "title": "Someone Knows Something",
-          "publisher": "CBC Podcasts",
-          "thumbnail": "https://production.listennotes.com/podcasts/someone-knows-something-cbc-podcasts-YiSf-XsBeF0-e9j723ECnps.300x300.jpg",
-          "listen_score": 81,
-          "listennotes_url": "https://www.listennotes.com/c/60b14e297a9142f4b2ab885bd3d1bfb8/",
-          "listen_score_global_rank": "0.01%"
-        }
-      ],
-      "source_url": "https://opoyi.com/entertainment/five-best-true-crime-podcasts-in-2023/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"Here are five of the best true crime podcasts to get you started:\"",
-      "pub_date_ms": 1679788901902,
-      "source_domain": "opoyi.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/five-best-true-crime-podcasts-in-2023-Z3EF7adI2up/"
-    },
-    {
-      "id": "rPZ6yNWYIbm",
-      "title": "Top 10 best Irish PODCASTS in 2023, RANKED",
-      "total": 9,
-      "podcasts": [
-        {
-          "id": "a148a10198bb4500b2ea40e33fadcab2",
-          "image": "https://production.listennotes.com/podcasts/talking-bollox-podcast-goloud-CZXwlSRmpYa-d5gUwHTJXQo.1400x1400.jpg",
-          "title": "Talking Bollox Podcast",
-          "publisher": "GoLoud",
-          "thumbnail": "https://production.listennotes.com/podcasts/talking-bollox-podcast-goloud--9GbSgluC71-d5gUwHTJXQo.300x300.jpg",
-          "listen_score": 40,
-          "listennotes_url": "https://www.listennotes.com/c/a148a10198bb4500b2ea40e33fadcab2/",
-          "listen_score_global_rank": "1.5%"
-        },
-        {
-          "id": "d9af2512490e4babbce52689af7525d4",
-          "image": "https://production.listennotes.com/podcasts/that-chapter-podcast-that-chapter-5vkyP9hMSop-Y0VhXeDJrny.1400x1400.jpg",
-          "title": "That Chapter Podcast",
-          "publisher": "That Chapter",
-          "thumbnail": "https://production.listennotes.com/podcasts/that-chapter-podcast-that-chapter-VesMm2pbnxO-Y0VhXeDJrny.300x300.jpg",
-          "listen_score": 65,
-          "listennotes_url": "https://www.listennotes.com/c/d9af2512490e4babbce52689af7525d4/",
+          "listennotes_url": "https://www.listennotes.com/c/318c0919e1d44a409c8d7e6df3879585/",
           "listen_score_global_rank": "0.05%"
         },
         {
-          "id": "d2fe4a103ee3441aafa8f3c94ad25341",
-          "image": "https://production.listennotes.com/podcasts/mens-rea-a-true-crime-podcast-mens-rea-true-ydHXcrlM67F-nCLVlx2mQD-.1400x1400.jpg",
-          "title": "Mens Rea: A true crime podcast",
-          "publisher": "Mens Rea True Crime",
-          "thumbnail": "https://production.listennotes.com/podcasts/mens-rea-a-true-crime-podcast-mens-rea-true-4P68i1udWbX-nCLVlx2mQD-.300x300.jpg",
-          "listen_score": 60,
-          "listennotes_url": "https://www.listennotes.com/c/d2fe4a103ee3441aafa8f3c94ad25341/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "605778a38ecd43f69ef844aead56d39d",
-          "image": "https://production.listennotes.com/podcasts/im-grand-mam-kevin-twomey-and-pj-kirby-rH0XqL_t1ow-Ei8H_mcjp-J.1400x1400.jpg",
-          "title": "I'm Grand Mam",
-          "publisher": "Kevin Twomey and PJ Kirby",
-          "thumbnail": "https://production.listennotes.com/podcasts/im-grand-mam-kevin-twomey-and-pj-kirby-jsQyNIi3B9S-Ei8H_mcjp-J.300x300.jpg",
-          "listen_score": 52,
-          "listennotes_url": "https://www.listennotes.com/c/605778a38ecd43f69ef844aead56d39d/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "df69a48cccca47049d64fde0c9137116",
-          "image": "https://production.listennotes.com/podcasts/and-another-thing-with-dave-dave-smith--srY3VqziP8-93Qt5Vdw_G6.1400x1400.jpg",
-          "title": "And Another Thing with Dave",
-          "publisher": "Dave Smith",
-          "thumbnail": "https://production.listennotes.com/podcasts/and-another-thing-with-dave-dave-smith-1rAdDeJRGiz-93Qt5Vdw_G6.300x300.jpg",
-          "listen_score": 25,
-          "listennotes_url": "https://www.listennotes.com/c/df69a48cccca47049d64fde0c9137116/",
-          "listen_score_global_rank": "10%"
-        }
-      ],
-      "source_url": "https://meanwhileinireland.com/best-irish-podcasts-2023/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"There\u2019s a podcast to suit everybody\u2019s tastes, so we\u2019ve ranked the best Irish podcasts of 2023. Read on and discover your next new audio obsession to binge listen.\"",
-      "pub_date_ms": 1679788803261,
-      "source_domain": "meanwhileinireland.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/top-10-best-irish-podcasts-in-2023-rPZ6yNWYIbm/"
-    },
-    {
-      "id": "cZL3VHSvO2Y",
-      "title": "Military podcasts you need in your life",
-      "total": 13,
-      "podcasts": [
-        {
-          "id": "fe87c2248762410eaf3b35d4a22869f2",
-          "image": "https://production.listennotes.com/podcasts/military-matters-stars-and-stripes-WZaApVj1Ln6-ArtLhFJnS5j.1400x1400.jpg",
-          "title": "Military Matters",
-          "publisher": "Stars and Stripes",
-          "thumbnail": "https://production.listennotes.com/podcasts/military-matters-stars-and-stripes-Y4FD17yN3Co-ArtLhFJnS5j.300x300.jpg",
-          "listen_score": 38,
-          "listennotes_url": "https://www.listennotes.com/c/fe87c2248762410eaf3b35d4a22869f2/",
-          "listen_score_global_rank": "2%"
-        },
-        {
-          "id": "c36aea82bf344a458f607c2859606838",
-          "image": "https://production.listennotes.com/podcasts/defense-one-radio-defense-one-staff-Wf748xhqEOp-16qvBekwLS4.1400x1400.jpg",
-          "title": "Defense One Radio",
-          "publisher": "Defense One staff",
-          "thumbnail": "https://production.listennotes.com/podcasts/defense-one-radio-defense-one-staff-PAUtRgL6Dz_-16qvBekwLS4.300x300.jpg",
+          "id": "08f1a9ff5d254044b5c1fa685aa7d428",
+          "image": "https://production.listennotes.com/podcasts/queers-gone-by-caitlin-powell-and-kate-butch-tUyg_hiY1XQ-zshDxnYb-J1.1400x1400.jpg",
+          "title": "Queers Gone By",
+          "publisher": "Caitlin Powell and Kate Butch",
+          "thumbnail": "https://production.listennotes.com/podcasts/queers-gone-by-caitlin-powell-and-kate-butch-2-kdTYPoFB6-zshDxnYb-J1.300x300.jpg",
           "listen_score": 40,
-          "listennotes_url": "https://www.listennotes.com/c/c36aea82bf344a458f607c2859606838/",
+          "listennotes_url": "https://www.listennotes.com/c/08f1a9ff5d254044b5c1fa685aa7d428/",
           "listen_score_global_rank": "1.5%"
-        },
-        {
-          "id": "658b13f1769449f89b937754c17feee4",
-          "image": "https://production.listennotes.com/podcasts/dan-carlins-hardcore-history-dan-carlin-zJPGhpdXYZf-THDlEiZ9tbB.1400x1400.jpg",
-          "title": "Dan Carlin's Hardcore History",
-          "publisher": "Dan Carlin",
-          "thumbnail": "https://production.listennotes.com/podcasts/dan-carlins-hardcore-history-dan-carlin-2U87isnyHrA-THDlEiZ9tbB.300x300.jpg",
-          "listen_score": 88,
-          "listennotes_url": "https://www.listennotes.com/c/658b13f1769449f89b937754c17feee4/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "241afd25f27c4c5e8775d2a6efd82f3c",
-          "image": "https://production.listennotes.com/podcasts/dan-snows-history-hit-history-hit-fnxh-PJF291-Ps7dHtO6cDG.1400x1400.jpg",
-          "title": "Dan Snow's History Hit",
-          "publisher": "History Hit",
-          "thumbnail": "https://production.listennotes.com/podcasts/dan-snows-history-hit-history-hit-O0SIPGFhu63-Ps7dHtO6cDG.300x300.jpg",
-          "listen_score": 74,
-          "listennotes_url": "https://www.listennotes.com/c/241afd25f27c4c5e8775d2a6efd82f3c/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "690e97c6c3704cf8a95272a8aafb1615",
-          "image": "https://production.listennotes.com/podcasts/war-stories-official-podcast-war-stories-h2VUZgDEBGe-DEXdRlh-B7t.1400x1400.jpg",
-          "title": "War Stories Official Podcast",
-          "publisher": "War Stories Official",
-          "thumbnail": "https://production.listennotes.com/podcasts/war-stories-official-podcast-war-stories-hWSpj1eDiZu-DEXdRlh-B7t.300x300.jpg",
-          "listen_score": 46,
-          "listennotes_url": "https://www.listennotes.com/c/690e97c6c3704cf8a95272a8aafb1615/",
-          "listen_score_global_rank": "1%"
         }
       ],
-      "source_url": "https://www.wearethemighty.com/mighty-culture/military-podcasts-you-need-in-your-life/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"We\u2019ve scoured the internet and compiled a list of the best military podcasts out there. From current events and policy to personal experiences and mental health, there\u2019s something for everyone. So, grab your headphones, tune in, and join the conversation!\"",
-      "pub_date_ms": 1679788662256,
-      "source_domain": "www.wearethemighty.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/military-podcasts-you-need-in-your-life-cZL3VHSvO2Y/"
+      "source_url": "https://www.gq-magazine.co.uk/article/best-comedy-podcasts?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"So, to get you started, or just to add to your collection, here\u2019s 10 of the best comedy podcasts.\"",
+      "pub_date_ms": 1691796119000,
+      "source_domain": "www.gq-magazine.co.uk",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-best-comedy-podcasts-for-light-P1Sy_L5VjIC/"
     },
     {
-      "id": "KYDhmAOnPNB",
-      "title": "14 Black Podcasts To Listen To This Spring",
+      "id": "xPBOmvU0up_",
+      "title": "14 podcasts to teach kids about history, identity, and current events",
       "total": 14,
       "podcasts": [
         {
-          "id": "40ab86e83ed944cca6ef76a7a3d6b0d4",
-          "image": "https://production.listennotes.com/podcasts/side-hustle-pro-nicaila-matthews-okome-R4LUY7HtQr--LJrh0xVaAZ4.1400x1400.jpg",
-          "title": "Side Hustle Pro",
-          "publisher": "Nicaila Matthews Okome",
-          "thumbnail": "https://production.listennotes.com/podcasts/side-hustle-pro-nicaila-matthews-okome-TM1qcWl-x3R-LJrh0xVaAZ4.300x300.jpg",
-          "listen_score": 61,
-          "listennotes_url": "https://www.listennotes.com/c/40ab86e83ed944cca6ef76a7a3d6b0d4/",
+          "id": "01059f5766134c94b46de87d7b644025",
+          "image": "https://production.listennotes.com/podcasts/flyest-fables-morgan-givens-esEJ4yZdM9g.1400x1396.jpg",
+          "title": "Flyest Fables",
+          "publisher": "Morgan Givens",
+          "thumbnail": "https://production.listennotes.com/podcasts/flyest-fables-morgan-givens-esEJ4yZdM9g.300x299.jpg",
+          "listen_score": 50,
+          "listennotes_url": "https://www.listennotes.com/c/01059f5766134c94b46de87d7b644025/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "14099bacce894db19f10ff1f1f51d848",
+          "image": "https://production.listennotes.com/podcasts/so-get-me-the-alphabet-rockers-podcast-for-vFGlY2AzBZs-sJroNCcWItd.1400x1400.jpg",
+          "title": "So Get Me: the Alphabet Rockers\u2019 podcast for families making change!",
+          "publisher": "Alphabet Rockers",
+          "thumbnail": "https://production.listennotes.com/podcasts/so-get-me-the-alphabet-rockers-podcast-for-wH_A42FEbhr-sJroNCcWItd.300x300.jpg",
+          "listen_score": 36,
+          "listennotes_url": "https://www.listennotes.com/c/14099bacce894db19f10ff1f1f51d848/",
+          "listen_score_global_rank": "2.5%"
+        },
+        {
+          "id": "7aa7f0b533884f76a435600ff5b3935c",
+          "image": "https://production.listennotes.com/podcasts/kidnuz-news-for-kids-starglow-media-uCixvUeDayo-kNo8xgZuGqj.1400x1400.jpg",
+          "title": "KidNuz: News for Kids",
+          "publisher": "Starglow Media",
+          "thumbnail": "https://production.listennotes.com/podcasts/kidnuz-news-for-kids-starglow-media-B_DaNHQpxuY-kNo8xgZuGqj.300x300.jpg",
+          "listen_score": 60,
+          "listennotes_url": "https://www.listennotes.com/c/7aa7f0b533884f76a435600ff5b3935c/",
           "listen_score_global_rank": "0.1%"
         },
         {
-          "id": "94fa1b17b53f4c938da1a1ce6a57b2db",
-          "image": "https://production.listennotes.com/podcasts/girl-stop-playin-podcast-koereyelle-GZYtnWAbQC_-3YfLDGgO8uk.1400x1400.jpg",
-          "title": "Girl Stop Playin Podcast",
-          "publisher": "Koereyelle",
-          "thumbnail": "https://production.listennotes.com/podcasts/girl-stop-playin-podcast-koereyelle-Ru4dnb-PgBk-3YfLDGgO8uk.300x300.jpg",
-          "listen_score": 49,
-          "listennotes_url": "https://www.listennotes.com/c/94fa1b17b53f4c938da1a1ce6a57b2db/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "ad780d7a26f248db87ed973c0a0e8990",
-          "image": "https://production.listennotes.com/podcasts/pour-minds-podcast-85-south-media-nZgeCi6QMpN-LHcniIMB-VF.1400x1400.jpg",
-          "title": "Pour Minds Podcast",
-          "publisher": "85 South Media",
-          "thumbnail": "https://production.listennotes.com/podcasts/pour-minds-podcast-85-south-media-1Bq-nc8XQer-LHcniIMB-VF.300x300.jpg",
-          "listen_score": 58,
-          "listennotes_url": "https://www.listennotes.com/c/ad780d7a26f248db87ed973c0a0e8990/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "53e61c0389f64fc7abcf8db90735fd23",
-          "image": "https://production.listennotes.com/podcasts/sol-affirmations-black-love-podcast-network-BkctPgoV_af-CBHp0QMSuYD.1400x1400.jpg",
-          "title": "SOL Affirmations with Karega & Felicia",
-          "publisher": "Black Love Podcast Network",
-          "thumbnail": "https://production.listennotes.com/podcasts/sol-affirmations-black-love-podcast-network-Zfpxd5aBkNM-CBHp0QMSuYD.300x300.jpg",
-          "listen_score": 39,
-          "listennotes_url": "https://www.listennotes.com/c/53e61c0389f64fc7abcf8db90735fd23/",
-          "listen_score_global_rank": "2%"
-        },
-        {
-          "id": "90527b9a3b7c496db81ba6aa4abadf5b",
-          "image": "https://production.listennotes.com/podcasts/the-mamas-den-WDcj_04qZmY-ZY8ln1TgemM.1400x1400.jpg",
-          "title": "The Mama's Den",
-          "publisher": "Black Love Podcast Network",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-mamas-den-EKVwsWDiyN9-ZY8ln1TgemM.300x300.jpg",
-          "listen_score": 46,
-          "listennotes_url": "https://www.listennotes.com/c/90527b9a3b7c496db81ba6aa4abadf5b/",
-          "listen_score_global_rank": "1%"
-        }
-      ],
-      "source_url": "https://www.essence.com/gallery/14-black-podcasts-to-listen-to-this-spring-2023/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"There are plenty of other podcasts from creatives of color to listen to daily; it might even become difficult trying to choose which one is best. So, assist in your search, here are some of the best Black podcasts to listen to this spring.\"",
-      "pub_date_ms": 1679787984536,
-      "source_domain": "www.essence.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/14-black-podcasts-to-listen-to-this-KYDhmAOnPNB/"
-    },
-    {
-      "id": "OgBoeNHSh4d",
-      "title": "French podcasts to help improve your language skills",
-      "total": 5,
-      "podcasts": [
-        {
-          "id": "37bd6f5c49f149bca00b17f11bc12324",
-          "image": "https://production.listennotes.com/podcasts/coffee-break-french-coffee-break-languages-6BLnrFGejTM-FP7RN9eTYIQ.1400x1400.jpg",
-          "title": "Coffee Break French",
-          "publisher": "Coffee Break Languages",
-          "thumbnail": "https://production.listennotes.com/podcasts/coffee-break-french-coffee-break-languages-t6NydoRZs2F-FP7RN9eTYIQ.300x300.jpg",
-          "listen_score": 67,
-          "listennotes_url": "https://www.listennotes.com/c/37bd6f5c49f149bca00b17f11bc12324/",
+          "id": "6a8d9581f3b444bf94c72284870672fd",
+          "image": "https://production.listennotes.com/podcasts/the-past-and-the-curious-a-history-podcast-i0EtMcI6uve-cRYL3imxkfu.1400x1400.jpg",
+          "title": "The Past and The Curious: A History Podcast for Kids and Families",
+          "publisher": "Mick Sullivan",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-past-and-the-curious-a-history-podcast-PoF5LuyRbtq-cRYL3imxkfu.300x300.jpg",
+          "listen_score": 64,
+          "listennotes_url": "https://www.listennotes.com/c/6a8d9581f3b444bf94c72284870672fd/",
           "listen_score_global_rank": "0.05%"
         },
         {
-          "id": "d22ab4350b9e49dd9369514508b45f6a",
-          "image": "https://production.listennotes.com/podcasts/grand-reportage-rfi-98NwA6vsc4b-6RnTHl0-NIP.1400x1400.jpg",
-          "title": "Grand reportage",
-          "publisher": "RFI",
-          "thumbnail": "https://production.listennotes.com/podcasts/grand-reportage-rfi-qs6YMQ09gCf-6RnTHl0-NIP.300x300.jpg",
-          "listen_score": 44,
-          "listennotes_url": "https://www.listennotes.com/c/d22ab4350b9e49dd9369514508b45f6a/",
-          "listen_score_global_rank": "1%"
-        },
+          "id": "50f9d56f477847daaff2ab3ac1d841d4",
+          "image": "https://production.listennotes.com/podcasts/but-why-a-podcast-for-curious-kids-vermont-XbnZvGABNdL-Sp2Zcqdj1n8.1400x1400.jpg",
+          "title": "But Why: A Podcast for Curious Kids",
+          "publisher": "Vermont Public",
+          "thumbnail": "https://production.listennotes.com/podcasts/but-why-a-podcast-for-curious-kids-vermont-GyXW-pNgLut-Sp2Zcqdj1n8.300x300.jpg",
+          "listen_score": 69,
+          "listennotes_url": "https://www.listennotes.com/c/50f9d56f477847daaff2ab3ac1d841d4/",
+          "listen_score_global_rank": "0.05%"
+        }
+      ],
+      "source_url": "https://mashable.com/article/educational-podcasts-children-back-to-school?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Mashable spoke with Elgersma and scoured Common Sense Media's review guides to get the top recommendations for child-friendly and thought-provoking podcasts that cover a range of topics from history to politics to identity.\"",
+      "pub_date_ms": 1691795673275,
+      "source_domain": "mashable.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/14-podcasts-to-teach-kids-about-xPBOmvU0up_/"
+    },
+    {
+      "id": "5w1e_Tm8VW6",
+      "title": "Best podcasts of the week: Gary Lineker and friends team up for a new football show",
+      "total": 10,
+      "podcasts": [
         {
-          "id": "39e505db4e6f44c493614595a1507cac",
-          "image": "https://production.listennotes.com/podcasts/news-in-slow-french-linguistica-360-DT1XtWoeny--rhitEn9USFY.1400x1400.jpg",
-          "title": "News in Slow French",
-          "publisher": "Linguistica 360",
-          "thumbnail": "https://production.listennotes.com/podcasts/news-in-slow-french-linguistica-360-kGYQT96iEDU-rhitEn9USFY.300x300.jpg",
-          "listen_score": 51,
-          "listennotes_url": "https://www.listennotes.com/c/39e505db4e6f44c493614595a1507cac/",
+          "id": "66b182559a35499db1f7d70a43855b84",
+          "image": "https://production.listennotes.com/podcasts/dear-alana-tenderfoot-tv-iheartpodcasts-02tiR6vdxqy-TMfjwrVzFg0.1400x1400.jpg",
+          "title": "Dear Alana,",
+          "publisher": "Tenderfoot TV & iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/dear-alana-tenderfoot-tv-iheartpodcasts-ZgOBQknS6lj-TMfjwrVzFg0.300x300.jpg",
+          "listen_score": 53,
+          "listennotes_url": "https://www.listennotes.com/c/66b182559a35499db1f7d70a43855b84/",
           "listen_score_global_rank": "0.5%"
         },
         {
-          "id": "91687847c5084c809097771c91e6dc2d",
-          "image": "https://production.listennotes.com/podcasts/french-voices-podcast-learn-french-2dwqWGUxsbM-ItsWGmP8dbZ.1400x1400.jpg",
-          "title": "French Voices Podcast | Learn French | Interviews with Native French Speakers | French Culture",
-          "publisher": "Jessica: Native French teacher, founder of French Your Way",
-          "thumbnail": "https://production.listennotes.com/podcasts/french-voices-podcast-learn-french-Fyim78Vuo_R-ItsWGmP8dbZ.300x300.jpg",
-          "listen_score": 46,
-          "listennotes_url": "https://www.listennotes.com/c/91687847c5084c809097771c91e6dc2d/",
-          "listen_score_global_rank": "1%"
-        },
-        {
-          "id": "8c62b6c76ed341e39b0f0a81a4958904",
-          "image": "https://production.listennotes.com/podcasts/promenades-imaginaires-au-mus\u00e9e-dorsay-bt6YThw5FMa-SdpZ0InW3PX.1400x1400.jpg",
-          "title": "Promenades imaginaires au mus\u00e9e d'Orsay",
-          "publisher": "Musee Orsay",
-          "thumbnail": "https://production.listennotes.com/podcasts/promenades-imaginaires-au-mus\u00e9e-dorsay-ZUCuWYKcTOs-SdpZ0InW3PX.300x300.jpg",
-          "listen_score": 42,
-          "listennotes_url": "https://www.listennotes.com/c/8c62b6c76ed341e39b0f0a81a4958904/",
-          "listen_score_global_rank": "1.5%"
-        }
-      ],
-      "source_url": "https://www.connexionfrance.com/article/Practical/Everyday-Life/French-podcasts-to-help-improve-your-language-skills?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"Podcasts are a great way to make progress in learning French. Do you know someone who might find this article helpful?\"",
-      "pub_date_ms": 1679787713457,
-      "source_domain": "www.connexionfrance.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/french-podcasts-to-help-improve-your-OgBoeNHSh4d/"
-    },
-    {
-      "id": "0VjXWH4D8Cp",
-      "title": "5 Leadership and Diversity Podcasts That Are Worth A Listen According To These Leading Corporate Execs",
-      "total": 5,
-      "podcasts": [
-        {
-          "id": "ef49ff5355134216917a8804ab2362b7",
-          "image": "https://production.listennotes.com/podcasts/higher-learning-with-van-lathan-and-rachel-Qj4E-2hHvYu-E9YWsoQB3tH.1400x1400.jpg",
-          "title": "Higher Learning with Van Lathan and Rachel Lindsay",
-          "publisher": "The Ringer ",
-          "thumbnail": "https://production.listennotes.com/podcasts/higher-learning-with-van-lathan-and-rachel-3_8RK5JyFgf-E9YWsoQB3tH.300x300.jpg",
-          "listen_score": 70,
-          "listennotes_url": "https://www.listennotes.com/c/ef49ff5355134216917a8804ab2362b7/",
-          "listen_score_global_rank": "0.05%"
-        },
-        {
-          "id": "f263c4cdd51b4b6db56bf1d90ec49b11",
-          "image": "https://production.listennotes.com/podcasts/color-code-o6qUkb8_l5S-ugKI7EU1sHh.1400x1400.jpg",
-          "title": "Color Code",
-          "publisher": "STAT",
-          "thumbnail": "https://production.listennotes.com/podcasts/color-code-gEqYkCl-JS4-ugKI7EU1sHh.300x300.jpg",
-          "listen_score": 33,
-          "listennotes_url": "https://www.listennotes.com/c/f263c4cdd51b4b6db56bf1d90ec49b11/",
+          "id": "4c0bce6ed7a14cd99f9f78a05976b6d9",
+          "image": "https://production.listennotes.com/podcasts/tiny-huge-decisions-t05BXjS7l8I-_Xhsz4NecxC.1400x1400.jpg",
+          "title": "Tiny Huge Decisions",
+          "publisher": "America Public Media",
+          "thumbnail": "https://production.listennotes.com/podcasts/tiny-huge-decisions-qrdIbEstVgv-_Xhsz4NecxC.300x300.jpg",
+          "listen_score": 30,
+          "listennotes_url": "https://www.listennotes.com/c/4c0bce6ed7a14cd99f9f78a05976b6d9/",
           "listen_score_global_rank": "5%"
         },
         {
-          "id": "b31ec935d0d748368daa0be2f498ccab",
-          "image": "https://production.listennotes.com/podcasts/dei-after-5-with-sacha-sacha-thompson-zwLZeg1GiCv-2Vd6Ro5vCBh.1400x1400.jpg",
-          "title": "DEI After 5 with Sacha",
-          "publisher": "Sacha Thompson",
-          "thumbnail": "https://production.listennotes.com/podcasts/dei-after-5-with-sacha-sacha-thompson-trHSRBf_1Ay-2Vd6Ro5vCBh.300x300.jpg",
-          "listen_score": 24,
-          "listennotes_url": "https://www.listennotes.com/c/b31ec935d0d748368daa0be2f498ccab/",
-          "listen_score_global_rank": "10%"
+          "id": "0fde021b31ab427795edc482f82ed151",
+          "image": "https://production.listennotes.com/podcasts/speidis-16th-minute-oqfuOCW3gzX-Oy12dC7n6uh.1400x1400.jpg",
+          "title": "Speidi's 16th Minute",
+          "publisher": "The Ringer",
+          "thumbnail": "https://production.listennotes.com/podcasts/speidis-16th-minute-kd043cbmwAH-Oy12dC7n6uh.300x300.jpg",
+          "listen_score": 46,
+          "listennotes_url": "https://www.listennotes.com/c/0fde021b31ab427795edc482f82ed151/",
+          "listen_score_global_rank": "1%"
         },
         {
-          "id": "2856814619cd4a35b5b0307c38481575",
-          "image": "https://production.listennotes.com/podcasts/gen-x-amplified-with-adrion-porter-adrion-wM-kp2HGF5d-8yEFMsKIL4Y.1400x1400.jpg",
-          "title": "Gen X Amplified with Adrion Porter",
-          "publisher": "Adrion Porter | Speaker. Mid-Career Mentor. Podcaster. Brand Strategist.",
-          "thumbnail": "https://production.listennotes.com/podcasts/gen-x-amplified-with-adrion-porter-adrion-aXDN0x4V-zw-8yEFMsKIL4Y.300x300.jpg",
-          "listen_score": 35,
-          "listennotes_url": "https://www.listennotes.com/c/2856814619cd4a35b5b0307c38481575/",
+          "id": "0e58d93e69e84e5083040e5ec0675bff",
+          "image": "https://production.listennotes.com/podcasts/over-my-dead-body-wondery-ZYgWXc_ITl5-ca54oTHGPx-.1400x1400.jpg",
+          "title": "Over My Dead Body",
+          "publisher": "Wondery",
+          "thumbnail": "https://production.listennotes.com/podcasts/over-my-dead-body-wondery-R1opfxn4MAC-ca54oTHGPx-.300x300.jpg",
+          "listen_score": 79,
+          "listennotes_url": "https://www.listennotes.com/c/0e58d93e69e84e5083040e5ec0675bff/",
+          "listen_score_global_rank": "0.01%"
+        },
+        {
+          "id": "9f7ae1afc32c4db18e27de9cd97648ed",
+          "image": "https://production.listennotes.com/podcasts/the-rest-is-football-goalhanger-podcasts-1svEbzL39PJ-LDpj85uEyoO.1400x1400.jpg",
+          "title": "The Rest Is Football",
+          "publisher": "Goalhanger Podcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-rest-is-football-goalhanger-podcasts-zarNL8vKuZh-LDpj85uEyoO.300x300.jpg",
+          "listen_score": 52,
+          "listennotes_url": "https://www.listennotes.com/c/9f7ae1afc32c4db18e27de9cd97648ed/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.theguardian.com/tv-and-radio/2023/aug/10/hear-here-gary-lineker-alan-shearer-micah-richards-the-rest-is-football?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"In this week\u2019s newsletter: The Match of the Day presenter joins Alan Shearer and Micah Richards for The Rest Is Football, just in time for the new season. Plus: five of the best summer podcasts.\"",
+      "pub_date_ms": 1691795235735,
+      "source_domain": "www.theguardian.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-podcasts-of-the-week-gary-lineker-5w1e_Tm8VW6/"
+    },
+    {
+      "id": "krzscifRDqu",
+      "title": "12 Comedy Podcasts As Smart as SmartLess",
+      "total": 12,
+      "podcasts": [
+        {
+          "id": "fa07bed1958840ca89c4c7d2536ab701",
+          "image": "https://production.listennotes.com/podcasts/family-trips-with-the-meyers-brothers-p2Kxr1EiX6--2j4-Oyeu0TK.1400x1400.jpg",
+          "title": "Family Trips with the Meyers Brothers",
+          "publisher": "Seth Meyers and Josh Meyers",
+          "thumbnail": "https://production.listennotes.com/podcasts/family-trips-with-the-meyers-brothers-eCzgUAX_vYK-2j4-Oyeu0TK.300x300.jpg",
+          "listen_score": 52,
+          "listennotes_url": "https://www.listennotes.com/c/fa07bed1958840ca89c4c7d2536ab701/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "170ba77c435a4faeaf41f93a1ffa1971",
+          "image": "https://production.listennotes.com/podcasts/baby-this-is-keke-palmer-j6kNzpt41qi-u2MSNy3hXxK.1400x1400.jpg",
+          "title": "Baby, This is Keke Palmer",
+          "publisher": "Wondery",
+          "thumbnail": "https://production.listennotes.com/podcasts/baby-this-is-keke-palmer-PyijXYsgFEQ-u2MSNy3hXxK.300x300.jpg",
+          "listen_score": 51,
+          "listennotes_url": "https://www.listennotes.com/c/170ba77c435a4faeaf41f93a1ffa1971/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "8038647a5e1c49e2934d3dea401aaf6b",
+          "image": "https://production.listennotes.com/podcasts/all-fantasy-everything-headgum-gdz1T3yokef-hGkLxfsg1To.1400x1400.jpg",
+          "title": "All Fantasy Everything",
+          "publisher": "Headgum",
+          "thumbnail": "https://production.listennotes.com/podcasts/all-fantasy-everything-headgum-OtygIaobpuE-hGkLxfsg1To.300x300.jpg",
+          "listen_score": 66,
+          "listennotes_url": "https://www.listennotes.com/c/8038647a5e1c49e2934d3dea401aaf6b/",
+          "listen_score_global_rank": "0.05%"
+        },
+        {
+          "id": "81ab79ffad794edab15e5b616d196650",
+          "image": "https://production.listennotes.com/podcasts/straightiolab-big-money-players-network-and-8XThz1-_0Ov-vnYD5R87bPe.1400x1400.jpg",
+          "title": "StraightioLab",
+          "publisher": "Big Money Players Network and iHeartPodcasts",
+          "thumbnail": "https://production.listennotes.com/podcasts/straightiolab-big-money-players-network-and-J62I1wf4v9G-vnYD5R87bPe.300x300.jpg",
+          "listen_score": 55,
+          "listennotes_url": "https://www.listennotes.com/c/81ab79ffad794edab15e5b616d196650/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "de5f2712de804c9fb6c60db35e64d3c5",
+          "image": "https://production.listennotes.com/podcasts/do-you-need-a-ride-exactly-right-mpAGMZCfrSW-mRz6LDytGMh.1400x1400.jpg",
+          "title": "Do You Need A Ride?",
+          "publisher": "Exactly Right",
+          "thumbnail": "https://production.listennotes.com/podcasts/do-you-need-a-ride-exactly-right-yIUF-NX9OzH-mRz6LDytGMh.300x300.jpg",
+          "listen_score": 68,
+          "listennotes_url": "https://www.listennotes.com/c/de5f2712de804c9fb6c60db35e64d3c5/",
+          "listen_score_global_rank": "0.05%"
+        }
+      ],
+      "source_url": "https://lifehacker.com/best-funny-conversation-podcasts-like-smartless-1850722663?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"That means if you\u2019re reading this you probably know all about the show, and maybe you\u2019re in the market for something with the same vibes: funny, offbeat, conversational. Here are 12 podcasts that might not be in the top five just yet, but are sure to bring you lots of laughs.\"",
+      "pub_date_ms": 1691795056963,
+      "source_domain": "lifehacker.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/12-comedy-podcasts-as-smart-as-smartless-krzscifRDqu/"
+    },
+    {
+      "id": "eZzoBAE1HCr",
+      "title": "From art history to museum tours: these are 9 of the best podcasts for art lovers",
+      "total": 9,
+      "podcasts": [
+        {
+          "id": "d63fd3fad2a941d8be4057bf41211aed",
+          "image": "https://production.listennotes.com/podcasts/the-banksy-story-bbc-radio-4-ODilU0gAaHk-ub0icr1pZVR.1400x1400.jpg",
+          "title": "The Banksy Story",
+          "publisher": "BBC Radio 4",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-banksy-story-bbc-radio-4-NiRMVosYCEk-ub0icr1pZVR.300x300.jpg",
+          "listen_score": 36,
+          "listennotes_url": "https://www.listennotes.com/c/d63fd3fad2a941d8be4057bf41211aed/",
+          "listen_score_global_rank": "2.5%"
+        },
+        {
+          "id": "1b2adc7d04644cb3b52a9454c37e36f6",
+          "image": "https://production.listennotes.com/podcasts/talk-art-russell-tovey-and-robert-diament-u_UVtrEBjeq-AovYj5Z4hqg.1400x1400.jpg",
+          "title": "Talk Art",
+          "publisher": "Russell Tovey and Robert Diament",
+          "thumbnail": "https://production.listennotes.com/podcasts/talk-art-russell-tovey-and-robert-diament-_hRdIX86e5--AovYj5Z4hqg.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/1b2adc7d04644cb3b52a9454c37e36f6/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "4920c16f39fd49479a711ff7b014435b",
+          "image": "https://production.listennotes.com/podcasts/the-great-women-artists-katy-hessel-e6jTPvwNDCQ-0sGkgXU5P3W.1400x1400.jpg",
+          "title": "The Great Women Artists",
+          "publisher": "Katy Hessel",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-great-women-artists-katy-hessel-poerDJA1Mfh-0sGkgXU5P3W.300x300.jpg",
+          "listen_score": 56,
+          "listennotes_url": "https://www.listennotes.com/c/4920c16f39fd49479a711ff7b014435b/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "6c5eee8129cf42658f32eef25a046fe9",
+          "image": "https://production.listennotes.com/podcasts/meet-me-at-the-museum-art-fund-xvyDIBgHw4i-y2GOHSNtbi5.1400x1400.jpg",
+          "title": "Meet Me at the Museum",
+          "publisher": "Art Fund",
+          "thumbnail": "https://production.listennotes.com/podcasts/meet-me-at-the-museum-art-fund-X9ZeQHNvVd8-y2GOHSNtbi5.300x300.jpg",
+          "listen_score": 45,
+          "listennotes_url": "https://www.listennotes.com/c/6c5eee8129cf42658f32eef25a046fe9/",
+          "listen_score_global_rank": "1%"
+        },
+        {
+          "id": "dc62e31b4eec4e7596ea2e61e4c268b5",
+          "image": "https://production.listennotes.com/podcasts/the-lonely-palette-tamar-avishai-RbL6_CTE7ci-S9_PQbKdFkg.1028x1028.jpg",
+          "title": "The Lonely Palette",
+          "publisher": "Tamar Avishai",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-lonely-palette-tamar-avishai-A0h695IMxcL-S9_PQbKdFkg.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/dc62e31b4eec4e7596ea2e61e4c268b5/",
+          "listen_score_global_rank": "0.5%"
+        }
+      ],
+      "source_url": "https://www.stylist.co.uk/entertainment/podcasts/best-podcasts-art-lovers/810375?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"With shows hosted by artists from across the world and a few famous faces, these nine podcasts are the ideal listening partner for both art lovers and the art curious.\"",
+      "pub_date_ms": 1691642762886,
+      "source_domain": "www.stylist.co.uk",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/from-art-history-to-museum-tours-these-eZzoBAE1HCr/"
+    },
+    {
+      "id": "q4wANu8UVds",
+      "title": "Best podcasts of the week: LeBron James\u2019s relentless rise from hyped prospect to king of the NBA",
+      "total": 9,
+      "podcasts": [
+        {
+          "id": "af1362f74e7c4a5ea5d392df62741580",
+          "image": "https://production.listennotes.com/podcasts/first-dates-the-podcast-podimo-twenty-twenty-CLOQ1G9qo7D-_HLi4KAb-1c.1400x1400.jpg",
+          "title": "First Dates: The Podcast",
+          "publisher": "Podimo & Twenty Twenty",
+          "thumbnail": "https://production.listennotes.com/podcasts/first-dates-the-podcast-podimo-twenty-twenty-YaNzW1kdcxH-_HLi4KAb-1c.300x300.jpg",
+          "listen_score": 34,
+          "listennotes_url": "https://www.listennotes.com/c/af1362f74e7c4a5ea5d392df62741580/",
           "listen_score_global_rank": "3%"
         },
         {
-          "id": "976890b98fd14aef85d8be8735179d72",
-          "image": "https://production.listennotes.com/podcasts/code-switch-npr-ukEBCRJM_P7-yORrA0KnwqZ.1400x1400.jpg",
-          "title": "Code Switch",
-          "publisher": "NPR",
-          "thumbnail": "https://production.listennotes.com/podcasts/code-switch-npr-He1goOF9-Zu-yORrA0KnwqZ.300x300.jpg",
-          "listen_score": 76,
-          "listennotes_url": "https://www.listennotes.com/c/976890b98fd14aef85d8be8735179d72/",
-          "listen_score_global_rank": "0.01%"
-        }
-      ],
-      "source_url": "https://www.essence.com/news/money-career/leadership-diversity-podcasts-corporate-execs/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"For entrepreneurs, business people, and leaders who seek credible expertise, informed conversation, and nuanced takes from diverse perspectives, ESSENCE surveyed five executives to find out their podcast faves. Here\u2019s what they recommended.\"",
-      "pub_date_ms": 1679787577970,
-      "source_domain": "www.essence.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/5-leadership-and-diversity-podcasts-0VjXWH4D8Cp/"
-    },
-    {
-      "id": "Ud7jFwSTofR",
-      "title": "The 7 best wellness podcasts to inspire pure joy this spring",
-      "total": 7,
-      "podcasts": [
-        {
-          "id": "1ab5768ac559452cac624e9716c731aa",
-          "image": "https://production.listennotes.com/podcasts/beauty-full-lives-madeleine-spencer-HtqWn_xZEAT-Idet9Ni3xLy.1400x1400.jpg",
-          "title": "Beauty Full Lives",
-          "publisher": "Madeleine Spencer",
-          "thumbnail": "https://production.listennotes.com/podcasts/beauty-full-lives-madeleine-spencer-_lQ45zeTXsc-Idet9Ni3xLy.300x300.jpg",
-          "listen_score": 45,
-          "listennotes_url": "https://www.listennotes.com/c/1ab5768ac559452cac624e9716c731aa/",
-          "listen_score_global_rank": "1%"
-        },
-        {
-          "id": "943c2da80d3b42f99c266ad3f9c06b5d",
-          "image": "https://production.listennotes.com/podcasts/ted-health-ted-Qu0GENswY3A-E-oUK8AZGa2.1400x1400.jpg",
-          "title": "TED Health",
-          "publisher": "TED",
-          "thumbnail": "https://production.listennotes.com/podcasts/ted-health-ted-Huegz2ZU5_Q-E-oUK8AZGa2.300x300.jpg",
-          "listen_score": 62,
-          "listennotes_url": "https://www.listennotes.com/c/943c2da80d3b42f99c266ad3f9c06b5d/",
+          "id": "16f2d5cb05fe4e4fa934160fd73600d7",
+          "image": "https://production.listennotes.com/podcasts/ghosted-by-roz-hernandez-exactly-right-UMaYGwvKQRk-gFyP4t3cQJn.1400x1400.jpg",
+          "title": "Ghosted! by Roz Hernandez",
+          "publisher": "Exactly Right",
+          "thumbnail": "https://production.listennotes.com/podcasts/ghosted-by-roz-hernandez-exactly-right-1uIRyW-F_l6-gFyP4t3cQJn.300x300.jpg",
+          "listen_score": 60,
+          "listennotes_url": "https://www.listennotes.com/c/16f2d5cb05fe4e4fa934160fd73600d7/",
           "listen_score_global_rank": "0.1%"
         },
         {
-          "id": "e1c66a542b8d4acfbc95b898c7ac710f",
-          "image": "https://production.listennotes.com/podcasts/feel-better-live-more-with-dr-rangan-HCVm172lNcX-JKmSp6BXHVk.1400x1400.jpg",
-          "title": "Feel Better, Live More with Dr Rangan Chatterjee",
-          "publisher": "Dr Rangan Chatterjee: GP & Author",
-          "thumbnail": "https://production.listennotes.com/podcasts/feel-better-live-more-with-dr-rangan-H1l2zKIPydb-JKmSp6BXHVk.300x300.jpg",
-          "listen_score": 72,
-          "listennotes_url": "https://www.listennotes.com/c/e1c66a542b8d4acfbc95b898c7ac710f/",
+          "id": "ef3719d40d194ceb957c5665a0cbd966",
+          "image": "https://production.listennotes.com/podcasts/the-athletic-nba-show-the-athletic-Jf8w7AjBpCv-yfPt3xGWVKU.1400x1400.jpg",
+          "title": "The Athletic NBA Show",
+          "publisher": "The Athletic",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-athletic-nba-show-the-athletic-BAkVEvFLYK8-yfPt3xGWVKU.300x300.jpg",
+          "listen_score": 59,
+          "listennotes_url": "https://www.listennotes.com/c/ef3719d40d194ceb957c5665a0cbd966/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "a9690dea70af49ffbc90cadbc8702703",
+          "image": "https://production.listennotes.com/podcasts/fiasco-leon-neyfakh-7xFXAydgqt8-hwDeVSLXRcM.1400x1400.jpg",
+          "title": "Fiasco",
+          "publisher": "Leon Neyfakh",
+          "thumbnail": "https://production.listennotes.com/podcasts/fiasco-leon-neyfakh-3xS7Ib8TfRG-hwDeVSLXRcM.300x300.jpg",
+          "listen_score": 48,
+          "listennotes_url": "https://www.listennotes.com/c/a9690dea70af49ffbc90cadbc8702703/",
+          "listen_score_global_rank": "0.5%"
+        },
+        {
+          "id": "ecac001513b94919bdc68b0b9277cc90",
+          "image": "https://production.listennotes.com/podcasts/ologies-with-alie-ward-alie-ward-KfHcnoSrNTY-k0n1jbDJigN.1400x1400.jpg",
+          "title": "Ologies with Alie Ward",
+          "publisher": "Alie Ward",
+          "thumbnail": "https://production.listennotes.com/podcasts/ologies-with-alie-ward-alie-ward-hU8wJsrtyDb-k0n1jbDJigN.300x300.jpg",
+          "listen_score": 80,
+          "listennotes_url": "https://www.listennotes.com/c/ecac001513b94919bdc68b0b9277cc90/",
+          "listen_score_global_rank": "0.01%"
+        }
+      ],
+      "source_url": "https://www.theguardian.com/tv-and-radio/2023/jul/27/hear-here-lebron-james-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"In this week\u2019s newsletter: How did the most talked-up teenager of a generation become maybe the greatest of all time? Find out in A King\u2019s Reign.\"",
+      "pub_date_ms": 1691082099689,
+      "source_domain": "www.theguardian.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/best-podcasts-of-the-week-lebron-q4wANu8UVds/"
+    },
+    {
+      "id": "xkZWSFApLCg",
+      "title": "Edinburgh Festival Fringe 2023: 5 of the best live podcasts to see this August including Clive Anderson",
+      "total": 4,
+      "podcasts": [
+        {
+          "id": "2fd47e2b9aab4a6bb1a1d3653f2c2b2d",
+          "image": "https://production.listennotes.com/podcasts/all-killa-no-filla-kiri-pritchard-mclean-r9BhVp1A0qn-uiaqj30HzrV.1400x1400.jpg",
+          "title": "All Killa No Filla",
+          "publisher": "Kiri Pritchard - McLean",
+          "thumbnail": "https://production.listennotes.com/podcasts/all-killa-no-filla-kiri-pritchard-mclean-2tAaWT9fNis-uiaqj30HzrV.300x300.jpg",
+          "listen_score": 70,
+          "listennotes_url": "https://www.listennotes.com/c/2fd47e2b9aab4a6bb1a1d3653f2c2b2d/",
           "listen_score_global_rank": "0.05%"
         },
         {
-          "id": "03d4da5853ef4f72b3ba215f573bc7aa",
-          "image": "https://production.listennotes.com/podcasts/saturn-returns-with-caggie-feast-collective-iNOEGVeYpUb-3GjI4_TZREl.1400x1400.jpg",
-          "title": "Saturn Returns with Caggie",
-          "publisher": "Astrid Productions",
-          "thumbnail": "https://production.listennotes.com/podcasts/saturn-returns-with-caggie-feast-collective-PBuElwy1D8g-3GjI4_TZREl.300x300.jpg",
-          "listen_score": 52,
-          "listennotes_url": "https://www.listennotes.com/c/03d4da5853ef4f72b3ba215f573bc7aa/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "e636a8dbde3f488a9ba76607f0491376",
-          "image": "https://production.listennotes.com/podcasts/modern-love-the-new-york-times-8nDlEQ6Txy4-OBwDWs-Uv25.1400x1400.jpg",
-          "title": "Modern Love",
-          "publisher": "The New York Times",
-          "thumbnail": "https://production.listennotes.com/podcasts/modern-love-the-new-york-times-cnhSIGxE_V3-OBwDWs-Uv25.300x300.jpg",
-          "listen_score": 73,
-          "listennotes_url": "https://www.listennotes.com/c/e636a8dbde3f488a9ba76607f0491376/",
-          "listen_score_global_rank": "0.01%"
-        }
-      ],
-      "source_url": "https://www.hellomagazine.com/hfm/20230320167226/best-wellness-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"In honor of International Day of Happiness, check out these mood-boosting podcasts\u2026\"",
-      "pub_date_ms": 1679442306683,
-      "source_domain": "www.hellomagazine.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-7-best-wellness-podcasts-to-Ud7jFwSTofR/"
-    },
-    {
-      "id": "WrXxzZPwmT-",
-      "title": "True crime, \u2018Buffy,\u2019 and horror: 5 podcasts by \u2018Morbid\u2019 hosts Ash & Alaina",
-      "total": 5,
-      "podcasts": [
-        {
-          "id": "ddd0bba87bbe45be818a7dfc2113fba6",
-          "image": "https://production.listennotes.com/podcasts/frozen-head-l3isXSpwykR-gXhufOAUm1P.1400x1400.jpg",
-          "title": "Frozen Head",
-          "publisher": "Wondery",
-          "thumbnail": "https://production.listennotes.com/podcasts/frozen-head-cYR8giXNU1k-gXhufOAUm1P.300x300.jpg",
-          "listen_score": 51,
-          "listennotes_url": "https://www.listennotes.com/c/ddd0bba87bbe45be818a7dfc2113fba6/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "bf83fac23a294d339c3815994bf8b0a6",
-          "image": "https://production.listennotes.com/podcasts/the-rewatcher-buffy-the-vampire-slayer-skKdof7qGH8-JHfxNXwoMRL.1400x1400.jpg",
-          "title": "The Rewatcher: Buffy the Vampire Slayer",
-          "publisher": "Wondery | Morbid Network",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-rewatcher-buffy-the-vampire-slayer-HIK2UNnmxMk-JHfxNXwoMRL.300x300.jpg",
-          "listen_score": 55,
-          "listennotes_url": "https://www.listennotes.com/c/bf83fac23a294d339c3815994bf8b0a6/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "abf3490be313490a8e21ded2f5f19742",
-          "image": "https://production.listennotes.com/podcasts/scream-ash-alaina-caleb-morbid-network-ZREc3FyU5Ku-Jqc0rSg3OhN.1400x1400.jpg",
-          "title": "Scream!",
-          "publisher": "Ash, Alaina, & Caleb | Morbid Network | Wondery",
-          "thumbnail": "https://production.listennotes.com/podcasts/scream-ash-alaina-caleb-morbid-network-TiSrl9V2EIe-Jqc0rSg3OhN.300x300.jpg",
-          "listen_score": 54,
-          "listennotes_url": "https://www.listennotes.com/c/abf3490be313490a8e21ded2f5f19742/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "08e7e64e80ac456a8ce0027f07dc40d0",
-          "image": "https://production.listennotes.com/podcasts/morbid-morbid-network-wondery-q_fSJAu-WOB-krRXUPe1dbC.1400x1400.jpg",
-          "title": "Morbid",
-          "publisher": "Morbid Network | Wondery",
-          "thumbnail": "https://production.listennotes.com/podcasts/morbid-morbid-network-wondery-YRN7M3rTyLo-krRXUPe1dbC.300x300.jpg",
-          "listen_score": 87,
-          "listennotes_url": "https://www.listennotes.com/c/08e7e64e80ac456a8ce0027f07dc40d0/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "5e4ad2b8edb841da88bb09b051e44887",
-          "image": "https://production.listennotes.com/podcasts/crime-countdown-parcast-network-eqlXINviYmy-AFG5a7mNJ4-.1400x1400.jpg",
-          "title": "Crime Countdown",
-          "publisher": "Parcast Network",
-          "thumbnail": "https://production.listennotes.com/podcasts/crime-countdown-parcast-network-ODgBxwZdIcV-AFG5a7mNJ4-.300x300.jpg",
-          "listen_score": 63,
-          "listennotes_url": "https://www.listennotes.com/c/5e4ad2b8edb841da88bb09b051e44887/",
-          "listen_score_global_rank": "0.1%"
-        }
-      ],
-      "source_url": "https://podsauce.com/articles/podcasts-hosted-by-morbid-hosts-ash-and-alaina/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "'We\u2019ve gathered the best podcasts hosted by Alaina and Ash. For more true crime, check out \u201cFrozen Head\u201d and \u201cCrime Countdown.\u201d Head to Hellmouth with the cohosts on a Buffy the Vampire Slayer rewatch show, a fun listen since Ash is watching the show for the first time ever. Horror fans will love \u201cScream!\u201d that covers classic and new films.'",
-      "pub_date_ms": 1679442224647,
-      "source_domain": "podsauce.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/true-crime-buffy-and-horror-5-podcasts-WrXxzZPwmT-/"
-    },
-    {
-      "id": "qVGZ5e9fArO",
-      "title": "\u2018The Last of Us\u2019 fan? Check out these 6 action survival podcasts set in post-apocalyptic worlds",
-      "total": 6,
-      "podcasts": [
-        {
-          "id": "3f658bb26b7843c4863277b0cadc7cc5",
-          "image": "https://production.listennotes.com/podcasts/impact-winter-audible-originals-zboDgQO4dTH-4XyZ6QHgEU5.1400x1400.jpg",
-          "title": "Impact Winter",
-          "publisher": "Audible Originals",
-          "thumbnail": "https://production.listennotes.com/podcasts/impact-winter-audible-originals-BWt9AeD_G1c-4XyZ6QHgEU5.300x300.jpg",
-          "listen_score": 56,
-          "listennotes_url": "https://www.listennotes.com/c/3f658bb26b7843c4863277b0cadc7cc5/",
-          "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "99a8698b73a04e719178c9a9badfb241",
-          "image": "https://production.listennotes.com/podcasts/hbos-the-last-of-us-podcast-hbo-uHhM4VasLFg-uWwptYigAhP.1400x1400.jpg",
-          "title": "HBO's The Last of Us Podcast",
-          "publisher": "HBO",
-          "thumbnail": "https://production.listennotes.com/podcasts/hbos-the-last-of-us-podcast-hbo-ZqhUEXMHzji-uWwptYigAhP.300x300.jpg",
-          "listen_score": 63,
-          "listennotes_url": "https://www.listennotes.com/c/99a8698b73a04e719178c9a9badfb241/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "6b1834218d79442f948a0f0dbf37808c",
-          "image": "https://production.listennotes.com/podcasts/the-white-vault-fool-and-scholar-productions-RO4PwMgu6Cd-T4gs5OEo0cl.1400x1400.jpg",
-          "title": "The White Vault",
-          "publisher": "Fool and Scholar Productions",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-white-vault-fool-and-scholar-productions-gC9GHfn1-ds-T4gs5OEo0cl.300x300.jpg",
-          "listen_score": 67,
-          "listennotes_url": "https://www.listennotes.com/c/6b1834218d79442f948a0f0dbf37808c/",
-          "listen_score_global_rank": "0.05%"
-        },
-        {
-          "id": "48ae8c05bb804158bf3838604bbd7d56",
-          "image": "https://production.listennotes.com/podcasts/were-alive-wayland-productions-inc-5uCloLFfU9I-nC-XLuBMGHf.1400x1400.jpg",
-          "title": "We're Alive",
-          "publisher": "Wayland Productions Inc",
-          "thumbnail": "https://production.listennotes.com/podcasts/were-alive-wayland-productions-inc-Qj-GYw5efID-nC-XLuBMGHf.300x300.jpg",
-          "listen_score": 73,
-          "listennotes_url": "https://www.listennotes.com/c/48ae8c05bb804158bf3838604bbd7d56/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "33efb964781b4314b95677d7d1c70f37",
-          "image": "https://production.listennotes.com/podcasts/the-cleansed-a-post-apocalyptic-saga-realm-6eJlr9QsWbR-vzpW6-qhHSi.1400x1400.jpg",
-          "title": "The Cleansed: A Post-Apocalyptic Saga",
-          "publisher": "Realm",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-cleansed-a-post-apocalyptic-saga-realm-3CldcOaXVrL-vzpW6-qhHSi.300x300.jpg",
-          "listen_score": 50,
-          "listennotes_url": "https://www.listennotes.com/c/33efb964781b4314b95677d7d1c70f37/",
-          "listen_score_global_rank": "0.5%"
-        }
-      ],
-      "source_url": "https://podsauce.com/articles/best-apocalyptic-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "'Shows on our list run the gamut of disasters from outbreaks to infections and beastly creatures who roam freely. Check out a sci-fi show by The Walking Dead\u2019s executive producers, \u201cImpact Winter.\u201d We\u2019ve also included \u201cHBO\u2019s The Last of Us Podcast,\u201d the long-running series \u201cWe\u2019re Alive,\u201d and \u201cBirds of Empire.\u201d'",
-      "pub_date_ms": 1679442173134,
-      "source_domain": "podsauce.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-last-of-us-fan-check-out-these-6-qVGZ5e9fArO/"
-    },
-    {
-      "id": "W8lD_AG9dHf",
-      "title": "The 15 Best Australian Podcasts To Zhush Up Your Listening Routine",
-      "total": 15,
-      "podcasts": [
-        {
-          "id": "12433c9821c045e5b67f84aca1cd30d8",
-          "image": "https://production.listennotes.com/podcasts/coming-out-blak-coming-out-blak-6cBi0bOXzp5-d2e-W5IAzOo.1400x1400.jpg",
-          "title": "Coming out, Blak",
-          "publisher": "Coming Out, Blak",
-          "thumbnail": "https://production.listennotes.com/podcasts/coming-out-blak-coming-out-blak-TAEmMdIXSyn-d2e-W5IAzOo.300x300.jpg",
+          "id": "d5a710015002438e95e0f02480d6a0a2",
+          "image": "https://production.listennotes.com/podcasts/darren-mcgarveys-common-people-hJFPW4l7s5z-5gyiUNGBbOd.1400x1400.jpg",
+          "title": "Darren McGarvey's Common People",
+          "publisher": "Darren McGarvey",
+          "thumbnail": "https://production.listennotes.com/podcasts/darren-mcgarveys-common-people-rIoaBV3xh6F-5gyiUNGBbOd.300x300.jpg",
           "listen_score": null,
-          "listennotes_url": "https://www.listennotes.com/c/12433c9821c045e5b67f84aca1cd30d8/",
+          "listennotes_url": "https://www.listennotes.com/c/d5a710015002438e95e0f02480d6a0a2/",
           "listen_score_global_rank": null
         },
         {
-          "id": "5eeb8130da324b71802d2f94814262f9",
-          "image": "https://production.listennotes.com/podcasts/its-a-lot-with-abbie-chatfield-listnr--NfMEPpHxbJ-OIlswEpiB1R.1400x1400.jpg",
-          "title": "It's A Lot with Abbie Chatfield",
-          "publisher": "LiSTNR",
-          "thumbnail": "https://production.listennotes.com/podcasts/its-a-lot-with-abbie-chatfield-listnr-nyWfkFHg_Qj-OIlswEpiB1R.300x300.jpg",
-          "listen_score": 60,
-          "listennotes_url": "https://www.listennotes.com/c/5eeb8130da324b71802d2f94814262f9/",
-          "listen_score_global_rank": "0.1%"
-        },
-        {
-          "id": "0799169505824196b203fe612aee50b1",
-          "image": "https://production.listennotes.com/podcasts/stop-everything-abc-radio-yWKC6S0XGrR-0LGoNiEqaBg.1400x1400.jpg",
-          "title": "Stop Everything!",
-          "publisher": "ABC Radio",
-          "thumbnail": "https://production.listennotes.com/podcasts/stop-everything-abc-radio-Jd0fXqKobUO-0LGoNiEqaBg.300x300.jpg",
-          "listen_score": 45,
-          "listennotes_url": "https://www.listennotes.com/c/0799169505824196b203fe612aee50b1/",
-          "listen_score_global_rank": "1%"
-        },
-        {
-          "id": "02e194651c6240e6b95c8e38729af63b",
-          "image": "https://production.listennotes.com/podcasts/casefile-true-crime-casefile-presents-KVzo_uljf5h-DG5lH8yuLgi.1400x1400.jpg",
-          "title": "Casefile True Crime",
-          "publisher": "Casefile Presents",
-          "thumbnail": "https://production.listennotes.com/podcasts/casefile-true-crime-casefile-presents-NF1Sr8fb_B9-DG5lH8yuLgi.300x300.jpg",
-          "listen_score": 87,
-          "listennotes_url": "https://www.listennotes.com/c/02e194651c6240e6b95c8e38729af63b/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "2e672df8e97a4a5583cb5e888f9b31cd",
-          "image": "https://production.listennotes.com/podcasts/the-briefing-listnr--E2XamwqAeo-Ca2Hb04qx8h.1400x1400.jpg",
-          "title": "The Briefing",
-          "publisher": "LiSTNR",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-briefing-listnr-zcCNdnHmpBh-Ca2Hb04qx8h.300x300.jpg",
-          "listen_score": 53,
-          "listennotes_url": "https://www.listennotes.com/c/2e672df8e97a4a5583cb5e888f9b31cd/",
-          "listen_score_global_rank": "0.5%"
-        }
-      ],
-      "source_url": "https://www.refinery29.com/en-au/best-australian-podcasts?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\u201cWe're here to help. Ahead, we've rounded up some of the best Australian podcasts that explore everything from entertainment, relationships, sexuality, news and current affairs and more.\u201d",
-      "pub_date_ms": 1679442077822,
-      "source_domain": "www.refinery29.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/the-15-best-australian-podcasts-to-W8lD_AG9dHf/"
-    },
-    {
-      "id": "gscUpP7b9Tu",
-      "title": "BBC Podcasts Premium Has Launched On Apple Podcasts",
-      "total": 14,
-      "podcasts": [
-        {
-          "id": "586687cfb0e34b26b9e37f691e12fa6c",
-          "image": "https://production.listennotes.com/podcasts/the-infinite-monkey-cage-bbc-radio-4-xg7r9tjOPwA-4jEfIrdVmKg.1400x1400.jpg",
-          "title": "The Infinite Monkey Cage",
-          "publisher": "BBC Radio 4",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-infinite-monkey-cage-bbc-radio-4-zaLHRuM01hW-4jEfIrdVmKg.300x300.jpg",
-          "listen_score": 73,
-          "listennotes_url": "https://www.listennotes.com/c/586687cfb0e34b26b9e37f691e12fa6c/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "4fff38a6c6bc41ba8a54ebce4be0aa8c",
-          "image": "https://production.listennotes.com/podcasts/in-our-time-bbc-radio-4-kr62xXmWgQy-NGaVjqYxhLn.1400x1400.jpg",
-          "title": "In Our Time",
-          "publisher": "BBC Radio 4",
-          "thumbnail": "https://production.listennotes.com/podcasts/in-our-time-bbc-radio-4-bVy7ZgIG1mc-NGaVjqYxhLn.300x300.jpg",
-          "listen_score": 73,
-          "listennotes_url": "https://www.listennotes.com/c/4fff38a6c6bc41ba8a54ebce4be0aa8c/",
-          "listen_score_global_rank": "0.01%"
-        },
-        {
-          "id": "275deca7255f4de48abd0209b65c47b5",
-          "image": "https://production.listennotes.com/podcasts/killing-victoria-bbc-radio-67qZs9TnaeC-BdqZgvPQbGx.1400x1400.jpg",
-          "title": "Killing Victoria",
-          "publisher": "BBC Radio",
-          "thumbnail": "https://production.listennotes.com/podcasts/killing-victoria-bbc-radio-znDHR145pfq-BdqZgvPQbGx.300x300.jpg",
+          "id": "bb1da955b3d14494a97271879fc2ed90",
+          "image": "https://production.listennotes.com/podcasts/my-seven-wonders-with-clive-anderson-stak-b13tpAu5-RI-civuzk5_Uj0.1400x1400.jpg",
+          "title": "My Seven Wonders with Clive Anderson",
+          "publisher": "Stak",
+          "thumbnail": "https://production.listennotes.com/podcasts/my-seven-wonders-with-clive-anderson-stak-3eY8mtcXk4Z-civuzk5_Uj0.300x300.jpg",
           "listen_score": 38,
-          "listennotes_url": "https://www.listennotes.com/c/275deca7255f4de48abd0209b65c47b5/",
+          "listennotes_url": "https://www.listennotes.com/c/bb1da955b3d14494a97271879fc2ed90/",
           "listen_score_global_rank": "2%"
         },
         {
-          "id": "5f5e5e6553d6476da37defbd0b6c57a8",
-          "image": "https://production.listennotes.com/podcasts/lady-killers-with-lucy-worsley-kdmLtTAIv1H-uQOhoWc6di-.1400x1400.jpg",
-          "title": "Lady Killers with Lucy Worsley",
-          "publisher": "BBC Radio 4",
-          "thumbnail": "https://production.listennotes.com/podcasts/lady-killers-with-lucy-worsley-IP0l8-evUqZ-uQOhoWc6di-.300x300.jpg",
-          "listen_score": 51,
-          "listennotes_url": "https://www.listennotes.com/c/5f5e5e6553d6476da37defbd0b6c57a8/",
+          "id": "34af1fef70014d3ba05f27fe22c364b7",
+          "image": "https://production.listennotes.com/podcasts/drunk-women-solving-crime-drunk-women-LIiDGbs58uW-ia9Llxu1EFV.1400x1400.jpg",
+          "title": "Drunk Women Solving Crime",
+          "publisher": "Drunk Women Solving Crime",
+          "thumbnail": "https://production.listennotes.com/podcasts/drunk-women-solving-crime-drunk-women-B_kyiWJZwOe-ia9Llxu1EFV.300x300.jpg",
+          "listen_score": 58,
+          "listennotes_url": "https://www.listennotes.com/c/34af1fef70014d3ba05f27fe22c364b7/",
           "listen_score_global_rank": "0.5%"
-        },
-        {
-          "id": "fa53c30c960a4b2283c8bdce64497534",
-          "image": "https://production.listennotes.com/podcasts/global-news-podcast-bbc-world-service-WIXCzYQDTBJ-D65IdPgn-Y_.1400x1400.jpg",
-          "title": "Global News Podcast",
-          "publisher": "BBC World Service",
-          "thumbnail": "https://production.listennotes.com/podcasts/global-news-podcast-bbc-world-service-2k-FqMgyEZR-D65IdPgn-Y_.300x300.jpg",
-          "listen_score": 73,
-          "listennotes_url": "https://www.listennotes.com/c/fa53c30c960a4b2283c8bdce64497534/",
-          "listen_score_global_rank": "0.05%"
         }
       ],
-      "source_url": "https://womenlovetech.com/bbc-podcasts-premium-has-launched-on-apple-podcasts/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "description": "\"BBC Podcasts Premium is available from the BBC Podcasts channel on Apple Podcasts for $4.49 per month or at an annual price of $49.99 a year. Those who are looking to try before they buy can get a 7 day free trial.\"",
-      "pub_date_ms": 1679332748879,
-      "source_domain": "womenlovetech.com",
-      "listennotes_url": "https://www.listennotes.com/curated-podcasts/bbc-podcasts-premium-has-launched-on-gscUpP7b9Tu/"
+      "source_url": "https://www.scotsman.com/arts-and-culture/edinburgh-festivals/edinburgh-festival-fringe-2023-5-of-the-best-live-podcasts-to-see-this-august-including-clive-anderson-4242369?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "description": "\"Podcast fans will be spoilt for choice at this year\u2019s Edinburgh Festival Fringe, with the chance to see some of their favourites recorded live.\"",
+      "pub_date_ms": 1691081891753,
+      "source_domain": "www.scotsman.com",
+      "listennotes_url": "https://www.listennotes.com/curated-podcasts/edinburgh-festival-fringe-2023-5-of-xkZWSFApLCg/"
     }
   ],
   "next_page_number": 3,
@@ -9784,8 +9779,17 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   
 ```json
 {
-  "status": "in review",
-  "podcast": {}
+  "status": "found",
+  "podcast": {
+    "id": "85a313213a6647909863f5f4aaffa703",
+    "image": "https://production.listennotes.com/podcasts/committed-_WuNZkL0v5x-JWSU49X_pnZ.1400x1400.jpg",
+    "title": "Committed",
+    "publisher": "iHeartPodcasts",
+    "thumbnail": "https://production.listennotes.com/podcasts/committed-GF3TtxOvPVb-JWSU49X_pnZ.300x300.jpg",
+    "listen_score": null,
+    "listennotes_url": "https://www.listennotes.com/c/85a313213a6647909863f5f4aaffa703/",
+    "listen_score_global_rank": null
+  }
 }
 ```   
 </details>
@@ -10031,7 +10035,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         },
         "thumbnail": "https://production.listennotes.com/podcasts/the-pomp-podcast/1014-oscar-merry-on-W-qrn7XULpm-s5SUXWPM2IZ.300x300.jpg",
         "description": "Oscar Merry is the Co-Founder of Fountain, a new podcast platform where viewers can get paid to listen to their favorite podcasts and is powered by the Bitcoin Lightning Network.\n\nIn this conversation, we talk about podcasting 2.0, how the Fountain product works, why podcasters should be interested in paying their listeners, and on-boarding people to the Bitcoin network through Fountain.\n=======================\nLMAX Digital - the market-leading solution for institutional crypto trading & custodial services - offers clients a regulated, transparent and secure trading environment, together with the deepest pool of crypto liquidity. LMAX Digital is also a primary price discovery venue, streaming real-time market data to the industry\u2019s leading analytics platforms. LMAX Digital - secure, liquid, trusted. Learn more at LMAXdigital.com/pomp\n=======================\nThe Pod Pro Cover by Eight Sleep is the most advanced solution on the market for thermoregulation. It pairs dynamic cooling and heating with biometric tracking. Go to https://www.eightsleep.com/Pomp to check out the Pod Pro Cover and save $150 at checkout. Eight Sleep currently ships within the USA, Canada, and the UK.\n=======================\nDeFi Technologies represents what\u2019s next in the digital economy -- providing simplified, trusted access to crypto, decentralized finance and Web 3.0 investment opportunities. Institutions and investors can gain diversified, secure, compliant, and easily tradable access to a diversified set of industry-leading equity products and protocols, through a single stock purchase on a regulated exchange. Currently listed on U.S. (OTC: DEFTF) and Canadian (NEO:DEFI) exchanges.\n\u00a0\nFor more information or to subscribe to receive company updates and financial information, visit our website at http://defi.tech\u00a0\n=======================",
-        "pub_date_ms": 1655835471162,
+        "pub_date_ms": 1655835471224,
         "guid_from_rss": "210c3350-f192-11ec-9037-036c07c848a8",
         "listennotes_url": "https://www.listennotes.com/e/b6965b7bcdab4df1b108a93309cedfc6/",
         "audio_length_sec": 1788,
@@ -10054,7 +10058,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "podcast": {
           "id": "2aba49dc3fc04e3e96fe89f79a261798",
           "image": "https://production.listennotes.com/podcasts/recode-media-recode-SNw3MlTLqjC-1iPwTajLXlS.1400x1400.jpg",
-          "title": "Recode Media",
+          "title": "Recode Media with Peter Kafka",
           "publisher": "Recode",
           "thumbnail": "https://production.listennotes.com/podcasts/recode-media-recode-ReV9rxkUvST-1iPwTajLXlS.300x300.jpg",
           "listen_score": 54,
@@ -10107,7 +10111,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         },
         "thumbnail": "https://production.listennotes.com/podcasts/the-tim-ferriss-show-tim-ferriss-7NwMpUz5o0S.300x300.jpg",
         "description": "<p><strong>How I Built The Tim Ferriss Show to 700+ Million Downloads \u2014 An Immersive Explanation of All Aspects and Key Decisions (Featuring Chris Hutchins) | Brought to you by </strong><a href=\"http://linkedin.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>LinkedIn Jobs</strong></a><strong>&nbsp;recruitment platform with 770M+ users</strong>, <a href=\"http://athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Athletic Greens</strong></a><strong>&nbsp;all-in-one nutritional supplement,&nbsp;and </strong><a href=\"http://helixsleep.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Helix Sleep</strong></a><strong>&nbsp;premium mattresses. More on all three below.</strong></p><p><strong>Chris Hutchins</strong>&nbsp;(<a href=\"https://twitter.com/hutchins\" rel=\"noopener noreferrer\" target=\"_blank\">@hutchins</a>) is an avid life hacker and financial optimizer. He\u2019s the host of&nbsp;<a href=\"https://www.allthehacks.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>All the Hacks</em></strong></a>&nbsp;podcast and the Head of New Product Strategy at&nbsp;<a href=\"https://www.wealthfront.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">Wealthfront</a>.</p><p>Previously, Chris was co-founder and CEO of Grove (acquired by&nbsp;<a href=\"https://www.wealthfront.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">Wealthfront</a>), co-founder of Milk (acquired by Google), and a partner at&nbsp;<a href=\"https://www.gv.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Google Ventures</a>, where he focused on seed and early stage investments.</p><p>Chris reached out with many questions about podcasting. He had already read much of&nbsp;<a href=\"https://tim.blog/2016/04/11/tim-ferriss-podcast-business/\" rel=\"noopener noreferrer\" target=\"_blank\">what I had written</a> and&nbsp;<a href=\"https://rolfpotts.com/podcast/tim-ferriss/\" rel=\"noopener noreferrer\" target=\"_blank\">listened to several interviews</a>, and this is intended to be an updated guide to all things podcasting.</p><p>Please enjoy!</p><p><strong>This episode is brought to you by&nbsp;</strong><a href=\"https://www.athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Athletic Greens</strong></a><strong>.</strong>&nbsp;I get asked all the time, \u201cIf you could only use one supplement, what would it be?\u201d My answer is usually&nbsp;<a href=\"https://www.athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">Athletic&nbsp;Greens</a>, my all-in-one nutritional insurance. I recommended it in&nbsp;<em>The 4-Hour Body</em>&nbsp;in 2010 and did not get paid to do so. I do my best with nutrient-dense meals, of course, but&nbsp;<a href=\"https://www.athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">AG</a>&nbsp;further covers my bases with vitamins, minerals, and whole-food-sourced micronutrients that support gut health and the immune system.&nbsp;</p><p><strong>Right now,&nbsp;</strong><a href=\"https://www.athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Athletic Greens</strong></a><strong>&nbsp;is offering you their Vitamin D Liquid Formula free with your first subscription purchase</strong>\u2014a vital nutrient for a strong immune system and strong bones.&nbsp;<strong>Visit&nbsp;</strong><a href=\"https://www.athleticgreens.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>AthleticGreens.com/Tim</strong></a><strong>&nbsp;to claim this special offer today and receive the free Vitamin D Liquid Formula (and five free travel packs) with your first subscription purchase!&nbsp;</strong>That\u2019s up to a one-year supply of Vitamin D as added value when you try their delicious and comprehensive all-in-one daily greens product.</p><p>*</p><p><strong>This episode is also brought to you by&nbsp;</strong><a href=\"http://helixsleep.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Helix Sleep</strong></a><strong>!&nbsp;</strong>Helix was selected as the #1 overall mattress of 2020 by&nbsp;<em>GQ&nbsp;</em>magazine<em>, Wired,&nbsp;</em>Apartment Therapy, and many others. With&nbsp;<a href=\"http://helixsleep.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">Helix</a>, there\u2019s a specific mattress to meet each and every body\u2019s unique comfort needs. Just take their quiz\u2014<a href=\"http://helixsleep.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\">only two minutes to complete</a>\u2014that matches your body type and sleep preferences to the perfect mattress for you. They have a 10-year warranty, and you get to try it out for a hundred nights, risk free. They\u2019ll even pick it up from you if you don\u2019t love it.&nbsp;</p><p><strong>And now, to my dear listeners, Helix is offering up to 200 dollars off all mattress orders plus two free pillows at&nbsp;</strong><a href=\"http://helixsleep.com/tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>HelixSleep.com/Tim</strong></a><strong>.</strong></p><p><strong>*</strong></p><p><strong>This episode is also brought to you by&nbsp;</strong><a href=\"https://linkedin.com/Tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>LinkedIn Jobs</strong></a><strong>.</strong>&nbsp;Whether you are looking to hire now for a critical role or thinking about needs that you may have in the future,&nbsp;<a href=\"https://linkedin.com/Tim\" rel=\"noopener noreferrer\" target=\"_blank\">LinkedIn Jobs</a>&nbsp;can help. LinkedIn screens candidates for the hard and soft skills you\u2019re looking for and puts your job in front of candidates looking for job opportunities that match what you have to offer.</p><p>Using LinkedIn\u2019s active community of more than 770 million professionals worldwide,&nbsp;<a href=\"https://linkedin.com/Tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>LinkedIn Jobs</strong></a>&nbsp;can help you find and hire the right person faster.&nbsp;<strong>When your business is ready to make that next hire, find the right person with LinkedIn Jobs. And now, you can post a job for free.</strong>&nbsp;<a href=\"https://linkedin.com/Tim\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Just visit LinkedIn.com/Tim</strong></a><strong>.</strong></p><p><strong>*</strong></p><p><strong>If you enjoy the podcast, would you please consider&nbsp;</strong><a href=\"https://podcasts.apple.com/us/podcast/the-tim-ferriss-show/id863897795?mt=2\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>leaving a short&nbsp;review&nbsp;on Apple Podcasts</strong></a><strong>?</strong>&nbsp;It takes less than 60 seconds, and it really makes a difference in helping to convince hard-to-get guests. I also love reading the&nbsp;reviews!</p><p><strong>For show notes and past guests, please visit</strong>&nbsp;<a href=\"https://tim.blog/podcast/?utm_source=podcast&amp;utm_medium=podcast&amp;utm_campaign=podcast-description\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>tim.blog/podcast</strong></a><strong>.</strong></p><p><strong>Sign up for Tim\u2019s email newsletter (\u201c5-Bullet Friday\u201d) at&nbsp;</strong><a href=\"https://go.tim.blog/5-bullet-friday-1/\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>tim.blog/friday</strong></a><strong>.</strong></p><p><strong>For transcripts of episodes, go to&nbsp;</strong><a href=\"http://tim.blog/transcripts\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>tim.blog/transcripts</strong></a><strong>.</strong></p><p><strong>Discover Tim\u2019s books:&nbsp;</strong><a href=\"http://tim.blog/books\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>tim.blog/books</strong></a><strong>.</strong></p><p><strong>Follow Tim:</strong></p><p><strong>Twitter</strong>:&nbsp;<a href=\"https://twitter.com/tferriss\" rel=\"noopener noreferrer\" target=\"_blank\">twitter.com/tferriss</a>&nbsp;</p><p><strong>Instagram</strong>:&nbsp;<a href=\"https://instagram.com/timferriss/\" rel=\"noopener noreferrer\" target=\"_blank\">instagram.com/timferriss</a></p><p><strong>Facebook</strong>:&nbsp;<a href=\"https://www.facebook.com/TimFerriss/\" rel=\"noopener noreferrer\" target=\"_blank\">facebook.com/timferriss</a>&nbsp;</p><p><strong>YouTube</strong>:&nbsp;<a href=\"https://www.youtube.com/timferriss\" rel=\"noopener noreferrer\" target=\"_blank\">youtube.com/timferriss</a></p><p>Past guests on&nbsp;<a href=\"http://tim.blog/podcast\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><em>The Tim Ferriss Show</em></strong></a>&nbsp;include&nbsp;<a href=\"https://tim.blog/2020/12/08/jerry-seinfeld/\" rel=\"noopener noreferrer\" target=\"_blank\">Jerry Seinfeld</a>,&nbsp;<a href=\"https://tim.blog/2020/06/26/hugh-jackman/\" rel=\"noopener noreferrer\" target=\"_blank\">Hugh Jackman</a>,&nbsp;<a href=\"https://tim.blog/2020/04/16/jane-goodall/\" rel=\"noopener noreferrer\" target=\"_blank\">Dr. Jane Goodall</a>,&nbsp;<a href=\"https://tim.blog/2018/11/27/lebron-james-mike-mancias/\" rel=\"noopener noreferrer\" target=\"_blank\">LeBron James</a>,&nbsp;<a href=\"https://tim.blog/2020/05/20/kevin-hart/\" rel=\"noopener noreferrer\" target=\"_blank\">Kevin Hart</a>,&nbsp;<a href=\"https://tim.blog/2018/09/07/doris-kearns-goodwin-leadership/\" rel=\"noopener noreferrer\" target=\"_blank\">Doris Kearns Goodwin</a>,&nbsp;<a href=\"https://tim.blog/2015/12/06/jamie-foxx/\" rel=\"noopener noreferrer\" target=\"_blank\">Jamie Foxx</a>,&nbsp;<a href=\"https://tim.blog/2020/10/19/matthew-mcconaughey/\" rel=\"noopener noreferrer\" target=\"_blank\">Matthew McConaughey</a>,&nbsp;<a href=\"https://tim.blog/2017/05/21/esther-perel/\" rel=\"noopener noreferrer\" target=\"_blank\">Esther Perel</a>,&nbsp;<a href=\"https://tim.blog/2020/05/08/elizabeth-gilbert/\" rel=\"noopener noreferrer\" target=\"_blank\">Elizabeth Gilbert</a>,&nbsp;<a href=\"https://tim.blog/2017/12/20/terry-crews-how-to-have-do-and-be-all-you-want/\" rel=\"noopener noreferrer\" target=\"_blank\">Terry Crews</a>,&nbsp;<a href=\"https://tim.blog/2020/08/12/sia/\" rel=\"noopener noreferrer\" target=\"_blank\">Sia</a>,&nbsp;<a href=\"https://tim.blog/2020/10/27/yuval-noah-harari/\" rel=\"noopener noreferrer\" target=\"_blank\">Yuval Noah Harari</a>,&nbsp;<a href=\"https://tim.blog/2016/06/21/malcolm-gladwell/\" rel=\"noopener noreferrer\" target=\"_blank\">Malcolm Gladwell</a>,&nbsp;<a href=\"https://tim.blog/2020/05/27/secretary-madeleine-albright/\" rel=\"noopener noreferrer\" target=\"_blank\">Madeleine Albright</a>,&nbsp;<a href=\"https://tim.blog/2017/03/30/cheryl-strayed/\" rel=\"noopener noreferrer\" target=\"_blank\">Cheryl Strayed</a>,&nbsp;<a href=\"https://tim.blog/2019/02/18/jim-collins/\" rel=\"noopener noreferrer\" target=\"_blank\">Jim Collins</a>,&nbsp;<a href=\"https://tim.blog/2020/11/11/mary-karr/\" rel=\"noopener noreferrer\" target=\"_blank\">Mary Karr,</a>&nbsp;<a href=\"https://tim.blog/2014/10/21/brain-pickings/\" rel=\"noopener noreferrer\" target=\"_blank\">Maria Popova</a>,&nbsp;<a href=\"https://tim.blog/2020/05/15/sam-harris-2/\" rel=\"noopener noreferrer\" target=\"_blank\">Sam Harris</a>,&nbsp;<a href=\"https://tim.blog/2021/01/21/michael-phelps-grant-hackett/\" rel=\"noopener noreferrer\" target=\"_blank\">Michael Phelps</a>,&nbsp;<a href=\"https://tim.blog/2020/01/16/bob-iger/\" rel=\"noopener noreferrer\" target=\"_blank\">Bob Iger</a>,&nbsp;<a href=\"https://tim.blog/2019/10/31/edward-norton-motherless-brooklyn/\" rel=\"noopener noreferrer\" target=\"_blank\">Edward Norton</a>,&nbsp;<a href=\"https://tim.blog/2015/02/02/arnold-schwarzenegger/\" rel=\"noopener noreferrer\" target=\"_blank\">Arnold Schwarzenegger</a>,&nbsp;<a href=\"https://tim.blog/2014/06/24/neil-strauss/\" rel=\"noopener noreferrer\" target=\"_blank\">Neil Strauss</a>,&nbsp;<a href=\"https://tim.blog/2019/09/12/ken-burns/\" rel=\"noopener noreferrer\" target=\"_blank\">Ken Burns</a>,&nbsp;<a href=\"https://tim.blog/2017/08/26/maria-sharapova/\" rel=\"noopener noreferrer\" target=\"_blank\">Maria Sharapova</a>,&nbsp;<a href=\"https://tim.blog/2016/05/29/marc-andreessen/\" rel=\"noopener noreferrer\" target=\"_blank\">Marc Andreessen</a>,&nbsp;<a href=\"https://tim.blog/2019/03/28/neil-gaiman/\" rel=\"noopener noreferrer\" target=\"_blank\">Neil Gaiman</a>,&nbsp;<a href=\"https://tim.blog/2019/10/03/neil-degrasse-tyson/\" rel=\"noopener noreferrer\" target=\"_blank\">Neil de Grasse Tyson</a>,&nbsp;<a href=\"https://tim.blog/2016/09/21/jocko-willink-on-discipline-leadership-and-overcoming-doubt/\" rel=\"noopener noreferrer\" target=\"_blank\">Jocko Willink</a>,&nbsp;<a href=\"https://tim.blog/2020/12/03/daniel-ek/\" rel=\"noopener noreferrer\" target=\"_blank\">Daniel Ek</a>,&nbsp;<a href=\"https://tim.blog/2020/09/08/kelly-slater/\" rel=\"noopener noreferrer\" target=\"_blank\">Kelly Slater</a>,&nbsp;<a href=\"https://tim.blog/2019/11/27/peter-attia-fasting-metformin-longevity/\" rel=\"noopener noreferrer\" target=\"_blank\">Dr. Peter Attia</a>,&nbsp;<a href=\"https://tim.blog/2016/02/10/seth-godin/\" rel=\"noopener noreferrer\" target=\"_blank\">Seth Godin</a>,&nbsp;<a href=\"https://tim.blog/2018/09/25/howard-marks/\" rel=\"noopener noreferrer\" target=\"_blank\">Howard Marks</a>,&nbsp;<a href=\"https://tim.blog/2020/02/06/brene-brown-striving-self-acceptance-saving-marriages/\" rel=\"noopener noreferrer\" target=\"_blank\">Dr. Bren\u00e9 Brown</a>,&nbsp;<a href=\"https://tim.blog/2019/04/09/eric-schmidt/\" rel=\"noopener noreferrer\" target=\"_blank\">Eric Schmidt</a>,&nbsp;<a href=\"https://tim.blog/2020/05/01/michael-lewis/\" rel=\"noopener noreferrer\" target=\"_blank\">Michael Lewis</a>,&nbsp;<a href=\"https://tim.blog/2018/03/08/joe-gebbia-co-founder-of-airbnb/\" rel=\"noopener noreferrer\" target=\"_blank\">Joe Gebbia</a>,&nbsp;<a href=\"https://tim.blog/2018/05/06/michael-pollan-how-to-change-your-mind/\" rel=\"noopener noreferrer\" target=\"_blank\">Michael Pollan</a>,&nbsp;<a href=\"https://tim.blog/2021/03/01/jordan-peterson/\" rel=\"noopener noreferrer\" target=\"_blank\">Dr. Jordan Peterson</a>,&nbsp;<a href=\"https://tim.blog/2017/05/31/vince-vaughn/\" rel=\"noopener noreferrer\" target=\"_blank\">Vince Vaughn</a>,&nbsp;<a href=\"https://tim.blog/2020/04/23/brian-koppelman/\" rel=\"noopener noreferrer\" target=\"_blank\">Brian Koppelman</a>,&nbsp;<a href=\"https://tim.blog/2019/05/07/ramit-sethi/\" rel=\"noopener noreferrer\" target=\"_blank\">Ramit Sethi</a>,&nbsp;<a href=\"https://tim.blog/2020/11/18/dax-shepard/\" rel=\"noopener noreferrer\" target=\"_blank\">Dax Shepard</a>,&nbsp;<a href=\"https://tim.blog/2014/10/15/money-master-the-game/\" rel=\"noopener noreferrer\" target=\"_blank\">Tony Robbins</a>,&nbsp;<a href=\"https://tim.blog/2020/05/18/jim-dethmer/\" rel=\"noopener noreferrer\" target=\"_blank\">Jim Dethmer</a>,&nbsp;<a href=\"https://tim.blog/2020/11/19/dan-harris/\" rel=\"noopener noreferrer\" target=\"_blank\">Dan Harris</a>,&nbsp;<a href=\"https://tim.blog/2017/09/13/ray-dalio/\" rel=\"noopener noreferrer\" target=\"_blank\">Ray Dalio</a>,&nbsp;<a href=\"https://tim.blog/2015/08/18/the-evolutionary-angel-naval-ravikant/\" rel=\"noopener noreferrer\" target=\"_blank\">Naval Ravikant</a>,&nbsp;<a href=\"https://tim.blog/2021/03/08/vitalik-buterin-naval-ravikant/\" rel=\"noopener noreferrer\" target=\"_blank\">Vitalik Buterin</a>,&nbsp;<a href=\"https://tim.blog/2021/03/16/elizabeth-lesser/\" rel=\"noopener noreferrer\" target=\"_blank\">Elizabeth Lesser</a>,&nbsp;<a href=\"https://tim.blog/2019/04/18/amanda-palmer-2/\" rel=\"noopener noreferrer\" target=\"_blank\">Amanda Palmer</a>,&nbsp;<a href=\"https://tim.blog/2021/02/18/katie-haun/\" rel=\"noopener noreferrer\" target=\"_blank\">Katie Haun</a>,&nbsp;<a href=\"https://tim.blog/2017/10/09/richard-branson/\" rel=\"noopener noreferrer\" target=\"_blank\">Sir Richard Branson</a>,&nbsp;<a href=\"https://tim.blog/2020/09/02/chuck-palahniuk/\" rel=\"noopener noreferrer\" target=\"_blank\">Chuck Palahniuk</a>,&nbsp;<a href=\"https://tim.blog/2017/10/18/arianna-huffington/\" rel=\"noopener noreferrer\" target=\"_blank\">Arianna Huffington</a>,&nbsp;<a href=\"https://tim.blog/2015/08/31/the-oracle-of-silicon-valley-reid-hoffman-plus-michael-mccullough/\" rel=\"noopener noreferrer\" target=\"_blank\">Reid Hoffman</a>,&nbsp;<a href=\"https://tim.blog/2017/09/17/bill-burr/\" rel=\"noopener noreferrer\" target=\"_blank\">Bill Burr</a>,&nbsp;<a href=\"https://tim.blog/2015/06/26/whitney-cummings/\" rel=\"noopener noreferrer\" target=\"_blank\">Whitney Cummings</a>,&nbsp;<a href=\"https://tim.blog/2015/05/15/rick-rubin/\" rel=\"noopener noreferrer\" target=\"_blank\">Rick Rubin</a>,&nbsp;<a href=\"https://tim.blog/2020/03/26/vivek-murthy/\" rel=\"noopener noreferrer\" target=\"_blank\">Dr. Vivek Murthy</a>,&nbsp;<a href=\"https://tim.blog/2017/09/09/darren-aronofsky/\" rel=\"noopener noreferrer\" target=\"_blank\">Darren Aronofsky</a>, and many more.</p><p>See Privacy Policy at <a href=\"https://art19.com/privacy\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy</a> and California Privacy Notice at <a href=\"https://art19.com/privacy#do-not-sell-my-info\" rel=\"noopener noreferrer\" target=\"_blank\">https://art19.com/privacy#do-not-sell-my-info</a>.</p>",
-        "pub_date_ms": 1634222633126,
+        "pub_date_ms": 1634222633143,
         "guid_from_rss": "gid://art19-episode-locator/V0/BtqNd8i7Fya-HhzGx_0SKu-ZiX1V8AB2Te4M0bCkakQ",
         "listennotes_url": "https://www.listennotes.com/e/af19ceda98d84d3c92eafe7e7f63b6dd/",
         "audio_length_sec": 10927,
@@ -10155,7 +10159,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "id": 475797,
       "data": {
         "id": "4c72c4dfac004ffca0867a70361f77ab",
-        "link": "https://jas.simplecast.com/episodes/side-hustle-friday-why-should-you-start-a-podcast-and-monetize-your-podcast-through-ads-and-patreon-bY620w_A?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "link": "https://jamesaltuchershow.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
         "audio": "https://www.listennotes.com/e/p/4c72c4dfac004ffca0867a70361f77ab/",
         "image": "https://production.listennotes.com/podcasts/the-james-altucher/side-hustle-friday-why-x-OdlkHPweS-jDmTs6Nl-tr.1400x1400.jpg",
         "title": "Side Hustle Friday: Why should you START a podcast and MONETIZE your podcast through Ads and Patreon!",
@@ -10171,7 +10175,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         },
         "thumbnail": "https://production.listennotes.com/podcasts/the-james-altucher/side-hustle-friday-why-BpGUVA-oL_v-jDmTs6Nl-tr.300x300.jpg",
         "description": "<p>Another Side Hustle Friday! I sat down with Jay Yow, the Sound Engineer/ Producer of The James Altucher, to discuss ways to monetize a podcast, we spoke about why this is the best time to launch a podcast and our equipment set up for remote recording and interview. In this episode, we break down that's the different ways you can monetize through Ads, sponsors, affiliate deals, and Patreon! Part 2 will be coming soon Monday!</p>\n<hr />\n<p><strong>I write about all my podcasts! Check out the full post and learn what I learned at <a href=\"https://www.jamesaltucher.com/podcast\">jamesaltucher.com/podcast</a>.</strong></p>\n<p><strong>Thanks so much for listening! If you like this episode, please subscribe to \u201cThe James Altucher Show\u201d and rate and review wherever you get your podcasts:</strong></p>\n<p><a href=\"https://itunes.apple.com/us/podcast/the-james-altucher-show/id794030859?mt=2\">Apple Podcasts</a></p>\n<p><a href=\"https://www.stitcher.com/podcast/stansberry-radio-network/the-james-altucher-show/e/52735033\">Stitcher</a></p>\n<p><a href=\"https://www.iheart.com/podcast/232-The-James-Altucher-Show-27085086/episode/ep-298-ryan-holiday-competition-28789411/\">iHeart Radio</a></p>\n<p><a href=\"https://open.spotify.com/episode/0ABi9w3Qrb2EFNDeeXlHyz\">Spotify</a></p>\n<p> </p>\n<p><strong>Follow me on Social Media:</strong></p>\n<p><a href=\"https://www.youtube.com/channel/UCRQlx2klE_aNrPhz2OyKRdg\">YouTube</a></p>\n<p><a href=\"https://twitter.com/jaltucher\">Twitter</a></p>\n<p><a href=\"https://www.facebook.com/JAltucher.Blog/\">Facebook</a></p>\n<p><a href=\"https://www.linkedin.com/in/jamesaltucher\">Linkedin</a></p>",
-        "pub_date_ms": 1602831600335,
+        "pub_date_ms": 1602831600455,
         "guid_from_rss": "fae163b1-dcc2-4600-b040-ac5600102349",
         "listennotes_url": "https://www.listennotes.com/e/4c72c4dfac004ffca0867a70361f77ab/",
         "audio_length_sec": 3007,
@@ -10187,7 +10191,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "id": 475796,
       "data": {
         "id": "d5e2112643ac4d01baaa8eab6c7b7cae",
-        "link": "https://jas.simplecast.com/episodes/side-hustle-friday-monetize-your-podcast-right-now-LY_D4F1p?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "link": "https://jamesaltuchershow.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
         "audio": "https://www.listennotes.com/e/p/d5e2112643ac4d01baaa8eab6c7b7cae/",
         "image": "https://production.listennotes.com/podcasts/the-james-altucher/side-hustle-friday-monetize-nJaycZ39zdH-vZt0gi5hoDN.1400x1400.jpg",
         "title": "Side Hustle Friday: Monetize your podcast right now!",
@@ -10203,7 +10207,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         },
         "thumbnail": "https://production.listennotes.com/podcasts/the-james-altucher/side-hustle-friday-monetize-TGCj-9qP0Nw-vZt0gi5hoDN.300x300.jpg",
         "description": "<p>Part 2 on monetizing your podcast! In this episode, we talked about ways to monetize your podcast via merchandising, getting hired as a consultant through your podcast, speaking gigs, on and on! Also, enjoy Jay's episodic debut on the podcast! (Technically a second since this is a part of Friday's podcast!)</p>\n<hr />\n<p><strong>I write about all my podcasts! Check out the full post and learn what I learned at <a href=\"https://www.jamesaltucher.com/podcast\">jamesaltucher.com/podcast</a>.</strong></p>\n<p><strong>Thanks so much for listening! If you like this episode, please subscribe to \u201cThe James Altucher Show\u201d and rate and review wherever you get your podcasts:</strong></p>\n<p><a href=\"https://itunes.apple.com/us/podcast/the-james-altucher-show/id794030859?mt=2\">Apple Podcasts</a></p>\n<p><a href=\"https://www.stitcher.com/podcast/stansberry-radio-network/the-james-altucher-show/e/52735033\">Stitcher</a></p>\n<p><a href=\"https://www.iheart.com/podcast/232-The-James-Altucher-Show-27085086/episode/ep-298-ryan-holiday-competition-28789411/\">iHeart Radio</a></p>\n<p><a href=\"https://open.spotify.com/episode/0ABi9w3Qrb2EFNDeeXlHyz\">Spotify</a></p>\n<p> </p>\n<p><strong>Follow me on Social Media:</strong></p>\n<p><a href=\"https://www.youtube.com/channel/UCRQlx2klE_aNrPhz2OyKRdg\">YouTube</a></p>\n<p><a href=\"https://twitter.com/jaltucher\">Twitter</a></p>\n<p><a href=\"https://www.facebook.com/JAltucher.Blog/\">Facebook</a></p>\n<p><a href=\"https://www.linkedin.com/in/jamesaltucher\">Linkedin</a></p>",
-        "pub_date_ms": 1603090800333,
+        "pub_date_ms": 1603090800453,
         "guid_from_rss": "7e70863f-ebf1-4641-b151-ac5800ea8773",
         "listennotes_url": "https://www.listennotes.com/e/d5e2112643ac4d01baaa8eab6c7b7cae/",
         "audio_length_sec": 2617,
@@ -10257,17 +10261,17 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "title": "Elise Hu - Hosting \"TED Talks Daily\" & The Future of Podcasting",
         "podcast": {
           "id": "11362a0682e744b29ce5ea73c920132e",
-          "image": "https://production.listennotes.com/podcasts/the-casey-adams-show-casey-adams-8wD2LP_N53x-YuarHs5lfDI.1400x1400.jpg",
+          "image": "https://production.listennotes.com/podcasts/the-casey-adams-show-casey-adams-YOIqNyvrFbD-YuarHs5lfDI.1400x1400.jpg",
           "title": "The Casey Adams Show",
           "publisher": "Casey Adams",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-casey-adams-show-casey-adams-3HEVj-Ons4h-YuarHs5lfDI.300x300.jpg",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-casey-adams-show-casey-adams-th_uNjDYGoE-YuarHs5lfDI.300x300.jpg",
           "listen_score": 53,
           "listennotes_url": "https://www.listennotes.com/c/11362a0682e744b29ce5ea73c920132e/",
           "listen_score_global_rank": "0.5%"
         },
         "thumbnail": "https://production.listennotes.com/podcasts/the-casey-adams-show/elise-hu-hosting-ted-talks-FbSdafYDC9N-wUV0p1Rd3zs.300x300.jpg",
         "description": "<p>Elise Hu is a host-at-large based at NPR West in Culver City, Calif. Previously, she explored the future with her video series, <a href=\"https://www.npr.org/2019/05/06/716414780/videos-future-you\"><em>Future You with Elise Hu</em></a>, and served as the founding bureau chief and International Correspondent for NPR's Seoul office. She was based in Seoul for nearly four years, responsible for the network's coverage of both Koreas and Japan, and filed from a dozen countries across Asia. Before joining NPR, she was one of the founding reporters at <a href=\"http://www.texastribune.org/\">The Texas Tribune</a>, a non-profit digital news startup devoted to politics and public policy. While at the Tribune, Hu oversaw television partnerships and multimedia projects, contributed to <em>The New York Times</em>' expanded Texas coverage, and pushed for editorial innovation across platforms.Her work at NPR has earned a DuPont-Columbia award and a Gracie Award from the Alliance for Women in Media for her video series, <em>Elise Tries</em>. Her previous work has earned a Gannett Foundation Award for Innovation in Watchdog Journalism, a National Edward R. Murrow award for best online video, and beat reporting awards from the Texas Associated Press. <em>The Austin Chronicle</em> once dubiously named her the \"<a href=\"http://www.austinchronicle.com/gyrobase/Awards/BestOfAustin?Award=660138\">Best TV Reporter Who Can Write</a>.\"</p>\n<p>Follow Elise Hu on Instagram: <a href=\"https://www.instagram.com/elisewho/?hl=en\">https://www.instagram.com/elisewho/?hl=en</a></p>\n<p>Learn more about Elise Hu: <a href=\"https://elisehu.com/\">https://elisehu.com/</a></p>\n<p>Listen to \"TED Talks Daily\" <a href=\"https://podcasts.apple.com/us/podcast/ted-talks-daily/id160904630\">https://podcasts.apple.com/us/podcast/ted-talks-daily/id160904630</a></p>\n<p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-        "pub_date_ms": 1586266731164,
+        "pub_date_ms": 1586266731179,
         "guid_from_rss": "9aeee818-e72c-4928-8149-7cae42595d82",
         "listennotes_url": "https://www.listennotes.com/e/50d0110bec79414eac61cb472c3c1de2/",
         "audio_length_sec": 2445,
@@ -10330,8 +10334,8 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
           "listen_score_global_rank": "0.1%"
         },
         "thumbnail": "https://production.listennotes.com/podcasts/marketing-school-digital-marketing-and-G-dNQec3V08-pHyiIJT4Lxl.300x300.jpg",
-        "description": "<p>In episode #1306, we discuss Spotify\u2019s acquisition of The Ringer. The podcasting industry is growing exponentially and Spotify wanted to make an aggressive move toward growing its market share. Tune in to hear why this was a super smart decision on their part!</p> <p>TIME-STAMPED SHOW NOTES:</p> <ul> <li>[00:25] Today\u2019s topic: How Spotify Acquired The Ringer.\u00a0\u00a0</li> <li>[00:42] The solid financial results for Spotify in Q4 of 2019.</li> <li>[00:56] How Spotify recognized exponential growth in podcast hours streamed.</li> <li>[01:24] Realizing that they needed to acquire a big podcast to double down on opportunities.\u00a0\u00a0\u00a0</li> <li>[01:53] The impressive retention rates of the Marketing School podcast.</li> <li>[02:09] Why Spotify\u2019s decision makes a lot of sense.\u00a0</li> <li>[02:39] Keep in mind that all good channels eventually become crowded.\u00a0\u00a0</li> <li>[03:09] Spotify\u2019s market share around podcasting and how they\u2019re more aggressive than Apple.\u00a0</li> <li>[03:48] The number of downloads The Ringer podcast is getting.\u00a0</li> <li>[04:07] Start comparing your Apple Podcast and Spotify analytics for your podcast.\u00a0</li> <li>[04:50] How our podcasts and Eric\u2019s own podcast are performing.\u00a0\u00a0</li> <li>[05:56] The proposed price for The Ringer stated by Bill Simmons: $100 million.\u00a0</li> <li>[06:25] That\u2019s it for today!</li> <li>[06:26] To stay updated with events and learn more about our mastermind, go to the <a href=\"https://marketingschool.io/growth-accelerator-mastermind\"> Marketing School</a> site for more information.</li> </ul> <p>Links Mentioned in Today\u2019s Episode:</p> <ul> <li>\n<a href=\"https://www.spotify.com/\">Spotify</a>\u00a0</li> <li><a href=\"https://www.theringer.com\">The Ringer</a></li> <li><a href=\"https://www.apple.com\">Apple</a></li> <li><a href=\"https://growtheverywhere.com/podcast-player/\">Leveling Up Podcast</a></li> <li><a href=\"https://twitter.com/BillSimmons?ref_src\">Bill Simmons on Twitter</a></li> </ul> <p>Leave Some Feedback:</p> <p>\u00a0</p> <ul> <li>What should we talk about next?\u00a0Please let us know in the comments below</li> </ul> <ul> <li>Did you enjoy this episode?\u00a0If so, please leave a short review.</li> </ul> <p>\u00a0</p> <p>Connect with Us:\u00a0</p> <ul> <li><a href=\"http://neilpatel.com\">Neilpatel.com</a></li> <li>\n<a href=\"https://www.quicksprout.com/\">Quick Sprout</a>\u00a0</li> <li><a href=\"https://growtheverywhere.com/\">Growth Everywhere</a></li> <li><a href=\"https://www.singlegrain.com/\">Single Grain</a></li> <li>\n<a href=\"https://twitter.com/neilpatel\">Twitter @neilpatel</a>\u00a0</li> <li><a href=\"https://twitter.com/ericosiu\">Twitter @ericosiu</a></li> </ul><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://megaphone.fm/adchoices\">megaphone.fm/adchoices</a></p>",
-        "pub_date_ms": 1582812001129,
+        "description": "<p>In episode #1306, we discuss Spotify\u2019s acquisition of The Ringer. The podcasting industry is growing exponentially and Spotify wanted to make an aggressive move toward growing its market share. Tune in to hear why this was a super smart decision on their part!</p> <p>TIME-STAMPED SHOW NOTES:</p> <ul> <li>[00:25] Today\u2019s topic: How Spotify Acquired The Ringer.\u00a0\u00a0</li> <li>[00:42] The solid financial results for Spotify in Q4 of 2019.</li> <li>[00:56] How Spotify recognized exponential growth in podcast hours streamed.</li> <li>[01:24] Realizing that they needed to acquire a big podcast to double down on opportunities.\u00a0\u00a0\u00a0</li> <li>[01:53] The impressive retention rates of the Marketing School podcast.</li> <li>[02:09] Why Spotify\u2019s decision makes a lot of sense.\u00a0</li> <li>[02:39] Keep in mind that all good channels eventually become crowded.\u00a0\u00a0</li> <li>[03:09] Spotify\u2019s market share around podcasting and how they\u2019re more aggressive than Apple.\u00a0</li> <li>[03:48] The number of downloads The Ringer podcast is getting.\u00a0</li> <li>[04:07] Start comparing your Apple Podcast and Spotify analytics for your podcast.\u00a0</li> <li>[04:50] How our podcasts and Eric\u2019s own podcast are performing.\u00a0\u00a0</li> <li>[05:56] The proposed price for The Ringer stated by Bill Simmons: $100 million.\u00a0</li> <li>[06:25] That\u2019s it for today!</li> <li>[06:26] To stay updated with events and learn more about our mastermind, go to the <a href=\"https://marketingschool.io/growth-accelerator-mastermind\"> Marketing School</a> site for more information.</li> </ul> <p>Links Mentioned in Today\u2019s Episode:</p> <ul> <li>\n<a href=\"https://www.spotify.com/\">Spotify</a>\u00a0</li> <li><a href=\"https://www.theringer.com\">The Ringer</a></li> <li><a href=\"https://www.apple.com\">Apple</a></li> <li><a href=\"https://growtheverywhere.com/podcast-player/\">Leveling Up Podcast</a></li> <li><a href=\"https://twitter.com/BillSimmons?ref_src\">Bill Simmons on Twitter</a></li> </ul> <p>Leave Some Feedback:</p> <p>\u00a0</p> <ul> <li>What should we talk about next?\u00a0Please let us know in the comments below</li> </ul> <ul> <li>Did you enjoy this episode?\u00a0If so, please leave a short review.</li> </ul> <p>\u00a0</p> <p>Connect with Us:\u00a0</p> <ul> <li><a href=\"http://neilpatel.com\">Neilpatel.com</a></li> <li>\n<a href=\"https://www.quicksprout.com/\">Quick Sprout</a>\u00a0</li> <li><a href=\"https://growtheverywhere.com/\">Growth Everywhere</a></li> <li><a href=\"https://www.singlegrain.com/\">Single Grain</a></li> <li>\n<a href=\"https://twitter.com/neilpatel\">Twitter @neilpatel</a>\u00a0</li> <li><a href=\"https://twitter.com/ericosiu\">Twitter @ericosiu</a></li> </ul>",
+        "pub_date_ms": 1582812001176,
         "guid_from_rss": "bf073240-9680-42e7-89aa-82a2338840dc",
         "listennotes_url": "https://www.listennotes.com/e/dbd3d477dfc94128982b79e8152301b4/",
         "audio_length_sec": 464,
@@ -10354,7 +10358,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "podcast": {
           "id": "2aba49dc3fc04e3e96fe89f79a261798",
           "image": "https://production.listennotes.com/podcasts/recode-media-recode-SNw3MlTLqjC-1iPwTajLXlS.1400x1400.jpg",
-          "title": "Recode Media",
+          "title": "Recode Media with Peter Kafka",
           "publisher": "Recode",
           "thumbnail": "https://production.listennotes.com/podcasts/recode-media-recode-ReV9rxkUvST-1iPwTajLXlS.300x300.jpg",
           "listen_score": 54,
@@ -10381,21 +10385,21 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "id": "eaa81f7bba344ae78bcf228b88e102a7",
         "link": "https://a16z.simplecast.com/episodes/a16z-podcast-how-what-why-500th-episode-behind-the-scenes-XgOK8aBT?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
         "audio": "https://www.listennotes.com/e/p/eaa81f7bba344ae78bcf228b88e102a7/",
-        "image": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-avDtXyHJkNw-IWF2alEr-9h.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-XN2jKrnD8Pt-IWF2alEr-9h.1400x1400.jpg",
         "title": "How We Podcast",
         "podcast": {
           "id": "7c20388d8d7e45d6ae4b770c1fe36b6f",
-          "image": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-avDtXyHJkNw-IWF2alEr-9h.1400x1400.jpg",
+          "image": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-XN2jKrnD8Pt-IWF2alEr-9h.1400x1400.jpg",
           "title": "a16z Podcast",
           "publisher": "Andreessen Horowitz",
-          "thumbnail": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-ANgqlWfk7aB-IWF2alEr-9h.300x300.jpg",
-          "listen_score": 61,
+          "thumbnail": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-7EDtgpiHdwl-IWF2alEr-9h.300x300.jpg",
+          "listen_score": 62,
           "listennotes_url": "https://www.listennotes.com/c/7c20388d8d7e45d6ae4b770c1fe36b6f/",
           "listen_score_global_rank": "0.1%"
         },
-        "thumbnail": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-ANgqlWfk7aB-IWF2alEr-9h.300x300.jpg",
+        "thumbnail": "https://production.listennotes.com/podcasts/a16z-podcast-andreessen-horowitz-7EDtgpiHdwl-IWF2alEr-9h.300x300.jpg",
         "description": "<p>\"Hi everyone, welcome to the a16z Podcast...\" ... and welcome to our 500th episode, where, for the first time, we reveal behind-the-scenes details and the backstory of how we built this show, and the broader editorial operation. [You can also listen to episode 499, with head of marketing Margit Wennmachers, on building the a16z brand, <a href=\"https://a16z.com/2019/11/20/brand-building-a16z-ideas-people-marketing/\" target=\"_blank\">here</a>.]</p><p>We've talked a lot about the podcasting industry, and even done podcasts about podcasting, so for this special episode, editor-in-chief and showrunner Sonal Chokshi reveals the how, what, and why in conversation with a16z general partner (and guest-host for this special episode) <a href=\"https://a16z.com/2019/10/01/knowable-audio-startups/\" target=\"_blank\">podcasting</a> fan Connie Chan. We also answer some frequently asked questions that we often get (and recently <a href=\"https://twitter.com/smc90/status/1198026729421324289\" target=\"_blank\">got</a> via Twitter), such as:</p><ul><li>how we program podcasts</li><li>what's the process, from ideas to publishing</li><li>do we edit them and how!</li><li>do guests prep, do we have a script</li><li>technical stack</li></ul><p>...and much more. In fact, much of the conversation goes beyond the a16z Podcast and towards Sonal's broader principles of 'editorial content marketing', which hopefully helps those thinking about their own content operations and podcasts, too. Including where podcasting may be going.</p><p>Finally, we share some unexpected moments, and lessons learned along the way; our positions on \"tics\", swear-words, and talking too fast; failed experiments, and new directions. But most importantly, we share some of the people behind the scenes who help make the a16z Podcast what it was, is, and can be... with thanks most of all to *you*, our wonderful fans!</p>",
-        "pub_date_ms": 1574838000212,
+        "pub_date_ms": 1574838000232,
         "guid_from_rss": "2307c44b-8b88-4348-b4f5-3deaa204135e",
         "listennotes_url": "https://www.listennotes.com/e/eaa81f7bba344ae78bcf228b88e102a7/",
         "audio_length_sec": 2864,
@@ -10411,23 +10415,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "id": 312259,
       "data": {
         "id": "1ca5d330311d4808a4dbc668680f565b",
-        "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
         "audio": "https://www.listennotes.com/e/p/1ca5d330311d4808a4dbc668680f565b/",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "*Live* at Spotify - Part II: Why Spotify is doing podcasts \u2014 Our interview with Max Cutler,  Founder & MD of podcasts at Spotify",
         "podcast": {
           "id": "c5ce6c02cbf1486496206829f7d42e8e",
-          "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+          "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
           "title": "The Best One Yet",
           "publisher": "Nick & Jack Studios",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
           "listen_score": 71,
           "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
           "listen_score_global_rank": "0.05%"
         },
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-        "description": "<p>The 2nd half of our Snacks recording live from Spotify. We sit down with Max Cutler, the Founder &amp; MD of Parcast Studios at Spotify \u2014 his startup was acquired by Spotify earlier this year. We\u2019re asking about how he first pitched his company, whether podcasts will follow the Netflix strategy, and what his favorite pod is. Ever.</p><p><br /></p><p><br /></p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-        "pub_date_ms": 1574852400737,
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+        "description": "The 2nd half of our Snacks recording live from Spotify. We sit down with Max Cutler, the Founder & MD of Parcast Studios at Spotify \u2014 his startup was acquired by Spotify earlier this year. We\u2019re asking about how he first pitched his company, whether podcasts will follow the Netflix strategy, and what his favorite pod is. Ever.\n\n\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+        "pub_date_ms": 1574852400867,
         "guid_from_rss": "b1210966-10a8-11ea-a5b5-6fb6124a64cd",
         "listennotes_url": "https://www.listennotes.com/e/1ca5d330311d4808a4dbc668680f565b/",
         "audio_length_sec": 1020,
@@ -10443,23 +10447,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "id": 310664,
       "data": {
         "id": "df11c9fde8234140a705c4aedff2561e",
-        "link": "https://www.instagram.com/tboypod?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+        "link": "https://wondery.com/shows/the-best-one-yet/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
         "audio": "https://www.listennotes.com/e/p/df11c9fde8234140a705c4aedff2561e/",
-        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+        "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
         "title": "*Live* at Spotify - Part I: How we build this (every day)",
         "podcast": {
           "id": "c5ce6c02cbf1486496206829f7d42e8e",
-          "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-syLJP5rimSp-kmx0XIZTAys.1400x1400.jpg",
+          "image": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-U_rQkCOW5Zp-kmx0XIZTAys.1400x1400.jpg",
           "title": "The Best One Yet",
           "publisher": "Nick & Jack Studios",
-          "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
+          "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
           "listen_score": 71,
           "listennotes_url": "https://www.listennotes.com/c/c5ce6c02cbf1486496206829f7d42e8e/",
           "listen_score_global_rank": "0.05%"
         },
-        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-YPWcDaHknUz-kmx0XIZTAys.300x300.jpg",
-        "description": "<p>Spotify invited us to their NYC offices to record a live podcast \u2014 it\u2019s a podcast about podcasts for our podcast listening Snackers. We introduce to the Snackers how we got into podcasting, how we built this podcast (every day), and the 5 ingredients for a podcast that people will actually listen to.\u00a0</p><p> </p><p>Learn more about your ad choices. Visit <a href=\"https://podcastchoices.com/adchoices\">podcastchoices.com/adchoices</a></p>",
-        "pub_date_ms": 1574420400740,
+        "thumbnail": "https://production.listennotes.com/podcasts/the-best-one-yet-nick-jack-studios-Q8pCEFw0caJ-kmx0XIZTAys.300x300.jpg",
+        "description": "Spotify invited us to their NYC offices to record a live podcast \u2014 it\u2019s a podcast about podcasts for our podcast listening Snackers. We introduce to the Snackers how we got into podcasting, how we built this podcast (every day), and the 5 ingredients for a podcast that people will actually listen to.\u00a0\nLearn more about your ad choices. Visit podcastchoices.com/adchoices\n\nSee Privacy Policy at https://art19.com/privacy and California Privacy Notice at https://art19.com/privacy#do-not-sell-my-info.",
+        "pub_date_ms": 1574420400870,
         "guid_from_rss": "b1632e3a-0ccb-11ea-82ce-6fd47d59f86e",
         "listennotes_url": "https://www.listennotes.com/e/df11c9fde8234140a705c4aedff2561e/",
         "audio_length_sec": 1226,
@@ -10519,7 +10523,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
           "thumbnail": "https://production.listennotes.com/podcasts/demandgen-radio-bdo-digital-llc-dsf5BPZyLFi-oVByO3tuFwR.300x300.jpg",
           "listen_score": 35,
           "listennotes_url": "https://www.listennotes.com/c/f446a0eaac2e481991e36467e4a4f96f/",
-          "listen_score_global_rank": "2.5%"
+          "listen_score_global_rank": "3%"
         },
         "thumbnail": "https://production.listennotes.com/podcasts/demandgen-radio-bdo-digital-llc-dsf5BPZyLFi-oVByO3tuFwR.300x300.jpg",
         "description": "<p></p>\n<p>Jordan Paris is a 21-year-old entrepreneur who runs a wildly successful podcast. In this episode, he shares how and why he started his podcast and how podcasting propelled the growth of his business and personal brand. Tune in as Jordan shares how he remains so driven and accomplished at an early age, what lessons he\u2019s learned from starting his podcast, and how you can benefit from starting your own podcast.</p>",
@@ -10555,7 +10559,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         },
         "thumbnail": "https://production.listennotes.com/podcasts/cold-call-hbr-presents-brian-kenny-egRtK2b1Odo-sC2kfX7gM0D.300x300.jpg",
         "description": "<p>Harvard Business School professors <strong><a href=\"https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6446\" rel=\"noopener\" target=\"_blank\">John Deighton</a></strong> and <strong><a href=\"https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6536\" rel=\"noopener\" target=\"_blank\">Jeffrey Rayport</a></strong> discuss their case, &#8220;<a href=\"https://store.hbr.org/product/gimlet-media-a-podcasting-startup/918413?sku=918413-PDF-ENG\" rel=\"noopener\" target=\"_blank\">Gimlet Media: A Podcasting Startup</a>,&#8221; and how two former public radio producers launch a podcast network, entering the last frontier of digital media. Can they turn a content supplier into a disruptive platform?</p>",
-        "pub_date_ms": 1569948476094,
+        "pub_date_ms": 1569948476104,
         "guid_from_rss": "tag:audio.hbr.org,2016-09-16:cold-call.0104",
         "listennotes_url": "https://www.listennotes.com/e/9df23a4053c940fa8762cc94d08c4836/",
         "audio_length_sec": 1584,
@@ -10606,7 +10610,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   "description": "A curated playlist of podcasts by Wenbin Fang.",
   "listennotes_url": "https://www.listennotes.com/playlists/podcasts-about-podcasting-m1pe7z60bsw/episodes/",
   "last_timestamp_ms": 1565460047367,
-  "total_audio_length_sec": 111670
+  "total_audio_length_sec": 112194
 }
 ```   
 </details>
@@ -11186,10 +11190,10 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "thumbnail": "https://production.listennotes.com/podcast-playlists/wenbin-fangs-podcast-playlist-aIykg5GvmcA-kr3-ta28cJu.300x299.jpg",
       "visibility": "public",
       "description": "Wenbin Fang\u2019s master playlist. Just listen to individual episodes, rather than subscribing to tons of podcasts. How I listen to podcasts: https://lnns.co/6ArPszTwvDE",
-      "episode_count": 6049,
-      "podcast_count": 82,
+      "episode_count": 6310,
+      "podcast_count": 90,
       "listennotes_url": "https://www.listennotes.com/playlists/wenbin-fangs-podcast-playlist-kr3-ta28cJu/episodes/",
-      "total_audio_length_sec": 18196784
+      "total_audio_length_sec": 19114953
     },
     {
       "id": "m1pe7z60bsw",
@@ -11201,11 +11205,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "episode_count": 38,
       "podcast_count": 2,
       "listennotes_url": "https://www.listennotes.com/playlists/podcasts-about-podcasting-m1pe7z60bsw/episodes/",
-      "total_audio_length_sec": 111670
+      "total_audio_length_sec": 112194
     },
     {
       "id": "uIK85BM6EWJ",
-      "name": "There's a podcast for that",
+      "name": "There's a podcast for that!",
       "image": "https://production.listennotes.com/podcast-playlists/theres-a-podcast-for-that-ROmWwgXrJhc-uIK85BM6EWJ.300x300.jpg",
       "thumbnail": "https://production.listennotes.com/podcast-playlists/theres-a-podcast-for-that-ROmWwgXrJhc-uIK85BM6EWJ.300x300.jpg",
       "visibility": "public",
@@ -11366,16 +11370,16 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 ```json
 {
   "terms": [
-    "\"Matt Taibbi\"",
-    "Eliezer Yudkowsky",
-    "Silicon Valley Bank",
-    "\"Paul Bloom\"",
+    "Vivek Ramaswamy",
+    "\"Mindset Coach\"",
     "Holden Karnofsky",
-    "Saagar Enjeti",
-    "\"future of banking\"",
-    "Kevin Conroy",
-    "Mark Drager",
-    "Brenda Davis"
+    "Natalee Holloway",
+    "Oppenheimer",
+    "Julie Lythcott-Haims",
+    "Bill Perkins",
+    "Affirmative Action",
+    "\"Robert F. Kennedy Jr\"",
+    "Richard Hanania"
   ]
 }
 ```   
@@ -11446,13 +11450,13 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "terms": [
     "evergrande group",
-    "evergrande stock",
     "evergrande news",
+    "evergrande stock",
+    "evergrande china",
     "evergrande default",
     "evergrande collapse",
-    "evergrande crisis",
-    "evergrande deadline",
-    "evergrande debt"
+    "evergrande debt",
+    "evergrande crisis"
   ]
 }
 ```   
@@ -11622,7 +11626,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
 {
   "by_regions": [
     {
-      "ratio": "52.57%",
+      "ratio": "52.53%",
       "region": "us"
     },
     {
@@ -11630,11 +11634,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "ca"
     },
     {
-      "ratio": "5.94%",
+      "ratio": "5.90%",
       "region": "gb"
     },
     {
-      "ratio": "4.62%",
+      "ratio": "4.55%",
       "region": "in"
     },
     {
@@ -11642,11 +11646,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "au"
     },
     {
-      "ratio": "3.14%",
+      "ratio": "3.27%",
       "region": "de"
     },
     {
-      "ratio": "1.25%",
+      "ratio": "1.24%",
       "region": "fr"
     },
     {
@@ -11654,19 +11658,19 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "nl"
     },
     {
-      "ratio": "1.14%",
+      "ratio": "1.11%",
       "region": "sg"
     },
     {
-      "ratio": "0.90%",
+      "ratio": "0.89%",
       "region": "es"
     },
     {
-      "ratio": "0.80%",
+      "ratio": "0.78%",
       "region": "za"
     },
     {
-      "ratio": "0.78%",
+      "ratio": "0.77%",
       "region": "br"
     },
     {
@@ -11674,11 +11678,11 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "pl"
     },
     {
-      "ratio": "0.71%",
+      "ratio": "0.70%",
       "region": "se"
     },
     {
-      "ratio": "0.65%",
+      "ratio": "0.66%",
       "region": "hk"
     },
     {
@@ -11687,55 +11691,55 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "ratio": "0.58%",
-      "region": "id"
-    },
-    {
-      "ratio": "0.56%",
-      "region": "ie"
-    },
-    {
-      "ratio": "0.54%",
-      "region": "it"
-    },
-    {
-      "ratio": "0.50%",
       "region": "kr"
     },
     {
-      "ratio": "0.50%",
-      "region": "ch"
+      "ratio": "0.57%",
+      "region": "ie"
     },
     {
-      "ratio": "0.48%",
-      "region": "no"
+      "ratio": "0.56%",
+      "region": "id"
+    },
+    {
+      "ratio": "0.55%",
+      "region": "it"
+    },
+    {
+      "ratio": "0.51%",
+      "region": "ch"
     },
     {
       "ratio": "0.48%",
       "region": "ph"
     },
     {
-      "ratio": "0.45%",
+      "ratio": "0.47%",
+      "region": "no"
+    },
+    {
+      "ratio": "0.44%",
       "region": "jp"
+    },
+    {
+      "ratio": "0.43%",
+      "region": "be"
     },
     {
       "ratio": "0.42%",
       "region": "tw"
     },
     {
-      "ratio": "0.41%",
+      "ratio": "0.42%",
       "region": "pt"
-    },
-    {
-      "ratio": "0.41%",
-      "region": "be"
     },
     {
       "ratio": "0.41%",
       "region": "mx"
     },
     {
-      "ratio": "0.36%",
-      "region": "ru"
+      "ratio": "0.39%",
+      "region": "gr"
     },
     {
       "ratio": "0.36%",
@@ -11743,19 +11747,19 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "ratio": "0.34%",
+      "region": "ru"
+    },
+    {
+      "ratio": "0.34%",
       "region": "at"
     },
     {
-      "ratio": "0.33%",
+      "ratio": "0.32%",
       "region": "il"
     },
     {
-      "ratio": "0.33%",
+      "ratio": "0.32%",
       "region": "fi"
-    },
-    {
-      "ratio": "0.33%",
-      "region": "gr"
     },
     {
       "ratio": "0.30%",
@@ -11766,52 +11770,52 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "dk"
     },
     {
-      "ratio": "0.29%",
+      "ratio": "0.28%",
       "region": "cz"
     },
     {
-      "ratio": "0.27%",
+      "ratio": "0.26%",
       "region": "th"
     },
     {
-      "ratio": "0.26%",
+      "ratio": "0.25%",
       "region": "vn"
     },
     {
-      "ratio": "0.24%",
+      "ratio": "0.23%",
       "region": "ae"
     },
     {
-      "ratio": "0.23%",
+      "ratio": "0.22%",
       "region": "ua"
     },
     {
       "ratio": "0.21%",
-      "region": "bg"
+      "region": "hr"
     },
     {
       "ratio": "0.20%",
-      "region": "hr"
+      "region": "bg"
     },
     {
       "ratio": "0.20%",
       "region": "my"
     },
     {
-      "ratio": "0.18%",
+      "ratio": "0.19%",
       "region": "tr"
     },
     {
-      "ratio": "0.17%",
-      "region": "sk"
-    },
-    {
-      "ratio": "0.17%",
+      "ratio": "0.18%",
       "region": "sa"
     },
     {
       "ratio": "0.17%",
       "region": "ar"
+    },
+    {
+      "ratio": "0.17%",
+      "region": "sk"
     },
     {
       "ratio": "0.15%",
@@ -11830,12 +11834,16 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "region": "si"
     },
     {
-      "ratio": "0.12%",
+      "ratio": "0.11%",
       "region": "ng"
     },
     {
-      "ratio": "0.11%",
-      "region": "ke"
+      "ratio": "0.10%",
+      "region": "eg"
+    },
+    {
+      "ratio": "0.10%",
+      "region": "cl"
     },
     {
       "ratio": "0.10%",
@@ -11843,10 +11851,10 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     },
     {
       "ratio": "0.10%",
-      "region": "cl"
+      "region": "ke"
     },
     {
-      "ratio": "2.39%",
+      "ratio": "2.32%",
       "region": "others"
     }
   ]
@@ -11925,56 +11933,112 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
   "has_next": true,
   "podcasts": [
     {
-      "id": "5c6bf053fa6c4d03b4729dbf9cecdfef",
-      "rss": "https://feeds.simplecast.com/W1rB_kgL",
+      "id": "b1091fb5382e4112b0f260b242e22b07",
+      "rss": "https://feeds.simplecast.com/2xzUiHxw",
       "type": "episodic",
-      "email": "popcast@nytimes.com",
+      "email": "matterofopinion@nytimes.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9XMXJCX2tnTA==",
-        "spotify_url": "https://open.spotify.com/show/3ugDIELXIU7erW5Xp49tWp",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS8yeHpVaUh4dw==",
+        "spotify_url": "https://open.spotify.com/show/6bmhSFLKtApYClEuSH8q42",
         "youtube_url": "",
         "linkedin_url": "",
         "wechat_handle": "",
         "patreon_handle": "",
-        "twitter_handle": "nytimesarts",
-        "facebook_handle": "ParelesNYTimes",
+        "twitter_handle": "",
+        "facebook_handle": "",
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/popcast-the-new-york-times-nlOhfJ9TAt8-dVnjvqYg8ah.1400x1400.jpg",
-      "title": "Popcast",
+      "image": "https://production.listennotes.com/podcasts/matter-of-opinion-new-york-times-opinion-wC_ORf2yG97-Xn9BoFDx4ZR.1400x1400.jpg",
+      "title": "Matter of Opinion",
       "country": "United States",
-      "website": "http://www.nytimes.com/podcasts/music-popcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.nytimes.com/column/matter-of-opinion?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         67,
+        99,
         122,
-        134
+        216
       ],
-      "itunes_id": 120315823,
-      "publisher": "The New York Times",
-      "thumbnail": "https://production.listennotes.com/podcasts/popcast-the-new-york-times-6UPvZJzsd9e-dVnjvqYg8ah.300x300.jpg",
+      "itunes_id": 1438024613,
+      "publisher": "New York Times Opinion",
+      "thumbnail": "https://production.listennotes.com/podcasts/matter-of-opinion-new-york-times-opinion-qbElpzjgGen-Xn9BoFDx4ZR.300x300.jpg",
       "is_claimed": false,
-      "description": "The Popcast is hosted by Jon Caramanica, a pop music critic for The New York Times. It covers the latest in popular music criticism, trends and news.",
+      "description": "Thoughts, aloud. Hosted by Michelle Cottle, Ross Douthat, Carlos Lozada and Lydia Polgreen. Every Thursday, from New York Times Opinion.\n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 58,
-      "total_episodes": 399,
-      "listennotes_url": "https://www.listennotes.com/c/5c6bf053fa6c4d03b4729dbf9cecdfef/",
-      "audio_length_sec": 3039,
+      "listen_score": 69,
+      "total_episodes": 236,
+      "listennotes_url": "https://www.listennotes.com/c/b1091fb5382e4112b0f260b242e22b07/",
+      "audio_length_sec": 2121,
       "explicit_content": false,
-      "latest_episode_id": "8fb65359055a4300a1ee0086793fea68",
-      "latest_pub_date_ms": 1680809209000,
-      "earliest_pub_date_ms": 1406865600397,
-      "update_frequency_hours": 179,
-      "listen_score_global_rank": "0.5%"
+      "latest_episode_id": "744266c3d79e4a2892ca568490e4cec2",
+      "latest_pub_date_ms": 1694077200000,
+      "earliest_pub_date_ms": 1538652714213,
+      "update_frequency_hours": 170,
+      "listen_score_global_rank": "0.05%"
+    },
+    {
+      "id": "c527eca3ab2a4fde91756c937bc077ef",
+      "rss": "https://feeds.simplecast.com/Z81L_Fet",
+      "type": "episodic",
+      "email": "tbrandpodcasts@nytimes.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9aODFMX0ZldA==",
+        "spotify_url": "",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "",
+        "facebook_handle": "",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/the-next-chapter-by-american-express-IrR9KqDCk4w-rn4UHT2iD8G.1400x1400.jpg",
+      "title": "The Next Chapter by American Express Business Class",
+      "country": "United States",
+      "website": "https://the-next-chapter-by-american-express-business-class.simplecast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        171,
+        94,
+        104,
+        93,
+        67,
+        100
+      ],
+      "itunes_id": 1627810508,
+      "publisher": "American Express",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-next-chapter-by-american-express-Oe5HoYQABJx-rn4UHT2iD8G.300x300.jpg",
+      "is_claimed": false,
+      "description": "Join the host Cardiff Garcia as he speaks with best-selling business authors. Each episode will focus on an essential work in our guest\u2019s career and culminate in a look ahead to their next chapter. The series will offer inspiration for those looking to expand their business or elevate their career. This season, our guests will include Maria Konnikova, Mashama Bailey and John O. Morisano, David Epstein, Susan Cain, Julie Zhuo and James Clear.",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 43,
+      "total_episodes": 14,
+      "listennotes_url": "https://www.listennotes.com/c/c527eca3ab2a4fde91756c937bc077ef/",
+      "audio_length_sec": 1735,
+      "explicit_content": false,
+      "latest_episode_id": "389ecd244fe14d8f808cdf439f54691d",
+      "latest_pub_date_ms": 1690963200000,
+      "earliest_pub_date_ms": 1654289098013,
+      "update_frequency_hours": 336,
+      "listen_score_global_rank": "1.5%"
     },
     {
       "id": "f2eb196b20884b0490cc60a58b05bbb6",
@@ -12012,7 +12076,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "The New York Times",
       "thumbnail": "https://production.listennotes.com/podcasts/the-daily-the-new-york-times-lDnVGaIf7Ks-xp7nhsmSkX2.300x300.jpg",
       "is_claimed": true,
-      "description": "This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro and Sabrina Tavernise. Twenty minutes a day, five days a week, ready by 6 a.m.",
+      "description": "This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro and Sabrina Tavernise. Twenty minutes a day, five days a week, ready by 6 a.m.\n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -12020,15 +12084,67 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 90,
-      "total_episodes": 1810,
+      "total_episodes": 1934,
       "listennotes_url": "https://www.listennotes.com/c/f2eb196b20884b0490cc60a58b05bbb6/",
-      "audio_length_sec": 1706,
+      "audio_length_sec": 1713,
       "explicit_content": false,
-      "latest_episode_id": "06d63c83a30946fa8ad6b1167cd01f44",
-      "latest_pub_date_ms": 1681724700000,
-      "earliest_pub_date_ms": 1484687988755,
+      "latest_episode_id": "15ecd9abef6641ab88154bdd46ee98b7",
+      "latest_pub_date_ms": 1694079900000,
+      "earliest_pub_date_ms": 1484687988900,
       "update_frequency_hours": 26,
       "listen_score_global_rank": "0.01%"
+    },
+    {
+      "id": "5c6bf053fa6c4d03b4729dbf9cecdfef",
+      "rss": "https://feeds.simplecast.com/W1rB_kgL",
+      "type": "episodic",
+      "email": "popcast@nytimes.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9XMXJCX2tnTA==",
+        "spotify_url": "https://open.spotify.com/show/3ugDIELXIU7erW5Xp49tWp",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "nytimesarts",
+        "facebook_handle": "ParelesNYTimes",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/popcast-the-new-york-times-nlOhfJ9TAt8-dVnjvqYg8ah.1400x1400.jpg",
+      "title": "Popcast",
+      "country": "United States",
+      "website": "https://www.nytimes.com/column/popcast-pop-music-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        67,
+        122,
+        134
+      ],
+      "itunes_id": 120315823,
+      "publisher": "The New York Times",
+      "thumbnail": "https://production.listennotes.com/podcasts/popcast-the-new-york-times-6UPvZJzsd9e-dVnjvqYg8ah.300x300.jpg",
+      "is_claimed": false,
+      "description": "The Popcast is hosted by Jon Caramanica, a pop music critic for The New York Times. It covers the latest in popular music criticism, trends and news. \n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 58,
+      "total_episodes": 430,
+      "listennotes_url": "https://www.listennotes.com/c/5c6bf053fa6c4d03b4729dbf9cecdfef/",
+      "audio_length_sec": 3076,
+      "explicit_content": false,
+      "latest_episode_id": "0e2ea7063e0446fd93f32233997bc43a",
+      "latest_pub_date_ms": 1694029038000,
+      "earliest_pub_date_ms": 1406865600413,
+      "update_frequency_hours": 91,
+      "listen_score_global_rank": "0.5%"
     },
     {
       "id": "4685e82279e84054a608c6364912ad73",
@@ -12053,7 +12169,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "image": "https://production.listennotes.com/podcasts/the-run-up-the-new-york-times-Qe1i-onFph5--Yp_oy2DA8J.1400x1400.jpg",
       "title": "The Run-Up",
       "country": "United States",
-      "website": "https://the-run-up.simplecast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.nytimes.com/column/election-run-up-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         67,
@@ -12063,78 +12179,23 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "The New York Times",
       "thumbnail": "https://production.listennotes.com/podcasts/the-run-up-the-new-york-times-RYloHdW6KEA--Yp_oy2DA8J.300x300.jpg",
       "is_claimed": false,
-      "description": "Because it's always about more than who wins and loses. And the next election has already started. Hosted by Astead W. Herndon.",
+      "description": "The Run-Up will be back in the fall of 2023 \u2014 and we will be coming back as a weekly show as the presidential election heats up. Stay tuned!\n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 55,
-      "total_episodes": 60,
+      "listen_score": 56,
+      "total_episodes": 70,
       "listennotes_url": "https://www.listennotes.com/c/4685e82279e84054a608c6364912ad73/",
-      "audio_length_sec": 2058,
+      "audio_length_sec": 2190,
       "explicit_content": false,
-      "latest_episode_id": "417ff7e7697246cfa79da90a0d973c2c",
-      "latest_pub_date_ms": 1681376400000,
+      "latest_episode_id": "62ab12a3d10c4896b1c315155e31215f",
+      "latest_pub_date_ms": 1687510800000,
       "earliest_pub_date_ms": 1470715200044,
-      "update_frequency_hours": 168,
+      "update_frequency_hours": 167,
       "listen_score_global_rank": "0.5%"
-    },
-    {
-      "id": "10904b22ae9a4311b2060002562b94aa",
-      "rss": "https://feeds.simplecast.com/J6oAIHuK",
-      "type": "episodic",
-      "email": "tbrandpodcasts@nytimes.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9KNm9BSUh1Sw==",
-        "spotify_url": "https://open.spotify.com/show/3U20MqXwrI3fZpDYquwH6m",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/built-for-change-bjTiNo0pY4c-sRZa48ULEk6.1400x1400.jpg",
-      "title": "Built for Change",
-      "country": "United States",
-      "website": "https://www.accenture.com/us-en/insights/company/built-for-change-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        122,
-        244,
-        127,
-        67,
-        97,
-        93
-      ],
-      "itunes_id": 1561378348,
-      "publisher": "Accenture",
-      "thumbnail": "https://production.listennotes.com/podcasts/built-for-change-peJclDT_HnO-sRZa48ULEk6.300x300.jpg",
-      "is_claimed": false,
-      "description": "Businesses today face challenges at a scale most leaders have never experienced \u2014 and never anticipated. Built for Change, hosted by broadcast journalist Elise Hu and technologist Josh Klein, explores how the global pandemic has not only forced radical changes in business, technology and human behavior, but also created incredible new opportunities for leaders to evolve and ultimately excel in this environment. Through compelling conversations with industry thought leaders, Built for Change dismantles shop-worn assumptions of how to meet customer needs; links a new model of employee well-being to company success; demonstrates how technology and sustainability can be part of a business\u2019s twin transformation \u2014 and more. Subscribe to Built for Change, a new podcast from Accenture.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 44,
-      "total_episodes": 26,
-      "listennotes_url": "https://www.listennotes.com/c/10904b22ae9a4311b2060002562b94aa/",
-      "audio_length_sec": 1592,
-      "explicit_content": false,
-      "latest_episode_id": "841cc001e8f04724a35df4809ba60709",
-      "latest_pub_date_ms": 1680681600000,
-      "earliest_pub_date_ms": 1617375600024,
-      "update_frequency_hours": 638,
-      "listen_score_global_rank": "1%"
     },
     {
       "id": "f9f8aa526f1e498286f205d66cf9e524",
@@ -12170,22 +12231,74 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "New York Times Opinion",
       "thumbnail": "https://production.listennotes.com/podcasts/the-ezra-klein-show-new-york-times-opinion-TqWs8-_zMvn-uirbhjX_SZ9.300x300.jpg",
       "is_claimed": false,
-      "description": "*** Named a best podcast of 2021 by Time, Vulture, Esquire and The Atlantic. ***\nEach Tuesday and Friday, Ezra Klein invites you into a conversation on something that matters. How do we address climate change if the political system fails to act? Has the logic of markets infiltrated too many aspects of our lives? What is the future of the Republican Party? What do psychedelics teach us about consciousness? What does sci-fi understand about our present that we miss? Can our food system be just to humans and animals alike?",
+      "description": "*** Named a best podcast of 2021 by Time, Vulture, Esquire and The Atlantic. ***\nEach Tuesday and Friday, Ezra Klein invites you into a conversation on something that matters. How do we address climate change if the political system fails to act? Has the logic of markets infiltrated too many aspects of our lives? What is the future of the Republican Party? What do psychedelics teach us about consciousness? What does sci-fi understand about our present that we miss? Can our food system be just to humans and animals alike?\n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 71,
-      "total_episodes": 225,
+      "listen_score": 72,
+      "total_episodes": 261,
       "listennotes_url": "https://www.listennotes.com/c/f9f8aa526f1e498286f205d66cf9e524/",
-      "audio_length_sec": 4098,
+      "audio_length_sec": 4103,
       "explicit_content": false,
-      "latest_episode_id": "f99392010b964a7fa3ff931d3c9a2bb4",
-      "latest_pub_date_ms": 1681462800000,
-      "earliest_pub_date_ms": 1610502169195,
-      "update_frequency_hours": 76,
+      "latest_episode_id": "0b9506adda7b4283bc56bf3781a8eefa",
+      "latest_pub_date_ms": 1693904400000,
+      "earliest_pub_date_ms": 1610502169251,
+      "update_frequency_hours": 127,
+      "listen_score_global_rank": "0.05%"
+    },
+    {
+      "id": "92d189ce198c4112a23b600b196662c5",
+      "rss": "https://feeds.simplecast.com/iAH8x82K",
+      "type": "serial",
+      "email": "serialshows@nytimes.com",
+      "extra": {
+        "url1": "",
+        "url2": "",
+        "url3": "",
+        "google_url": "",
+        "spotify_url": "",
+        "youtube_url": "",
+        "linkedin_url": "",
+        "wechat_handle": "",
+        "patreon_handle": "",
+        "twitter_handle": "",
+        "facebook_handle": "",
+        "amazon_music_url": "",
+        "instagram_handle": ""
+      },
+      "image": "https://production.listennotes.com/podcasts/the-retrievals-serial-productions-the-new-5iqbaQTN4GI-z_CqYrIa8lo.1400x1400.jpg",
+      "title": "The Retrievals",
+      "country": "United States",
+      "website": "https://nytimes.com/theretrievals?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "language": "English",
+      "genre_ids": [
+        99,
+        67,
+        135
+      ],
+      "itunes_id": 1691599042,
+      "publisher": "Serial Productions & The New York Times",
+      "thumbnail": "https://production.listennotes.com/podcasts/the-retrievals-serial-productions-the-new-GhjqpwzcfWb-z_CqYrIa8lo.300x300.jpg",
+      "is_claimed": false,
+      "description": "Dozens of women seeking to become mothers came to a fertility clinic at Yale. A (five-part) narrative series about the shocking events that unfolded there. From Serial Productions and The New York Times.",
+      "looking_for": {
+        "guests": false,
+        "cohosts": false,
+        "sponsors": false,
+        "cross_promotion": false
+      },
+      "listen_score": 68,
+      "total_episodes": 7,
+      "listennotes_url": "https://www.listennotes.com/c/92d189ce198c4112a23b600b196662c5/",
+      "audio_length_sec": 2018,
+      "explicit_content": false,
+      "latest_episode_id": "1cb9e35aeadc406c992d65f5ca403d88",
+      "latest_pub_date_ms": 1691056800000,
+      "earliest_pub_date_ms": 1687399200006,
+      "update_frequency_hours": 167,
       "listen_score_global_rank": "0.05%"
     },
     {
@@ -12222,35 +12335,35 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "The New York Times",
       "thumbnail": "https://production.listennotes.com/podcasts/hard-fork-the-new-york-times-mwetHTuP2Az-M2AZCUFvHzY.300x300.jpg",
       "is_claimed": false,
-      "description": "\u201cHard Fork\u201d is a show about the future that\u2019s already here. Each week, journalists Kevin Roose and Casey Newton explore and make sense of the latest in the rapidly changing world of tech.",
+      "description": "\u201cHard Fork\u201d is a show about the future that\u2019s already here. Each week, journalists Kevin Roose and Casey Newton explore and make sense of the latest in the rapidly changing world of tech. \n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 66,
-      "total_episodes": 223,
+      "listen_score": 67,
+      "total_episodes": 243,
       "listennotes_url": "https://www.listennotes.com/c/c3c933b6d22d4a06b236e5493b4603cc/",
-      "audio_length_sec": 2329,
+      "audio_length_sec": 2456,
       "explicit_content": false,
-      "latest_episode_id": "0a06b69ce15f4312b9639d475dc068c6",
-      "latest_pub_date_ms": 1681462800000,
+      "latest_episode_id": "15a4d8e9a4584106af9ddf7112a84f6e",
+      "latest_pub_date_ms": 1693558800000,
       "earliest_pub_date_ms": 1599624000194,
-      "update_frequency_hours": 159,
+      "update_frequency_hours": 168,
       "listen_score_global_rank": "0.05%"
     },
     {
-      "id": "5437a383b2e74bc195ba6adde2e996eb",
-      "rss": "https://feeds.simplecast.com/wHqls8d1",
-      "type": "serial",
-      "email": "serialshows@nytimes.com",
+      "id": "10904b22ae9a4311b2060002562b94aa",
+      "rss": "https://feeds.simplecast.com/J6oAIHuK",
+      "type": "episodic",
+      "email": "tbrandpodcasts@nytimes.com",
       "extra": {
         "url1": "",
         "url2": "",
         "url3": "",
-        "google_url": "",
-        "spotify_url": "https://open.spotify.com/show/0Z4uNINH9BXtmGpuf7DkQL",
+        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS9KNm9BSUh1Sw==",
+        "spotify_url": "https://open.spotify.com/show/3U20MqXwrI3fZpDYquwH6m",
         "youtube_url": "",
         "linkedin_url": "",
         "wechat_handle": "",
@@ -12260,38 +12373,40 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "amazon_music_url": "",
         "instagram_handle": ""
       },
-      "image": "https://production.listennotes.com/podcasts/the-coldest-case-in-laramie-b5SykAzGiCK-gQWy-5mrHO_.1400x1400.jpg",
-      "title": "The Coldest Case In Laramie",
+      "image": "https://production.listennotes.com/podcasts/built-for-change-accenture-ru_Si-c8pxC-sRZa48ULEk6.1400x1400.jpg",
+      "title": "Built for Change",
       "country": "United States",
-      "website": "https://the-coldest-case-in-laramie.simplecast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.accenture.com/us-en/insights/company/built-for-change-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         122,
-        99,
-        135,
-        67
+        244,
+        127,
+        67,
+        97,
+        93
       ],
-      "itunes_id": 1664273280,
-      "publisher": "Serial Productions & The New York Times",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-coldest-case-in-laramie-2XEkKJlzTsb-gQWy-5mrHO_.300x300.jpg",
+      "itunes_id": 1561378348,
+      "publisher": "Accenture",
+      "thumbnail": "https://production.listennotes.com/podcasts/built-for-change-accenture-nCDqeVuGzYP-sRZa48ULEk6.300x300.jpg",
       "is_claimed": false,
-      "description": "Kim Barker, a Pulitzer Prize-winning investigative reporter for The New York Times, revisits an unsolved murder that took place while she was in high school in Laramie, Wyoming, nearly 40 years ago. She confronts the conflicting stories people have told themselves about the crime because of an unexpected development: the arrest of a former Laramie police officer accused in the murder.",
+      "description": "The modern business landscape is constantly evolving, presenting unprecedented challenges for leaders. The Built for Change podcast, hosted by journalist Elise Hu and technologist Josh Klein, explores these challenges and how leaders can adapt to thrive in this environment.\n\nThrough insightful conversations with industry thought leaders, the podcast explores innovative approaches to meeting customer needs, the relationship between employee well-being and company success, and the role of technology and sustainability in driving business transformation.\n\nWhether you're a business leader seeking to stay ahead of the curve or simply interested in the latest developments in the world of business, Built for Change offers valuable insights and actionable advice. Subscribe to the podcast today and join the conversation on how to thrive in an ever-changing business landscape.",
       "looking_for": {
         "guests": false,
         "cohosts": false,
         "sponsors": false,
         "cross_promotion": false
       },
-      "listen_score": 62,
-      "total_episodes": 9,
-      "listennotes_url": "https://www.listennotes.com/c/5437a383b2e74bc195ba6adde2e996eb/",
-      "audio_length_sec": 1661,
+      "listen_score": 44,
+      "total_episodes": 32,
+      "listennotes_url": "https://www.listennotes.com/c/10904b22ae9a4311b2060002562b94aa/",
+      "audio_length_sec": 1620,
       "explicit_content": false,
-      "latest_episode_id": "fd5110a3747c4e15a365faadb73d89f2",
-      "latest_pub_date_ms": 1677148500000,
-      "earliest_pub_date_ms": 1676523600000,
-      "update_frequency_hours": 0,
-      "listen_score_global_rank": "0.1%"
+      "latest_episode_id": "7deef80c60a94dbdaa6a282434ed5758",
+      "latest_pub_date_ms": 1693382400000,
+      "earliest_pub_date_ms": 1617375600031,
+      "update_frequency_hours": 537,
+      "listen_score_global_rank": "1%"
     },
     {
       "id": "ea36396fab7d47a8b6c578decfc81834",
@@ -12316,7 +12431,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "image": "https://production.listennotes.com/podcasts/the-book-review-the-new-york-times-K0shf57H1FS-nbG5CgVhJKz.1400x1400.jpg",
       "title": "The Book Review",
       "country": "United States",
-      "website": "https://the-book-review.simplecast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "website": "https://www.nytimes.com/column/book-review-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "language": "English",
       "genre_ids": [
         67,
@@ -12328,7 +12443,7 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
       "publisher": "The New York Times",
       "thumbnail": "https://production.listennotes.com/podcasts/the-book-review-the-new-york-times-EmN1vCyg95q-nbG5CgVhJKz.300x300.jpg",
       "is_claimed": false,
-      "description": "The world's top authors and critics join host Gilbert Cruz and editors at The New York Times Book Review to talk about the week's top books, what we're reading and what's going on in the literary world.",
+      "description": "The world's top authors and critics join host Gilbert Cruz and editors at The New York Times Book Review to talk about the week's top books, what we're reading and what's going on in the literary world.\n\nListen to this podcast in New York Times Audio, our new iOS app for news subscribers. Download now at nytimes.com/audioapp",
       "looking_for": {
         "guests": false,
         "cohosts": false,
@@ -12336,120 +12451,15 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
         "cross_promotion": false
       },
       "listen_score": 66,
-      "total_episodes": 439,
+      "total_episodes": 456,
       "listennotes_url": "https://www.listennotes.com/c/ea36396fab7d47a8b6c578decfc81834/",
-      "audio_length_sec": 3123,
+      "audio_length_sec": 3083,
       "explicit_content": false,
-      "latest_episode_id": "7db4100d7f5e4d698b3788f2b9aeb8a3",
-      "latest_pub_date_ms": 1681501720000,
+      "latest_episode_id": "b3704fbf9ad445f39c914781ac6aeb16",
+      "latest_pub_date_ms": 1692381111000,
       "earliest_pub_date_ms": 1418360400434,
-      "update_frequency_hours": 189,
+      "update_frequency_hours": 168,
       "listen_score_global_rank": "0.05%"
-    },
-    {
-      "id": "b1091fb5382e4112b0f260b242e22b07",
-      "rss": "https://feeds.simplecast.com/2xzUiHxw",
-      "type": "episodic",
-      "email": "argument@nytimes.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zaW1wbGVjYXN0LmNvbS8yeHpVaUh4dw==",
-        "spotify_url": "https://open.spotify.com/show/6bmhSFLKtApYClEuSH8q42",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/the-argument-new-york-times-opinion-Re_TLX2kCZ5-Xn9BoFDx4ZR.1400x1400.jpg",
-      "title": "The Argument",
-      "country": "United States",
-      "website": "https://www.nytimes.com/the-argument?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        67,
-        99,
-        122,
-        216
-      ],
-      "itunes_id": 1438024613,
-      "publisher": "New York Times Opinion",
-      "thumbnail": "https://production.listennotes.com/podcasts/the-argument-new-york-times-opinion-zGp5dUt_a14-Xn9BoFDx4ZR.300x300.jpg",
-      "is_claimed": false,
-      "description": "Strongly-held opinions. Open-minded debates. A weekly ideas show, hosted by Jane Coaston.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 68,
-      "total_episodes": 216,
-      "listennotes_url": "https://www.listennotes.com/c/b1091fb5382e4112b0f260b242e22b07/",
-      "audio_length_sec": 2146,
-      "explicit_content": false,
-      "latest_episode_id": "64d4ccb89d134f88993d57572d570117",
-      "latest_pub_date_ms": 1671012000000,
-      "earliest_pub_date_ms": 1538652714213,
-      "update_frequency_hours": 167,
-      "listen_score_global_rank": "0.05%"
-    },
-    {
-      "id": "6206f07f04084407864dd8d7885a201c",
-      "rss": "https://feeds.simplecast.com/ksGYZ_Z3",
-      "type": "episodic",
-      "email": "firstperson@nytimes.com",
-      "extra": {
-        "url1": "",
-        "url2": "",
-        "url3": "",
-        "google_url": "",
-        "spotify_url": "",
-        "youtube_url": "",
-        "linkedin_url": "",
-        "wechat_handle": "",
-        "patreon_handle": "",
-        "twitter_handle": "",
-        "facebook_handle": "",
-        "amazon_music_url": "",
-        "instagram_handle": ""
-      },
-      "image": "https://production.listennotes.com/podcasts/first-person-xduohs6nrU8-STqd9okE5CJ.1400x1400.jpg",
-      "title": "First Person",
-      "country": "United States",
-      "website": "https://first-person.simplecast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "language": "English",
-      "genre_ids": [
-        122,
-        99,
-        67
-      ],
-      "itunes_id": 1624946521,
-      "publisher": "New York Times Opinion",
-      "thumbnail": "https://production.listennotes.com/podcasts/first-person-PWpaRBEIL1K-STqd9okE5CJ.300x300.jpg",
-      "is_claimed": false,
-      "description": "Every opinion starts with a story. Intimate conversations about the big ideas shaping our world, hosted by journalist Lulu Garcia-Navarro. From New York Times Opinion.",
-      "looking_for": {
-        "guests": false,
-        "cohosts": false,
-        "sponsors": false,
-        "cross_promotion": false
-      },
-      "listen_score": 52,
-      "total_episodes": 33,
-      "listennotes_url": "https://www.listennotes.com/c/6206f07f04084407864dd8d7885a201c/",
-      "audio_length_sec": 2010,
-      "explicit_content": false,
-      "latest_episode_id": "7d8ee10cf59c481aba4afebbb02eecfa",
-      "latest_pub_date_ms": 1681376400000,
-      "earliest_pub_date_ms": 1652882400030,
-      "update_frequency_hours": 167,
-      "listen_score_global_rank": "0.5%"
     }
   ],
   "page_number": 1,
@@ -12725,6 +12735,291 @@ See all available parameters on the [API Docs page](https://www.listennotes.com/
     "previous_page_number": {
       "type": "integer",
       "example": 1
+    }
+  }
+}
+```   
+</details>
+
+
+
+
+### Find individual episodes by searching for their titles
+
+Function Name: **search_episode_titles**
+
+Conduct targeted searches for individual episodes by title and refine results using the podcast id such as 
+Listen Notes Podcast ID, Apple Podcasts ID, Spotify ID, or RSS feed URL. 
+This endpoint is specially designed to streamline the import of specific episodes from platforms 
+like Apple Podcasts and Spotify into your application. 
+Compared to the GET /search endpoint, which performs full-text searches across multiple fields, 
+this endpoint focuses solely on episode titles for enhanced accuracy and performance.
+
+
+Example:
+```python
+
+from listennotes import podcast_api
+
+# If api_key is None, the sdk will connect to a mock server that'll
+# return fake data for testing purpose            
+api_key = 'a6a1f7ae6a4a4cf7a208e5ba********'
+
+client = podcast_api.Client(api_key=api_key)      
+
+response = client.search_episode_titles(q='Jerusalem Demsas on The Dispossessed')
+            
+print(response.json())
+
+```
+
+See all available parameters on the [API Docs page](https://www.listennotes.com/api/docs/#get-api-v2-search_episode_titles).
+
+
+<details>
+  <summary>Click to see example response</summary>
+  
+```json
+{
+  "took": 0.214,
+  "count": 1,
+  "total": 1,
+  "results": [
+    {
+      "id": "9df80c4856e641568f75cb98b653ab5e",
+      "rss": "https://cowenconvos.libsyn.com/rss",
+      "link": "https://cowenconvos.libsyn.com/jerusalem-demsas-on-the-dispossessed-gullivers-travels-and-of-boys-and-menjerusalem-demsas-on-the-dispossessed-gullivers-travels-and-of-boys-and-menjerusalem-demsas-on-the-dispossessed-gullivers-travels-and-of-boys-and-men?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "audio": "https://www.listennotes.com/e/p/9df80c4856e641568f75cb98b653ab5e/",
+      "image": "https://production.listennotes.com/podcasts/conversations-with-tyler-mercatus-center-at-z-TDdAxC3RO-LRMWNKAThUg.1400x1400.jpg",
+      "podcast": {
+        "id": "cda18f20f1be4ac7b3cce7d0eb168fff",
+        "image": "https://production.listennotes.com/podcasts/conversations-with-tyler-mercatus-center-at-z-TDdAxC3RO-LRMWNKAThUg.1400x1400.jpg",
+        "genre_ids": [
+          122
+        ],
+        "thumbnail": "https://production.listennotes.com/podcasts/conversations-with-tyler-mercatus-center-at-6rAZtD2EleW-LRMWNKAThUg.300x300.jpg",
+        "listen_score": 63,
+        "title_original": "Conversations with Tyler",
+        "listennotes_url": "https://www.listennotes.com/c/cda18f20f1be4ac7b3cce7d0eb168fff/",
+        "title_highlighted": "Conversations with Tyler",
+        "publisher_original": "Mercatus Center at George Mason University",
+        "publisher_highlighted": "Mercatus Center at George Mason University",
+        "listen_score_global_rank": "0.1%"
+      },
+      "itunes_id": 983795625,
+      "thumbnail": "https://production.listennotes.com/podcasts/conversations-with-tyler-mercatus-center-at-6rAZtD2EleW-LRMWNKAThUg.300x300.jpg",
+      "pub_date_ms": 1694001600000,
+      "guid_from_rss": "5c548120-153e-4abf-bd82-b81450ff685b",
+      "title_original": "Jerusalem Demsas on The Dispossessed, Gulliver's Travels, and Of Boys and Men",
+      "listennotes_url": "https://www.listennotes.com/e/9df80c4856e641568f75cb98b653ab5e/",
+      "audio_length_sec": 3788,
+      "explicit_content": false,
+      "title_highlighted": "<span class=\"ln-search-highlight\">Jerusalem</span> <span class=\"ln-search-highlight\">Demsas</span> <span class=\"ln-search-highlight\">on</span> <span class=\"ln-search-highlight\">The</span> Dispossessed, Gulliver's Travels, and Of Boys and Men",
+      "description_original": "<p class=\"p1\">In this special episode, Tyler sat down with Jerusalem Demsas, staff writer at The Atlantic, to discuss three books: The Dispossessed by Ursula K. Le Guin, Gulliver's Travels by Jonathan Swift, and Of Boys and Men by Richard V. Reeves.</p> <p class=\"p1\">Spanning centuries and genres and yet provoking similar questions, these books prompted Tyler and Jerusalem to wrestle with enduring questions about human nature, gender dynamics, the purpose of travel, and moral progress, including debating whether Le Guin prefers the anarchist utopia she depicts, dissecting Swift's stance on science and slavery, questioning if travel makes us happier or helps us understand ourselves, comparing Gulliver and Shevek's alienation and restlessness, considering Swift\u2019s views on the difficulty of moral progress, reflecting on how feminism links to moral progress and gender equality, contemplating whether imaginative fiction or policy analysis is more likely to spur social change, and more.</p> <p class=\"MsoNormal\">Read a\u00a0<a href=\"https://conversationswithtyler.com/episodes/jerusalem-demsas/\">full transcript</a> enhanced with helpful links, or watch the <a href=\"https://youtu.be/Hhg1X1CYlmk?feature=shared\">full video</a>.</p> <p class=\"p1\"><em>Recorded May 22nd, 2023.</em></p> <p class=\"p1\">Other ways to connect</p> <ul> <li class=\"p1\">Follow us on\u00a0<a href=\"https://twitter.com/cowenconvos\">X</a>\u00a0and\u00a0<a href=\"https://www.instagram.com/cowenconvos/?hl=en\">Instagram</a></li> <li class=\"p1\">Follow\u00a0<a href=\"https://twitter.com/tylercowen\">Tyler</a> on X</li> <li class=\"p1\">Follow <a href=\"https://twitter.com/JerusalemDemsas\">Jerusalem</a> on X</li> <li>Join our\u00a0<a href=\"https://discord.gg/JAVWP7vTxt\">Discord</a></li> <li class=\"p1\">Email us:\u00a0<a class=\"c-link\" href=\"mailto:cowenconvos@mercatus.gmu.edu\" rel=\"noopener noreferrer\" tabindex=\"-1\" target=\"_blank\">cowenconvos@mercatus.gmu.edu</a></li> <li class=\"p1\">Learn more about Conversations with Tyler and other Mercatus Center podcasts\u00a0<a href=\"https://www.mercatus.org/podcasts\">here</a>.</li> </ul>",
+      "description_highlighted": "...In this special episode, Tyler sat down with Jerusalem Demsas, staff writer at The Atlantic, to discuss three books: The Dispossessed by Ursula K. Le Guin, Gulliver's Travels by Jonathan Swift, and Of Boys and Men by Richard V. Reeves. \nSpanning centuries and genres and yet provoking similar questions, these books prompted Tyler and Jerusalem to wrestle with enduring questions about human nature, gender dynamics, the purpose of travel, and moral progress, including debating whether Le Guin prefers the anarchist utopia she depicts, dissecting Swift's stance on science and slavery, questioning if travel makes us happier or helps us understand ourselves, comparing Gulliver and Shevek's alienation and restlessness, considering Swift\u2019s views on the difficulty of moral progress, reflecting on how feminism links to moral progress and gender equality, contemplating whether imaginative fiction or policy analysis is more likely to spur social change, and more. \nRead a\u00a0full transcript enhanced with helpful links, or watch the full video. \nRecorded May 22nd, 2023. \nOther ways to connect \n \nFollow us on\u00a0X\u00a0and\u00a0Instagram \nFollow\u00a0Tyler on X \nFollow Jerusalem on X \nJoin our\u00a0Discord \nEmail us:\u00a0cowenconvos@mercatus.gmu.edu \nLearn more about Conversations with Tyler and other Mercatus Center podcasts\u00a0here. ...",
+      "transcripts_highlighted": []
+    }
+  ],
+  "next_offset": 1
+}
+```   
+</details>
+
+
+
+<details>
+  <summary>Click to see response schema</summary>
+  
+```json
+{
+  "type": "object",
+  "properties": {
+    "took": {
+      "type": "number",
+      "example": 0.093,
+      "description": "The time it took to fetch these search results. In seconds."
+    },
+    "count": {
+      "type": "integer",
+      "example": 10,
+      "description": "The number of search results in this page."
+    },
+    "total": {
+      "type": "integer",
+      "example": 1989,
+      "description": "The total number of search results."
+    },
+    "results": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "example": "4d82e50314174754a3b603912448e812",
+              "description": "Episode id, which can be used to further fetch detailed episode metadata via `GET /episodes/{id}`."
+            },
+            "rss": {
+              "type": "string",
+              "example": "https://sw7x7.libsyn.com/rss",
+              "description": "RSS url of this podcast. This field is available only in the PRO/ENTERPRISE plan."
+            },
+            "link": {
+              "type": "string",
+              "example": "https://www.npr.org/2020/01/22/798532179/soleimanis-iran",
+              "description": "Web link of this episode."
+            },
+            "audio": {
+              "type": "string",
+              "example": "https://www.listennotes.com/e/p/11b34041e804491b9704d11f283c74de/",
+              "description": "Audio url of this episode, which can be played directly."
+            },
+            "image": {
+              "type": "string",
+              "example": "https://cdn-images-1.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-OaJSjb4xQv3.1400x1400.jpg",
+              "description": "Image url for this episode.\nIf an episode doesn't have its own image, then this field would be the url of the podcast artwork image.\nIf you are using PRO/ENTERPRISE plan, then it's\na high resolution image (1400x1400). If you are using FREE plan, then it's the same as **thumbnail**,\nlow resolution image (300x300).\n"
+            },
+            "podcast": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "4d3fe717742d4963a85562e9f84d8c79",
+                  "description": "Podcast id, which can be used to further fetch detailed podcast metadata via `GET /podcasts/{id}`."
+                },
+                "image": {
+                  "type": "string",
+                  "example": "https://cdn-images-1.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-OaJSjb4xQv3.1400x1400.jpg",
+                  "description": "Image url for this podcast's artwork. If you are using PRO/ENTERPRISE plan, then it's\na high resolution image (1400x1400). If you are using FREE plan, then it's the same as **thumbnail**,\nlow resolution image (300x300).\n"
+                },
+                "genre_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "description": "Genre ids."
+                  },
+                  "example": [
+                    138,
+                    86,
+                    160,
+                    68,
+                    82,
+                    100,
+                    101
+                  ]
+                },
+                "thumbnail": {
+                  "type": "string",
+                  "example": "https://cdn-images-1.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-OaJSjb4xQv3.300x300.jpg",
+                  "description": "Thumbnail image url for this podcast's artwork (300x300)."
+                },
+                "listen_score": {
+                  "type": "integer",
+                  "example": 81,
+                  "description": "The estimated popularity score of a podcast compared to all other rss-based public podcasts in the world on a scale from 0 to 100.\nIf the score is not available, it'll be null. Learn more at listennotes.com/listen-score\n"
+                },
+                "title_original": {
+                  "type": "string",
+                  "example": "Star Wars 7x7 | Star Wars News, Interviews, and More!",
+                  "description": "Plain text of podcast name."
+                },
+                "listennotes_url": {
+                  "type": "string",
+                  "example": "https://www.listennotes.com/c/4d3fe717742d4963a85562e9f84d8c79/",
+                  "description": "The url of this podcast on [ListenNotes.com](https://www.ListenNotes.com)."
+                },
+                "title_highlighted": {
+                  "type": "string",
+                  "example": "<span class=\\\"ln-search-highlight\\\">Star</span> <span class=\\\"ln-search-highlight\\\">Wars</span> 7x7 | <span class=\\\"ln-search-highlight\\\">Star</span> <span class=\\\"ln-search-highlight\\\">Wars</span> News, Interviews, and More!",
+                  "description": "Highlighted segment of podcast name."
+                },
+                "publisher_original": {
+                  "type": "string",
+                  "example": "Star Wars Daily, by Allen Voivod",
+                  "description": "Plain text of this podcast's publisher name."
+                },
+                "publisher_highlighted": {
+                  "type": "string",
+                  "example": "<span class=\\\"ln-search-highlight\\\">Star</span> <span class=\\\"ln-search-highlight\\\">Wars</span> Daily, by Allen Voivod",
+                  "description": "Highlighted segment of this podcast's publisher name."
+                },
+                "listen_score_global_rank": {
+                  "type": "string",
+                  "example": "0.5%",
+                  "description": "The estimated popularity ranking of a podcast compared to all other rss-based public podcasts in the world.\nFor example, if the value is 0.5%, then this podcast is one of the top 0.5% most popular shows out of all podcasts globally, ranked by Listen Score.\nIf the ranking is not available, it'll be null. Learn more at listennotes.com/listen-score\n"
+                }
+              },
+              "description": "The podcast that this episode belongs to."
+            },
+            "itunes_id": {
+              "type": "integer",
+              "example": 896354638,
+              "description": "iTunes id for this podcast."
+            },
+            "thumbnail": {
+              "type": "string",
+              "example": "https://cdn-images-1.listennotes.com/podcasts/exponent-ben-thompson-james-allworth-OaJSjb4xQv3.300x300.jpg",
+              "description": "Thumbnail image (300x300) url for this episode.\nIf an episode doesn't have its own image, then this field would be the url of the podcast artwork thumbnail image.\n"
+            },
+            "pub_date_ms": {
+              "type": "integer",
+              "example": 1474873200000,
+              "description": "Published date for this episode. In millisecond."
+            },
+            "title_original": {
+              "type": "string",
+              "example": "815: Star Wars 2020 Movie and Beyond!",
+              "description": "Plain text of this episode' title"
+            },
+            "listennotes_url": {
+              "type": "string",
+              "example": "https://www.listennotes.com/e/4d82e50314174754a3b603912448e812/",
+              "description": "The url of this episode on [ListenNotes.com](https://www.ListenNotes.com)."
+            },
+            "audio_length_sec": {
+              "type": "integer",
+              "example": 567,
+              "description": "Audio length of this episode. In seconds."
+            },
+            "explicit_content": {
+              "type": "boolean",
+              "example": false,
+              "description": "Whether this podcast contains explicit language."
+            },
+            "title_highlighted": {
+              "type": "string",
+              "example": "815: <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 2020 Movie and Beyond!",
+              "description": "Highlighted segment of this episode's title"
+            },
+            "description_original": {
+              "type": "string",
+              "example": "Yeah, Star Wars Celebration Orlando is 32 days away, but what's the scoop on Celebration 2018? Plus, Rebels Day is Saturday, and much more in our update. Punch it! ***We're listener supported! Go to http://Patreon.com/sw7x7 to donate to the Star Wars 7x7 podcast, and you\u00e2\u20ac\u2122ll get some fabulous rewards for your pledge.***  Check out SW7x7.com for full Star Wars 7x7 show notes and links, and to comment on any of the content of this episode! If you like what you've heard, please leave us a rating or review on iTunes or Stitcher, which will also help more people discover this Star Wars podcast. Don't forget to join the Star Wars 7x7 fun on Facebook at Facebook.com/SW7x7, and follow the breaking news Twitter feed at Twitter.com/SW7x7Podcast. We're also on Pinterest and Instagram as \"SW7x7\" too, and we'd love to connect with you there!\n",
+              "description": "Plain text of this episode's description"
+            },
+            "description_highlighted": {
+              "type": "string",
+              "example": "...Go to http://Patreon.com/sw7x7 to donate to the <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7x7 podcast, and you'll get some fabulous rewards for your pledge.***  Check out SW7x7.com for full <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> 7x7 show notes and links, and to\n",
+              "description": "Highlighted segment of this episode's description"
+            },
+            "transcripts_highlighted": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "example": "00:21:27  when Disney bought the <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> franchise from George Lucas they had a plan lots of <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> movies new <span class=\"ln-search-highlight\">Star</span> <span class=\"ln-search-highlight\">Wars</span> movies every month another one was just released while I was talking\n"
+              },
+              "description": "Up to 2 highlighted segments of the audio transcript of this episode."
+            }
+          },
+          "description": "When **type** is *episode*."
+        }
+      ],
+      "description": "A list of search results."
+    },
+    "next_offset": {
+      "type": "integer",
+      "example": 10,
+      "description": "Pass this value to the **offset** parameter to do pagination of search results."
     }
   }
 }
