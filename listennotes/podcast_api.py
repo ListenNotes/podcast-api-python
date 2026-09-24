@@ -1,210 +1,54 @@
-from listennotes import version, http_utils
+"""Listen Notes API client. Endpoint methods are generated from OpenAPI."""
 
+import re
+from urllib.parse import quote
+
+from listennotes import version, http_utils
+from listennotes._api_methods import ApiMethods
 
 api_key = None
 api_base_prod = "https://listen-api.listennotes.com/api/v2"
 api_base_test = "https://listen-api-test.listennotes.com/api/v2"
-default_user_agent = "podcasts-api-python %s" % version.VERSION
+default_user_agent = "podcast-api-python %s" % version.VERSION
 
 
-class Client(object):
+class Client(ApiMethods):
     def __init__(self, api_key=None, user_agent=None, max_retries=None):
         self.api_base = api_base_prod if api_key else api_base_test
-
         self.request_headers = {
             "X-ListenAPI-Key": api_key,
             "User-Agent": user_agent if user_agent else default_user_agent,
         }
-
         request_kwargs = {}
-        if max_retries:
+        if max_retries is not None:
             request_kwargs["max_retries"] = max_retries
-
         self.http_client = http_utils.Request(**request_kwargs)
 
-    #
-    # All endpoints
-    #
-    def search(self, **kwargs):
-        return self.http_client.get(
-            "%s/search" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
+    def _request_api(self, method, template, query_names, values):
+        params = dict(values)
 
-    def typeahead(self, **kwargs):
-        return self.http_client.get(
-            "%s/typeahead" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
+        def path_value(match):
+            name = match.group(1)
+            value = params.pop(name, None)
+            if value is None or value == "":
+                raise ValueError(f"Missing path parameter: {name}")
+            return quote(str(value), safe="")
 
-    def search_episode_titles(self, **kwargs):
-        return self.http_client.get(
-            "%s/search_episode_titles" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def spellcheck(self, **kwargs):
-        return self.http_client.get(
-            "%s/spellcheck" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_related_searches(self, **kwargs):
-        return self.http_client.get(
-            "%s/related_searches" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_trending_searches(self, **kwargs):
-        return self.http_client.get(
-            "%s/trending_searches" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_best_podcasts(self, **kwargs):
-        return self.http_client.get(
-            "%s/best_podcasts" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_podcast_by_id(self, **kwargs):
-        podcast_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/podcasts/%s" % (self.api_base, podcast_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_episode_by_id(self, **kwargs):
-        episode_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/episodes/%s" % (self.api_base, episode_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def batch_fetch_podcasts(self, **kwargs):
-        return self.http_client.post(
-            "%s/podcasts" % self.api_base,
-            data=kwargs,
-            headers=self.request_headers,
-        )
-
-    def batch_fetch_episodes(self, **kwargs):
-        return self.http_client.post(
-            "%s/episodes" % self.api_base,
-            data=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_curated_podcasts_list_by_id(self, **kwargs):
-        curated_list_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/curated_podcasts/%s" % (self.api_base, curated_list_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_curated_podcasts_lists(self, **kwargs):
-        return self.http_client.get(
-            "%s/curated_podcasts" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_podcast_genres(self, **kwargs):
-        return self.http_client.get(
-            "%s/genres" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_podcast_regions(self, **kwargs):
-        return self.http_client.get(
-            "%s/regions" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_podcast_languages(self, **kwargs):
-        return self.http_client.get(
-            "%s/languages" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def just_listen(self, **kwargs):
-        return self.http_client.get(
-            "%s/just_listen" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_recommendations_for_podcast(self, **kwargs):
-        podcast_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/podcasts/%s/recommendations" % (self.api_base, podcast_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_recommendations_for_episode(self, **kwargs):
-        episode_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/episodes/%s/recommendations" % (self.api_base, episode_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_playlist_by_id(self, **kwargs):
-        playlist_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/playlists/%s" % (self.api_base, playlist_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_my_playlists(self, **kwargs):
-        return self.http_client.get(
-            "%s/playlists" % self.api_base,
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def submit_podcast(self, **kwargs):
-        return self.http_client.post(
-            "%s/podcasts/submit" % self.api_base,
-            data=kwargs,
-            headers=self.request_headers,
-        )
-
-    def delete_podcast(self, **kwargs):
-        podcast_id = kwargs.pop("id", None)
-        return self.http_client.delete(
-            "%s/podcasts/%s" % (self.api_base, podcast_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_audience_for_podcast(self, **kwargs):
-        podcast_id = kwargs.pop("id", None)
-        return self.http_client.get(
-            "%s/podcasts/%s/audience" % (self.api_base, podcast_id),
-            params=kwargs,
-            headers=self.request_headers,
-        )
-
-    def fetch_podcasts_by_domain(self, **kwargs):
-        domain_name = kwargs.pop("domain_name", None)
-        return self.http_client.get(
-            "%s/podcasts/domains/%s" % (self.api_base, domain_name),
-            params=kwargs,
-            headers=self.request_headers,
+        path = re.sub(r"\{([^}]+)\}", path_value, template)
+        query, body = {}, {}
+        for name, value in params.items():
+            if value is None:
+                continue
+            # Unknown fields retain historical routing for forward compatibility.
+            target = (
+                query
+                if name in query_names or method in {"GET", "DELETE"}
+                else body
+            )
+            target[name] = value
+        options = {"params": query, "headers": self.request_headers}
+        if method in {"POST", "PUT"}:
+            options["data"] = body
+        return self.http_client.request(
+            method, self.api_base + path, **options
         )

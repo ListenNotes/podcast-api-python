@@ -1,9 +1,0 @@
-[paths]
-source =
-    listennotes
-    */site-packages
-
-[run]
-branch = true
-parallel = true
-source = listennotes

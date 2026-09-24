@@ -1,0 +1,911 @@
+{
+  "schema_version": 1,
+  "version": "3.0.0",
+  "operations": [
+    {
+      "operationId": "search",
+      "func": "search",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/search",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true
+        },
+        {
+          "name": "sort_by_date",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "type",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "offset",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "len_min",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "len_max",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "episode_count_min",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "episode_count_max",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "update_freq_min",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "update_freq_max",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "genre_ids",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "published_before",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "published_after",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "only_in",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "language",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "region",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "ocid",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "ncid",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "safe_mode",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "unique_podcasts",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "interviews_only",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "sponsored_only",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "page_size",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "q": "star wars",
+        "sort_by_date": 0,
+        "type": "episode",
+        "offset": 0,
+        "len_min": 10,
+        "len_max": 30,
+        "genre_ids": "68,82",
+        "published_before": 1580172454000,
+        "published_after": 0,
+        "only_in": "title,description",
+        "language": "English",
+        "region": "",
+        "safe_mode": 0,
+        "unique_podcasts": 0,
+        "interviews_only": 0,
+        "sponsored_only": 0,
+        "page_size": 10
+      },
+      "summary": "Full-text search",
+      "description": "Full-text search on episodes, podcasts, or curated lists of podcasts.\nUse the `offset` parameter to paginate through search results.\nThe FREE plan allows to see up to 30 search results (or `offset` < 30) per query.\nThe PRO plan allows to see up to 300 search results (or `offset` < 300) per query.\nThe ENTERPRISE plan allows to see up to 10,000 search results (or `offset` < 10000) per query."
+    },
+    {
+      "operationId": "typeahead",
+      "func": "typeahead",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/typeahead",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true
+        },
+        {
+          "name": "show_podcasts",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "show_genres",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "safe_mode",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "q": "star wars",
+        "show_podcasts": 1,
+        "show_genres": 1,
+        "safe_mode": 0
+      },
+      "summary": "Typeahead search",
+      "description": "Suggest search terms, podcast genres, and podcasts."
+    },
+    {
+      "operationId": "searchEpisodeTitles",
+      "func": "search_episode_titles",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/search_episode_titles",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true
+        },
+        {
+          "name": "podcast_id",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "podcast_id_type",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "q": "Jerusalem Demsas on The Dispossessed"
+      },
+      "summary": "Find individual episodes by searching for their titles",
+      "description": "Conduct targeted searches for individual episodes by title and refine results using the podcast id such as\nListen Notes Podcast ID, Apple Podcasts ID, Spotify ID, or RSS feed URL.\nThis endpoint is specially designed to streamline the import of specific episodes from platforms\nlike Apple Podcasts and Spotify into your application.\nCompared to the GET /search endpoint, which performs full-text searches across multiple fields,\nthis endpoint focuses solely on episode titles for enhanced accuracy and performance."
+    },
+    {
+      "operationId": "spellcheck",
+      "func": "spellcheck",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/spellcheck",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "q": "microsft stock"
+      },
+      "summary": "Spell check on a search term",
+      "description": "Suggest a list of words that correct the spelling errors of a search term. This endpoint is available only in the PRO/ENTERPRISE plan."
+    },
+    {
+      "operationId": "getRelatedSearches",
+      "func": "fetch_related_searches",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/related_searches",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "q": "evergrande"
+      },
+      "summary": "Fetch related search terms",
+      "description": "Suggest related search terms. The results are more comprehensive than from `GET /typeahead`. This endpoint is available only in the PRO/ENTERPRISE plan."
+    },
+    {
+      "operationId": "getTrendingSearches",
+      "func": "fetch_trending_searches",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/trending_searches",
+      "parameters": [],
+      "example_params": {},
+      "summary": "Fetch trending search terms",
+      "description": "Fetch up to 10 most recent trending search terms on the Listen Notes platform."
+    },
+    {
+      "operationId": "getBestPodcasts",
+      "func": "fetch_best_podcasts",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/best_podcasts",
+      "parameters": [
+        {
+          "name": "genre_id",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "page",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "region",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "publisher_region",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "language",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "sort",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "safe_mode",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "genre_id": 93,
+        "page": 2,
+        "region": "us",
+        "sort": "listen_score",
+        "safe_mode": 0
+      },
+      "summary": "Fetch a list of best podcasts by genre",
+      "description": "Get a list of curated best podcasts by genre,\nwhich are curated by Listen Notes staffs based on various signals from the Internet, e.g.,\ntop charts on other podcast platforms, recommendations from mainstream media,\nuser activities on listennotes.com...\nYou can get the genre ids from `GET /genres` endpoint.\nThis endpoint returns same data as https://www.listennotes.com/best-podcasts/"
+    },
+    {
+      "operationId": "getPodcastById",
+      "func": "fetch_podcast_by_id",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/podcasts/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "next_episode_pub_date",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "sort",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "4d3fe717742d4963a85562e9f84d8c79",
+        "next_episode_pub_date": 1479154463000,
+        "sort": "recent_first"
+      },
+      "summary": "Fetch detailed meta data and episodes for a podcast by id",
+      "description": "Fetch detailed meta data and episodes for a specific podcast (up to 10 episodes each time).\nYou can use the **next_episode_pub_date** parameter to do pagination and fetch more episodes.\nDuring pagination with **next_episode_pub_date**, an empty **episodes** array in the response signals that no more episodes are available."
+    },
+    {
+      "operationId": "deletePodcastById",
+      "func": "delete_podcast",
+      "available_from": "1.1.6",
+      "method": "DELETE",
+      "path": "/podcasts/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "reason",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "4d3fe717742d4963a85562e9f84d8c79",
+        "reason": "the podcaster wants to delete it"
+      },
+      "summary": "Request to delete a podcast",
+      "description": "Podcast hosting services can use this endpoint to streamline the process of podcast deletion on behave of their users (podcasters). We will review the deletion request within 12 hours. If the podcast is already deleted, the \"status\" field in the response will be \"deleted\". Otherwise, the status field will be \"in review\". If you want to get a notification once the podcast is deleted, you can configure a webhook url in the dashboard: listennotes.com/api/dashboard/#webhooks"
+    },
+    {
+      "operationId": "getEpisodeById",
+      "func": "fetch_episode_by_id",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/episodes/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "show_transcript",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "6b6d65930c5a4f71b254465871fed370",
+        "show_transcript": 1
+      },
+      "summary": "Fetch detailed meta data for an episode by id",
+      "description": "Fetch detailed meta data for a specific episode."
+    },
+    {
+      "operationId": "getEpisodesInBatch",
+      "func": "batch_fetch_episodes",
+      "available_from": "1.1.6",
+      "method": "POST",
+      "path": "/episodes",
+      "parameters": [
+        {
+          "name": "ids",
+          "in": "body",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "ids": "c577d55b2b2b483c969fae3ceb58e362,0f34a9099579490993eec9e8c8cebb82"
+      },
+      "summary": "Batch fetch basic meta data for episodes",
+      "description": "Batch fetch basic meta data for up to 10 episodes. This endpoint could be used to implement custom playlists for individual episodes. For detailed meta data of an individual episode, you need to use `GET /episodes/{id}`. This endpoint is available only in the PRO/ENTERPRISE plan."
+    },
+    {
+      "operationId": "getPodcastsInBatch",
+      "func": "batch_fetch_podcasts",
+      "available_from": "1.1.6",
+      "method": "POST",
+      "path": "/podcasts",
+      "parameters": [
+        {
+          "name": "ids",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "rsses",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "itunes_ids",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "spotify_ids",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "show_latest_episodes",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "next_episode_pub_date",
+          "in": "body",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "ids": "3302bc71139541baa46ecb27dbf6071a,68faf62be97149c280ebcc25178aa731,37589a3e121e40debe4cef3d9638932a,9cf19c590ff0484d97b18b329fed0c6a",
+        "rsses": "https://rss.art19.com/recode-decode,https://rss.art19.com/the-daily,https://www.npr.org/rss/podcast.php?id=510331,https://www.npr.org/rss/podcast.php?id=510331",
+        "itunes_ids": "1457514703,1386234384,659155419",
+        "spotify_ids": "3DDfEsKDIDrTlnPOiG4ZF4,4qDNe5Gvl1XxdLinUGEXrC,23NZCM4ik6o3UYkM473Itz",
+        "show_latest_episodes": 1,
+        "next_episode_pub_date": 1557394247000
+      },
+      "summary": "Batch fetch basic meta data for podcasts",
+      "description": "Batch fetch basic meta data for up to 10 podcasts.\nThis endpoint could be used to build something like OPML import,\nallowing users to import a bunch of podcasts via rss urls.\nFor detailed meta data (including episodes) of an individual podcast, you need to use `GET /podcasts/{id}`. This endpoint is available only in the PRO/ENTERPRISE plan."
+    },
+    {
+      "operationId": "getCuratedPodcastById",
+      "func": "fetch_curated_podcasts_list_by_id",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/curated_podcasts/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "id": "SDFKduyJ47r"
+      },
+      "summary": "Fetch a curated list of podcasts by id",
+      "description": "Get detailed meta data of all podcasts in a specific curated list.\nThis endpoint returns same data as https://www.listennotes.com/curated-podcasts/"
+    },
+    {
+      "operationId": "getGenres",
+      "func": "fetch_podcast_genres",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/genres",
+      "parameters": [
+        {
+          "name": "top_level_only",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "top_level_only": 1
+      },
+      "summary": "Fetch a list of podcast genres",
+      "description": "Get a list of podcast genres that are supported in Listen Notes.\nThe genre id can be passed to other endpoints as a parameter to get podcasts in a specific genre,\ne.g., `GET /best_podcasts`, `GET /search`...\nYou may want to cache the list of genres on the client side."
+    },
+    {
+      "operationId": "getRegions",
+      "func": "fetch_podcast_regions",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/regions",
+      "parameters": [],
+      "example_params": {},
+      "summary": "Fetch a list of supported countries/regions for best podcasts",
+      "description": "It returns a dictionary of country codes (e.g., us, gb...) & country names (United States, United Kingdom...). The country code is used in the query parameter **region** of `GET /best_podcasts`."
+    },
+    {
+      "operationId": "getLanguages",
+      "func": "fetch_podcast_languages",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/languages",
+      "parameters": [],
+      "example_params": {},
+      "summary": "Fetch a list of supported languages for podcasts",
+      "description": "Get a list of languages that are supported in Listen Notes database. You can use the language string as query parameter in `GET /search`."
+    },
+    {
+      "operationId": "justListen",
+      "func": "just_listen",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/just_listen",
+      "parameters": [],
+      "example_params": {},
+      "summary": "Fetch a random podcast episode",
+      "description": "Recently published episodes are more likely to be fetched. Good luck!"
+    },
+    {
+      "operationId": "getCuratedPodcasts",
+      "func": "fetch_curated_podcasts_lists",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/curated_podcasts",
+      "parameters": [
+        {
+          "name": "page",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "page": 2
+      },
+      "summary": "Fetch curated lists of podcasts",
+      "description": "A bunch of curated lists from online media. For each list, you'll get basic info of up to 5 podcasts. To get detailed meta data of all podcasts in a specific list, you need to use `GET /curated_podcasts/{id}`. We add new curated lists to the database on a daily basis."
+    },
+    {
+      "operationId": "getPodcastRecommendations",
+      "func": "fetch_recommendations_for_podcast",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/podcasts/{id}/recommendations",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "safe_mode",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "25212ac3c53240a880dd5032e547047b",
+        "safe_mode": 0
+      },
+      "summary": "Fetch recommendations for a podcast",
+      "description": "Fetch up to 8 podcast recommendations based on the given podcast id."
+    },
+    {
+      "operationId": "getEpisodeRecommendations",
+      "func": "fetch_recommendations_for_episode",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/episodes/{id}/recommendations",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "safe_mode",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "254444fa6cf64a43a95292a70eb6869b",
+        "safe_mode": 0
+      },
+      "summary": "Fetch recommendations for an episode",
+      "description": "Fetch up to 8 episode recommendations based on the given episode id."
+    },
+    {
+      "operationId": "submitPodcast",
+      "func": "submit_podcast",
+      "available_from": "1.1.6",
+      "method": "POST",
+      "path": "/podcasts/submit",
+      "parameters": [
+        {
+          "name": "rss",
+          "in": "body",
+          "required": true
+        },
+        {
+          "name": "email",
+          "in": "body",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "rss": "https://feeds.megaphone.fm/committed",
+        "email": "hello@example.com"
+      },
+      "summary": "Submit a podcast to Listen Notes database",
+      "description": "Podcast hosting services can use this endpoint to help your users directly submit a new podcast to Listen Notes database. If the podcast doesn't exist in the database, \"status\" in the response will be \"in review\", and we'll review it within 12 hours. If the podcast exists, \"status\" in the response will be \"found\". If this submission is rejected, \"status\" in the response will be \"rejected\". You can use `POST /podcasts` to check if multiple podcasts exist in the database. If you want to get a notification once the podcast is accepted, you can either specify the \"email\" parameter or configure a webhook url in the dashboard: listennotes.com/api/dashboard/#webhooks"
+    },
+    {
+      "operationId": "getPlaylistById",
+      "func": "fetch_playlist_by_id",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/playlists/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "type",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "last_timestamp_ms",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "sort",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw",
+        "type": "episode_list",
+        "last_timestamp_ms": 0,
+        "sort": "recent_added_first"
+      },
+      "summary": "Fetch a playlist's info and items (i.e., episodes or podcasts).",
+      "description": "A playlist can contain both episodes and podcasts, shown in separate views,\njust like playlists created via listennotes.com/listen/.\nThis endpoint fetches items from the saved default view unless **type** is specified.\nThe response type and listennotes_url describe the selected view.\nYou can use the **last_pub_date_ms** parameter to do pagination and fetch more items.\nA playlist can be **public** (discoverable on ListenNotes.com),\n**unlisted** (accessible to anyone who knows the playlist id),\nor **private** (accessible when the API admin has active playlist membership).\nPublic and unlisted playlists can also be fetched by ID regardless of their owner."
+    },
+    {
+      "operationId": "getPlaylists",
+      "func": "fetch_my_playlists",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/playlists",
+      "parameters": [
+        {
+          "name": "sort",
+          "in": "query",
+          "required": false
+        },
+        {
+          "name": "page",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "sort": "recent_added_first",
+        "page": 1
+      },
+      "summary": "Fetch a list of your playlists.",
+      "description": "This endpoint lists playlists with an active membership for the API admin, including playlists they created or joined.\nEach playlist includes its saved default **type** and a **listennotes_url** for that view.\nYou can use the **page** parameter to do pagination and fetch more playlists."
+    },
+    {
+      "operationId": "getPodcastAudience",
+      "func": "fetch_audience_for_podcast",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/podcasts/{id}/audience",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "id": "25212ac3c53240a880dd5032e547047b"
+      },
+      "summary": "Fetch audience demographics for a podcast",
+      "description": "Fetch audience demographics for a podcast - 1) directly measured on the Listen Notes platform; 2) only supports audience breakdown by regions for now; 3) not every podcast has data."
+    },
+    {
+      "operationId": "getPodcastsByDomainName",
+      "func": "fetch_podcasts_by_domain",
+      "available_from": "1.1.6",
+      "method": "GET",
+      "path": "/podcasts/domains/{domain_name}",
+      "parameters": [
+        {
+          "name": "domain_name",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "page",
+          "in": "query",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "domain_name": "nytimes.com",
+        "page": 1
+      },
+      "summary": "Fetch podcasts by a publisher's domain name",
+      "description": "Fetch podcasts by a publisher's domain name, e.g., nytimes.com, wondery.com, npr.org...\nEach request will return up to 10 podcasts. You can use the `page` parameter to paginate."
+    },
+    {
+      "operationId": "createPlaylist",
+      "func": "create_playlist",
+      "available_from": "3.0.0",
+      "method": "POST",
+      "path": "/playlists",
+      "parameters": [
+        {
+          "name": "name",
+          "in": "body",
+          "required": true
+        },
+        {
+          "name": "description",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "visibility",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "type",
+          "in": "body",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "name": "My favorite podcasts",
+        "description": "Podcasts and episodes to revisit.",
+        "visibility": "public",
+        "type": "episode_list"
+      },
+      "summary": "Create a playlist.",
+      "description": "Create an empty playlist owned by the API admin. Name is required; description defaults to an empty string, visibility defaults to public, and type defaults to episode_list. Set type to podcast_list to make podcasts the default view. The response includes the saved type and its listennotes_url.\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
+    },
+    {
+      "operationId": "updatePlaylist",
+      "func": "update_playlist",
+      "available_from": "3.0.0",
+      "method": "PUT",
+      "path": "/playlists/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "name",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "description",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "visibility",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "type",
+          "in": "body",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw",
+        "name": "My favorite podcasts",
+        "description": "Podcasts and episodes to revisit.",
+        "visibility": "public",
+        "type": "podcast_list"
+      },
+      "summary": "Update playlist metadata.",
+      "description": "Update any subset of name, description, visibility, and type. Omitted fields remain unchanged; at least one field is required. Switching to private rotates the playlist RSS secret. Type selects the saved default view (episode_list or podcast_list) and the returned listennotes_url; changing it preserves all existing episodes and podcasts.\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
+    },
+    {
+      "operationId": "addPlaylistItem",
+      "func": "add_playlist_item",
+      "available_from": "3.0.0",
+      "method": "POST",
+      "path": "/playlists/{id}/items",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "episode_id",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "podcast_id",
+          "in": "body",
+          "required": false
+        },
+        {
+          "name": "notes",
+          "in": "body",
+          "required": false
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw",
+        "episode_id": "e53e6992a5b7492f9ea6fcd85d9ad95f",
+        "notes": "Worth a listen."
+      },
+      "summary": "Add an episode or podcast to a playlist.",
+      "description": "Provide exactly one non-empty episode_id or podcast_id; an empty unused ID field is ignored. Invalid ID formats return 400 and identify the field. A missing episode or podcast returns 404 with an error such as \"Episode not found: {episode_id}.\" or \"Podcast not found: {podcast_id}.\". Existing active items are reused (200); new or restored items return 201. Omitted notes preserve existing notes, including when restoring a deleted item; supplied notes replace them."
+    },
+    {
+      "operationId": "deletePlaylistItem",
+      "func": "delete_playlist_item",
+      "available_from": "3.0.0",
+      "method": "DELETE",
+      "path": "/playlists/{id}/items/{item_id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "item_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw",
+        "item_id": 23
+      },
+      "summary": "Remove an item from a playlist.",
+      "description": "Delete a playlist item. Repeating deletion of the same item succeeds. This does not delete the episode or podcast from the podcast database.\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
+    },
+    {
+      "operationId": "updatePlaylistItemNotes",
+      "func": "update_playlist_item_notes",
+      "available_from": "3.0.0",
+      "method": "PUT",
+      "path": "/playlists/{id}/items/{item_id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "item_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "name": "notes",
+          "in": "body",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw",
+        "item_id": 23,
+        "notes": ""
+      },
+      "summary": "Update notes for a playlist item.",
+      "description": "Replace item notes, or send an empty string to clear them. The item ID and added_at_ms remain unchanged.\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
+    }
+  ]
+}
