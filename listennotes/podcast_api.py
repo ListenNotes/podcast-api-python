@@ -9,7 +9,7 @@ from listennotes._api_methods import ApiMethods
 api_key = None
 api_base_prod = "https://listen-api.listennotes.com/api/v2"
 api_base_test = "https://listen-api-test.listennotes.com/api/v2"
-default_user_agent = "podcasts-api-python %s" % version.VERSION
+default_user_agent = "podcast-api-python %s" % version.VERSION
 
 
 class Client(ApiMethods):

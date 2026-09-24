@@ -182,7 +182,7 @@ def test_clients_keep_independent_keys_sessions_and_configuration(transport):
     assert transport.calls[0][0].headers["User-Agent"] == "first-agent"
     assert (
         transport.calls[1][0].headers["User-Agent"]
-        == "podcasts-api-python 3.0.0"
+        == "podcast-api-python 3.0.0"
     )
     assert first.http_client.session is not second.http_client.session
     assert (
