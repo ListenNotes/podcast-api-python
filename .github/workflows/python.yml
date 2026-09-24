@@ -2,24 +2,42 @@ name: Python CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
-  build:
-
+  test:
+    name: Test (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
-
     strategy:
+      fail-fast: false
       matrix:
-        python-version: ['3.10', '3.11', '3.12', '3.13']
-
+        python-version: ['3.10', '3.14']
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
-      with:
-        python-version: ${{ matrix.python-version }}
-    - run: make
-    - run: make test
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: '0.11.25'
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run --locked pytest --cov=listennotes --cov-report=term-missing
+  quality:
+    name: Lint and package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: '0.11.25'
+          python-version: '3.14'
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run --locked black --check listennotes tests
+      - run: uv run --locked flake8 listennotes tests
+      - run: uv build --no-sources
+      - run: uv publish --dry-run --trusted-publishing never

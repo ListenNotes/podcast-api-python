@@ -9,12 +9,12 @@ class ListenApiError(Exception):
         self.response = response
 
     def __str__(self):
-        return self._message
+        return str(self._message) if self._message is not None else ""
 
 
 class NotFoundError(ListenApiError):
     """
-    Endpoint not exist or the podcast / episode not exist
+    The endpoint or requested resource does not exist
     """
 
     pass
@@ -52,3 +52,7 @@ class APIConnectionError(ListenApiError):
     """
 
     pass
+
+
+class PermissionDeniedError(ListenApiError):
+    """The API account cannot modify the requested resource."""

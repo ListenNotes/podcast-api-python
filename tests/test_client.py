@@ -1,276 +1,197 @@
-from urllib.parse import parse_qs, urlparse
+import copy
+from importlib.resources import files
+import json
+from urllib.parse import parse_qs, quote, urlparse
+
+import pytest
+import requests
 
 from listennotes import podcast_api
-from listennotes.errors import AuthenticationError
+
+CONTRACT = json.loads(
+    files("listennotes").joinpath("api-contract.json").read_text()
+)
+OPERATIONS = CONTRACT["operations"]
 
 
-class TestClient(object):
-    def test_set_apikey(self):
-        client = podcast_api.Client()
-        assert client.request_headers.get("X-ListenAPI-Key") is None
-
-        api_key = "abcd"
-        client = podcast_api.Client(api_key=api_key)
-        assert client.request_headers.get("X-ListenAPI-Key") == api_key
-
-    def test_search_with_mock(self):
-        client = podcast_api.Client()
-        term = "dummy"
-        sort_by_date = 1
-        response = client.search(q=term, sort_by_date=sort_by_date)
-        assert len(response.json().get("results", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/search"
-        params = parse_qs(url.query)
-        assert params["q"][0] == term
-        assert params["sort_by_date"][0] == "1"
-
-    def test_search_with_authentication_error(self):
-        api_key = "wrong key"
-        client = podcast_api.Client(api_key=api_key)
-        term = "dummy"
-        sort_by_date = 1
-        try:
-            client.search(q=term, sort_by_date=sort_by_date)
-        except AuthenticationError:
-            pass
-        except Exception:
-            assert False
+def normalized(values):
+    result = {}
+    for key, value in values.items():
+        if value is None:
+            continue
+        if isinstance(value, (list, tuple)):
+            result[key] = [str(item) for item in value]
         else:
-            assert False
+            result[key] = [str(value)]
+    return result
 
-    def test_search_episode_titles_with_mock(self):
-        client = podcast_api.Client()
-        term = "dummy2"
-        response = client.search_episode_titles(
-            q=term, podcast_id='0cdaa63b905b4de3861554669a6a3dd1')
-        assert len(response.json().get("results", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/search_episode_titles"
-        params = parse_qs(url.query)
-        assert params["q"][0] == term
-        assert params["podcast_id"][0] == "0cdaa63b905b4de3861554669a6a3dd1"
 
-    def test_typeahead_with_mock(self):
-        client = podcast_api.Client()
-        term = "dummy"
-        show_podcasts = 1
-        response = client.typeahead(q=term, show_podcasts=show_podcasts)
-        assert len(response.json().get("terms", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/typeahead"
-        params = parse_qs(url.query)
-        assert params["q"][0] == term
-        assert params["show_podcasts"][0] == "1"
+@pytest.mark.parametrize("operation", OPERATIONS, ids=lambda op: op["func"])
+def test_every_generated_method_against_contract(operation, transport):
+    client = podcast_api.Client(api_key="test-key")
+    params = copy.deepcopy(operation["example_params"])
+    before = copy.deepcopy(params)
+    response = getattr(client, operation["func"])(**params)
+    request, options = transport.calls[0]
+    assert len(transport.calls) == 1
+    assert request.method == operation["method"]
+    path = operation["path"]
+    for param in operation["parameters"]:
+        if param["in"] == "path":
+            path = path.replace(
+                "{" + param["name"] + "}",
+                quote(str(params[param["name"]]), safe=""),
+            )
+    assert urlparse(request.url).path == "/api/v2" + path
+    for location, encoded in (
+        ("query", urlparse(request.url).query),
+        ("body", request.body or ""),
+    ):
+        expected = {
+            param["name"]: params[param["name"]]
+            for param in operation["parameters"]
+            if param["in"] == location and param["name"] in params
+        }
+        assert parse_qs(encoded, keep_blank_values=True) == normalized(
+            expected
+        )
+    assert request.headers["X-ListenAPI-Key"] == "test-key"
+    assert options["timeout"] == 30
+    assert isinstance(response, requests.Response)
+    assert response.json() == {"ok": True}
+    assert response.headers["X-ListenAPI-Usage"] == "42"
+    assert params == before
 
-    def test_spellcheck_with_mock(self):
-        client = podcast_api.Client()
-        term = "dummy"
-        response = client.spellcheck(q=term)
-        assert len(response.json().get("tokens", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/spellcheck"
-        params = parse_qs(url.query)
-        assert params["q"][0] == term
 
-    def test_related_searches_with_mock(self):
-        client = podcast_api.Client()
-        term = "dummy"
-        response = client.fetch_related_searches(q=term)
-        assert len(response.json().get("terms", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/related_searches"
-        params = parse_qs(url.query)
-        assert params["q"][0] == term
+def test_nested_path_ids_and_empty_notes(transport):
+    client = podcast_api.Client(api_key="test-key")
+    client.update_playlist_item_notes(id="a/b ?#%", item_id="23/4", notes="")
+    request = transport.calls[0][0]
+    assert request.url.endswith("/playlists/a%2Fb%20%3F%23%25/items/23%2F4")
+    assert request.body == "notes="
+    assert (
+        request.headers["Content-Type"] == "application/x-www-form-urlencoded"
+    )
 
-    def test_trending_searches_with_mock(self):
-        client = podcast_api.Client()
-        response = client.fetch_trending_searches()
-        assert len(response.json().get("terms", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/trending_searches"
 
-    def test_fetch_best_podcasts_with_mock(self):
-        client = podcast_api.Client()
-        genre_id = 23
-        response = client.fetch_best_podcasts(genre_id=genre_id)
-        assert response.json().get("total", 0) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/best_podcasts"
-        params = parse_qs(url.query)
-        assert params["genre_id"][0] == str(genre_id)
+def test_query_encoding_and_forward_compatible_fields(transport):
+    client = podcast_api.Client()
+    client.search(
+        q="a+b & café", offset=0, safe_mode=False, future="", ignored=None
+    )
+    request = transport.calls[0][0]
+    assert parse_qs(urlparse(request.url).query, keep_blank_values=True) == {
+        "q": ["a+b & café"],
+        "offset": ["0"],
+        "safe_mode": ["False"],
+        "future": [""],
+    }
+    assert "X-ListenAPI-Key" not in request.headers
+    assert request.url.startswith(podcast_api.api_base_test)
 
-    def test_fetch_podcast_by_id_with_mock(self):
-        client = podcast_api.Client()
-        podcast_id = "asdfsdaf"
-        response = client.fetch_podcast_by_id(id=podcast_id)
-        assert len(response.json().get("episodes", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts/%s" % podcast_id
 
-    def test_fetch_episode_by_id_with_mock(self):
-        client = podcast_api.Client()
-        episode_id = "asdfsdaf"
-        response = client.fetch_episode_by_id(id=episode_id)
-        assert len(response.json().get("podcast", {}).get("rss")) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/episodes/%s" % episode_id
+def test_delete_podcast_reason_is_query_not_body(transport):
+    podcast_api.Client().delete_podcast(id="abc", reason="a & b")
+    request = transport.calls[0][0]
+    assert request.method == "DELETE"
+    assert request.url.endswith("/podcasts/abc?reason=a+%26+b")
+    assert request.body is None
 
-    def test_batch_fetch_podcasts_with_mock(self):
-        client = podcast_api.Client()
-        ids = "996,777,888,1000"
-        response = client.batch_fetch_podcasts(ids=ids)
-        assert parse_qs(response.request.body)["ids"][0] == ids
-        assert len(response.json().get("podcasts", [])) > 0
-        assert response.request.method == "POST"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts"
 
-    def test_batch_fetch_episodes_with_mock(self):
-        client = podcast_api.Client()
-        ids = "996,777,888,100220"
-        response = client.batch_fetch_episodes(ids=ids)
-        assert parse_qs(response.request.body)["ids"][0] == ids
-        assert len(response.json().get("episodes", [])) > 0
-        assert response.request.method == "POST"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/episodes"
+def test_query_and_body_are_routed_independently(transport):
+    client = podcast_api.Client()
+    client._request_api(
+        "PUT",
+        "/example/{id}",
+        ("locale",),
+        {
+            "id": "a/b",
+            "locale": "en",
+            "description": "",
+            "extra": 0,
+            "skip": None,
+        },
+    )
+    request = transport.calls[0][0]
+    assert request.url.endswith("/example/a%2Fb?locale=en")
+    assert parse_qs(request.body, keep_blank_values=True) == {
+        "description": [""],
+        "extra": ["0"],
+    }
 
-    def test_fetch_curated_podcasts_list_by_id_with_mock(self):
-        client = podcast_api.Client()
-        curated_list_id = "asdfsdaf"
-        response = client.fetch_curated_podcasts_list_by_id(id=curated_list_id)
-        assert len(response.json().get("podcasts", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/curated_podcasts/%s" % curated_list_id
 
-    def test_fetch_curated_podcasts_lists_with_mock(self):
-        client = podcast_api.Client()
-        page = 2
-        response = client.fetch_curated_podcasts_lists(page=page)
-        assert response.json().get("total") > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        params = parse_qs(url.query)
-        assert params["page"][0] == str(page)
-        assert url.path == "/api/v2/curated_podcasts"
+@pytest.mark.parametrize("status", [200, 201])
+def test_add_item_duplicate_or_created_response(status, transport):
+    transport.status = status
+    transport.payload = {"id": 23, "notes": ""}
+    result = podcast_api.Client().add_playlist_item(
+        id="playlist", episode_id="episode"
+    )
+    assert result.status_code == status
+    assert result.json() == {"id": 23, "notes": ""}
+    assert transport.calls[0][0].body == "episode_id=episode"
 
-    def test_fetch_podcast_genres_with_mock(self):
-        client = podcast_api.Client()
-        top_level_only = 1
-        response = client.fetch_podcast_genres(top_level_only=top_level_only)
-        assert len(response.json().get("genres", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        params = parse_qs(url.query)
-        assert params["top_level_only"][0] == str(top_level_only)
-        assert url.path == "/api/v2/genres"
 
-    def test_fetch_podcast_regions_with_mock(self):
-        client = podcast_api.Client()
-        response = client.fetch_podcast_regions()
-        assert len(response.json().get("regions", {}).keys()) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/regions"
+@pytest.mark.parametrize("notes", [None, "", "hello & goodbye"])
+def test_optional_notes_preserve_omission_and_empty_string(notes, transport):
+    podcast_api.Client().add_playlist_item(
+        id="playlist", podcast_id="podcast", notes=notes
+    )
+    fields = parse_qs(transport.calls[0][0].body, keep_blank_values=True)
+    assert fields["podcast_id"] == ["podcast"]
+    assert "episode_id" not in fields
+    if notes is None:
+        assert "notes" not in fields
+    else:
+        assert fields["notes"] == [notes]
 
-    def test_fetch_podcast_languages_with_mock(self):
-        client = podcast_api.Client()
-        response = client.fetch_podcast_languages()
-        assert len(response.json().get("languages", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/languages"
 
-    def test_just_listen_with_mock(self):
-        client = podcast_api.Client()
-        response = client.just_listen()
-        assert response.json().get("audio_length_sec", 0) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/just_listen"
+def test_metadata_clearing_and_type(transport):
+    podcast_api.Client().update_playlist(
+        id="playlist", description="", type="podcast_list"
+    )
+    request = transport.calls[0][0]
+    assert parse_qs(request.body, keep_blank_values=True) == {
+        "description": [""],
+        "type": ["podcast_list"],
+    }
 
-    def test_fetch_recommendations_for_podcast_with_mock(self):
-        client = podcast_api.Client()
-        podcast_id = "adfsddf"
-        response = client.fetch_recommendations_for_podcast(id=podcast_id)
-        assert len(response.json().get("recommendations", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts/%s/recommendations" % podcast_id
 
-    def test_fetch_recommendations_for_episode_with_mock(self):
-        client = podcast_api.Client()
-        episode_id = "adfsddf"
-        response = client.fetch_recommendations_for_episode(id=episode_id)
-        assert len(response.json().get("recommendations", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/episodes/%s/recommendations" % episode_id
+@pytest.mark.parametrize("field", ["id", "item_id"])
+@pytest.mark.parametrize("value", [None, ""])
+def test_missing_path_parameter_fails_before_http(field, value, transport):
+    params = {"id": "playlist", "item_id": 23}
+    params[field] = value
+    with pytest.raises(ValueError, match=f"Missing path parameter: {field}"):
+        podcast_api.Client().delete_playlist_item(**params)
+    assert not transport.calls
 
-    def test_fetch_playlist_by_id_with_mock(self):
-        client = podcast_api.Client()
-        playlist_id = "adfsddf"
-        response = client.fetch_playlist_by_id(id=playlist_id)
-        assert len(response.json().get("items", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/playlists/%s" % playlist_id
 
-    def test_fetch_my_playlists_with_mock(self):
-        client = podcast_api.Client()
-        page = 2
-        response = client.fetch_my_playlists(page=page)
-        assert len(response.json().get("playlists", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/playlists"
-
-    def test_submit_podcast_with_mock(self):
-        client = podcast_api.Client()
-        rss = "http://myrss.com/rss"
-        response = client.submit_podcast(rss=rss)
-        assert parse_qs(response.request.body)["rss"][0] == rss
-        assert len(response.json().get("status", "")) > 0
-        assert response.request.method == "POST"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts/submit"
-
-    def test_delete_podcast_with_mock(self):
-        client = podcast_api.Client()
-        podcast_id = "asdfasdfdf"
-        response = client.delete_podcast(id=podcast_id)
-        assert len(response.json().get("status", "")) > 0
-        assert response.request.method == "DELETE"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts/%s" % podcast_id
-
-    def test_fetch_audience_for_podcast_with_mock(self):
-        client = podcast_api.Client()
-        podcast_id = "adfsddf"
-        response = client.fetch_audience_for_podcast(id=podcast_id)
-        assert len(response.json().get("by_regions", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        assert url.path == "/api/v2/podcasts/%s/audience" % podcast_id
-
-    def test_fetch_podcasts_by_domain_with_mock(self):
-        client = podcast_api.Client()
-        domain_name = "nytimes.com"
-        response = client.fetch_podcasts_by_domain(domain_name=domain_name, page=3)
-        assert len(response.json().get("podcasts", [])) > 0
-        assert response.request.method == "GET"
-        url = urlparse(response.url)
-        params = parse_qs(url.query)
-        assert params["page"][0] == '3'
-        assert url.path == "/api/v2/podcasts/domains/%s" % domain_name
+def test_clients_keep_independent_keys_sessions_and_configuration(transport):
+    first = podcast_api.Client(
+        api_key="first", user_agent="first-agent", max_retries=0
+    )
+    second = podcast_api.Client(api_key="second", max_retries=2)
+    mock = podcast_api.Client()
+    first.fetch_my_playlists()
+    second.fetch_my_playlists()
+    mock.fetch_my_playlists()
+    assert [
+        call[0].headers.get("X-ListenAPI-Key") for call in transport.calls
+    ] == ["first", "second", None]
+    assert transport.calls[0][0].headers["User-Agent"] == "first-agent"
+    assert (
+        transport.calls[1][0].headers["User-Agent"]
+        == "podcasts-api-python 3.0.0"
+    )
+    assert first.http_client.session is not second.http_client.session
+    assert (
+        first.http_client.session.get_adapter("https://").max_retries.total
+        == 0
+    )
+    assert (
+        second.http_client.session.get_adapter("https://").max_retries.total
+        == 2
+    )
+    assert first.api_base == second.api_base == podcast_api.api_base_prod
+    assert mock.api_base == podcast_api.api_base_test
