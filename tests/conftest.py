@@ -1,4 +1,4 @@
-"""All SDK tests are offline, including authentication and HTTP errors."""
+"""Tests are offline unless mock-server integration tests are requested."""
 
 import json
 import socket
@@ -7,8 +7,32 @@ import pytest
 import requests
 
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--run-integration",
+        action="store_true",
+        help="Run integration tests against the public Listen API mock server",
+    )
+
+
+def pytest_collection_modifyitems(config, items):
+    if config.getoption("--run-integration"):
+        return
+    skip = pytest.mark.skip(
+        reason="Use --run-integration to call the mock API"
+    )
+    for item in items:
+        if item.get_closest_marker("integration"):
+            item.add_marker(skip)
+
+
 @pytest.fixture(autouse=True)
-def no_network(monkeypatch):
+def no_network(monkeypatch, request):
+    if request.node.get_closest_marker(
+        "integration"
+    ) and request.config.getoption("--run-integration"):
+        return
+
     def blocked(*args, **kwargs):
         raise AssertionError("Unit tests must never open network connections")
 

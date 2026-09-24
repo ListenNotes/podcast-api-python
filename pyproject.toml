@@ -56,6 +56,7 @@ listennotes = ["api-contract.json"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--strict-markers"
+markers = ["integration: calls the public mock API (requires --run-integration)"]
 
 [tool.coverage.run]
 branch = true

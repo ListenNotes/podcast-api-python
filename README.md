@@ -798,7 +798,15 @@ uv build --no-sources
 uv publish --dry-run --trusted-publishing never
 ```
 
-The last command validates distribution metadata without uploading anything. Unit tests use mocked HTTP transports and never call production or the public mock server. CI tests Python 3.10 and 3.14; formatting, lint, and packaging run once on 3.14. Check all supported versions (3.10–3.14) before major releases or substantial dependency changes. To test another interpreter locally, use `uv run --locked --python 3.10 pytest`. Use `uv run --locked black listennotes tests` to format code.
+The last command validates distribution metadata without uploading anything. Default test runs are offline: unit tests block network access, and integration tests are skipped. CI runs unit tests on Python 3.10 and 3.14; formatting, lint, and packaging run once on 3.14. Check all supported versions (3.10–3.14) before major releases or substantial dependency changes. To test another interpreter locally, use `uv run --locked --python 3.10 pytest`. Use `uv run --locked black listennotes tests` to format code.
+
+To run integration tests against the public mock server:
+
+```sh
+uv run --locked pytest --run-integration -m integration
+```
+
+These tests send real HTTP requests to `https://listen-api-test.listennotes.com/api/v2` without an API key. They cover search, podcast/playlist reads, all five playlist write operations, response headers, and a missing route. Requests are restricted to that mock URL and redirects are disabled. The mock returns fixed responses: writes do not persist data, and the tests do not verify production authorization or playlist persistence. CI runs this suite separately on Python 3.14; a mock service outage can fail that integration job without affecting the offline test jobs. Omit `-m integration` to run both suites with `--run-integration`.
 
 Update dependencies with `uv add` (or `uv add --dev` for tooling) and include the resulting `pyproject.toml` and `uv.lock` changes together. After editing a pinned version directly, run `uv lock`; `uv lock --upgrade` refreshes dependencies within the declared constraints. Keep the Requests development pin at the runtime lower bound so CI tests the minimum supported version. Update the package version in `listennotes/version.py` and refresh the lockfile before a release.
 
