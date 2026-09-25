@@ -7,6 +7,7 @@ import pytest
 import requests
 
 from listennotes import podcast_api
+from listennotes.version import VERSION
 
 CONTRACT = json.loads(
     files("listennotes").joinpath("api-contract.json").read_text()
@@ -90,11 +91,28 @@ def test_query_encoding_and_forward_compatible_fields(transport):
     assert request.url.startswith(podcast_api.api_base_test)
 
 
-def test_delete_podcast_reason_is_query_not_body(transport):
-    podcast_api.Client().delete_podcast(id="abc", reason="a & b")
+@pytest.mark.parametrize(
+    "method,params,path",
+    [
+        (
+            "delete_podcast",
+            {"id": "abc", "reason": "a & b"},
+            "/podcasts/abc?reason=a+%26+b",
+        ),
+        (
+            "delete_playlist",
+            {"id": "a/b ?#%"},
+            "/playlists/a%2Fb%20%3F%23%25",
+        ),
+    ],
+)
+def test_delete_encodes_path_and_query_without_body(
+    method, params, path, transport
+):
+    getattr(podcast_api.Client(), method)(**params)
     request = transport.calls[0][0]
     assert request.method == "DELETE"
-    assert request.url.endswith("/podcasts/abc?reason=a+%26+b")
+    assert request.url == podcast_api.api_base_test + path
     assert request.body is None
 
 
@@ -157,13 +175,25 @@ def test_metadata_clearing_and_type(transport):
     }
 
 
-@pytest.mark.parametrize("field", ["id", "item_id"])
+@pytest.mark.parametrize(
+    "method,params,field",
+    [
+        ("delete_playlist", {}, "id"),
+        ("delete_playlist_item", {"id": "playlist", "item_id": 23}, "id"),
+        (
+            "delete_playlist_item",
+            {"id": "playlist", "item_id": 23},
+            "item_id",
+        ),
+    ],
+)
 @pytest.mark.parametrize("value", [None, ""])
-def test_missing_path_parameter_fails_before_http(field, value, transport):
-    params = {"id": "playlist", "item_id": 23}
-    params[field] = value
+def test_missing_path_parameter_fails_before_http(
+    method, params, field, value, transport
+):
+    params = {**params, field: value}
     with pytest.raises(ValueError, match=f"Missing path parameter: {field}"):
-        podcast_api.Client().delete_playlist_item(**params)
+        getattr(podcast_api.Client(), method)(**params)
     assert not transport.calls
 
 
@@ -182,7 +212,7 @@ def test_clients_keep_independent_keys_sessions_and_configuration(transport):
     assert transport.calls[0][0].headers["User-Agent"] == "first-agent"
     assert (
         transport.calls[1][0].headers["User-Agent"]
-        == "podcast-api-python 3.0.0"
+        == f"podcast-api-python {VERSION}"
     )
     assert first.http_client.session is not second.http_client.session
     assert (

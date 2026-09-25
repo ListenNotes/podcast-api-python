@@ -250,6 +250,14 @@ class ApiMethods:
             kwargs,
         )
 
+    def delete_playlist(self, **kwargs):
+        return self._request_api(
+            "DELETE",
+            "/playlists/{id}",
+            (),
+            kwargs,
+        )
+
     def add_playlist_item(self, **kwargs):
         return self._request_api(
             "POST",

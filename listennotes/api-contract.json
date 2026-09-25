@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "3.0.0",
+  "version": "3.1.0",
   "operations": [
     {
       "operationId": "search",
@@ -814,6 +814,25 @@
       },
       "summary": "Update playlist metadata.",
       "description": "Update any subset of name, description, visibility, and type. Omitted fields remain unchanged; at least one field is required. Switching to private rotates the playlist RSS secret. Type selects the saved default view (episode_list or podcast_list) and the returned listennotes_url; changing it preserves all existing episodes and podcasts.\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
+    },
+    {
+      "operationId": "deletePlaylist",
+      "func": "delete_playlist",
+      "available_from": "3.1.0",
+      "method": "DELETE",
+      "path": "/playlists/{id}",
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "example_params": {
+        "id": "m1pe7z60bsw"
+      },
+      "summary": "Delete a playlist.",
+      "description": "Permanently delete a playlist, including all episode and podcast references saved in this specific playlist and their notes. The actual episodes and podcasts remain in the Listen Notes podcast database.\n\n**Warning: Deletion cannot be undone. Once deleted, the playlist is gone, regardless of how many episodes or podcasts it contains. You, the developer, are responsible for adding a confirmation step in your app's UI before calling this endpoint to prevent accidental deletion.**\n\nOnly playlists owned by your admin API account can be modified; contributor membership does not grant write access."
     },
     {
       "operationId": "addPlaylistItem",
