@@ -173,6 +173,7 @@ def test_exception_without_message_is_printable():
         ("fetch_my_playlists", {}, 4),
         ("create_playlist", {"name": "test"}, 1),
         ("update_playlist", {"id": "playlist", "description": ""}, 1),
+        ("delete_playlist", {"id": "playlist"}, 1),
         ("delete_playlist_item", {"id": "playlist", "item_id": 23}, 1),
     ],
 )

@@ -173,6 +173,14 @@ def test_delete_playlist_item(client):
     assert response.request.body is None
 
 
+def test_delete_playlist(client):
+    response = client.delete_playlist(id=PLAYLIST_ID)
+    payload = response_json(response, "DELETE", f"/playlists/{PLAYLIST_ID}")
+    assert payload == {"id": PLAYLIST_ID, "deleted": True}
+    assert urlparse(response.request.url).query == ""
+    assert response.request.body is None
+
+
 def test_missing_route(client):
     with pytest.raises(NotFoundError) as exc:
         client.http_client.get(MOCK_BASE + "/sdk-integration-missing-route")
