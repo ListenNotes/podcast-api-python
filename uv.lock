@@ -486,7 +486,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "certifi", specifier = ">=2026.10.18" },
+    { name = "certifi", specifier = ">=2026.10.19" },
     { name = "requests", specifier = ">=2.34.1,<3" },
 ]
 
