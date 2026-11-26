@@ -181,6 +181,33 @@ def test_delete_playlist(client):
     assert response.request.body is None
 
 
+def test_transcription_workflow(client):
+    episode_id = "dc09fd798802477b8dba0ca1e10134fa"
+    path = f"/episodes/{episode_id}/transcript"
+    estimate = response_json(
+        client.estimate_episode_transcription(id=episode_id),
+        "GET",
+        path + "/estimate",
+    )
+    assert "amount_cents" in estimate["billing_this_transcription"]
+
+    response = client.transcribe_episode(id=episode_id)
+    queued = response_json(response, "POST", path, status=202)
+    assert queued["status"] == "queued"
+    assert not response.request.body
+
+    completed = response_json(
+        client.get_episode_transcript(id=episode_id), "GET", path
+    )
+    assert completed["status"] == "completed"
+    assert completed["download_urls"]
+    page = response_json(
+        client.list_transcripts(limit=20), "GET", "/transcripts"
+    )
+    assert page["transcripts"]
+    assert page["next_cursor"] is None
+
+
 def test_missing_route(client):
     with pytest.raises(NotFoundError) as exc:
         client.http_client.get(MOCK_BASE + "/sdk-integration-missing-route")

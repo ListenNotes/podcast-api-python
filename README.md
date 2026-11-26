@@ -2,10 +2,9 @@
 
 [![Python CI](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml/badge.svg)](https://github.com/ListenNotes/podcast-api-python/actions/workflows/python.yml) [![PyPI](https://img.shields.io/pypi/v/podcast-api)](https://pypi.org/project/podcast-api/)
 
-The Podcast API Python library provides convenient access to the [Listen Notes Podcast API](https://www.listennotes.com/podcast-api/) from
-applications written in the Python language.
+Search podcasts and episodes, generate speaker-labeled transcripts on demand, and get podcast audience insights with the official Python SDK for the [Listen Notes Podcast API](https://www.listennotes.com/api/).
 
-Simple and no-nonsense podcast search & directory API. Search the meta data of all podcasts and episodes by people, places, or topics. It's the same API that powers [the best podcast search engine Listen Notes](https://www.listennotes.com/).
+You can also discover podcasts in ChatGPT, Claude, or another compatible AI assistant without writing code. [Connect the official Podcast MCP](https://www.listennotes.com/api/mcp/).
 
 If you have any questions, please contact [hello@listennotes.com](hello@listennotes.com?subject=Questions+about+the+Python+SDK+of+Listen+API)
 
@@ -21,6 +20,21 @@ If you have any questions, please contact [hello@listennotes.com](hello@listenno
   - [Method index](#method-index)
   - [API Reference](#api-reference)
   - [Development](#development)
+
+## On-demand podcast transcription
+
+Transcription methods are available in version 3.2.0. Use the [mock API](https://www.listennotes.help/article/48-how-to-test-the-podcast-api-without-an-api-key) to try the examples with fixed responses and no API key.
+
+| Method | What it does |
+| --- | --- |
+| [`estimate_episode_transcription`](#estimate_episode_transcription) | Estimate cost and check your remaining transcription quota. |
+| [`transcribe_episode`](#transcribe_episode) | Queue a transcription for a podcast episode. |
+| [`get_episode_transcript`](#get_episode_transcript) | Poll for job status and get fresh signed download URLs. |
+| [`list_transcripts`](#list_transcripts) | List completed transcripts and paginate with `next_cursor`. |
+
+**Can I get speaker-labeled podcast transcripts?** Yes. When multiple voices are detected, TXT, SRT, and VTT include speaker labels. Word-level JSON includes speaker IDs when available and timestamps in milliseconds. Signed links expire after 15 minutes. Poll again for fresh links.
+
+**Can I request a live transcription?** Enable transcription and set up billing in your API dashboard, then use a server-side API key. Check the estimate first because live requests can incur transcription fees. [Transcription settings](https://www.listennotes.com/api/dashboard/#transcription) · [Pricing](https://www.listennotes.com/api/pricing/#on-demand-transcription)
 
 ## Installation
 
@@ -123,6 +137,10 @@ And you can see some sample code [here](https://github.com/ListenNotes/podcast-a
 - [`add_playlist_item`](#add_playlist_item) — `POST /playlists/{id}/items`
 - [`delete_playlist_item`](#delete_playlist_item) — `DELETE /playlists/{id}/items/{item_id}`
 - [`update_playlist_item_notes`](#update_playlist_item_notes) — `PUT /playlists/{id}/items/{item_id}`
+- [`estimate_episode_transcription`](#estimate_episode_transcription) — `GET /episodes/{id}/transcript/estimate`
+- [`transcribe_episode`](#transcribe_episode) — `POST /episodes/{id}/transcript`
+- [`get_episode_transcript`](#get_episode_transcript) — `GET /episodes/{id}/transcript`
+- [`list_transcripts`](#list_transcripts) — `GET /transcripts`
 
 <!-- END GENERATED METHOD INDEX -->
 
@@ -348,7 +366,11 @@ Fetch detailed meta data for an episode by id
 
 `GET /episodes/{id}`
 
-Fetch detailed meta data for a specific episode.
+Fetch detailed metadata for a specific episode.
+
+Existing episode transcripts are already available on Listen Notes and include transcripts supplied by podcast producers. About 12% of new episodes and over 3% of all episodes have an existing transcript. Retrieve one with `show_transcript=1` on PRO and ENTERPRISE.
+
+If an episode has no transcript, use `POST /episodes/{id}/transcript` to request on-demand transcription on any plan.
 
 ```python
 import os
@@ -806,6 +828,121 @@ print(response.json())
 ```
 
 [Full API documentation](https://www.listennotes.com/api/docs/#put-api-v2-playlists-id-items-item_id)
+
+### estimate_episode_transcription
+
+Estimate episode transcription cost
+
+`GET /episodes/{id}/transcript/estimate`
+
+Get an informational estimate using episode duration metadata, your remaining quota, and your account's per-minute overage rate. This does not start transcription or reserve quota.
+
+`transcription_quota_this_cycle` shows the included and remaining minutes. `billing_this_transcription.amount_cents` is the estimated fee for minutes beyond the remaining quota. It is 0 when the estimate fits within the quota.
+
+The final fee uses the audio duration measured by the model, the quota available when transcription completes, and the per-minute rate saved when the request is accepted.
+
+If duration metadata is unavailable, `estimate`, `billing_this_transcription.billable_minutes`, and `billing_this_transcription.amount_cents` are null. You can request an estimate before enabling Transcription or adding a payment method. Normal API request accounting applies.
+
+```python
+import os
+from listennotes import podcast_api
+
+client = podcast_api.Client(api_key=os.environ.get("LISTEN_API_KEY"))
+response = client.estimate_episode_transcription(**{'id': 'dc09fd798802477b8dba0ca1e10134fa'})
+print(response.json())
+```
+
+[Full API documentation](https://www.listennotes.com/api/docs/#get-api-v2-episodes-id-transcript-estimate)
+
+### transcribe_episode
+
+Request episode transcription
+
+`POST /episodes/{id}/transcript`
+
+Generate speaker-labeled transcripts for a podcast episode on demand. The request runs asynchronously. Ensure Transcription is enabled and a payment method is added in the [API dashboard](https://www.listennotes.com/api/dashboard/#transcription). Eligible paid accounts may use their existing invoicing arrangement.
+
+**On-demand transcription can incur fees. This example uses the mock API. Configure a server-side API key only when you intend to request live transcription.**
+
+See the [API pricing page](https://www.listennotes.com/api/pricing/#on-demand-transcription) for included minutes and rates. Use the estimate endpoint to check your account's quota and estimated charge.
+
+Returns HTTP 202 for a queued or processing request, or HTTP 200 if a completed transcript already exists for this API account. Repeating a pending or completed request reuses it without another transcription charge. If transcription fails, you may request it again. Up to three pending requests are allowed per API account by default.
+
+Both responses include `transcription_quota_this_cycle` and `billing_this_transcription`. HTTP 202 includes `estimate`, which is null when duration metadata is unavailable. HTTP 200 includes the measured duration and completion time. Use the polling endpoint for signed download URLs.
+
+Poll GET /episodes/{id}/transcript, or [configure a webhook in the dashboard](https://www.listennotes.com/api/dashboard/#webhooks) to receive `episode_transcription.completed` or `episode_transcription.failed`. Webhooks are optional; there is no webhook URL parameter on this operation.
+
+The processing deadline is 15 minutes when estimated audio length is under 60 minutes or unknown, otherwise 25% of estimated audio length. Failed and timed-out transcriptions are not charged a transcription fee.
+
+The per-minute rate is saved when the request is accepted. When a transcription succeeds, we round the measured audio duration up to a whole minute. Only minutes beyond the included quota incur a transcription fee. Disabling Transcription blocks new requests. Accepted requests continue processing.
+
+No request body is required. Normal API request accounting applies even when the transcription fee is zero.
+
+```python
+from listennotes import podcast_api
+
+client = podcast_api.Client(api_key=None)
+response = client.transcribe_episode(**{'id': '1871d978bdc648588441bc5649857ddb'})
+print(response.json())
+```
+
+[Full API documentation](https://www.listennotes.com/api/docs/#post-api-v2-episodes-id-transcript)
+
+### get_episode_transcript
+
+Get episode transcription status and downloads
+
+`GET /episodes/{id}/transcript`
+
+Poll the transcription requested by your API account for this episode. Returns HTTP 200 for queued, processing, completed, and failed states. Only your API account's requests are accessible.
+
+Queued and processing responses include the same quota, billing, and estimate fields as HTTP 202 from POST, plus a `Retry-After` header of 30 seconds. Completed responses include actual duration, `billing_this_transcription`, `transcription_quota_this_cycle`, and all available TXT, SRT, VTT, and word-level JSON download URLs. Failed responses include `error.code`, such as `transcription_timeout`, and null billing minutes and amount.
+
+Signed URLs in `download_urls` are valid for 15 minutes and share the UTC expiration time in `download_url_expired_date`. Anyone holding a valid URL can download the file without an API key. Poll again for fresh URLs.
+
+Transcription uses speaker diarization to distinguish voices. When multiple speakers are detected, TXT, SRT, and VTT use speaker labels. A TXT download places the label before the spoken text.
+
+```
+Speaker A: Thanks for joining us.
+
+Speaker B: Happy to be here.
+```
+
+Word-level JSON includes start and end timestamps in milliseconds and a `speaker` ID for each word, or `null` when a label is unavailable.
+
+If multiple attempts exist, an existing completed transcript remains available until a replacement succeeds. Otherwise the latest request is returned. This operation does not initiate transcription.
+
+```python
+import os
+from listennotes import podcast_api
+
+client = podcast_api.Client(api_key=os.environ.get("LISTEN_API_KEY"))
+response = client.get_episode_transcript(**{'id': '1871d978bdc648588441bc5649857ddb'})
+print(response.json())
+```
+
+[Full API documentation](https://www.listennotes.com/api/docs/#get-api-v2-episodes-id-transcript)
+
+### list_transcripts
+
+List completed episode transcripts
+
+`GET /transcripts`
+
+List your API account's completed transcripts, newest completion first. Queued, processing, failed, and superseded attempts are excluded.
+
+Follow `next_cursor` until it is null. Cursors are opaque and belong to this API account. Each item contains a `billing_this_transcription` summary. Fetch its `transcript_url` from the API server for quota details and fresh signed download URLs.
+
+```python
+import os
+from listennotes import podcast_api
+
+client = podcast_api.Client(api_key=os.environ.get("LISTEN_API_KEY"))
+response = client.list_transcripts(**{'limit': 20})
+print(response.json())
+```
+
+[Full API documentation](https://www.listennotes.com/api/docs/#get-api-v2-transcripts)
 
 <!-- END GENERATED API REFERENCE -->
 
