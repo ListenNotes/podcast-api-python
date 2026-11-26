@@ -281,3 +281,35 @@ class ApiMethods:
             (),
             kwargs,
         )
+
+    def estimate_episode_transcription(self, **kwargs):
+        return self._request_api(
+            "GET",
+            "/episodes/{id}/transcript/estimate",
+            (),
+            kwargs,
+        )
+
+    def transcribe_episode(self, **kwargs):
+        return self._request_api(
+            "POST",
+            "/episodes/{id}/transcript",
+            (),
+            kwargs,
+        )
+
+    def get_episode_transcript(self, **kwargs):
+        return self._request_api(
+            "GET",
+            "/episodes/{id}/transcript",
+            (),
+            kwargs,
+        )
+
+    def list_transcripts(self, **kwargs):
+        return self._request_api(
+            "GET",
+            "/transcripts",
+            ("limit", "cursor"),
+            kwargs,
+        )
